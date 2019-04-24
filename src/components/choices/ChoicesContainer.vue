@@ -18,6 +18,6 @@
     .choices-container{
         height: 100px;
         width: 100%;
-        background-color: #111111;
+        background-color: #222;
     }
 </style>

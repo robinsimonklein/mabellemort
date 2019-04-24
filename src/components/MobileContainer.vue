@@ -23,7 +23,6 @@
         flex-direction: column;
         height: 100%;
         width: 100%;
-        background-color: white;
 
         @media screen and (min-width:540px) {
             height: 80%;

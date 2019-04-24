@@ -17,7 +17,6 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "scss/_body";
 
   #app {
     display: flex;
