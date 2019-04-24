@@ -1,21 +1,29 @@
 <template>
-    <span class="choice">{{ text }}</span>
+    <span class="choice" :style="style">{{ text }}</span>
 </template>
 
 <script>
     export default {
         name: "Choice",
         props: {
-            text:String
-        }
+            text:String,
+            color:String
+        },
+        computed: {
+            style () {
+                return 'background-color: ' + this.color;
+            }
+        },
     }
 </script>
 
 <style scoped>
     .choice{
-        display: inline-block;
-        background-color: #444;
-        padding: 10px 15px;
+        display: block;
+        font-size: 14px;
+        color: black;
+        padding: 15px 0;
+        border-top: 1px solid black;
 
     }
 </style>

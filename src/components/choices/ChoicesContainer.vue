@@ -1,8 +1,8 @@
 <template>
     <div class="choices-container">
-        <Choice text="Un choix"/>
-        <Choice text="Un autre choix"/>
-        <Choice text="Troisième choix"/>
+        <Choice text="Un choix" color="#9278ED"/>
+        <Choice text="Un autre choix" color="#EBFCB4"/>
+        <Choice text="Troisième choix" color="#55B470"/>
     </div>
 </template>
 
@@ -16,7 +16,6 @@
 
 <style lang="scss" scoped>
     .choices-container{
-        height: 100px;
         width: 100%;
         background-color: #222;
     }

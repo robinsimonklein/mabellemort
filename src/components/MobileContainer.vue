@@ -28,7 +28,6 @@
             height: 80%;
             width: 90%;
             max-width: 400px;
-            border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 0 20px rgba(200, 200, 200, 0.1);
         }
