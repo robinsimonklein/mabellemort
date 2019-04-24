@@ -1,10 +1,16 @@
 <template>
-    <div class="mobile-container">{{title}}</div>
+    <div class="mobile-container">
+        <MessagesContainer />
+        <ChoicesContainer />
+    </div>
 </template>
 
 <script>
+    import ChoicesContainer from "./choices/ChoicesContainer";
+    import MessagesContainer from "./messages/MessagesContainer";
     export default {
         name: "MobileContainer",
+        components: {MessagesContainer, ChoicesContainer},
         props: {
             title: String
         }
@@ -13,6 +19,8 @@
 
 <style lang="scss" scoped>
     .mobile-container{
+        display: flex;
+        flex-direction: column;
         height: 100%;
         width: 100%;
         background-color: white;
@@ -25,5 +33,9 @@
             overflow: hidden;
             box-shadow: 0 0 20px rgba(200, 200, 200, 0.1);
         }
+    }
+
+    .messages-container{
+        flex:1;
     }
 </style>
