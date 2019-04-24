@@ -1,26 +1,29 @@
-# mabellemort
+# Ma Belle Mort
 
-## Project setup
+Ma Belle Mort c'est un moyen d'échanger, pendant un instant, avec sa propre mort 
+afin d'embellir la représentation qu'on s'en fait tout en passant un bon moment !
+
+## Installer le projet
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiler pour le development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiler et minifier pour la prod
 ```
 npm run build
 ```
 
-### Run your tests
+### Lancer les tests
 ```
 npm run test
 ```
 
-### Lints and fixes files
+### Lints et corrections
 ```
 npm run lint
 ```
