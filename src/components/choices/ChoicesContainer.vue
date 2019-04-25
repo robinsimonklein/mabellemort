@@ -1,8 +1,8 @@
 <template>
     <div class="choices-container">
         <Choice text="Un choix" color="#9278ED"/>
-        <Choice text="Un autre choix" color="#EBFCB4"/>
-        <Choice text="Troisième choix" color="#55B470"/>
+        <Choice text="Un autre choix" color="#9278ED"/>
+        <Choice text="Troisième choix" color="#9278ED"/>
     </div>
 </template>
 
