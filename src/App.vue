@@ -7,12 +7,17 @@
 
 <script>
 import MobileContainer from "./components/MobileContainer";
+import { Client } from 'dialogflow-gateway'
 
 export default {
-  name: 'app',
-  components: {
-    MobileContainer
-  }
+    name: 'app',
+    mounted() {
+        new Client('mabellemort-6e5b9').connect()
+
+    },
+    components: {
+     MobileContainer
+    }
 }
 </script>
 
