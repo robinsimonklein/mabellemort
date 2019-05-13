@@ -1,11 +1,22 @@
-import json from './datas.json'
+import Vuex from 'vuex'
+import Vue from "vue";
 
-var store = {
-    actual: 0,
-    tree: json,
-    setActual(id){
-        this.actual = id;
+Vue.use(Vuex);
+
+
+export default new Vuex.Store({
+    state: {
+        actual: 0,
+    },
+    mutations: {
+        setActual (id) {
+            this.state.actual = id
+        }
+    },
+    getters: {
+
+    },
+    actions: {
+
     }
-} ;
-
-export default store;
+});

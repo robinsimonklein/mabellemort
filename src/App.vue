@@ -2,9 +2,9 @@
   <div id="app">
       <div class="mobile-container">
       <div class="messages-container">
-          <Message v-for="message in messages" :key="message.index" :sender="message.sender" :content="message.content"/>
+          <!-- <Message v-for="message in messages" :key="message.index" :sender="message.sender" :content="message.content"/> -->
       </div>
-      <ChoicesContainer :actual="sharedActual" />
+      <ChoicesContainer/>
       </div>
   </div>
 </template>
@@ -15,19 +15,15 @@
 import Message from "./components/messages/Message";
 import ChoicesContainer from "./components/choices/ChoicesContainer";
 
-import store from "./store";
-
 export default {
     name: 'app',
     data() {
         return {
-            sharedTree: store.tree,
-            messages : []
         }
     },
     methods: {
         printMessage(sender, content){
-            this.messages.push({'sender': sender, 'content': content})
+            this.messages.push({'sender': sender, 'content': content});
             this.setNextResponse();
         },
         setNextResponse(){
@@ -35,21 +31,9 @@ export default {
         }
     },
     computed: {
-        sharedActual: function(){
-            return store.actual
-        }
+
     },
     mounted(){
-        const container = this;
-
-        const firstMessage = store.tree[store.actual].responses[Math.floor(Math.random() * store.tree[store.actual].responses.length)];
-        this.printMessage('bot', firstMessage);
-
-        this.$root.$on('selectChoice', function(message, follow){
-            container.printMessage('user', message)
-            store.setActual(follow);
-            console.log(store);
-        });
 
     },
     components: {

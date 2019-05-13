@@ -1,7 +1,6 @@
 <template>
     <div class="choices-container">
         <Choice  v-for=" choice in this.choices" :key="choice.follow" :text="choice.text" :follow="choice.follow" color="#9278ED" />
-        <h1>{{actual}}</h1>
     </div>
 </template>
 
@@ -9,16 +8,15 @@
     /* eslint-disable */
 
     import Choice from "./Choice";
-    import store from '../../store.js';
+    import store from '../../store';
+    import json from '../../datas';
 
     export default {
         name: "ChoicesContainer",
-        props: {
-            actual: Number
-        },
+        store: store,
         data() {
             return {
-                choices: store.tree[store.actual].intents
+                choices: json[0].intents
             }
         },
         methods: {
