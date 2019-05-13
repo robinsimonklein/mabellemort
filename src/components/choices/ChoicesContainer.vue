@@ -1,6 +1,7 @@
 <template>
     <div class="choices-container">
         <Choice  v-for=" choice in this.choices" :key="choice.follow" :text="choice.text" :follow="choice.follow" color="#9278ED" />
+        <h1>{{actual}}</h1>
     </div>
 </template>
 
@@ -12,6 +13,9 @@
 
     export default {
         name: "ChoicesContainer",
+        props: {
+            actual: Number
+        },
         data() {
             return {
                 choices: store.tree[store.actual].intents

@@ -4,7 +4,7 @@
       <div class="messages-container">
           <Message v-for="message in messages" :key="message.index" :sender="message.sender" :content="message.content"/>
       </div>
-      <ChoicesContainer />
+      <ChoicesContainer :actual="sharedActual" />
       </div>
   </div>
 </template>
@@ -12,7 +12,6 @@
 <script>
     /* eslint-disable */
 
-import MobileContainer from "./components/MobileContainer";
 import Message from "./components/messages/Message";
 import ChoicesContainer from "./components/choices/ChoicesContainer";
 
@@ -22,12 +21,22 @@ export default {
     name: 'app',
     data() {
         return {
+            sharedTree: store.tree,
             messages : []
         }
     },
     methods: {
         printMessage(sender, content){
             this.messages.push({'sender': sender, 'content': content})
+            this.setNextResponse();
+        },
+        setNextResponse(){
+
+        }
+    },
+    computed: {
+        sharedActual: function(){
+            return store.actual
         }
     },
     mounted(){
@@ -36,15 +45,16 @@ export default {
         const firstMessage = store.tree[store.actual].responses[Math.floor(Math.random() * store.tree[store.actual].responses.length)];
         this.printMessage('bot', firstMessage);
 
-        this.$root.$on('selectChoice', function(message){
+        this.$root.$on('selectChoice', function(message, follow){
             container.printMessage('user', message)
+            store.setActual(follow);
+            console.log(store);
         });
 
     },
     components: {
         ChoicesContainer,
-        Message,
-     MobileContainer
+        Message
     }
 }
 </script>

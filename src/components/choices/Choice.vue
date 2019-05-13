@@ -4,7 +4,6 @@
 
 <script>
 
-    import store from '../../store';
 
     export default {
         name: "Choice",
@@ -16,9 +15,8 @@
         },
         methods: {
             selectChoice(){
-                this.$root.$emit('selectChoice', this.text);
+                this.$root.$emit('selectChoice', this.text, this.follow);
 
-                store.actual = this.follow;
 
             }
         },
