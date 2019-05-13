@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "dialogflow-gateway": "0.0.2",
     "vue": "^2.6.10"
   },
   "devDependencies": {
