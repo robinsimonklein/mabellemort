@@ -1,6 +1,7 @@
 <template>
     <div class="choices-container">
-        <Choice  v-for=" choice in this.choices" :key="choice.follow" :text="choice.text" :follow="choice.follow" color="#9278ED" />
+        <!--Choice  v-for=" choice in this.choices" :key="choice.follow" :text="choice.text" :follow="choice.follow" color="#9278ED" /-->
+        <h1 @click="setActual">{{ actual }}</h1>
     </div>
 </template>
 
@@ -9,17 +10,25 @@
 
     import Choice from "./Choice";
     import store from '../../store';
-    import json from '../../datas';
+    import Vuex from 'vuex';
+
+    global.v = Vuex
 
     export default {
         name: "ChoicesContainer",
         store: store,
         data() {
             return {
-                choices: json[0].intents
+                // choices: json[this.actual].intents
             }
         },
         methods: {
+            setActual: () => {
+                store.commit('SET_ACTUAL', 1);
+            }
+        },
+        computed: {
+            ...Vuex.mapGetters(['actual'])
 
         },
         mounted(){
