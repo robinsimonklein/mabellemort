@@ -16,6 +16,7 @@
     .message {
         display: block;
         margin: 5px 0;
+
         span {
             display: inline-block;
             padding: 5px 10px;
@@ -27,11 +28,13 @@
         &.user{
             text-align: right;
             span {
+                text-align: left;
                 border-color: #55B470;
                 color: black;
                 background-color: rgba(#55B470, 0.8);
             }
         }
+
         &.bot{
             text-align: left;
             span {

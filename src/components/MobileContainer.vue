@@ -1,19 +1,23 @@
 <template>
     <div class="mobile-container">
-        <MessagesContainer />
-        <ChoicesContainer />
+
     </div>
 </template>
 
 <script>
     import ChoicesContainer from "./choices/ChoicesContainer";
     import MessagesContainer from "./messages/MessagesContainer";
+    import Message from "./messages/Message";
+    import store from './../store.js';
+
     export default {
         name: "MobileContainer",
-        components: {MessagesContainer, ChoicesContainer},
         props: {
             title: String
-        }
+        },
+
+        components: {Message, MessagesContainer, ChoicesContainer},
+
     }
 </script>
 
@@ -33,7 +37,10 @@
         }
     }
 
-    .messages-container{
+    .messages-container {
         flex:1;
+        background-color: black;
+        padding: 15px;
+        overflow: auto;
     }
 </style>
