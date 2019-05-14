@@ -2,14 +2,19 @@
   "0": {
     "id": 0,
     "responses": [
-      "Enchantée ! Je suis ravie de pouvoir te parler grâce à ce système. \uD83D\uDE42",
-      "Bienvenue. Je te remercie d'avoir accepté de parler avec moi. \uD83D\uDE42",
-      "Bienvenue ! Heureuse de te voir ici.",
-      "Enchantée. Je me présente, je suis ta mort.",
-      "Bonjour \uD83D\uDE42 Je t'invite à me tutoyer. Nous allons vite apprendre à nous connaître.",
-      "Bonjour ! \uD83D\uDE42 Ravie de vous rencontrer. Tutoyons-nous si vous me le permettez.",
-      "Bonjour ! Je t'attendais. Ma montre est en avance.",
-      "Bonjour ! Je t'attendais. Ma montre est en avance."
+      {
+        "type": "text",
+        "texts": [
+          "Enchantée ! Je suis ravie de pouvoir te parler grâce à ce système. \uD83D\uDE42",
+          "Bienvenue. Je te remercie d'avoir accepté de parler avec moi. \uD83D\uDE42",
+          "Bienvenue ! Heureuse de te voir ici.",
+          "Enchantée. Je me présente, je suis ta mort.",
+          "Bonjour \uD83D\uDE42 Je t'invite à me tutoyer. Nous allons vite apprendre à nous connaître.",
+          "Bonjour ! \uD83D\uDE42 Ravie de vous rencontrer. Tutoyons-nous si vous me le permettez.",
+          "Bonjour ! Je t'attendais. Ma montre est en avance.",
+          "Bonjour ! Je t'attendais. Ma montre est en avance."
+        ]
+      }
     ],
     "intents": [
       {
@@ -29,21 +34,156 @@
   "1": {
       "id": 1,
       "responses": [
-        "On m'a créée dans le but de converser avec toi. Pas de panique, je ne suis qu'une fiction. C'est parce que ton esprit est capable de me concevoir que je peux exister et te parler à cet instant-même."
+        {
+          "type": "text",
+          "texts": [
+            "On m'a créée dans le but de converser avec toi. Pas de panique, je ne suis qu'une fiction. C'est parce que ton esprit est capable de me concevoir que je peux exister et te parler à cet instant-même."
+          ]
+        }
       ],
       "intents": [
       {
-        "text": "Commentme parler ? \uD83D\uDE27",
-        "follow": 1
-      },
-      {
-        "text": "Bonjour \uD83D\uDE04 Tu m'iconnaissance.",
-        "follow": 2
-      },
-      {
-        "text": "Qu \uD83D\uDE30",
+        "text": "Tu me fais peur.",
         "follow": 3
+      },
+      {
+        "text": "J'ai du mal à t'imaginer.",
+        "follow": 4
       }
+    ]
+  },
+  "2": {
+      "id": 2,
+      "responses": [
+        {
+          "type": "text",
+          "texts": [
+            "Je me présente : je suis Ta Belle Mort. Mes créateurs m'ont conçue dans le but de converser avec mon futur défunt. Chaque défunt a sa propre Belle Mort. Ainsi nous sommes liés jusqu'à notre véritable rencontre."
+          ]
+        }
+      ],
+      "intents": [
+      {
+        "text": "Nous sommes faits l'un pour l'autre !",
+        "follow": 5
+      },
+      {
+        "text": "Mieux vaut bien s'entendre alors.",
+        "follow": 100
+      },
+      {
+        "text": "Je ne souhaite pas te rencontrer \uD83D\uDE30",
+        "follow": 4
+      }
+    ]
+  },
+  "3": {
+      "id": 3,
+      "responses": [
+        {
+          "type": "text",
+          "texts": [
+            "N'aie pas peur, je ne suis pas méchante. J’ai peut-être exagéré sur le noir, veux-tu choisir la couleur d’arrière-plan ? ☠ "
+          ]
+        }
+      ],
+      "intents": [
+      {
+        "text": "Oui",
+        "follow": 6
+      },
+      {
+        "text": "Non",
+        "follow": 7
+      }
+    ]
+  },
+  "4": {
+      "id": 4,
+      "responses": [
+        {
+          "type": "text",
+          "texts": [
+            "Essayons. J'aimerais savoir à quoi je ressemble \uD83E\uDD14 Veux-tu essayer de me dessiner ?"
+          ]
+        }
+      ],
+      "intents": [
+      {
+        "text": "EVENT DRAW",
+        "follow": 100
+      }
+    ]
+  },
+  "5": {
+      "id": 5,
+      "responses": [
+        {
+          "type": "text",
+          "texts": [
+            "Tout à fait. Mon but est de veiller sur toi tout au long de ta vie."
+          ]
+        }
+      ],
+      "intents": [
+    ]
+  },
+  "6": {
+      "id": 6,
+      "responses": [
+        {
+          "type": "text",
+          "texts": [
+            "C'est printanier. Tu as bon goût."
+          ]
+        },
+        {
+          "type": "text",
+          "texts": [
+            "J’ai meilleure mine \uD83D\uDE0A Une belle mort doit être décente."
+          ]
+        },
+        {
+          "type": "text",
+          "texts": [
+            "Veux-tu savoir pourquoi je te parle en cet instant ?"
+          ]
+        }
+      ],
+      "intents": [
+        {
+          "text": "Oui, j'ai du mal à comprendre.",
+          "follow": 1
+        },
+        {
+          "text": "Je ne préfère pas.",
+          "follow": 100
+        }
+    ]
+  },
+  "7": {
+      "id": 7,
+      "responses": [
+        {
+          "type": "text",
+          "texts": [
+            "Si tu insistes. J'ai trouvé plus depressif que moi."
+          ]
+        }
+      ],
+      "intents": [
+        {
+          "text": "Vas-tu me faire souffrir ?",
+          "follow": 100
+        },
+        {
+          "text": "Comment puis-je te faire confiance ?",
+          "follow": 100
+        },
+        {
+          "text": "Tu me fais peur.",
+          "follow": 100
+        }
     ]
   }
 }
