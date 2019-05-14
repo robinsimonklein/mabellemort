@@ -1,10 +1,11 @@
 <template>
   <div id="app">
       <div class="mobile-container">
-      <div class="messages-container">
-          <!-- <Message v-for="message in messages" :key="message.index" :sender="message.sender" :content="message.content"/> -->
-      </div>
-      <ChoicesContainer/>
+          <div class="messages-container">
+              <Message v-for="message in messages" :key="message.index" :sender="message.sender" :content="message.content"/>
+              <div v-if="loading">La mort est en train d'écrire...</div>
+          </div>
+          <ChoicesContainer/>
       </div>
   </div>
 </template>
@@ -14,26 +15,54 @@
 
 import Message from "./components/messages/Message";
 import ChoicesContainer from "./components/choices/ChoicesContainer";
+import Vuex from 'vuex';
 
 export default {
     name: 'app',
     data() {
         return {
+            messages: []
         }
     },
     methods: {
-        printMessage(sender, content){
-            this.messages.push({'sender': sender, 'content': content});
-            this.setNextResponse();
-        },
-        setNextResponse(){
+        ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING']),
 
-        }
+        printUserMessage(content){
+            this.messages.push({'sender': 'user', 'content': content});
+        },
+        printDeathResponses(responses){
+            responses.forEach((response) => {
+                this.messages.push({'sender': 'bot', 'content': response});
+            });
+
+        },
     },
     computed: {
-
+        ...Vuex.mapGetters(['actual', 'loading', 'actualResponses'])
     },
     mounted(){
+        this.$root.$on('selectChoice', (choice, nextId) => {
+
+            this.printUserMessage(choice);
+
+            setTimeout(() => {
+                this.SET_LOADING(true);
+                setTimeout(() => {
+
+                    this.SET_ACTUAL(nextId);
+
+                    this.printDeathResponses(this.actualResponses);
+
+                    this.SET_LOADING(false);
+                }, 1500)
+            }, 500);
+
+
+
+
+        });
+
+        this.printDeathResponses(this.actualResponses);
 
     },
     components: {

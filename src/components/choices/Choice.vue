@@ -16,8 +16,6 @@
         methods: {
             selectChoice(){
                 this.$root.$emit('selectChoice', this.text, this.follow);
-
-
             }
         },
         computed: {
