@@ -1,9 +1,13 @@
 <template>
   <div id="app">
+      <div @click="SET_ACTUAL(1)" class="actualHint">{{ actual }}</div>
       <div class="mobile-container">
           <div class="messages-container">
-              <Message v-for="message in messages" :key="message.index" :sender="message.sender" :content="message.content"/>
-              <div v-if="loading">La mort est en train d'écrire...</div>
+              <div class="messages-container__wrap">
+                  <transition-group name="messages-list">
+                      <Message v-for="(message, index) in messages" v-bind:key="index" :sender="message.sender" :content="message.content"/>
+                  </transition-group>
+              </div>
           </div>
           <ChoicesContainer/>
       </div>
@@ -35,10 +39,11 @@ export default {
                 this.messages.push({'sender': 'bot', 'content': response});
             });
 
-        },
+        }
+
     },
     computed: {
-        ...Vuex.mapGetters(['actual', 'loading', 'actualResponses'])
+        ...Vuex.mapGetters(['actual', 'actualResponses'])
     },
     mounted(){
         this.$root.$on('selectChoice', (choice, nextId) => {
@@ -56,8 +61,6 @@ export default {
                     this.SET_LOADING(false);
                 }, 1500)
             }, 500);
-
-
 
 
         });
@@ -111,6 +114,13 @@ export default {
       background-color: black;
       padding: 15px;
       overflow: auto;
+  }
+
+  .messages-list-enter-active, .messages-list-leave-active {
+      transition: opacity .5s ease-out;
+  }
+  .messages-list-enter, .messages-list-leave-to /* .fade-leave-active below version 2.1.8 */ {
+      opacity: 0;
   }
 
 </style>
