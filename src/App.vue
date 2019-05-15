@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <div @click="SET_ACTUAL(1)" class="actualHint">{{ actual }}</div>
+      <div @click="SET_ACTUAL(1)" class="actualHint">Step : {{ actual }}</div>
       <div class="mobile-container">
           <div class="messages-container">
               <div class="messages-container__wrap">
@@ -35,15 +35,21 @@ export default {
             this.messages.push({'sender': 'user', 'content': content});
         },
         printDeathResponses(responses){
-            responses.forEach((response) => {
-                this.messages.push({'sender': 'bot', 'content': response});
+            responses.forEach((response, i) => {
+                if(i>0){
+                    setTimeout(() => {
+                        this.messages.push({'sender': 'bot', 'content': response});
+                    }, 800 * i);
+                }else {
+                    this.messages.push({'sender': 'bot', 'content': response});
+                }
             });
 
         }
 
     },
     computed: {
-        ...Vuex.mapGetters(['actual', 'actualResponses'])
+        ...Vuex.mapGetters(['actual','loading', 'actualResponses'])
     },
     mounted(){
         this.$root.$on('selectChoice', (choice, nextId) => {
@@ -52,16 +58,15 @@ export default {
 
             setTimeout(() => {
                 this.SET_LOADING(true);
-                setTimeout(() => {
+            }, 1500);
+            setTimeout(() => {
 
-                    this.SET_ACTUAL(nextId);
+                this.SET_ACTUAL(nextId);
 
-                    this.printDeathResponses(this.actualResponses);
+                this.printDeathResponses(this.actualResponses);
 
-                    this.SET_LOADING(false);
-                }, 1500)
-            }, 500);
-
+                this.SET_LOADING(false);
+            }, Math.random() * 3000 + 2000)
 
         });
 
@@ -122,5 +127,13 @@ export default {
   .messages-list-enter, .messages-list-leave-to /* .fade-leave-active below version 2.1.8 */ {
       opacity: 0;
   }
+    .actualHint{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+    }
 
 </style>

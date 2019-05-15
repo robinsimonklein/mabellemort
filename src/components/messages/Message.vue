@@ -11,7 +11,11 @@
         },
         methods : {
             scrollMessagesDown(){
-                document.querySelector('.messages-container').scroll(0, document.querySelector('.messages-container').scrollHeight + 30);
+                document.querySelector('.messages-container').scroll({
+                    left: 0,
+                    top: document.querySelector('.messages-container').scrollHeight + 30,
+                    behavior: 'smooth'}
+                );
             }
         },
         mounted(){
