@@ -21,6 +21,11 @@ import Message from "./components/messages/Message";
 import ChoicesContainer from "./components/choices/ChoicesContainer";
 import Vuex from 'vuex';
 
+
+import MyGraph from './graph';
+
+global.graph = MyGraph;
+
 export default {
     name: 'app',
     data() {
