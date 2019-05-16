@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-      <div @click="SET_ACTUAL(1)" class="actualHint">Step : {{ actual }}</div>
+
+      <div class="actualHint">Step : {{ actual }} <br><button @click="pingServer('commencer')">Ping Server</button></div>
       <div class="mobile-container">
           <div class="messages-container">
               <div class="messages-container__wrap">
@@ -20,16 +21,19 @@
 import Message from "./components/messages/Message";
 import ChoicesContainer from "./components/choices/ChoicesContainer";
 import Vuex from 'vuex';
+import openSocket from 'socket.io-client';
 
-
+/*
 import MyGraph from './graph';
 
 global.graph = MyGraph;
+*/
 
 export default {
     name: 'app',
     data() {
         return {
+            socket: null,
             messages: []
         }
     },
@@ -50,6 +54,9 @@ export default {
                 }
             });
 
+        },
+        pingServer(data) {
+            this.socket.emit('dialogflow request', data)
         }
 
     },
@@ -57,6 +64,9 @@ export default {
         ...Vuex.mapGetters(['actual','loading', 'actualResponses'])
     },
     mounted(){
+
+        this.socket = openSocket('http://localhost:3000');
+
         this.$root.$on('selectChoice', (choice, nextId) => {
 
             this.printUserMessage(choice);
@@ -76,6 +86,12 @@ export default {
         });
 
         this.printDeathResponses(this.actualResponses);
+
+        this.socket.on('dialogflow response', (message) => {
+            this.printDeathResponses([message])
+        })
+
+
 
     },
     components: {

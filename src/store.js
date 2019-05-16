@@ -1,6 +1,6 @@
 import Vuex from 'vuex'
-import Vue from "vue";
 import json from './datas';
+import Vue from "vue";
 
 Vue.use(Vuex);
 
