@@ -104,16 +104,15 @@
         {
           "type": "text",
           "texts": [
-            "Essayons. J'aimerais savoir à quoi je ressemble \uD83E\uDD14 Veux-tu essayer de me dessiner ?"
+            "D'accord, je te laisse me répondre ce que tu veux alors."
           ]
         }
       ],
-      "intents": [
+      "event":
       {
-        "text": "EVENT DRAW",
+        "type": "DIALOGFLOW",
         "follow": 100
       }
-    ]
   },
   "5": {
       "id": 5,

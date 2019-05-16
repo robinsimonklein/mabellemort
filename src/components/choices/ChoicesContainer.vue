@@ -1,7 +1,10 @@
 <template>
     <div class="choices-container">
         <div class="loader"> {{ loading ? 'La mort est en train d\'écrire...' : ''}}</div>
-        <Choice @ ="test" v-for="choice in this.actualChoices" :key="choice.index" :text="choice.text" :follow="choice.follow" color="#9278ED" />
+        <div v-if="this.actualChoices != 'DIALOGFLOW'">
+            <Choice v-for="choice in this.actualChoices" :key="choice.index" :text="choice.text" :follow="choice.follow" color="#9278ED" />
+        </div>
+        <form @submit="sendDialogflowMessage" v-if="this.actualChoices === 'DIALOGFLOW'" class="user-input__wrap"><input v-model="dfmessage" type="text" placeholder="Votre message..." class="user-input"><button type="submit" class="user-input__btn">Envoyer</button></form>
     </div>
 </template>
 
@@ -17,15 +20,17 @@
         store: store,
         data() {
             return {
-
+                dfmessage: null,
             }
         },
         methods: {
             ...Vuex.mapMutations([
                 'SET_ACTUAL'
             ]),
-            test(){
-                console.log('change')
+            sendDialogflowMessage(e){
+                e.preventDefault();
+                this.$root.$emit('sendDialogflowMessage', this.dfmessage);
+                this.dfmessage = '';
             }
         },
         computed: {
@@ -42,7 +47,7 @@
 <style lang="scss" scoped>
     .choices-container{
         width: 100%;
-        background-color: #222;
+        background-color: #000;
     }
     .loader{
         display: flex;
@@ -50,5 +55,37 @@
         justify-content: center;
         height: 30px;
         padding: 5px;
+    }
+    .user-input {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 8px;
+        font-size: 15px;
+        background-color: #333;
+        outline: none;
+        box-shadow: none;
+        color: white;
+        border: none;
+        box-sizing: border-box;
+
+        &__wrap{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        &::placeholder{
+            color: white;
+            opacity: 0.5;
+        }
+
+        &__btn{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
     }
 </style>

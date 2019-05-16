@@ -36,7 +36,12 @@ const getters = {
     },
     actualChoices: state => {
         if(json[state.actual]) {
-            return json[state.actual].intents
+            if(json[state.actual].intents){
+                return json[state.actual].intents
+            }else{
+                return json[state.actual].event.type
+            }
+
         }else{
             return []
         }

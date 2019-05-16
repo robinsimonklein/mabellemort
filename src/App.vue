@@ -85,6 +85,11 @@ export default {
 
         });
 
+        this.$root.$on('sendDialogflowMessage', (message) => {
+            this.printUserMessage(message);
+            this.socket.emit('dialogflow request', message);
+        });
+
         this.printDeathResponses(this.actualResponses);
 
         this.socket.on('dialogflow response', (message) => {
