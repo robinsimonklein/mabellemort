@@ -31,9 +31,9 @@
 
         span {
             display: inline-block;
-            padding: 5px 10px;
+            padding: 10px 15px;
             border: 1px solid;
-            font-size: 14px;
+            font-size: 18px;
             max-width: 70%;
         }
 
@@ -52,7 +52,7 @@
             span {
                 border-color: #EBFCB4;
                 color: black;
-                background-color: rgba(#EBFCB4, 0.8);
+                background-color: rgba(#FFF, 0.8);
             }
         }
     }

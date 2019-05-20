@@ -29,7 +29,7 @@
 <style scoped>
     .choice{
         display: block;
-        font-size: 14px;
+        font-size: 17px;
         color: black;
         padding: 15px 0;
         border-top: 1px solid black;

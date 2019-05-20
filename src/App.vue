@@ -93,6 +93,7 @@ export default {
         this.printDeathResponses(this.actualResponses);
 
         this.socket.on('dialogflow response', (message) => {
+            this.SET_LOADING(false);
             this.printDeathResponses([message])
         })
 

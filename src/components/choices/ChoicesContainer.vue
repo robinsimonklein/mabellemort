@@ -1,6 +1,6 @@
 <template>
     <div class="choices-container">
-        <div class="loader"> {{ loading ? 'La mort est en train d\'écrire...' : ''}}</div>
+        <div class="loader"> {{ loading ? 'Ma Belle Mort est en train d\'écrire...' : ''}}</div>
         <div v-if="this.actualChoices != 'DIALOGFLOW'">
             <Choice v-for="choice in this.actualChoices" :key="choice.index" :text="choice.text" :follow="choice.follow" color="#9278ED" />
         </div>
@@ -25,11 +25,12 @@
         },
         methods: {
             ...Vuex.mapMutations([
-                'SET_ACTUAL'
+                'SET_ACTUAL', 'SET_LOADING'
             ]),
             sendDialogflowMessage(e){
                 e.preventDefault();
                 this.$root.$emit('sendDialogflowMessage', this.dfmessage);
+                this.SET_LOADING(true)
                 this.dfmessage = '';
             }
         },
@@ -86,6 +87,8 @@
             font-size: 15px;
             font-weight: bold;
             margin-left: 5px;
+            background: none;
+            border: none;
         }
     }
 </style>
