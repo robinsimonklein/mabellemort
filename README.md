@@ -18,6 +18,8 @@ npm install
 npm run serve
 ```
 
+Le projet sera disponible à `localhost:8080`.
+
 ### Compiler et minifier pour la prod
 ```
 npm run build
