@@ -6,11 +6,14 @@
           <div class="messages-container">
               <div class="messages-container__wrap">
                   <transition-group name="messages-list">
-                      <Message v-for="{message, key} in messages" :key="key" :sender="message.sender" :content="message.content"/>
+                      <Message v-for="(message, key) in messages" :key="key" :sender="message.sender" :content="message.content"/>
                   </transition-group>
               </div>
           </div>
-          <ChoicesContainer/>
+
+          <user-cards-container>
+              <user-card></user-card>
+          </user-cards-container>
       </div>
   </div>
 </template>
@@ -22,6 +25,8 @@ import Message from "./components/messages/Message";
 import ChoicesContainer from "./components/choices/ChoicesContainer";
 import Vuex from 'vuex';
 import openSocket from 'socket.io-client';
+    import UserCardsContainer from "./components/userCards/userCardsContainer";
+    import UserCard from "./components/userCards/userCard";
 
 /*
 import MyGraph from './graph';
@@ -101,6 +106,8 @@ export default {
 
     },
     components: {
+        UserCard,
+        UserCardsContainer,
         ChoicesContainer,
         Message
     }
@@ -131,6 +138,7 @@ export default {
       flex-direction: column;
       height: 100%;
       width: 100%;
+      background-color: black;
 
       @media screen and (min-width:540px) {
           height: 80%;
