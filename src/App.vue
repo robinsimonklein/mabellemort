@@ -6,7 +6,7 @@
           <div class="messages-container">
               <div class="messages-container__wrap">
                   <transition-group name="messages-list">
-                      <Message v-for="(message, index) in messages" v-bind:key="index" :sender="message.sender" :content="message.content"/>
+                      <Message v-for="{message, key} in messages" :key="key" :sender="message.sender" :content="message.content"/>
                   </transition-group>
               </div>
           </div>

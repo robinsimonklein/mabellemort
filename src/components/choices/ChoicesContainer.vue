@@ -2,7 +2,7 @@
     <div class="choices-container">
         <div class="loader"> {{ loading ? 'Ma Belle Mort est en train d\'écrire...' : ''}}</div>
         <div v-if="this.actualChoices != 'DIALOGFLOW'">
-            <Choice v-for="choice in this.actualChoices" :key="choice.index" :text="choice.text" :follow="choice.follow" color="#9278ED" />
+            <Choice v-for="(choice, key) in this.actualChoices" :key="key" :text="choice.text" :follow="choice.follow" color="#9278ED" />
         </div>
         <form @submit="sendDialogflowMessage" v-if="this.actualChoices === 'DIALOGFLOW'" class="user-input__wrap"><input v-model="dfmessage" type="text" placeholder="Votre message..." class="user-input"><button type="submit" class="user-input__btn">Envoyer</button></form>
     </div>
