@@ -14,6 +14,7 @@
     .user-cards-container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         position: fixed;
         bottom: 0;
         left: 0;

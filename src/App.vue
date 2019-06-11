@@ -12,7 +12,9 @@
           </div>
 
           <user-cards-container>
-              <user-card></user-card>
+              <user-card :class="'small--left'" :color="'blue'"></user-card>
+              <user-card :class="'small'" :color="'darkred'"></user-card>
+              <user-card :class="''" :color="'violet'"></user-card>
           </user-cards-container>
       </div>
   </div>
