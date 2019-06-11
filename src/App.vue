@@ -10,12 +10,14 @@
                   </transition-group>
               </div>
           </div>
-
+<!--
           <user-cards-container>
               <user-card :class="'small--left'" :color="'blue'"></user-card>
               <user-card :class="'small'" :color="'darkred'"></user-card>
               <user-card :class="''" :color="'violet'"></user-card>
           </user-cards-container>
+          -->
+          <choices-container></choices-container>
       </div>
   </div>
 </template>
@@ -156,6 +158,7 @@ export default {
       background-color: black;
       padding: 15px;
       overflow: auto;
+      -webkit-overflow-scrolling: touch;
   }
 
   .messages-list-enter-active, .messages-list-leave-active {
