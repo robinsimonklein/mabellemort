@@ -1,12 +1,73 @@
 <template>
-    <div class="user-cards-container">
-        <slot></slot>
+    <div class="user-cards-container tidy" @click="next()">
+        <user-card v-for="(choice, key) in choices" :key="key" @click="send()" :class="getClass(key)" :text="choice.text" :color="choice.color"></user-card>
     </div>
 </template>
 
 <script>
+    /* eslint-disable */
+
+    import UserCard from "./userCard";
     export default {
-        name: "userCardsContainer"
+        name: "userCardsContainer",
+        props: {
+            choices : {
+                type: Array,
+                default: null
+            }
+        },
+        components: {UserCard},
+        data() {
+            return {
+                index: 0
+            }
+        },
+        computed: {
+            totalCards() {
+                return this.choices.length;
+            },
+            secondCard() {
+                if(this.index + 1 >= this.totalCards) {
+                    return 0;
+                }else {
+                    return this.index + 1
+                }
+            },
+            thirdCard() {
+                if(this.secondCard + 1 >= this.totalCards) {
+                    return 0;
+                }else {
+                    return this.secondCard + 1
+                }
+            }
+        },
+        methods: {
+            next() {
+                if(this.index + 1 >= this.totalCards) {
+                    this.index = 0;
+                }else {
+                    this.index++
+                }
+            },
+            getClass(key) {
+                switch (key) {
+                    case this.index :
+                        return 'active';
+                    case this.secondCard :
+                        return 'small';
+                    case this.thirdCard :
+                        return 'small--left';
+                    default:
+                        return 'hidden'
+                }
+            }
+        },
+        mounted() {
+            console.log('total', this.totalCards);
+            console.log('index', this.index);
+            console.log('second', this.secondCard);
+            console.log('third', this.thirdCard);
+        }
     }
 </script>
 

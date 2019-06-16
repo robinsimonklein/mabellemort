@@ -1,7 +1,7 @@
 <template>
     <div class="user-card" :style="'background-color: ' + color">
         <div class="user-card__text-wrap">
-            <p class="user-card__text">ds nkfnsdnfjdsfn jsdf dsf bsdfb s vgvv hdbsdfjdb</p>
+            <p class="user-card__text">{{ text }}</p>
         </div>
     </div>
 </template>
@@ -10,10 +10,14 @@
     export default {
         name: "userCard",
         props: {
+            text: {
+                type: String,
+                default: ''
+            },
             color: {
                 type: String,
                 default: 'red'
-            }
+            },
         }
     }
 </script>
@@ -30,6 +34,8 @@
         width: $card-width;
         margin-bottom: 12vh;
         box-sizing: border-box;
+        z-index: 5;
+        transition: all 0.5s ease;
 
         &:after {
             content: "";
@@ -37,21 +43,41 @@
             padding-bottom: 150%;
         }
 
+        &.hidden {
+            opacity: 0;
+            z-index: 0;
+            $card-scale: 0.2;
+            transform: scale($card-scale) rotate(-30deg);
+            transform-origin: bottom;
+            margin-bottom: 0;
+        }
+
         &.small {
             $card-scale: 0.2;
             transform: scale($card-scale);
             transform-origin: bottom;
             margin-bottom: 0;
+            z-index: 3;
 
             &--left {
-                transform: scale($card-scale) rotate(-45deg);
+                transform: scale($card-scale) rotate(-30deg);
                 transform-origin: bottom;
                 margin-bottom: 0;
+                z-index: 2;
+
+                .active &{
+                    transform: scale($card-scale) rotate(-15deg);
+                }
             }
             &--right {
-                transform: scale($card-scale) rotate(45deg);
+                transform: scale($card-scale) rotate(30deg);
                 transform-origin: bottom;
                 margin-bottom: 0;
+                z-index: 4;
+            }
+
+            .tidy &{
+                $card-scale: 0.4;
             }
         }
 

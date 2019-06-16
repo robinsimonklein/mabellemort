@@ -10,14 +10,9 @@
                   </transition-group>
               </div>
           </div>
-<!--
-          <user-cards-container>
-              <user-card :class="'small--left'" :color="'blue'"></user-card>
-              <user-card :class="'small'" :color="'darkred'"></user-card>
-              <user-card :class="''" :color="'violet'"></user-card>
-          </user-cards-container>
-          -->
-          <choices-container></choices-container>
+
+          <user-cards-container :choices="userChoices"></user-cards-container>
+          <!--<choices-container></choices-container>-->
       </div>
   </div>
 </template>
@@ -29,21 +24,38 @@ import Message from "./components/messages/Message";
 import ChoicesContainer from "./components/choices/ChoicesContainer";
 import Vuex from 'vuex';
 import openSocket from 'socket.io-client';
-    import UserCardsContainer from "./components/userCards/userCardsContainer";
-    import UserCard from "./components/userCards/userCard";
+import UserCardsContainer from "./components/userCards/userCardsContainer";
+import UserCard from "./components/userCards/userCard";
 
-/*
-import MyGraph from './graph';
-
-global.graph = MyGraph;
-*/
 
 export default {
     name: 'app',
     data() {
         return {
             socket: null,
-            messages: []
+            messages: [],
+            userChoices: [
+                {
+                    text: '1. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
+                    color: 'darkred'
+                },
+                {
+                    text: '2. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
+                    color: 'darkblue'
+                },
+                {
+                    text: '3. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
+                    color: 'darkgreen'
+                },
+                {
+                    text: '4. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
+                    color: 'grey'
+                },
+                {
+                    text: '5. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
+                    color: 'violet'
+                }
+            ]
         }
     },
     methods: {
