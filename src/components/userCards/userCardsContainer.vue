@@ -1,6 +1,6 @@
 <template>
     <div class="user-cards-container tidy" @click="next()">
-        <user-card v-for="(choice, key) in choices" :key="key" @click="send()" :class="getClass(key)" :text="choice.text" :color="choice.color"></user-card>
+        <user-card v-for="(choice, key) in choices" :key="key" :class="getClass(key)"  :text="choice.text" :color="choice.color"></user-card>
     </div>
 </template>
 
@@ -59,6 +59,12 @@
                         return 'small--left';
                     default:
                         return 'hidden'
+                }
+            },
+            select(){
+                console.log('send');
+                if(key === this.index) {
+                    console.log('send');
                 }
             }
         },

@@ -18,13 +18,16 @@
                 type: String,
                 default: 'red'
             },
+        },
+        methods : {
+
         }
     }
 </script>
 
 <style lang="scss" scoped>
     .user-card {
-        $card-width: 70vw;
+        $card-width: 67vw;
 
         position: absolute;
         bottom: 0;
@@ -34,6 +37,7 @@
         width: $card-width;
         margin-bottom: 12vh;
         box-sizing: border-box;
+        border-radius: 10px;
         z-index: 5;
         transition: all 0.5s ease;
 
@@ -99,6 +103,7 @@
 
         &__text {
             margin: 0;
+            padding: 0 20px;
         }
     }
 </style>

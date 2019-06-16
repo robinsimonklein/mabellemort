@@ -46,14 +46,6 @@ export default {
                 {
                     text: '3. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
                     color: 'darkgreen'
-                },
-                {
-                    text: '4. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
-                    color: 'grey'
-                },
-                {
-                    text: '5. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
-                    color: 'violet'
                 }
             ]
         }
