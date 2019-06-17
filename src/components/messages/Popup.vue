@@ -1,0 +1,96 @@
+<template>
+    <div class="popup">
+        <div class="popup__wrap" :style="'border-color: ' + color">
+            <span class="popup__title">{{ title }}</span>
+            <p class="popup__text">{{ text }}</p>
+            <div class="popup__actions">
+                <button class="popup__button popup__button--1" :style="'background-color:' + color">{{ choices[0].text }}</button>
+                <button class="popup__button popup__button--2" :style="'color:' + color + '; border-color:' + color">{{ choices[1].text }}</button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "Popup",
+        props: {
+            title: {
+                type: String,
+                default: 'Ma Belle Mort'
+            },
+            text: {
+                type: String,
+                default: ''
+            },
+            choices: {
+                type: Array,
+                default: null
+            },
+            color: {
+                type: String,
+                default: 'grey'
+            }
+        }
+    }
+</script>
+
+<style lang="scss" scoped>
+    .popup {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background-color: rgba(black, 0.7);
+        z-index: 900;
+        font-family: 'Millimetre', Arial, sans-serif;
+
+        &__wrap {
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            width: 85%;
+            border-radius: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        &__title {
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-family: 'Millimetre', Arial, sans-serif;
+        }
+
+        &__text {
+            font-size: 15px;
+            color: black;
+            font-family: 'Millimetre', Arial, sans-serif;
+        }
+
+        &__actions {
+
+        }
+
+        &__button {
+            font-size: 0.8rem;
+            border-radius: 0;
+            border-style: solid;
+            border-width: 2px;
+            text-transform: uppercase;
+            padding: 8px 30px;
+            margin: 0 10px;
+            font-family: 'Millimetre', Arial, sans-serif;
+
+            color: black;
+            border-color: black;
+            background-color: black;
+        }
+    }
+</style>

@@ -18,6 +18,10 @@
                 type: String,
                 default: 'red'
             },
+            follow: {
+                type: Object,
+                default: null
+            }
         },
         data() {
             return {
@@ -68,8 +72,19 @@
             transition: all 0.5s ease;
         }
 
+        $card-scale: 0.2;
+
+        &.active {
+            .tidy &{
+                transform: scale($card-scale) rotate(30deg);
+                transform-origin: bottom;
+                margin-bottom: 0;
+                z-index: 4;
+            }
+        }
+
+
         &.hidden {
-            $card-scale: 0.2;
             opacity: 0;
             z-index: 0;
             transform: scale($card-scale) rotate(-30deg);
@@ -78,7 +93,6 @@
         }
 
         &.small {
-            $card-scale: 0.2;
             transform: scale($card-scale);
             transform-origin: bottom;
             margin-bottom: 0;

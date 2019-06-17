@@ -7,7 +7,8 @@
               <div class="messages-container__wrap">
                   <transition-group name="messages-list">
                       <div v-for="(message, key) in messages" :key="key" >
-                          <Message v-if="message.sender === 'death'" :sender="message.sender" :content="message.content"/>
+                          <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
+                          <Popup v-if="message.type === 'popup'" :sender="message.sender" :title="message.content.title" :text="message.content.text" :choices="actualChoices" :color="message.content.color"/>
                           <UserCard v-if="message.sender === 'user'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
                       </div>
                   </transition-group>
@@ -29,6 +30,7 @@ import Vuex from 'vuex';
 import openSocket from 'socket.io-client';
 import UserCardsContainer from "./components/userCards/UserCardsContainer";
 import UserCard from "./components/userCards/UserCard";
+import Popup from "./components/messages/Popup";
 
 
 export default {
@@ -45,20 +47,19 @@ export default {
 
         printUserMessage(el, text, color){
             // On masque la carte
-            el.parentNode.removeChild(el)
+            el.parentNode.removeChild(el);
             this.messages.push({'sender': 'user', 'text': text, 'color': color});
         },
         printDeathResponses(responses){
             responses.forEach((response, i) => {
                 if(i>0){
                     setTimeout(() => {
-                        this.messages.push({'sender': 'death', 'content': response});
+                        this.messages.push({'type': response.type, 'sender': 'death', 'content': response.content, 'intents': response.intents });
                     }, 800 * i);
                 }else {
-                    this.messages.push({'sender': 'death', 'content': response});
+                    this.messages.push({'type': response.type, 'sender': 'death', 'content': response.content, 'intents': response.intents});
                 }
             });
-            this.SET_LOADING(false);
 
         },
         pingServer(data) {
@@ -67,7 +68,7 @@ export default {
 
     },
     computed: {
-        ...Vuex.mapGetters(['actual','loading', 'actualResponses'])
+        ...Vuex.mapGetters(['actual','loading', 'actualResponses', 'actualChoices'])
     },
     mounted(){
 
@@ -82,8 +83,9 @@ export default {
             }, 1500);
             setTimeout(() => {
 
-                this.SET_ACTUAL(nextId);
+                this.SET_ACTUAL(nextId.default);
 
+                console.log(this.actualResponses);
                 this.printDeathResponses(this.actualResponses);
 
                 this.SET_LOADING(false);
@@ -97,6 +99,7 @@ export default {
         });
 
         this.printDeathResponses(this.actualResponses);
+        console.log(this.actualResponses)
 
         this.socket.on('dialogflow response', (message) => {
             this.SET_LOADING(false);
@@ -107,6 +110,7 @@ export default {
 
     },
     components: {
+        Popup,
         UserCard,
         UserCardsContainer,
         ChoicesContainer,
@@ -153,7 +157,7 @@ export default {
   .messages-container {
       flex:1;
       background-color: black;
-      padding: 15px;
+      padding: 15px 15px 15vh 15px;
       overflow: auto;
       -webkit-overflow-scrolling: touch;
   }

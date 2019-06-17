@@ -1,6 +1,7 @@
 <template>
-    <div class="user-cards-container">
-        <user-card v-for="(choice, key) in actualChoices" :key="key" :class="getClass(key)" :id="'card-'+key" :text="choice.text" :color="'blue'"></user-card>
+    <div class="user-cards-container" :class="{'tidy' : tidy}">
+        <user-card v-for="(choice, key) in actualChoices" :key="key" :class="getClass(key)" :id="'card-'+key" :text="choice.text" :follow="choice.follow" :color="'blue'"></user-card>
+        <div class="user-cards__control" @click="next"></div>
     </div>
 </template>
 
@@ -22,7 +23,8 @@
         components: {UserCard},
         data() {
             return {
-                index: 0
+                index: 2,
+                tidy: true
             }
         },
         computed: {
@@ -47,6 +49,10 @@
         },
         methods: {
             next() {
+                if(this.tidy){
+                    this.tidy = false;
+                    return;
+                }
                 if(this.index + 1 >= this.totalCards) {
                     this.index = 0;
                 }else {
@@ -64,21 +70,6 @@
                     default:
                         return 'hidden'
                 }
-            },
-            select(){
-                console.log('send');
-                if(key === this.index) {
-                    console.log('send');
-                }
-            },
-            send(){
-                const card = document.getElementById('card-'+this.index);
-                const messagesContainer = document.querySelector('.messages-container__wrap');
-                card.parentNode.removeChild(card);
-                card.classList.add('fluid');
-                messagesContainer.appendChild(card);
-
-
             }
         },
         mounted() {
@@ -99,5 +90,17 @@
         bottom: 0;
         left: 0;
         right: 0;
+
+        .user-cards__control {
+            position: absolute;
+            display: block;
+            width: 30vw;
+            height: 12vh;
+            left: 50vw;
+            bottom: 0;
+            margin-left: -15vw;
+            z-index: 10;
+        }
     }
+
 </style>

@@ -23,10 +23,12 @@ const getters = {
     loading: state => state.loading,
     actualResponses: state => {
         if(json[state.actual]) {
-            const responses = [];
+            let responses = [];
             json[state.actual].responses.forEach((response) => {
                 if(response.type === 'text'){
-                    responses.push(response.content[Math.floor(Math.random() * response.content.length)])
+                    responses.push({'type': 'text', 'content': response.content[Math.floor(Math.random() * response.content.length)]})
+                }else{
+                    responses.push(response);
                 }
             });
             return responses;
