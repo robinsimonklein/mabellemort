@@ -23,10 +23,10 @@ const getters = {
     loading: state => state.loading,
     actualResponses: state => {
         if(json[state.actual]) {
-            const responses = []
+            const responses = [];
             json[state.actual].responses.forEach((response) => {
                 if(response.type === 'text'){
-                    responses.push(response.texts[Math.floor(Math.random() * response.texts.length)])
+                    responses.push(response.content[Math.floor(Math.random() * response.content.length)])
                 }
             });
             return responses;
@@ -36,8 +36,8 @@ const getters = {
     },
     actualChoices: state => {
         if(json[state.actual]) {
-            if(json[state.actual].intents){
-                return json[state.actual].intents
+            if(json[state.actual].intents.type === "choices"){
+                return json[state.actual].intents.choices
             }else{
                 return json[state.actual].event.type
             }

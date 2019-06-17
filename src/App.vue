@@ -3,7 +3,7 @@
 
       <div class="actualHint">Step : {{ actual }} <br><button @click="pingServer('commencer')">Ping Server</button></div>
       <div class="mobile-container">
-          <div class="messages-container">
+          <div class="messages-container" id="messages-container">
               <div class="messages-container__wrap">
                   <transition-group name="messages-list">
                       <Message v-for="(message, key) in messages" :key="key" :sender="message.sender" :content="message.content"/>
@@ -24,8 +24,8 @@ import Message from "./components/messages/Message";
 import ChoicesContainer from "./components/choices/ChoicesContainer";
 import Vuex from 'vuex';
 import openSocket from 'socket.io-client';
-import UserCardsContainer from "./components/userCards/userCardsContainer";
-import UserCard from "./components/userCards/userCard";
+import UserCardsContainer from "./components/userCards/UserCardsContainer";
+import UserCard from "./components/userCards/UserCard";
 
 
 export default {

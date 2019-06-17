@@ -8,7 +8,7 @@
 
 <script>
     export default {
-        name: "userCard",
+        name: "UserCard",
         props: {
             text: {
                 type: String,
@@ -39,7 +39,7 @@
         box-sizing: border-box;
         border-radius: 10px;
         z-index: 5;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in-out;
 
         &:after {
             content: "";
@@ -47,10 +47,20 @@
             padding-bottom: 150%;
         }
 
+        &.fluid {
+            position: relative;
+            left: inherit;
+            bottom: inherit;
+            margin: 20px 0;
+            float: right;
+
+            transition: all 0.5s ease;
+        }
+
         &.hidden {
+            $card-scale: 0.2;
             opacity: 0;
             z-index: 0;
-            $card-scale: 0.2;
             transform: scale($card-scale) rotate(-30deg);
             transform-origin: bottom;
             margin-bottom: 0;
@@ -80,9 +90,6 @@
                 z-index: 4;
             }
 
-            .tidy &{
-                $card-scale: 0.4;
-            }
         }
 
         &__text-wrap {
@@ -104,6 +111,7 @@
         &__text {
             margin: 0;
             padding: 0 20px;
+            text-rendering: geometricPrecision;
         }
     }
 </style>

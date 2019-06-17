@@ -1,15 +1,18 @@
 <template>
-    <div class="user-cards-container tidy" @click="next()">
-        <user-card v-for="(choice, key) in choices" :key="key" :class="getClass(key)"  :text="choice.text" :color="choice.color"></user-card>
+    <div class="user-cards-container tidy" @click="send()">
+        <user-card v-for="(choice, key) in this.actualChoices" :key="key" :class="getClass(key)" :id="'card-'+key" :text="choice.text" :color="'blue'"></user-card>
     </div>
 </template>
 
 <script>
     /* eslint-disable */
 
-    import UserCard from "./userCard";
+    import UserCard from "./UserCard";
+    import store from '../../store';
+    import Vuex from 'vuex';
+
     export default {
-        name: "userCardsContainer",
+        name: "UserCardsContainer",
         props: {
             choices : {
                 type: Array,
@@ -23,6 +26,7 @@
             }
         },
         computed: {
+            ...Vuex.mapGetters(['actual', 'loading', 'actualChoices']),
             totalCards() {
                 return this.choices.length;
             },
@@ -66,6 +70,15 @@
                 if(key === this.index) {
                     console.log('send');
                 }
+            },
+            send(){
+                const card = document.getElementById('card-'+this.index);
+                const messagesContainer = document.getElementById('messages-container');
+                card.parentNode.removeChild(card);
+                card.classList.add('fluid');
+                messagesContainer.appendChild(card);
+
+
             }
         },
         mounted() {
