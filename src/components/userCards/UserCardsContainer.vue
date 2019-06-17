@@ -1,6 +1,6 @@
 <template>
-    <div class="user-cards-container tidy" @click="send()">
-        <user-card v-for="(choice, key) in this.actualChoices" :key="key" :class="getClass(key)" :id="'card-'+key" :text="choice.text" :color="'blue'"></user-card>
+    <div class="user-cards-container">
+        <user-card v-for="(choice, key) in actualChoices" :key="key" :class="getClass(key)" :id="'card-'+key" :text="choice.text" :color="'blue'"></user-card>
     </div>
 </template>
 
@@ -28,7 +28,7 @@
         computed: {
             ...Vuex.mapGetters(['actual', 'loading', 'actualChoices']),
             totalCards() {
-                return this.choices.length;
+                return this.actualChoices.length;
             },
             secondCard() {
                 if(this.index + 1 >= this.totalCards) {
@@ -73,7 +73,7 @@
             },
             send(){
                 const card = document.getElementById('card-'+this.index);
-                const messagesContainer = document.getElementById('messages-container');
+                const messagesContainer = document.querySelector('.messages-container__wrap');
                 card.parentNode.removeChild(card);
                 card.classList.add('fluid');
                 messagesContainer.appendChild(card);

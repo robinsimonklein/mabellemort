@@ -6,12 +6,15 @@
           <div class="messages-container" id="messages-container">
               <div class="messages-container__wrap">
                   <transition-group name="messages-list">
-                      <Message v-for="(message, key) in messages" :key="key" :sender="message.sender" :content="message.content"/>
+                      <div v-for="(message, key) in messages" :key="key" >
+                          <Message v-if="message.sender === 'death'" :sender="message.sender" :content="message.content"/>
+                          <UserCard v-if="message.sender === 'user'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
+                      </div>
                   </transition-group>
               </div>
           </div>
 
-          <user-cards-container :choices="userChoices"></user-cards-container>
+          <user-cards-container v-show="loading === false"></user-cards-container>
           <!--<choices-container></choices-container>-->
       </div>
   </div>
@@ -34,38 +37,28 @@ export default {
         return {
             socket: null,
             messages: [],
-            userChoices: [
-                {
-                    text: '1. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
-                    color: 'darkred'
-                },
-                {
-                    text: '2. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
-                    color: 'darkblue'
-                },
-                {
-                    text: '3. fdf sgr sffdgndfsl fdsjfdjfds bfhdf',
-                    color: 'darkgreen'
-                }
-            ]
+
         }
     },
     methods: {
         ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING']),
 
-        printUserMessage(content){
-            this.messages.push({'sender': 'user', 'content': content});
+        printUserMessage(el, text, color){
+            // On masque la carte
+            el.parentNode.removeChild(el)
+            this.messages.push({'sender': 'user', 'text': text, 'color': color});
         },
         printDeathResponses(responses){
             responses.forEach((response, i) => {
                 if(i>0){
                     setTimeout(() => {
-                        this.messages.push({'sender': 'bot', 'content': response});
+                        this.messages.push({'sender': 'death', 'content': response});
                     }, 800 * i);
                 }else {
-                    this.messages.push({'sender': 'bot', 'content': response});
+                    this.messages.push({'sender': 'death', 'content': response});
                 }
             });
+            this.SET_LOADING(false);
 
         },
         pingServer(data) {
@@ -80,9 +73,9 @@ export default {
 
         this.socket = openSocket('http://localhost:3000');
 
-        this.$root.$on('selectChoice', (choice, nextId) => {
+        this.$root.$on('selectChoice', (el, text, color, nextId) => {
 
-            this.printUserMessage(choice);
+            this.printUserMessage(el, text, color);
 
             setTimeout(() => {
                 this.SET_LOADING(true);

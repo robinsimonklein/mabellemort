@@ -1,5 +1,5 @@
 <template>
-    <div class="user-card" :style="'background-color: ' + color">
+    <div class="user-card" :style="'background-color: ' + color" @click="selectChoice">
         <div class="user-card__text-wrap">
             <p class="user-card__text">{{ text }}</p>
         </div>
@@ -19,22 +19,33 @@
                 default: 'red'
             },
         },
-        methods : {
+        data() {
+            return {
 
+            }
+        },
+        methods: {
+            selectChoice(){
+                this.$root.$emit('selectChoice',this.$el, this.text, this.color, this.follow);
+            }
+        },
+        mounted() {
+            this.el = this.$el
         }
     }
 </script>
 
 <style lang="scss" scoped>
-    .user-card {
-        $card-width: 67vw;
 
+    @import "~@/scss/_abstract/_variables";
+
+    .user-card {
         position: absolute;
         bottom: 0;
         left: 50%;
-        margin-left: $card-width / -2;
+        margin-left: $user-card-width / -2;
         display: block;
-        width: $card-width;
+        width: $user-card-width;
         margin-bottom: 12vh;
         box-sizing: border-box;
         border-radius: 10px;

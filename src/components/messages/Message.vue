@@ -1,5 +1,5 @@
 <template>
-    <div class="message" v-bind:class="[sender]"><span>{{ content }}</span></div>
+    <div :class="['message', sender]"><span>{{ content }}</span></div>
 </template>
 
 <script>
@@ -47,7 +47,7 @@
             }
         }
 
-        &.bot{
+        &.death{
             text-align: left;
             span {
                 border-color: #EBFCB4;

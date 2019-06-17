@@ -30,7 +30,7 @@
             sendDialogflowMessage(e){
                 e.preventDefault();
                 this.$root.$emit('sendDialogflowMessage', this.dfmessage);
-                this.SET_LOADING(true)
+                this.SET_LOADING(true);
                 this.dfmessage = '';
             }
         },
