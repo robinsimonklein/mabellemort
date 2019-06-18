@@ -55,6 +55,7 @@ export default {
                 if(i>0){
                     setTimeout(() => {
                         this.messages.push({'type': response.type, 'sender': 'death', 'content': response.content, 'intents': response.intents });
+
                     }, 800 * i);
                 }else {
                     this.messages.push({'type': response.type, 'sender': 'death', 'content': response.content, 'intents': response.intents});
@@ -64,6 +65,14 @@ export default {
         },
         pingServer(data) {
             this.socket.emit('dialogflow request', data)
+        },
+
+        scrollMessagesDown(){
+            document.querySelector('.messages-container').scroll({
+                left: 0,
+                top: document.querySelector('.messages-container').scrollHeight + 30,
+                behavior: 'smooth'}
+            );
         }
 
     },

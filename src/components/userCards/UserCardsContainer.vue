@@ -23,7 +23,7 @@
         components: {UserCard},
         data() {
             return {
-                index: 2,
+                index: 0,
                 tidy: true
             }
         },

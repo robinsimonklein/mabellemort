@@ -4,8 +4,8 @@
             <span class="popup__title">{{ title }}</span>
             <p class="popup__text">{{ text }}</p>
             <div class="popup__actions">
-                <button class="popup__button popup__button--1" :style="'background-color:' + color">{{ choices[0].text }}</button>
-                <button class="popup__button popup__button--2" :style="'color:' + color + '; border-color:' + color">{{ choices[1].text }}</button>
+                <button @click="selectChoice" class="popup__button popup__button--1" :style="'background-color:' + color">{{ choices[0].text }}</button>
+                <button @click="selectChoice" class="popup__button popup__button--2" :style="'color:' + color + '; border-color:' + color">{{ choices[1].text }}</button>
             </div>
         </div>
     </div>
@@ -30,6 +30,11 @@
             color: {
                 type: String,
                 default: 'grey'
+            }
+        },
+        methods: {
+            selectChoice(){
+                this.$root.$emit('selectChoice',this.$el, this.text, this.color, this.follow);
             }
         }
     }
@@ -86,7 +91,9 @@
             text-transform: uppercase;
             padding: 8px 30px;
             margin: 0 10px;
+            font-weight: bold;
             font-family: 'Millimetre', Arial, sans-serif;
+            outline: 0!important;
 
             color: black;
             border-color: black;

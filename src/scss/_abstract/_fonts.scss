@@ -1,15 +1,18 @@
 @font-face {
   font-family: "Millimetre";
-  src: url('/fonts/millimetre/regular/Millimetre-Regular_web.eot');
-  src: url('/fonts/millimetre/regular/Millimetre-Regular_web.otf') format('truetype'),
-        url('/fonts/millimetre/regular/Millimetre-Regular_web.woff') format('woff'),
-        url('/fonts/millimetre/regular/Millimetre-Regular_web.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/millimetre/regular/Millimetre-Regular_web.svg#MillimetreRegular') format('svg');
+  src: url('~@/assets/fonts/millimetre/regular/Millimetre-Regular_web.eot');
+  src: url('~@/assets/fonts/millimetre/regular/Millimetre-Regular_web.otf') format('truetype'),
+        url('~@/assets/fonts/millimetre/regular/Millimetre-Regular_web.woff') format('woff'),
+        url('~@/assets/fonts/millimetre/regular/Millimetre-Regular_web.eot?#iefix') format('embedded-opentype');
+        // url('assets/fonts/millimetre/regular/Millimetre-Regular_web.svg#MillimetreRegular') format('svg');
+  font-weight: normal;
 }
-/*
 @font-face {
   font-family: "Millimetre";
+  src: url('~@/assets/fonts/millimetre/bold/Millimetre-Bold_web.eot');
+  src: url('~@/assets/fonts/millimetre/bold/Millimetre-Bold_web.otf') format('truetype'),
+        url('~@/assets/fonts/millimetre/bold/Millimetre-Bold_web.woff') format('woff'),
+        url('~@/assets/fonts/millimetre/bold/Millimetre-Bold_web.eot?#iefix') format('embedded-opentype');
+        // url('assets/fonts/millimetre/regular/Millimetre-Bold_web.svg#MillimetreBold') format('svg');
   font-weight: bold;
-  src: url('MaSuperFonte-Bold.ttf');
 }
- */
