@@ -38,7 +38,7 @@
           "follow":
             {
               "priority": [],
-              "default": 2
+              "default": 1
             }
 
         },
@@ -47,7 +47,7 @@
           "follow":
             {
               "priority": [],
-              "default": 3
+              "default": 1
             }
 
         }
@@ -56,84 +56,6 @@
     "done": false
   },
   "1": {
-    "responses": [
-      {
-        "type": "text",
-        "content": [
-          "On m'a créée dans le but de converser avec toi. Pas de panique, je ne suis qu'une fiction. C'est parce que ton esprit est capable de me concevoir que je peux exister et te parler à cet instant-même."
-        ]
-      }
-    ],
-    "intents": {
-      "type": "choices",
-      "choices": [
-        {
-          "text": "J'ai du mal à t'imaginer.",
-          "follow":
-            {
-              "priority": [],
-              "default": 4
-            }
-
-        },
-        {
-          "text": "Tu me fais peur.",
-          "follow":
-            {
-              "priority": [],
-              "default": 3
-            }
-
-        }
-      ]
-    },
-    "done": false
-  },
-  "2": {
-    "responses": [
-      {
-        "type": "text",
-        "content": [
-          "Je suis Ta Belle Mort. Mes créateurs m'ont conçue dans le but de converser avec mon futur défunt. Chaque défunt a sa propre Belle Mort. Ainsi nous sommes liés jusqu'à notre véritable rencontre."
-        ]
-      }
-    ],
-    "intents": {
-      "type": "choices",
-      "choices": [
-        {
-          "text": "Nous sommes faits l'un pour l'autre !",
-          "follow":
-            {
-              "priority": [],
-              "default": 6
-            }
-
-        },
-        {
-          "text": "Mieux vaut bien s'entendre alors.",
-          "follow":
-            {
-              "priority": [],
-              "default": 3
-            }
-
-        },
-        {
-          "text": "Je ne souhaite pas te rencontrer \uD83D\uDE30",
-          "follow":
-            {
-              "priority": [],
-              "default": 3
-            }
-
-        }
-      ]
-    },
-    "done": false
-  },
-
-  "3": {
     "responses": [
       {
         "type": "popup",

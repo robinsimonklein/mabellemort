@@ -10,6 +10,7 @@
                           <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
                           <Popup v-if="message.type === 'popup'" :sender="message.sender" :title="message.content.title" :text="message.content.text" :choices="actualChoices" :color="message.content.color"/>
                           <UserCard v-if="message.sender === 'user'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
+                          <ColorPalette :colors="['red', 'blue', 'green', 'yellow', 'violet']"/>
                       </div>
                   </transition-group>
               </div>
@@ -31,6 +32,7 @@ import openSocket from 'socket.io-client';
 import UserCardsContainer from "./components/userCards/UserCardsContainer";
 import UserCard from "./components/userCards/UserCard";
 import Popup from "./components/messages/Popup";
+    import ColorPalette from "./components/choices/ColorPalette";
 
 
 export default {
@@ -119,6 +121,7 @@ export default {
 
     },
     components: {
+        ColorPalette,
         Popup,
         UserCard,
         UserCardsContainer,
