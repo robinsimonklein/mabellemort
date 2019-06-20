@@ -3,9 +3,7 @@
         <span class="canvas-draw__title">Dessiner Ma Belle Mort</span>
         <canvas id="canvas" class="canvas-draw__area" ref="canvas" :width="width" :height="height"></canvas>
         <ul class="tools">
-            <li class="tool__reset" @click="changeTool(0)">
-                <img src="@/assets/picto/trash.svg"/>
-            </li>
+            <li class="tool__clear" @click="clearDrawing"></li>
             <!-- <li class="tool__eraser" :class="{ active: selectedToolIdx === 1 }" @click="changeTool(1)">
                 <img src="@/assets/eraser.svg"/>
             </li> -->
@@ -14,6 +12,8 @@
                     <li v-for="(color, key) in palette" :key="key" :class="['tool__color', 'tool__color--' + key, {'active' : tools[0].color === color}]" @click="setColor(color)" :style="'background-color:'+color"></li>
                 </ul>
             </li>
+
+            <li class="tool__send">ENVOYER</li>
         </ul>
     </div>
 </template>
@@ -105,14 +105,9 @@
             setColor(color){
                 this.tools[0].color = color;
             },
-            showColorPalette() {
-                const colorPalette = document.createElement('input');
-                colorPalette.addEventListener('change', (event) => {
-                    this.tools[0].color = event.target.value;
-                });
-                colorPalette.type = 'color';
-                colorPalette.value = this.tools[0].color;
-                colorPalette.click();
+            clearDrawing(){
+                // Effacer le dessin
+                this.canvasContext.clearRect(0, 0, this.$refs.canvas.width, this.$refs.canvas.height);
             },
             download() {
                 const link = document.createElement('a');
@@ -156,21 +151,35 @@
     .tools {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         list-style-type: none;
         margin-top: 1rem;
         padding: 0;
+        width: 90vw;
     }
     .tool {
+
+        &__clear {
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 50%;
+            background-color: white;
+            background-image: url('/assets/picto/trash.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
         &__color-palette ul{
             display: flex;
             padding: 0;
             list-style-type: none;
         }
         &__color {
-            margin: 0 5px;
-            height: 2rem;
-            width: 2rem;
+            height: 2.5rem;
+            width: 2.5rem;
             border-radius: 100%;
+            margin: 0 5px;
             box-sizing: border-box;
             border: 8px solid white;
             transition: border 0.2s ease;
@@ -180,6 +189,12 @@
                 transition: border 0.2s ease;
             }
 
+        }
+
+        &__send {
+            font-family: 'Millimetre', Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
         }
     }
 
