@@ -5,12 +5,13 @@
       <div class="mobile-container">
           <div class="messages-container" id="messages-container">
               <div class="messages-container__wrap">
+                  <CanvasDraw/>
                   <transition-group name="messages-list">
                       <div v-for="(message, key) in messages" :key="key" >
                           <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
                           <Popup v-if="message.type === 'popup'" :sender="message.sender" :title="message.content.title" :text="message.content.text" :choices="actualChoices" :color="message.content.color"/>
                           <UserCard v-if="message.sender === 'user'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
-                          <ColorPalette :colors="['red', 'blue', 'green', 'yellow', 'violet']"/>
+                          <!-- <ColorPalette :colors="['red', 'blue', 'green', 'yellow', 'violet']"/> -->
                       </div>
                   </transition-group>
               </div>
@@ -32,7 +33,8 @@ import openSocket from 'socket.io-client';
 import UserCardsContainer from "./components/userCards/UserCardsContainer";
 import UserCard from "./components/userCards/UserCard";
 import Popup from "./components/messages/Popup";
-    import ColorPalette from "./components/choices/ColorPalette";
+import ColorPalette from "./components/interactions/ColorPalette";
+import CanvasDraw from "./components/interactions/CanvasDraw";
 
 
 export default {
@@ -53,15 +55,16 @@ export default {
             this.messages.push({'sender': 'user', 'text': text, 'color': color});
         },
         printDeathResponses(responses){
-            responses.forEach((response, i) => {
-                if(i>0){
-                    setTimeout(() => {
-                        this.messages.push({'type': response.type, 'sender': 'death', 'content': response.content, 'intents': response.intents });
+            setTimeout(() => {
+                this.SET_LOADING(true);
+            }, 1500);
 
-                    }, 800 * i);
-                }else {
-                    this.messages.push({'type': response.type, 'sender': 'death', 'content': response.content, 'intents': response.intents});
-                }
+            // Afficher les réponses une par une avec un interval aléatoire
+            responses.forEach((response, i) => {
+                setTimeout(() => {
+                    this.messages.push({'type': response.type, 'sender': 'death', 'content': response.content, 'intents': response.intents });
+
+                }, Math.random() * 3000 + 2000 * i);
             });
 
         },
@@ -89,18 +92,11 @@ export default {
 
             this.printUserMessage(el, text, color);
 
-            setTimeout(() => {
-                this.SET_LOADING(true);
-            }, 1500);
-            setTimeout(() => {
+            this.SET_ACTUAL(nextId.default);
 
-                this.SET_ACTUAL(nextId.default);
+            this.printDeathResponses(this.actualResponses);
 
-                console.log(this.actualResponses);
-                this.printDeathResponses(this.actualResponses);
-
-                this.SET_LOADING(false);
-            }, Math.random() * 3000 + 2000)
+            this.SET_LOADING(false);
 
         });
 
@@ -121,6 +117,7 @@ export default {
 
     },
     components: {
+        CanvasDraw,
         ColorPalette,
         Popup,
         UserCard,
