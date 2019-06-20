@@ -74,7 +74,7 @@
           "follow":
             {
               "priority": [],
-              "default": 6
+              "default": 2
             }
 
         },
@@ -90,5 +90,10 @@
       ]
     },
     "done": false
+  },
+  "2": {
+    "responses": {
+      "type": "color-palette"
+    }
   }
 }

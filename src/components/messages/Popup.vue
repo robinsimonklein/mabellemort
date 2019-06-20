@@ -34,7 +34,7 @@
         },
         methods: {
             selectChoice(){
-                this.$root.$emit('selectChoice',this.$el, this.text, this.color, this.follow);
+                this.$root.$emit('selectChoice',this.$el, {text: this.text, color: this.color}, this.follow);
             }
         }
     }

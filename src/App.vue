@@ -1,23 +1,20 @@
 <template>
   <div id="app">
-
-      <div class="actualHint">Step : {{ actual }} <br><button @click="pingServer('commencer')">Ping Server</button></div>
       <div class="mobile-container">
           <div class="messages-container" id="messages-container">
               <div class="messages-container__wrap">
-                  <CanvasDraw/>
                   <transition-group name="messages-list">
                       <div v-for="(message, key) in messages" :key="key" >
                           <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
                           <Popup v-if="message.type === 'popup'" :sender="message.sender" :title="message.content.title" :text="message.content.text" :choices="actualChoices" :color="message.content.color"/>
-                          <UserCard v-if="message.sender === 'user'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
+                          <UserCard v-if="message.type === 'card'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
                           <!-- <ColorPalette :colors="['red', 'blue', 'green', 'yellow', 'violet']"/> -->
                       </div>
                   </transition-group>
               </div>
           </div>
 
-          <user-cards-container v-show="loading === false"></user-cards-container>
+          <user-cards-container v-if="loading === false"></user-cards-container>
           <!--<choices-container></choices-container>-->
       </div>
   </div>
@@ -63,7 +60,7 @@ export default {
             responses.forEach((response, i) => {
                 setTimeout(() => {
                     this.messages.push({'type': response.type, 'sender': 'death', 'content': response.content, 'intents': response.intents });
-
+                    this.SET_LOADING(false);
                 }, Math.random() * 3000 + 2000 * i);
             });
 
@@ -88,9 +85,9 @@ export default {
 
         this.socket = openSocket('http://localhost:3000');
 
-        this.$root.$on('selectChoice', (el, text, color, nextId) => {
+        this.$root.$on('selectChoice', (el, data, nextId) => {
 
-            this.printUserMessage(el, text, color);
+            this.printUserMessage(el, data.text, data.color);
 
             this.SET_ACTUAL(nextId.default);
 
