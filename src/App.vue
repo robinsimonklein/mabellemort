@@ -3,19 +3,18 @@
       <div class="mobile-container">
           <div class="messages-container" id="messages-container">
               <div class="messages-container__wrap">
-                  <transition-group name="messages-list">
-                      <div v-for="(message, key) in messages" :key="key" >
-                          <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
-                          <Popup v-if="message.type === 'popup'" :sender="message.sender" :title="message.content.title" :text="message.content.text" :choices="actualChoices" :color="message.content.color"/>
-                          <UserCard v-if="message.type === 'card'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
-                          <!-- <ColorPalette :colors="['red', 'blue', 'green', 'yellow', 'violet']"/> -->
-                      </div>
-                  </transition-group>
+                  <component v-for="(message, key) in messages" :key="key" :is="message.type" :data="message.data"></component>
+                  <!--
+                      <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
+                      <Popup v-if="message.type === 'popup'" :sender="message.sender" :title="message.content.title" :text="message.content.text" :choices="actualChoices" :color="message.content.color"/>
+                      <UserCard v-if="message.type === 'card'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
+                      <ColorPalette :colors="['red', 'blue', 'green', 'yellow', 'violet']"/>
+                   -->
+
               </div>
           </div>
 
-          <user-cards-container v-if="loading === false"></user-cards-container>
-          <!--<choices-container></choices-container>-->
+          <component v-if="userEvent" :is="'user-cards-container'"></component>
       </div>
   </div>
 </template>
@@ -24,7 +23,6 @@
     /* eslint-disable */
 
 import Message from "./components/messages/Message";
-import ChoicesContainer from "./components/choices/ChoicesContainer";
 import Vuex from 'vuex';
 import openSocket from 'socket.io-client';
 import UserCardsContainer from "./components/userCards/UserCardsContainer";
@@ -44,31 +42,26 @@ export default {
         }
     },
     methods: {
-        ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING']),
+        ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING', 'SET_USER_EVENT']),
 
         printUserMessage(el, text, color){
             // On masque la carte
-            el.parentNode.removeChild(el);
             this.messages.push({'sender': 'user', 'text': text, 'color': color});
         },
         printDeathResponses(responses){
-            setTimeout(() => {
-                this.SET_LOADING(true);
-            }, 1500);
+            // Masquer l'interaction de l'utilisateur
+            this.SET_USER_EVENT(false);
 
-            // Afficher les réponses une par une avec un interval aléatoire
+            // Afficher les réponses une par une
             responses.forEach((response, i) => {
-                setTimeout(() => {
-                    this.messages.push({'type': response.type, 'sender': 'death', 'content': response.content, 'intents': response.intents });
-                    this.SET_LOADING(false);
-                }, Math.random() * 3000 + 2000 * i);
+                this.messages.push({
+                    'type': response.type,
+                    'data': response.data,
+                });
             });
-
+            // Afficher la nouvelle interaction de l'utilisateur
+            this.SET_USER_EVENT(true);
         },
-        pingServer(data) {
-            this.socket.emit('dialogflow request', data)
-        },
-
         scrollMessagesDown(){
             document.querySelector('.messages-container').scroll({
                 left: 0,
@@ -79,7 +72,7 @@ export default {
 
     },
     computed: {
-        ...Vuex.mapGetters(['actual','loading', 'actualResponses', 'actualChoices'])
+        ...Vuex.mapGetters(['actual', 'userEvent', 'loading', 'actualResponses', 'actualChoices', 'state'])
     },
     mounted(){
 
@@ -97,18 +90,23 @@ export default {
 
         });
 
+        /*
         this.$root.$on('sendDialogflowMessage', (message) => {
             this.printUserMessage(message);
             this.socket.emit('dialogflow request', message);
         });
 
-        this.printDeathResponses(this.actualResponses);
-        console.log(this.actualResponses)
+         */
 
+        this.printDeathResponses(this.actualResponses);
+
+        /*
         this.socket.on('dialogflow response', (message) => {
             this.SET_LOADING(false);
             this.printDeathResponses([message])
         })
+
+         */
 
 
 
@@ -119,7 +117,6 @@ export default {
         Popup,
         UserCard,
         UserCardsContainer,
-        ChoicesContainer,
         Message
     }
 }

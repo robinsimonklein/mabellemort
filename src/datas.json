@@ -2,7 +2,7 @@
   "0": {
     "responses": [
       {
-        "type": "text",
+        "type": "message",
         "content": [
           "Enchantée ! Je suis ravie de pouvoir te parler grâce à ce système. \uD83D\uDE42",
           "Bienvenue. Je te remercie d'avoir accepté de parler avec moi. \uD83D\uDE42",
@@ -15,7 +15,7 @@
         ]
       },
       {
-        "type": "text",
+        "type": "message",
         "content": [
           "Pour me répondre, des cartes sont à ta disposition.\nQuant à moi, je n'ai pas de forme déterminée. Je contrôlerai l'apparence de cette interface comme bon me semble."
         ]

@@ -6,6 +6,7 @@ Vue.use(Vuex);
 
 const state = {
     actual: 0,
+    userEvent: false,
     loading: false
 };
 
@@ -15,21 +16,27 @@ const mutations = {
     },
     SET_LOADING: (state, bool) => {
         state.loading = bool
+    },
+    SET_USER_EVENT: (state, bool) => {
+        state.userEvent = bool
     }
 };
 
 const getters = {
     actual: state => state.actual,
+    userEvent: state => state.userEvent,
     loading: state => state.loading,
     actualResponses: state => {
         if(json[state.actual]) {
             let responses = [];
             json[state.actual].responses.forEach((response) => {
-                if(response.type === 'text'){
-                    responses.push({'type': 'text', 'content': response.content[Math.floor(Math.random() * response.content.length)]})
-                }else{
-                    responses.push(response);
-                }
+                responses.push({
+                    'type': response.type,
+                    'data': {
+                        'sender': 'death',
+                        'text': response.content[Math.floor(Math.random() * response.content.length)]
+                    }
+                });
             });
             return responses;
         }else{
