@@ -5,7 +5,7 @@ import Vue from "vue";
 Vue.use(Vuex);
 
 const state = {
-    actual: 0,
+    actual: 1,
     userEvent: false,
     loading: false
 };
@@ -31,7 +31,16 @@ const getters = {
             return json[state.actual]
         }else{
             // TODO: Erreur, le noeud n'existe pas
-            return []
+            return null
+        }
+    },
+    nextNode: state => {
+        return 10
+        if(json[state.actual].next){
+            return json[state.actual].next
+        }else{
+            // TODO: Erreur, il n'y a pas de suite
+            return 100
         }
     }
 };

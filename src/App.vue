@@ -23,14 +23,18 @@
 <script>
     /* eslint-disable */
 
-import Message from "./components/messages/Message";
-import SimpleMessage from "./components/messages/SimpleMessage";
-import Vuex from 'vuex';
-import UserCardsContainer from "./components/userCards/UserCardsContainer";
-import UserCard from "./components/userCards/UserCard";
-import Popup from "./components/interactions/Popup";
-import ColorPalette from "./components/interactions/ColorPalette";
-import CanvasDraw from "./components/interactions/CanvasDraw";
+    import Vuex from 'vuex';
+
+    //Import message components
+    import Message from "./components/messages/Message";
+    import SimpleMessage from "./components/messages/SimpleMessage";
+
+    //Import interactions components
+    import UserCardsContainer from "./components/userCards/UserCardsContainer";
+    import UserCard from "./components/userCards/UserCard";
+    import Popup from "./components/interactions/Popup";
+    import ColorPalette from "./components/interactions/ColorPalette";
+    import CanvasDraw from "./components/interactions/CanvasDraw";
 
 
 export default {
@@ -48,22 +52,39 @@ export default {
             // On masque la carte
             this.messages.push({'type': type, 'data': data, 'color': color});
         },
-        printResponse(response){
+        printMessage(message){
             // Masquer l'interaction de l'utilisateur
             this.SET_USER_EVENT(false);
 
             this.SET_LOADING(true);
             setTimeout(()=>{
                 this.messages.push({
-                    'component': response.component,
-                    'data': response.data,
+                    'component': message.component,
+                    'data': message.data,
                 });
                 this.SET_LOADING(false);
             }, Math.random() * 2000 + 1000);
         },
+        displayNode(node){
+            switch (node.type) {
+                case 'message':
+                    this.printMessage(node);
+                    break;
+                case 'interaction':
+                    break;
+                default:
+                    console.error('%cUne erreur s\'est produite : le noeud demandé n\'existe pas.', 'font-weight: bold');
+                    break;
+            }
+        },
         goToNextNode(id){
             this.SET_ACTUAL(id);
-            console.log('actual', id)
+            if(this.actualNode) {
+                this.displayNode(this.actualNode);
+                console.log('actual', id)
+            }else{
+                // TODO: Erreur, le noeud suivant n'existe pas
+            }
         },
         scrollMessagesDown(){
             document.querySelector('.messages-container').scroll({
@@ -89,11 +110,12 @@ export default {
 
         });
         this.$root.$on('goToNextNode', (nextId) => {
+
             this.goToNextNode(nextId);
         });
-        console.log(this.actualNode)
+        console.log(this.actualNode);
 
-        this.printResponse(this.actualNode);
+        this.displayNode(this.actualNode);
 
     },
     components: {
