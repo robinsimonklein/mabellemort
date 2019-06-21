@@ -23,7 +23,7 @@
       "text": [
         "Pour me répondre, des cartes sont à ta disposition.\nQuant à moi, je n'ai pas de forme déterminée. Je contrôlerai l'apparence de cette interface comme bon me semble."
       ],
-      "sender": "Ma Belle Mort"
+      "sender": "Arte"
     },
     "next": 2
   },
@@ -46,6 +46,27 @@
           "text": "Que veux-tu ? \uD83D\uDE30",
           "color": "blue",
           "next": 3
+        }
+      ]
+    }
+  },
+  "3": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "N'aie pas peur, je ne suis pas méchante. J’ai peut-être exagéré sur le noir, veux-tu choisir la couleur d’arrière-plan ? ☠️",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": 4
+
+        },
+        {
+          "text": "Non",
+          "next": 4
+
         }
       ]
     }

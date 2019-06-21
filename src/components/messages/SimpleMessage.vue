@@ -23,10 +23,19 @@
                 return this.data.text[Math.round(Math.random() * (this.data.text.length - 1))]
             }
         },
+        methods: {
+            scrollMessagesDown(){
+                document.querySelector('.messages-container').scroll({
+                    left: 0,
+                    top: document.querySelector('.messages-container').scrollHeight + 30,
+                    behavior: 'smooth'}
+                );
+            }
+        },
         mounted() {
+            this.scrollMessagesDown();
             if(this.nextNode){
                 this.$root.$emit('goToNextNode', this.nextNode);
-                console.log(this.nextNode)
             }
         }
     }

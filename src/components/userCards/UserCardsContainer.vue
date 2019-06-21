@@ -1,6 +1,6 @@
 <template>
     <div class="user-cards-container" :class="{'tidy' : tidy}">
-        <user-card v-for="(choice, key) in data.choices" :key="key" :class="getClass(key)" :id="'card-'+key" :text="choice.text" :follow="choice.follow" :color="choice.color"></user-card>
+        <user-card v-for="(choice, key) in data.choices" :key="key" :class="getClass(key)" :id="'card-'+key" :data="{text: choice.text, next: choice.next, color: choice.color}" :fluid="false"></user-card>
         <div class="user-cards__control" @click="next"></div>
     </div>
 </template>
@@ -75,7 +75,6 @@
             }
         },
         mounted() {
-
         }
     }
 </script>

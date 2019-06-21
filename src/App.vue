@@ -3,7 +3,7 @@
       <div class="mobile-container">
           <div class="messages-container" id="messages-container">
               <div class="messages-container__wrap">
-                  <component v-for="(message, key) in messages" :key="key" :is="message.component" :data="message.data"></component>
+                  <component v-for="(message, key) in messages" :key="key" :is="message.component" :data="message.data" :fluid="true"></component>
                   <div v-if="loading" class="loader">Ma Belle Mort est en train d'écrire...</div>
                   <!--
                       <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
@@ -15,7 +15,7 @@
               </div>
           </div>
 
-          <component v-if="userInteraction" :is="'user-cards-container'" :data="actualNode.data"></component>
+          <component v-if="userInteraction" :is="actualNode.component" :data="actualNode.data"></component>
       </div>
   </div>
 </template>
@@ -48,9 +48,14 @@ export default {
     methods: {
         ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING', 'ACTIVATE_USER_INTERACTION', 'DISABLE_USER_INTERACTION']),
 
-        printUserMessage(type, data, color){
-            // On masque la carte
-            this.messages.push({'type': type, 'data': data, 'color': color});
+        printUserMessage(message){
+            // Masquer l'interaction de l'utilisateur
+            this.DISABLE_USER_INTERACTION();
+
+            this.messages.push({
+                'component': message.component,
+                'data': message.data,
+            });
         },
         printMessage(message){
             // Masquer l'interaction de l'utilisateur
@@ -101,20 +106,13 @@ export default {
     },
     mounted(){
 
-        this.$root.$on('selectChoice', (el, type, data, nextId) => {
-
-            this.printUserMessage(el, data.text, data.color);
-
-            this.SET_ACTUAL(nextId.default);
-
-            // this.printDeathResponses(this.actualResponses);
-
+        this.$root.$on('printUserMessage', (message) => {
+            this.printUserMessage(message);
         });
         this.$root.$on('goToNextNode', (nextId) => {
-
             this.goToNextNode(nextId);
         });
-        console.log(this.actualNode);
+        console.log('start node :', this.actualNode);
 
         this.displayNode(this.actualNode);
 

@@ -5,7 +5,7 @@ import Vue from "vue";
 Vue.use(Vuex);
 
 const state = {
-    actual: 1,
+    actual: 3,
     userInteraction: false,
     loading: false
 };
