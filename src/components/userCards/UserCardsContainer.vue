@@ -1,6 +1,6 @@
 <template>
     <div class="user-cards-container" :class="{'tidy' : tidy}">
-        <user-card v-for="(choice, key) in actualChoices" :key="key" :class="getClass(key)" :id="'card-'+key" :text="choice.text" :follow="choice.follow" :color="'blue'"></user-card>
+        <user-card v-for="(choice, key) in data.choices" :key="key" :class="getClass(key)" :id="'card-'+key" :text="choice.text" :follow="choice.follow" :color="choice.color"></user-card>
         <div class="user-cards__control" @click="next"></div>
     </div>
 </template>
@@ -30,9 +30,9 @@
             }
         },
         computed: {
-            ...Vuex.mapGetters(['actual', 'loading', 'actualChoices']),
+            ...Vuex.mapGetters(['actual', 'loading']),
             totalCards() {
-                return this.actualChoices.length;
+                return this.data.choices.length;
             },
             secondCard() {
                 if(this.index + 1 >= this.totalCards) {

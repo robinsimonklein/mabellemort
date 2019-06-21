@@ -34,30 +34,18 @@
       "choices": [
         {
           "text": "Comment ma mort peut-elle me parler ? \uD83D\uDE27",
-          "follow":
-          {
-            "priority": [],
-            "default": 1
-          }
-
+          "color": "red",
+          "next": 3
         },
         {
           "text": "Bonjour \uD83D\uDE04 Tu m'intrigues, faisons connaissance.",
-          "follow":
-          {
-            "priority": [],
-            "default": 1
-          }
-
+          "color": "green",
+          "next": 3
         },
         {
           "text": "Que veux-tu ? \uD83D\uDE30",
-          "follow":
-          {
-            "priority": [],
-            "default": 1
-          }
-
+          "color": "blue",
+          "next": 3
         }
       ]
     }

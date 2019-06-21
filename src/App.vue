@@ -15,7 +15,7 @@
               </div>
           </div>
 
-          <component v-if="userEvent" :is="'user-cards-container'" :data="''"></component>
+          <component v-if="userInteraction" :is="'user-cards-container'" :data="actualNode.data"></component>
       </div>
   </div>
 </template>
@@ -46,7 +46,7 @@ export default {
         }
     },
     methods: {
-        ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING', 'SET_USER_EVENT']),
+        ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING', 'ACTIVATE_USER_INTERACTION', 'DISABLE_USER_INTERACTION']),
 
         printUserMessage(type, data, color){
             // On masque la carte
@@ -54,7 +54,7 @@ export default {
         },
         printMessage(message){
             // Masquer l'interaction de l'utilisateur
-            this.SET_USER_EVENT(false);
+            this.DISABLE_USER_INTERACTION();
 
             this.SET_LOADING(true);
             setTimeout(()=>{
@@ -71,6 +71,7 @@ export default {
                     this.printMessage(node);
                     break;
                 case 'interaction':
+                    this.ACTIVATE_USER_INTERACTION();
                     break;
                 default:
                     console.error('%cUne erreur s\'est produite : le noeud demandé n\'existe pas.', 'font-weight: bold');
@@ -96,7 +97,7 @@ export default {
 
     },
     computed: {
-        ...Vuex.mapGetters(['actual', 'userEvent', 'loading', 'actualNode', 'state'])
+        ...Vuex.mapGetters(['actual', 'userInteraction', 'loading', 'actualNode', 'state'])
     },
     mounted(){
 

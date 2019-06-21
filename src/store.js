@@ -6,7 +6,7 @@ Vue.use(Vuex);
 
 const state = {
     actual: 1,
-    userEvent: false,
+    userInteraction: false,
     loading: false
 };
 
@@ -17,14 +17,17 @@ const mutations = {
     SET_LOADING: (state, bool) => {
         state.loading = bool
     },
-    SET_USER_EVENT: (state, bool) => {
-        state.userEvent = bool
+    ACTIVATE_USER_INTERACTION: (state) => {
+        state.userInteraction = true
+    },
+    DISABLE_USER_INTERACTION: (state) => {
+        state.userInteraction = false
     }
 };
 
 const getters = {
     actual: state => state.actual,
-    userEvent: state => state.userEvent,
+    userInteraction: state => state.userInteraction,
     loading: state => state.loading,
     actualNode: state => {
         if(json[state.actual]) {
@@ -35,12 +38,11 @@ const getters = {
         }
     },
     nextNode: state => {
-        return 10
         if(json[state.actual].next){
             return json[state.actual].next
         }else{
             // TODO: Erreur, il n'y a pas de suite
-            return 100
+            return null
         }
     }
 };
