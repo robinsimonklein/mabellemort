@@ -30,13 +30,16 @@ const getters = {
         if(json[state.actual]) {
             let responses = [];
             json[state.actual].responses.forEach((response) => {
-                responses.push({
-                    'type': response.type,
-                    'data': {
-                        'sender': 'death',
-                        'text': response.content[Math.floor(Math.random() * response.content.length)]
+                responses.push(
+                    {
+                        'type': response.type,
+                        'data':
+                            {
+                            'sender': 'death',
+                            'text': response.content[Math.floor(Math.random() * response.content.length)]
+                            }
                     }
-                });
+                );
             });
             return responses;
         }else{

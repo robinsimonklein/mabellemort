@@ -15,9 +15,11 @@
     export default {
         name: "UserCardsContainer",
         props: {
-            choices : {
-                type: Array,
-                default: null
+            data: {
+                choices : {
+                    type: Array,
+                    default: null
+                }
             }
         },
         components: {UserCard},
@@ -73,10 +75,7 @@
             }
         },
         mounted() {
-            console.log('total', this.totalCards);
-            console.log('index', this.index);
-            console.log('second', this.secondCard);
-            console.log('third', this.thirdCard);
+
         }
     }
 </script>

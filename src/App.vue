@@ -4,17 +4,18 @@
           <div class="messages-container" id="messages-container">
               <div class="messages-container__wrap">
                   <component v-for="(message, key) in messages" :key="key" :is="message.type" :data="message.data"></component>
+                  <div v-if="loading" class="loader">Ma Belle Mort est en train d'écrire...</div>
                   <!--
                       <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
                       <Popup v-if="message.type === 'popup'" :sender="message.sender" :title="message.content.title" :text="message.content.text" :choices="actualChoices" :color="message.content.color"/>
                       <UserCard v-if="message.type === 'card'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
-                      <ColorPalette :colors="['red', 'blue', 'green', 'yellow', 'violet']"/>
+                      <ColorPalette :colors="['red', 'blue', 'green', 'white', 'violet']"/>
                    -->
 
               </div>
           </div>
 
-          <component v-if="userEvent" :is="'user-cards-container'"></component>
+          <component v-if="userEvent" :is="'user-cards-container'" :data="''"></component>
       </div>
   </div>
 </template>
@@ -24,7 +25,6 @@
 
 import Message from "./components/messages/Message";
 import Vuex from 'vuex';
-import openSocket from 'socket.io-client';
 import UserCardsContainer from "./components/userCards/UserCardsContainer";
 import UserCard from "./components/userCards/UserCard";
 import Popup from "./components/messages/Popup";
@@ -36,7 +36,6 @@ export default {
     name: 'app',
     data() {
         return {
-            socket: null,
             messages: [],
 
         }
@@ -44,23 +43,29 @@ export default {
     methods: {
         ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING', 'SET_USER_EVENT']),
 
-        printUserMessage(el, text, color){
+        printUserMessage(type, data, color){
             // On masque la carte
-            this.messages.push({'sender': 'user', 'text': text, 'color': color});
+            this.messages.push({'type': type, 'data': data, 'color': color});
         },
         printDeathResponses(responses){
             // Masquer l'interaction de l'utilisateur
             this.SET_USER_EVENT(false);
 
-            // Afficher les réponses une par une
+            // Afficher les réponses de la mort une par une
             responses.forEach((response, i) => {
-                this.messages.push({
-                    'type': response.type,
-                    'data': response.data,
-                });
+                this.SET_LOADING(true);
+                setTimeout(()=>{
+                    this.messages.push({
+                        'type': response.type,
+                        'data': response.data,
+                    });
+                    this.SET_LOADING(false);
+                    if(responses.length === i + 1){
+                        // Afficher la nouvelle interaction de l'utilisateur
+                        this.SET_USER_EVENT(true);
+                    }
+                }, Math.random() * 2000 + 1000 + 1000 * i);
             });
-            // Afficher la nouvelle interaction de l'utilisateur
-            this.SET_USER_EVENT(true);
         },
         scrollMessagesDown(){
             document.querySelector('.messages-container').scroll({
@@ -76,9 +81,7 @@ export default {
     },
     mounted(){
 
-        this.socket = openSocket('http://localhost:3000');
-
-        this.$root.$on('selectChoice', (el, data, nextId) => {
+        this.$root.$on('selectChoice', (el, type, data, nextId) => {
 
             this.printUserMessage(el, data.text, data.color);
 
@@ -90,25 +93,7 @@ export default {
 
         });
 
-        /*
-        this.$root.$on('sendDialogflowMessage', (message) => {
-            this.printUserMessage(message);
-            this.socket.emit('dialogflow request', message);
-        });
-
-         */
-
         this.printDeathResponses(this.actualResponses);
-
-        /*
-        this.socket.on('dialogflow response', (message) => {
-            this.SET_LOADING(false);
-            this.printDeathResponses([message])
-        })
-
-         */
-
-
 
     },
     components: {
