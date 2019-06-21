@@ -3,7 +3,7 @@
       <div class="mobile-container">
           <div class="messages-container" id="messages-container">
               <div class="messages-container__wrap">
-                  <component v-for="(message, key) in messages" :key="key" :is="message.type" :data="message.data"></component>
+                  <component v-for="(message, key) in messages" :key="key" :is="message.component" :data="message.data"></component>
                   <div v-if="loading" class="loader">Ma Belle Mort est en train d'écrire...</div>
                   <!--
                       <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
@@ -24,10 +24,11 @@
     /* eslint-disable */
 
 import Message from "./components/messages/Message";
+import SimpleMessage from "./components/messages/SimpleMessage";
 import Vuex from 'vuex';
 import UserCardsContainer from "./components/userCards/UserCardsContainer";
 import UserCard from "./components/userCards/UserCard";
-import Popup from "./components/messages/Popup";
+import Popup from "./components/interactions/Popup";
 import ColorPalette from "./components/interactions/ColorPalette";
 import CanvasDraw from "./components/interactions/CanvasDraw";
 
@@ -47,25 +48,22 @@ export default {
             // On masque la carte
             this.messages.push({'type': type, 'data': data, 'color': color});
         },
-        printDeathResponses(responses){
+        printResponse(response){
             // Masquer l'interaction de l'utilisateur
             this.SET_USER_EVENT(false);
 
-            // Afficher les réponses de la mort une par une
-            responses.forEach((response, i) => {
-                this.SET_LOADING(true);
-                setTimeout(()=>{
-                    this.messages.push({
-                        'type': response.type,
-                        'data': response.data,
-                    });
-                    this.SET_LOADING(false);
-                    if(responses.length === i + 1){
-                        // Afficher la nouvelle interaction de l'utilisateur
-                        this.SET_USER_EVENT(true);
-                    }
-                }, Math.random() * 2000 + 1000 + 1000 * i);
-            });
+            this.SET_LOADING(true);
+            setTimeout(()=>{
+                this.messages.push({
+                    'component': response.component,
+                    'data': response.data,
+                });
+                this.SET_LOADING(false);
+            }, Math.random() * 2000 + 1000);
+        },
+        goToNextNode(id){
+            this.SET_ACTUAL(id);
+            console.log('actual', id)
         },
         scrollMessagesDown(){
             document.querySelector('.messages-container').scroll({
@@ -77,7 +75,7 @@ export default {
 
     },
     computed: {
-        ...Vuex.mapGetters(['actual', 'userEvent', 'loading', 'actualResponses', 'actualChoices', 'state'])
+        ...Vuex.mapGetters(['actual', 'userEvent', 'loading', 'actualNode', 'state'])
     },
     mounted(){
 
@@ -87,16 +85,19 @@ export default {
 
             this.SET_ACTUAL(nextId.default);
 
-            this.printDeathResponses(this.actualResponses);
-
-            this.SET_LOADING(false);
+            // this.printDeathResponses(this.actualResponses);
 
         });
+        this.$root.$on('goToNextNode', (nextId) => {
+            this.goToNextNode(nextId);
+        });
+        console.log(this.actualNode)
 
-        this.printDeathResponses(this.actualResponses);
+        this.printResponse(this.actualNode);
 
     },
     components: {
+        SimpleMessage,
         CanvasDraw,
         ColorPalette,
         Popup,

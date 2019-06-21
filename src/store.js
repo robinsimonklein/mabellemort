@@ -26,35 +26,11 @@ const getters = {
     actual: state => state.actual,
     userEvent: state => state.userEvent,
     loading: state => state.loading,
-    actualResponses: state => {
+    actualNode: state => {
         if(json[state.actual]) {
-            let responses = [];
-            json[state.actual].responses.forEach((response) => {
-                responses.push(
-                    {
-                        'type': response.type,
-                        'data':
-                            {
-                            'sender': 'death',
-                            'text': response.content[Math.floor(Math.random() * response.content.length)]
-                            }
-                    }
-                );
-            });
-            return responses;
+            return json[state.actual]
         }else{
-            return []
-        }
-    },
-    actualChoices: state => {
-        if(json[state.actual]) {
-            if(json[state.actual].intents.type === "choices"){
-                return json[state.actual].intents.choices
-            }else{
-                return json[state.actual].event.type
-            }
-
-        }else{
+            // TODO: Erreur, le noeud n'existe pas
             return []
         }
     }

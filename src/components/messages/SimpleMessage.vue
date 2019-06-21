@@ -1,13 +1,23 @@
 <template>
-    $END$
+    <div class="simple-message">
+        {{ data.text }}
+    </div>
 </template>
 
 <script>
     export default {
-        name: "simpleMessage"
+        name: "SimpleMessage",
+        props: {
+            data: {
+                text: Array,
+                default: null
+            }
+        }
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+    .simple-message {
 
+    }
 </style>

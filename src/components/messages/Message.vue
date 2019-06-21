@@ -1,5 +1,5 @@
 <template>
-    <div :class="['message', data.sender]"><span>{{ data.text }}</span></div>
+    <div :class="['message']"><span>{{ randomText }}</span></div>
 </template>
 
 <script>
@@ -12,9 +12,14 @@
                     default: 'death'
                 },
                 text: {
-                    type: String,
-                    default: ''
+                    type: Array,
+                    default: null
                 }
+            }
+        },
+        computed: {
+            randomText() {
+                return this.data.text[Math.round(Math.random() * this.data.text.length)]
             }
         },
         methods : {

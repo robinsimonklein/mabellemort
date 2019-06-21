@@ -1,5 +1,34 @@
 {
   "0": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Enchantée ! Je suis ravie de pouvoir te parler grâce à ce système. \uD83D\uDE42",
+        "Bienvenue. Je te remercie d'avoir accepté de parler avec moi. \uD83D\uDE42",
+        "Bienvenue ! Heureuse de te voir ici.",
+        "Enchantée. Je me présente, je suis ta mort.",
+        "Bonjour \uD83D\uDE42 Je t'invite à me tutoyer. Nous allons vite apprendre à nous connaître.",
+        "Bonjour ! \uD83D\uDE42 Ravie de vous rencontrer. Tutoyons-nous si vous me le permettez.",
+        "Bonjour ! Je t'attendais. Ma montre est en avance."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": 1
+  },
+  "1": {
+    "type": "message",
+    "component": "SimpleMessage",
+    "data": {
+      "text": [
+        "Pour me répondre, des cartes sont à ta disposition.\nQuant à moi, je n'ai pas de forme déterminée. Je contrôlerai l'apparence de cette interface comme bon me semble."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": 2
+  },
+
+  "10": {
     "responses": [
       {
         "type": "message",
@@ -54,14 +83,17 @@
     },
     "done": false
   },
-  "1": {
+  "11": {
     "responses": [
       {
         "type": "popup",
         "content": {
           "title": "Ma Belle Mort",
           "text": "N'aie pas peur, je ne suis pas méchante. J’ai peut-être exagéré sur le noir, veux-tu choisir la couleur d’arrière-plan ? ☠️",
-          "color": "#B3FFD2"
+          "color": "#B3FFD2",
+          "choices": [
+
+          ]
         }
       }
     ],
@@ -90,7 +122,7 @@
     },
     "done": false
   },
-  "2": {
+  "12": {
     "responses": {
       "type": "color-palette"
     }
