@@ -4,8 +4,8 @@
             <span class="popup__title">{{ data.title }}</span>
             <p class="popup__text">{{ data.text }}</p>
             <div class="popup__actions">
-                <button @click="selectChoice" class="popup__button popup__button--1" :style="'background-color:' + data.color">{{ data.choices[0].text }}</button>
-                <button @click="selectChoice" class="popup__button popup__button--2" :style="'color:' + data.color + '; border-color:' + data.color">{{ data.choices[1].text }}</button>
+                <button @click="selectChoice(data.choices[0].next)" class="popup__button popup__button--1" :style="'background-color:' + data.color">{{ data.choices[0].text }}</button>
+                <button @click="selectChoice(data.choices[1].next)" class="popup__button popup__button--2" :style="'color:' + data.color + '; border-color:' + data.color">{{ data.choices[1].text }}</button>
             </div>
         </div>
     </div>
@@ -35,9 +35,10 @@
             }
         },
         methods: {
-            selectChoice(){
-                this.$root.$emit('printUserMessage', {'component':'UserCard', 'data': {'text': this.data.text, 'color': this.data.color}});
-                this.$root.$emit('goToNextNode', this.data.next);
+            selectChoice(nextId){
+                console.log(nextId)
+                // this.$root.$emit('printUserMessage', {'component':'UserCard', 'data': {'text': this.data.text, 'color': this.data.color}});
+                this.$root.$emit('goToNextNode', nextId);
             }
         }
     }

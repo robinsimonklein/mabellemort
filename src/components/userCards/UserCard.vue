@@ -78,7 +78,7 @@
             left: inherit;
             bottom: inherit;
             margin: 20px 0;
-
+            z-index: 1;
             transition: all 0.5s ease;
         }
 
