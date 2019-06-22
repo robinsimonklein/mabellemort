@@ -1,13 +1,26 @@
 <template>
-    <div :class="['message', sender]"><span>{{ content }}</span></div>
+    <div :class="['message']"><span>{{ randomText }}</span></div>
 </template>
 
 <script>
     export default {
         name: "Message",
         props: {
-            content: String,
-            sender: String
+            data: {
+                sender: {
+                    type: String,
+                    default: 'death'
+                },
+                text: {
+                    type: Array,
+                    default: null
+                }
+            }
+        },
+        computed: {
+            randomText() {
+                return this.data.text[Math.round(Math.random() * this.data.text.length)]
+            }
         },
         methods : {
             scrollMessagesDown(){

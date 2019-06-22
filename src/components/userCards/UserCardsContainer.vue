@@ -1,6 +1,6 @@
 <template>
     <div class="user-cards-container" :class="{'tidy' : tidy}">
-        <user-card v-for="(choice, key) in actualChoices" :key="key" :class="getClass(key)" :id="'card-'+key" :text="choice.text" :follow="choice.follow" :color="'blue'"></user-card>
+        <user-card v-for="(choice, key) in data.choices" :key="key" :class="getClass(key)" :id="'card-'+key" :data="{text: choice.text, next: choice.next, color: choice.color}" :fluid="false"></user-card>
         <div class="user-cards__control" @click="next"></div>
     </div>
 </template>
@@ -15,9 +15,11 @@
     export default {
         name: "UserCardsContainer",
         props: {
-            choices : {
-                type: Array,
-                default: null
+            data: {
+                choices : {
+                    type: Array,
+                    default: null
+                }
             }
         },
         components: {UserCard},
@@ -28,9 +30,9 @@
             }
         },
         computed: {
-            ...Vuex.mapGetters(['actual', 'loading', 'actualChoices']),
+            ...Vuex.mapGetters(['actual', 'loading']),
             totalCards() {
-                return this.actualChoices.length;
+                return this.data.choices.length;
             },
             secondCard() {
                 if(this.index + 1 >= this.totalCards) {
@@ -73,10 +75,6 @@
             }
         },
         mounted() {
-            console.log('total', this.totalCards);
-            console.log('index', this.index);
-            console.log('second', this.secondCard);
-            console.log('third', this.thirdCard);
         }
     }
 </script>

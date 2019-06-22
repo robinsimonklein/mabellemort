@@ -1,7 +1,7 @@
 <template>
-    <div class="user-card" :style="'background-color: ' + color" @click="selectChoice">
+    <div class="user-card" :class="{'fluid' : fluid}" :style="'background-color: ' + data.color" @click="selectChoice">
         <div class="user-card__text-wrap">
-            <p class="user-card__text">{{ text }}</p>
+            <p class="user-card__text">{{ data.text }}</p>
         </div>
     </div>
 </template>
@@ -10,31 +10,42 @@
     export default {
         name: "UserCard",
         props: {
-            text: {
-                type: String,
-                default: ''
+            data: {
+                text: {
+                    type: String,
+                    default: ''
+                },
+                color: {
+                    type: String,
+                    default: 'red'
+                },
+                next: {
+                    type: Number,
+                    default: null
+                }
             },
-            color: {
-                type: String,
-                default: 'red'
-            },
-            follow: {
-                type: Object,
-                default: null
-            }
-        },
-        data() {
-            return {
-
+            fluid: {
+                type: Boolean,
+                default: false
             }
         },
         methods: {
             selectChoice(){
-                this.$root.$emit('selectChoice',this.$el, this.text, this.color, this.follow);
+                this.$root.$emit('printUserMessage', {'component':'UserCard', 'data': {'text': this.data.text, 'color': this.data.color}});
+                this.$root.$emit('goToNextNode', this.data.next);
+            },
+            scrollMessagesDown(){
+                document.querySelector('.messages-container').scroll({
+                    left: 0,
+                    top: document.querySelector('.messages-container').scrollHeight + 30,
+                    behavior: 'smooth'}
+                );
             }
         },
         mounted() {
-            this.el = this.$el
+            if(this.fluid){
+                this.scrollMessagesDown();
+            }
         }
     }
 </script>
@@ -67,8 +78,7 @@
             left: inherit;
             bottom: inherit;
             margin: 20px 0;
-            float: right;
-
+            z-index: 1;
             transition: all 0.5s ease;
         }
 

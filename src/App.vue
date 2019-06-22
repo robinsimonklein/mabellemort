@@ -3,19 +3,19 @@
       <div class="mobile-container">
           <div class="messages-container" id="messages-container">
               <div class="messages-container__wrap">
-                  <transition-group name="messages-list">
-                      <div v-for="(message, key) in messages" :key="key" >
-                          <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
-                          <Popup v-if="message.type === 'popup'" :sender="message.sender" :title="message.content.title" :text="message.content.text" :choices="actualChoices" :color="message.content.color"/>
-                          <UserCard v-if="message.type === 'card'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
-                          <!-- <ColorPalette :colors="['red', 'blue', 'green', 'yellow', 'violet']"/> -->
-                      </div>
-                  </transition-group>
+                  <component v-for="(message, key) in messages" :key="key" :is="message.component" :data="message.data" :fluid="true"></component>
+                  <div v-if="loading" class="loader">Ma Belle Mort est en train d'écrire...</div>
+                  <!--
+                      <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
+                      <Popup v-if="message.type === 'popup'" :sender="message.sender" :title="message.content.title" :text="message.content.text" :choices="actualChoices" :color="message.content.color"/>
+                      <UserCard v-if="message.type === 'card'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
+                      <ColorPalette :colors="['red', 'blue', 'green', 'white', 'violet']"/>
+                   -->
+
               </div>
           </div>
 
-          <user-cards-container v-if="loading === false"></user-cards-container>
-          <!--<choices-container></choices-container>-->
+          <component v-if="userInteraction" :is="actualNode.component" :data="actualNode.data"></component>
       </div>
   </div>
 </template>
@@ -23,52 +23,75 @@
 <script>
     /* eslint-disable */
 
-import Message from "./components/messages/Message";
-import ChoicesContainer from "./components/choices/ChoicesContainer";
-import Vuex from 'vuex';
-import openSocket from 'socket.io-client';
-import UserCardsContainer from "./components/userCards/UserCardsContainer";
-import UserCard from "./components/userCards/UserCard";
-import Popup from "./components/messages/Popup";
-import ColorPalette from "./components/interactions/ColorPalette";
-import CanvasDraw from "./components/interactions/CanvasDraw";
+    import Vuex from 'vuex';
+
+    //Import message components
+    import Message from "./components/messages/Message";
+    import SimpleMessage from "./components/messages/SimpleMessage";
+
+    //Import interactions components
+    import UserCardsContainer from "./components/userCards/UserCardsContainer";
+    import UserCard from "./components/userCards/UserCard";
+    import Popup from "./components/interactions/Popup";
+    import ColorPalette from "./components/interactions/ColorPalette";
+    import CanvasDraw from "./components/interactions/CanvasDraw";
 
 
 export default {
     name: 'app',
     data() {
         return {
-            socket: null,
             messages: [],
 
         }
     },
     methods: {
-        ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING']),
+        ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING', 'ACTIVATE_USER_INTERACTION', 'DISABLE_USER_INTERACTION']),
 
-        printUserMessage(el, text, color){
-            // On masque la carte
-            el.parentNode.removeChild(el);
-            this.messages.push({'sender': 'user', 'text': text, 'color': color});
-        },
-        printDeathResponses(responses){
-            setTimeout(() => {
-                this.SET_LOADING(true);
-            }, 1500);
+        printUserMessage(message){
+            // Masquer l'interaction de l'utilisateur
+            this.DISABLE_USER_INTERACTION();
 
-            // Afficher les réponses une par une avec un interval aléatoire
-            responses.forEach((response, i) => {
-                setTimeout(() => {
-                    this.messages.push({'type': response.type, 'sender': 'death', 'content': response.content, 'intents': response.intents });
-                    this.SET_LOADING(false);
-                }, Math.random() * 3000 + 2000 * i);
+            this.messages.push({
+                'component': message.component,
+                'data': message.data,
             });
-
         },
-        pingServer(data) {
-            this.socket.emit('dialogflow request', data)
-        },
+        printMessage(message){
+            // Masquer l'interaction de l'utilisateur
+            this.DISABLE_USER_INTERACTION();
 
+            this.SET_LOADING(true);
+            setTimeout(()=>{
+                this.messages.push({
+                    'component': message.component,
+                    'data': message.data,
+                });
+                this.SET_LOADING(false);
+            }, Math.random() * 2000 + 1000);
+        },
+        displayNode(node){
+            switch (node.type) {
+                case 'message':
+                    this.printMessage(node);
+                    break;
+                case 'interaction':
+                    this.ACTIVATE_USER_INTERACTION();
+                    break;
+                default:
+                    console.error('%cUne erreur s\'est produite : le noeud demandé n\'existe pas.', 'font-weight: bold');
+                    break;
+            }
+        },
+        goToNextNode(id){
+            this.SET_ACTUAL(id);
+            if(this.actualNode) {
+                this.displayNode(this.actualNode);
+                console.log('actual', id)
+            }else{
+                // TODO: Erreur, le noeud suivant n'existe pas
+            }
+        },
         scrollMessagesDown(){
             document.querySelector('.messages-container').scroll({
                 left: 0,
@@ -79,47 +102,28 @@ export default {
 
     },
     computed: {
-        ...Vuex.mapGetters(['actual','loading', 'actualResponses', 'actualChoices'])
+        ...Vuex.mapGetters(['actual', 'userInteraction', 'loading', 'actualNode', 'state'])
     },
     mounted(){
 
-        this.socket = openSocket('http://localhost:3000');
-
-        this.$root.$on('selectChoice', (el, data, nextId) => {
-
-            this.printUserMessage(el, data.text, data.color);
-
-            this.SET_ACTUAL(nextId.default);
-
-            this.printDeathResponses(this.actualResponses);
-
-            this.SET_LOADING(false);
-
-        });
-
-        this.$root.$on('sendDialogflowMessage', (message) => {
+        this.$root.$on('printUserMessage', (message) => {
             this.printUserMessage(message);
-            this.socket.emit('dialogflow request', message);
         });
+        this.$root.$on('goToNextNode', (nextId) => {
+            this.goToNextNode(nextId);
+        });
+        console.log('start node :', this.actualNode);
 
-        this.printDeathResponses(this.actualResponses);
-        console.log(this.actualResponses)
-
-        this.socket.on('dialogflow response', (message) => {
-            this.SET_LOADING(false);
-            this.printDeathResponses([message])
-        })
-
-
+        this.displayNode(this.actualNode);
 
     },
     components: {
+        SimpleMessage,
         CanvasDraw,
         ColorPalette,
         Popup,
         UserCard,
         UserCardsContainer,
-        ChoicesContainer,
         Message
     }
 }
@@ -130,7 +134,7 @@ export default {
   #app {
       display: flex;
       height: 100%;
-      width: 100%;
+      width: 100vw;
 
       align-items: center;
       justify-content: center;

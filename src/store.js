@@ -5,7 +5,8 @@ import Vue from "vue";
 Vue.use(Vuex);
 
 const state = {
-    actual: 0,
+    actual: 3,
+    userInteraction: false,
     loading: false
 };
 
@@ -15,37 +16,33 @@ const mutations = {
     },
     SET_LOADING: (state, bool) => {
         state.loading = bool
+    },
+    ACTIVATE_USER_INTERACTION: (state) => {
+        state.userInteraction = true
+    },
+    DISABLE_USER_INTERACTION: (state) => {
+        state.userInteraction = false
     }
 };
 
 const getters = {
     actual: state => state.actual,
+    userInteraction: state => state.userInteraction,
     loading: state => state.loading,
-    actualResponses: state => {
+    actualNode: state => {
         if(json[state.actual]) {
-            let responses = [];
-            json[state.actual].responses.forEach((response) => {
-                if(response.type === 'text'){
-                    responses.push({'type': 'text', 'content': response.content[Math.floor(Math.random() * response.content.length)]})
-                }else{
-                    responses.push(response);
-                }
-            });
-            return responses;
+            return json[state.actual]
         }else{
-            return []
+            // TODO: Erreur, le noeud n'existe pas
+            return null
         }
     },
-    actualChoices: state => {
-        if(json[state.actual]) {
-            if(json[state.actual].intents.type === "choices"){
-                return json[state.actual].intents.choices
-            }else{
-                return json[state.actual].event.type
-            }
-
+    nextNode: state => {
+        if(json[state.actual].next){
+            return json[state.actual].next
         }else{
-            return []
+            // TODO: Erreur, il n'y a pas de suite
+            return null
         }
     }
 };
