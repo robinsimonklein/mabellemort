@@ -1,34 +1,53 @@
 <template>
     <div class="color-palette">
+        <span class="color-palette__text">Choisis ta couleur...</span>
+
         <div class="color-palette__wrap">
             <div class="color-palette__item color-palette__item--1">
-                <div class="color-palette__dot" :style="'background-color:' + colors[0]" ></div>
+                <div @click="selectColor(data.choices[0].next, data.choices[0].color)" class="color-palette__dot" :style="'background-color:' + data.choices[0].color" ></div>
             </div>
             <div class="color-palette__item color-palette__item--2">
-                <div class="color-palette__dot" :style="'background-color:' + colors[1]" ></div>
+                <div @click="selectColor(data.choices[1].next, data.choices[1].color)" class="color-palette__dot" :style="'background-color:' + data.choices[1].color" ></div>
             </div>
             <div class="color-palette__item color-palette__item--3">
-                <div class="color-palette__dot" :style="'background-color:' + colors[2]" ></div>
+                <div @click="selectColor(data.choices[2].next, data.choices[2].color)" class="color-palette__dot" :style="'background-color:' + data.choices[2].color" ></div>
             </div>
             <div class="color-palette__item color-palette__item--4">
-                <div class="color-palette__dot" :style="'background-color:' + colors[3]" ></div>
+                <div @click="selectColor(data.choices[3].next, data.choices[3].color)" class="color-palette__dot" :style="'background-color:' + data.choices[3].color" ></div>
             </div>
             <div class="color-palette__item color-palette__item--5">
-                <div class="color-palette__dot" :style="'background-color:' + colors[4]" ></div>
+                <div @click="selectColor(data.choices[4].next, data.choices[4].color)" class="color-palette__dot" :style="'background-color:' + data.choices[4].color" ></div>
             </div>
         </div>
-        <span class="color-palette__text">Choisis ta couleur...</span>
     </div>
 </template>
 
 <script>
+    import Vuex from 'vuex';
+
     export default {
         name: "ColorPalette",
         props: {
-            colors: {
-                type: Array,
-                default: null
+            data: {
+                choices: {
+                    color: {
+                        type: String,
+                        default: null
+                    },
+                    next: {
+                        type: Number,
+                        default: null
+                    }
+                }
             }
+        },
+        methods: {
+            ...Vuex.mapMutations(['SET_BG_COLOR']),
+
+            selectColor(nextId, color){
+                this.SET_BG_COLOR(color);
+                this.$root.$emit('goToNextNode', nextId);
+            },
         }
     }
 </script>
@@ -96,7 +115,7 @@
 
         &__text {
             position: absolute;
-            bottom: 5vh;
+            top: 5vh;
             left: 50%;
             transform: translateX(-50%);
         }

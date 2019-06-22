@@ -69,18 +69,37 @@
 
         }
       ]
-    }
+    },
+    "delay": 1200
   },
   "4": {
-    "type": "message",
-    "component": "SimpleMessage",
+    "type": "interaction",
+    "component": "ColorPalette",
     "data": {
-      "text": [
-        "Tu as répondu au popup, merci."
-      ],
-      "sender": "Arte"
+      "choices": [
+        {
+          "color": "white",
+          "next": 0
+        },
+        {
+          "color": "violet",
+          "next": 0
+        },
+        {
+          "color": "green",
+          "next": 0
+        },
+        {
+          "color": "blue",
+          "next": 0
+        },
+        {
+          "color": "darkorange",
+          "next": 0
+        }
+      ]
     },
-    "next": 2
+    "delay": 1200
   },
 
   "10": {

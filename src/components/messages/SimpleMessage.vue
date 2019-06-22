@@ -47,5 +47,6 @@
         padding: 20px;
         text-align: left;
         margin: 1rem 0;
+        background-color: black;
     }
 </style>

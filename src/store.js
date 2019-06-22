@@ -7,7 +7,8 @@ Vue.use(Vuex);
 const state = {
     actual: 3,
     userInteraction: false,
-    loading: false
+    loading: false,
+    bgColor: '#000'
 };
 
 const mutations = {
@@ -22,11 +23,15 @@ const mutations = {
     },
     DISABLE_USER_INTERACTION: (state) => {
         state.userInteraction = false
+    },
+    SET_BG_COLOR: (state, color) => {
+        state.bgColor = color
     }
 };
 
 const getters = {
     actual: state => state.actual,
+    bgColor: state => state.bgColor,
     userInteraction: state => state.userInteraction,
     loading: state => state.loading,
     actualNode: state => {

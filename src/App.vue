@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <div class="mobile-container">
-          <div class="messages-container" id="messages-container">
+          <div class="messages-container" id="messages-container" :style="'background-color:' + bgColor">
               <div class="messages-container__wrap">
                   <component v-for="(message, key) in messages" :key="key" :is="message.component" :data="message.data" :fluid="true"></component>
                   <div v-if="loading" class="loader">Ma Belle Mort est en train d'écrire...</div>
@@ -61,14 +61,19 @@ export default {
             // Masquer l'interaction de l'utilisateur
             this.DISABLE_USER_INTERACTION();
 
-            this.SET_LOADING(true);
-            setTimeout(()=>{
-                this.messages.push({
-                    'component': message.component,
-                    'data': message.data,
-                });
-                this.SET_LOADING(false);
-            }, Math.random() * 2000 + 1000);
+            setTimeout(() => {
+                // Afficher "... est en train d'écrire"
+                this.SET_LOADING(true);
+
+                setTimeout(()=>{
+                    // Afficher le message
+                    this.messages.push({
+                        'component': message.component,
+                        'data': message.data,
+                    });
+                    this.SET_LOADING(false);
+                }, Math.random() * 2000 + 1000);
+            }, Math.random() * 1000 + 500);
         },
         displayNode(node){
             switch (node.type) {
@@ -76,7 +81,9 @@ export default {
                     this.printMessage(node);
                     break;
                 case 'interaction':
-                    this.ACTIVATE_USER_INTERACTION();
+                    setTimeout(() => {
+                        this.ACTIVATE_USER_INTERACTION();
+                    }, node.delay ? node.delay : 0);
                     break;
                 default:
                     console.error('%cUne erreur s\'est produite : le noeud demandé n\'existe pas.', 'font-weight: bold');
@@ -102,7 +109,7 @@ export default {
 
     },
     computed: {
-        ...Vuex.mapGetters(['actual', 'userInteraction', 'loading', 'actualNode', 'state'])
+        ...Vuex.mapGetters(['actual', 'bgColor', 'userInteraction', 'loading', 'actualNode', 'state'])
     },
     mounted(){
 
@@ -112,7 +119,6 @@ export default {
         this.$root.$on('goToNextNode', (nextId) => {
             this.goToNextNode(nextId);
         });
-        console.log('start node :', this.actualNode);
 
         this.displayNode(this.actualNode);
 

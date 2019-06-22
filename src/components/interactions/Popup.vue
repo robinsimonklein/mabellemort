@@ -1,11 +1,11 @@
 <template>
-    <div class="popup">
+    <div class="popup" :class="{'fluid' : fluid}">
         <div class="popup__wrap" :style="'border-color: ' + data.color">
             <span class="popup__title">{{ data.title }}</span>
             <p class="popup__text">{{ data.text }}</p>
             <div class="popup__actions">
-                <button @click="selectChoice(data.choices[0].next)" class="popup__button popup__button--1" :style="'background-color:' + data.color">{{ data.choices[0].text }}</button>
-                <button @click="selectChoice(data.choices[1].next)" class="popup__button popup__button--2" :style="'color:' + data.color + '; border-color:' + data.color">{{ data.choices[1].text }}</button>
+                <button @click="selectChoice(data.choices[0].next, 0)" class="popup__button popup__button--1" :class="{'popup__button--disabled' : data.selected === 1}" :style="'background-color:' + data.color">{{ data.choices[0].text }}</button>
+                <button @click="selectChoice(data.choices[1].next, 1)" class="popup__button popup__button--2" :class="{'popup__button--disabled' : data.selected === 0}" :style="'color:' + data.color + '; border-color:' + data.color">{{ data.choices[1].text }}</button>
             </div>
         </div>
     </div>
@@ -31,14 +31,42 @@
                 color: {
                     type: String,
                     default: 'grey'
+                },
+                selected: {
+                    type: Number,
+                    default: null
                 }
+            },
+            fluid: {
+                type: Boolean,
+                default: false
             }
         },
         methods: {
-            selectChoice(nextId){
-                console.log(nextId)
-                // this.$root.$emit('printUserMessage', {'component':'UserCard', 'data': {'text': this.data.text, 'color': this.data.color}});
+            selectChoice(nextId, selected){
+                this.$root.$emit('printUserMessage', {
+                    'component':'Popup',
+                    'data': {
+                        'title': this.data.title,
+                        'text': this.data.text,
+                        'choices': this.data.choices,
+                        'color': this.data.color,
+                        'selected': selected
+                    }
+                });
                 this.$root.$emit('goToNextNode', nextId);
+            },
+            scrollMessagesDown(){
+                document.querySelector('.messages-container').scroll({
+                    left: 0,
+                    top: document.querySelector('.messages-container').scrollHeight + 30,
+                    behavior: 'smooth'}
+                );
+            }
+        },
+        mounted() {
+            if(this.fluid){
+                this.scrollMessagesDown();
             }
         }
     }
@@ -58,6 +86,17 @@
         background-color: rgba(black, 0.7);
         z-index: 900;
         font-family: 'Millimetre', Arial, sans-serif;
+
+        &.fluid {
+            position: relative;
+            height: auto;
+            width: auto;
+            top: inherit;
+            left: inherit;
+            margin: 1rem 0;
+            z-index: 1;
+            background: none;
+        }
 
         &__wrap {
             background-color: white;
@@ -102,6 +141,10 @@
             color: black;
             border-color: black;
             background-color: black;
+
+            &--disabled {
+                opacity: 0.2;
+            }
         }
     }
 </style>
