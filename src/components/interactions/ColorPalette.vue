@@ -4,19 +4,19 @@
 
         <div class="color-palette__wrap">
             <div class="color-palette__item color-palette__item--1">
-                <div @click="selectColor(data.choices[0].next, data.choices[0].color)" class="color-palette__dot" :style="'background-color:' + data.choices[0].color" ></div>
+                <div @click="selectColor(0, data.choices[0].next, data.choices[0].color, 0)" class="color-palette__dot" :style="'background-color:' + data.choices[0].color" ></div>
             </div>
             <div class="color-palette__item color-palette__item--2">
-                <div @click="selectColor(data.choices[1].next, data.choices[1].color)" class="color-palette__dot" :style="'background-color:' + data.choices[1].color" ></div>
+                <div @click="selectColor(1, data.choices[1].next, data.choices[1].color, 1)" class="color-palette__dot" :style="'background-color:' + data.choices[1].color" ></div>
             </div>
             <div class="color-palette__item color-palette__item--3">
-                <div @click="selectColor(data.choices[2].next, data.choices[2].color)" class="color-palette__dot" :style="'background-color:' + data.choices[2].color" ></div>
+                <div @click="selectColor(2, data.choices[2].next, data.choices[2].color, 2)" class="color-palette__dot" :style="'background-color:' + data.choices[2].color" ></div>
             </div>
             <div class="color-palette__item color-palette__item--4">
-                <div @click="selectColor(data.choices[3].next, data.choices[3].color)" class="color-palette__dot" :style="'background-color:' + data.choices[3].color" ></div>
+                <div @click="selectColor(3, data.choices[3].next, data.choices[3].color, 3)" class="color-palette__dot" :style="'background-color:' + data.choices[3].color" ></div>
             </div>
             <div class="color-palette__item color-palette__item--5">
-                <div @click="selectColor(data.choices[4].next, data.choices[4].color)" class="color-palette__dot" :style="'background-color:' + data.choices[4].color" ></div>
+                <div @click="selectColor(4, data.choices[4].next, data.choices[4].color, 4)" class="color-palette__dot" :style="'background-color:' + data.choices[4].color" ></div>
             </div>
         </div>
     </div>
@@ -42,16 +42,36 @@
                 }
             }
         },
+        data(){
+            return {
+                dots: []
+            }
+        },
         methods: {
             ...Vuex.mapMutations(['SET_BG_COLOR']),
 
-            selectColor(nextId, color){
+            selectColor(index, nextId, color){
                 this.SET_BG_COLOR(color);
-                this.$root.$emit('goToNextNode', nextId);
+                // On masque toutes les autres couleurs
+                this.dots.forEach((dot, i) => {
+                    if(i !== index){
+                        dot.style.opacity = 0;
+                    }
+                });
+
+                // Animation de remplissage avec la couleur
+                // eslint-disable-next-line
+                TweenLite.to(this.dots[index], 1, {scale: 20, ease: Power2.easeOut});
+                TweenLite.to(this.$el, 1, {opacity: 0, ease: Power2.easeOut, delay: 0.7, onComplete: () => {
+                        this.$root.$emit('goToNextNode', nextId);
+                    }})
+                // this.$root.$emit('goToNextNode', nextId);
             },
         },
         mounted() {
             this.$el.querySelectorAll('.color-palette__dot').forEach((el, i) => {
+                this.dots[i] = el;
+                // eslint-disable-next-line
                 TweenLite.to(el, 1, {x: '20vw', delay: i*0.03, ease: Power2.easeOut})
             })
         }
