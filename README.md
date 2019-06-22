@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2327550e-3f43-473b-bb55-1a0858936ca5/deploy-status)](https://app.netlify.com/sites/mabellemort/deploys)
+
 # Ma Belle Mort
 
 Ma Belle Mort c'est un moyen d'échanger, pendant un instant, avec sa propre mort 
