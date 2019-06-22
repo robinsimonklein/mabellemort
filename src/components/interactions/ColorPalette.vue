@@ -24,6 +24,7 @@
 
 <script>
     import Vuex from 'vuex';
+    import TweenLite from 'gsap'
 
     export default {
         name: "ColorPalette",
@@ -48,6 +49,11 @@
                 this.SET_BG_COLOR(color);
                 this.$root.$emit('goToNextNode', nextId);
             },
+        },
+        mounted() {
+            this.$el.querySelectorAll('.color-palette__dot').forEach((el, i) => {
+                TweenLite.to(el, 1, {x: '20vw', delay: i*0.03, ease: Power2.easeOut})
+            })
         }
     }
 </script>
@@ -55,7 +61,7 @@
 <style lang="scss" scoped>
     .color-palette {
         $item-size: 20vw;
-        $palette-radius: 12vw;
+        $palette-radius: 25vw;
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -71,15 +77,20 @@
         z-index: 900;
 
         &__wrap{
-            position: relative;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: $item-size;
+            width: $item-size;
+            margin-left: $item-size / -2;
+            margin-top: $item-size / -2;
         }
 
         &__item{
             position: absolute;
             display: inline-block;
             bottom: 0;
-            left: -$item-size/2;
-            padding-bottom: $palette-radius;
+            left: 0;
 
             &--1 {
 
@@ -87,19 +98,19 @@
 
             &--2 {
                 transform: rotate(72deg);
-                transform-origin: bottom center;
+                transform-origin: center center;
             }
             &--3 {
                 transform: rotate(144deg);
-                transform-origin: bottom center;
+                transform-origin: center center;
             }
             &--4 {
                 transform: rotate(218deg);
-                transform-origin: bottom center;
+                transform-origin: center center;
             }
             &--5 {
                 transform: rotate(290deg);
-                transform-origin: bottom center;
+                transform-origin: center center;
             }
 
 
