@@ -4,6 +4,9 @@
 
 Ma Belle Mort c'est un moyen d'échanger, pendant un instant, avec sa propre mort 
 afin d'embellir la représentation qu'on s'en fait tout en passant un bon moment !
+<br>
+<br>
+[Voir le projet](https://mabellemort.netlify.com)
 
 ### Pré-requis
 
