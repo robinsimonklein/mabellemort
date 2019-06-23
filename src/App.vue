@@ -109,9 +109,11 @@ export default {
 
     },
     computed: {
-        ...Vuex.mapGetters(['actual', 'bgColor', 'userInteraction', 'loading', 'actualNode', 'state'])
+        ...Vuex.mapGetters(['actual', 'scenario', 'bgColor', 'userInteraction', 'loading', 'actualNode', 'state'])
     },
     mounted(){
+
+        console.log(this.scenario)
 
         this.$root.$on('printUserMessage', (message) => {
             this.printUserMessage(message);

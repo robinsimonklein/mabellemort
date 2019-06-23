@@ -5,6 +5,7 @@ import Vue from "vue";
 Vue.use(Vuex);
 
 const state = {
+    scenario: json,
     actual: 7,
     userInteraction: false,
     loading: false,
@@ -32,10 +33,12 @@ const mutations = {
 const getters = {
     actual: state => state.actual,
     bgColor: state => state.bgColor,
+    scenario: state => state.scenario,
     userInteraction: state => state.userInteraction,
     loading: state => state.loading,
+
     actualNode: state => {
-        if(json[state.actual]) {
+        if(state.scenario[state.actual]) {
             return json[state.actual]
         }else{
             // TODO: Erreur, le noeud n'existe pas
@@ -43,7 +46,7 @@ const getters = {
         }
     },
     nextNode: state => {
-        if(json[state.actual].next){
+        if(state.scenario[state.actual].next){
             return json[state.actual].next
         }else{
             // TODO: Erreur, il n'y a pas de suite
