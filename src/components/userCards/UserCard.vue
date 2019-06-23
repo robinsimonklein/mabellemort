@@ -7,6 +7,8 @@
 </template>
 
 <script>
+    import TweenLite from 'gsap'
+
     export default {
         name: "UserCard",
         props: {
@@ -29,6 +31,11 @@
                 default: false
             }
         },
+        data(){
+            return {
+                hidden: false
+            }
+        },
         methods: {
             selectChoice(){
                 this.$root.$emit('printUserMessage', {'component':'UserCard', 'data': {'text': this.data.text, 'color': this.data.color}});
@@ -45,6 +52,8 @@
         mounted() {
             if(this.fluid){
                 this.scrollMessagesDown();
+            }else {
+                TweenLite
             }
         }
     }
@@ -82,7 +91,7 @@
             transition: all 0.5s ease;
         }
 
-        $card-scale: 0.2;
+        $card-scale: 0.25;
 
         &.active {
             .tidy &{

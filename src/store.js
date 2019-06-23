@@ -5,7 +5,7 @@ import Vue from "vue";
 Vue.use(Vuex);
 
 const state = {
-    actual: 0,
+    actual: 7,
     userInteraction: false,
     loading: false,
     bgColor: '#000'

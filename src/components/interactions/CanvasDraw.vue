@@ -4,16 +4,13 @@
         <canvas id="canvas" class="canvas-draw__area" ref="canvas" :width="width" :height="height"></canvas>
         <ul class="tools">
             <li class="tool__clear" @click="clearDrawing"></li>
-            <!-- <li class="tool__eraser" :class="{ active: selectedToolIdx === 1 }" @click="changeTool(1)">
-                <img src="@/assets/eraser.svg"/>
-            </li> -->
             <li class="tool__color-palette">
                 <ul>
                     <li v-for="(color, key) in palette" :key="key" :class="['tool__color', 'tool__color--' + key, {'active' : tools[0].color === color}]" @click="setColor(color)" :style="'background-color:'+color"></li>
                 </ul>
             </li>
 
-            <li class="tool__send">ENVOYER</li>
+            <li @click="checkCanvas()" class="tool__send">ENVOYER</li>
         </ul>
     </div>
 </template>
@@ -83,9 +80,6 @@
                 this.$refs.canvas.addEventListener('touchend', () => this.isDrawing = false);
                 this.$refs.canvas.addEventListener('touchleave', () => this.isDrawing = false);
             },
-            changeTool(tool) {
-                this.selectedToolIdx = tool;
-            },
             draw(event) {
                 if (!this.isDrawing) return;
 
@@ -108,6 +102,9 @@
             clearDrawing(){
                 // Effacer le dessin
                 this.canvasContext.clearRect(0, 0, this.$refs.canvas.width, this.$refs.canvas.height);
+            },
+            checkCanvas(){
+                // TODO : Check canvas
             },
             download() {
                 const link = document.createElement('a');
@@ -164,8 +161,8 @@
             width: 2.5rem;
             border-radius: 50%;
             background-color: white;
-            background-image: url('/assets/picto/trash.svg');
-            background-size: cover;
+            background-image: url('~@/assets/picto/trash.svg');
+            background-size: 50%;
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -176,8 +173,8 @@
             list-style-type: none;
         }
         &__color {
-            height: 2.5rem;
-            width: 2.5rem;
+            height: 2.3rem;
+            width: 2.3rem;
             border-radius: 100%;
             margin: 0 5px;
             box-sizing: border-box;

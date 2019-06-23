@@ -55,7 +55,7 @@
     "component": "Popup",
     "data": {
       "title": "Ma Belle Mort",
-      "text": "N'aie pas peur, je ne suis pas méchante. J’ai peut-être exagéré sur le noir, veux-tu choisir la couleur d’arrière-plan ? ☠️",
+      "text": "Incroyable ce popup, peu importe ce que tu vas choisir je vais te faire changer la couleur de fond lol ☠️",
       "color": "#B3FFD2",
       "choices": [
         {
@@ -79,27 +79,69 @@
       "choices": [
         {
           "color": "white",
-          "next": 0
+          "next": 5
         },
         {
           "color": "violet",
-          "next": 0
+          "next": 5
         },
         {
           "color": "green",
-          "next": 0
+          "next": 5
         },
         {
           "color": "blue",
-          "next": 0
+          "next": 5
         },
         {
           "color": "darkorange",
-          "next": 0
+          "next": 5
         }
       ]
     },
     "delay": 1200
+  },
+  "5": {
+    "type": "message",
+    "component": "SimpleMessage",
+    "data": {
+      "text": [
+        "Cimer. Très bonne couleur."
+      ],
+      "sender": "Arte"
+    },
+    "next": 6
+  },
+  "6": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "Maintenant tu veux dessiner ? (t'as pas le choix de toute façon) ☠️",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": 7
+
+        },
+        {
+          "text": "Non",
+          "next": 7
+
+        }
+      ]
+    },
+    "delay": 2000
+  },
+  "7": {
+    "type": "interaction",
+    "component": "CanvasDraw",
+    "data": {
+
+    },
+    "delay": 2000
+
   },
 
   "10": {
