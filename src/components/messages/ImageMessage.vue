@@ -7,6 +7,7 @@
 <script>
     /* eslint-disable */
     import Vuex from 'vuex';
+    import imagesLoaded from 'imagesloaded'
 
     export default {
         name: "ImageMessage",
@@ -36,10 +37,12 @@
             }
         },
         mounted() {
-            this.scrollMessagesDown();
-            if(this.nextNode){
-                this.$root.$emit('goToNextNode', this.nextNode);
-            }
+            imagesLoaded(this.$el.querySelector('img'), () => {
+                this.scrollMessagesDown();
+                if(this.nextNode){
+                    this.$root.$emit('goToNextNode', this.nextNode);
+                }
+            });
         }
     }
 </script>
