@@ -1,5 +1,5 @@
 <template>
-    <div class="user-card" :class="{'fluid' : fluid}" :style="'background-color: ' + data.color" @click="selectChoice">
+    <div class="user-card" :class="{'fluid' : fluid}" :style="'background-image:url(/assets/messages/user-card/user-card_' + data.number + '.png)'" @click="selectChoice">
         <div class="user-card__text-wrap">
             <p class="user-card__text">{{ data.text }}</p>
         </div>
@@ -21,6 +21,10 @@
                     type: String,
                     default: 'red'
                 },
+                number: {
+                    type: String,
+                    default: 1
+                },
                 next: {
                     type: Number,
                     default: null
@@ -38,7 +42,7 @@
         },
         methods: {
             selectChoice(){
-                this.$root.$emit('printUserMessage', {'component':'UserCard', 'data': {'text': this.data.text, 'color': this.data.color}});
+                this.$root.$emit('printUserMessage', {'component':'UserCard', 'data': {'text': this.data.text, 'color': this.data.color, 'number': this.data.number}});
                 this.$root.$emit('goToNextNode', this.data.next);
             },
             scrollMessagesDown(){
@@ -53,7 +57,7 @@
             if(this.fluid){
                 this.scrollMessagesDown();
             }else {
-                TweenLite
+                //TweenLite
             }
         }
     }
@@ -67,19 +71,22 @@
         position: absolute;
         bottom: 0;
         left: 50%;
+        color: #222;
         margin-left: $user-card-width / -2;
         display: block;
         width: $user-card-width;
         margin-bottom: 12vh;
         box-sizing: border-box;
-        border-radius: 10px;
         z-index: 5;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         transition: all 0.5s ease-in-out;
 
         &:after {
             content: "";
             display: block;
-            padding-bottom: 150%;
+            padding-bottom: 157.3%;
         }
 
         &.fluid {

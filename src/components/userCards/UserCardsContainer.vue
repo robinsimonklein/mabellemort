@@ -1,6 +1,6 @@
 <template>
     <div class="user-cards-container" :class="{'tidy' : tidy}">
-        <user-card v-for="(choice, key) in data.choices" :key="key" :class="getClass(key)" :id="'card-'+key" :data="{text: choice.text, next: choice.next, color: choice.color}" :fluid="false"></user-card>
+        <user-card v-for="(choice, key) in data.choices" :key="key" :class="getClass(key)" :id="'card-'+key" :data="{text: choice.text, next: choice.next, color: choice.color, number: (key + 1) + '-' + Math.round(Math.random() + 1)}" :fluid="false"></user-card>
         <div class="user-cards__control" @click="next"></div>
     </div>
 </template>
