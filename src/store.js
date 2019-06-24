@@ -5,7 +5,7 @@ import Vue from "vue";
 Vue.use(Vuex);
 
 const state = {
-    testMode: true,
+    testMode: false,
     scenario: json,
     actual: 0,
     userInteraction: false,
