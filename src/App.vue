@@ -29,6 +29,7 @@
     import Message from "./components/messages/Message";
     import SimpleMessage from "./components/messages/SimpleMessage";
     import ImageMessage from "./components/messages/ImageMessage";
+    import FloatingMessage from "./components/messages/FloatingMessage";
 
     //Import interactions components
     import UserCardsContainer from "./components/userCards/UserCardsContainer";
@@ -73,7 +74,7 @@ export default {
                         'data': message.data,
                     });
                     this.SET_LOADING(false);
-                }, Math.random() * 4000 + 3000);
+                }, !this.testMode ? Math.random() * 4000 + 3000 : 400);
             }, !this.testMode ? Math.random() * 1000 + 2000 : 0);
         },
         displayNode(node){
@@ -126,6 +127,7 @@ export default {
     components: {
         SimpleMessage,
         ImageMessage,
+        FloatingMessage,
         Message,
         CanvasDraw,
         ColorPalette,
@@ -177,6 +179,12 @@ export default {
       padding: 15px 15px 15vh 15px;
       overflow: auto;
       -webkit-overflow-scrolling: touch;
+
+      &__wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
   }
 
   .messages-list-enter-active, .messages-list-leave-active {

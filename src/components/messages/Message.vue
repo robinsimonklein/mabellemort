@@ -1,5 +1,5 @@
 <template>
-    <div :class="['message']"><span>{{ randomText }}</span></div>
+    <div :class="['1.png']"><span>{{ randomText }}</span></div>
 </template>
 
 <script>

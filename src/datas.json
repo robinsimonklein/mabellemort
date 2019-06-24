@@ -18,12 +18,21 @@
   },
   "1": {
     "type": "message",
-    "component": "SimpleMessage",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Pour me répondre, des cartes sont à ta disposition.\nQuant à moi, je n'ai pas de forme déterminée. Je contrôlerai l'apparence de cette interface comme bon me semble."
-      ],
-      "sender": "Arte"
+      "id": 1,
+      "assets": {
+        "topLeft": {
+          "z-index": 1,
+          "top": 0,
+          "left": 0
+        },
+        "bottomRight": {
+          "z-index": 1,
+          "bottom": "10px",
+          "right": "10px"
+        }
+      }
     },
     "next": 2
   },
