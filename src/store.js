@@ -5,6 +5,7 @@ import Vue from "vue";
 Vue.use(Vuex);
 
 const state = {
+    testMode: false,
     scenario: json,
     actual: 7,
     userInteraction: false,
@@ -31,6 +32,7 @@ const mutations = {
 };
 
 const getters = {
+    testMode: state => state.testMode,
     actual: state => state.actual,
     bgColor: state => state.bgColor,
     scenario: state => state.scenario,
