@@ -73,7 +73,7 @@ export default {
                     });
                     this.SET_LOADING(false);
                 }, Math.random() * 4000 + 3000);
-            }, Math.random() * 1000 + 2000);
+            }, !this.testMode ? Math.random() * 1000 + 2000 : 0);
         },
         displayNode(node){
             switch (node.type) {
@@ -83,7 +83,7 @@ export default {
                 case 'interaction':
                     setTimeout(() => {
                         this.ACTIVATE_USER_INTERACTION();
-                    }, node.delay ? node.delay : 0);
+                    }, node.delay && !this.testMode ? node.delay : 0);
                     break;
                 default:
                     console.error('%cUne erreur s\'est produite : le noeud demandé n\'existe pas.', 'font-weight: bold');
@@ -94,7 +94,6 @@ export default {
             this.SET_ACTUAL(id);
             if(this.actualNode) {
                 this.displayNode(this.actualNode);
-                console.log('actual', id)
             }else{
                 // TODO: Erreur, le noeud suivant n'existe pas
             }
@@ -109,11 +108,9 @@ export default {
 
     },
     computed: {
-        ...Vuex.mapGetters(['actual', 'scenario', 'bgColor', 'userInteraction', 'loading', 'actualNode', 'state'])
+        ...Vuex.mapGetters(['testMode', 'actual', 'scenario', 'bgColor', 'userInteraction', 'loading', 'actualNode', 'state'])
     },
     mounted(){
-
-        console.log(this.scenario)
 
         this.$root.$on('printUserMessage', (message) => {
             this.printUserMessage(message);

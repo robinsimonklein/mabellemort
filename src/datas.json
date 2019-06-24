@@ -138,109 +138,86 @@
     "type": "interaction",
     "component": "CanvasDraw",
     "data": {
-
+      "colors": ["#000", "#A05", "#0A4", "#05A"],
+      "thresholds": {
+        "size": 150,
+        "time": 3,
+        "oneColor": "#000",
+        "restart": 3
+      },
+      "next": {
+        "size": 10,
+        "time": 11,
+        "oneColor": 12,
+        "restart": 13,
+        "default": 14
+      }
     },
     "delay": 2000
 
   },
-
   "10": {
-    "responses": [
-      {
-        "type": "message",
-        "content": [
-          "Enchantée ! Je suis ravie de pouvoir te parler grâce à ce système. \uD83D\uDE42",
-          "Bienvenue. Je te remercie d'avoir accepté de parler avec moi. \uD83D\uDE42",
-          "Bienvenue ! Heureuse de te voir ici.",
-          "Enchantée. Je me présente, je suis ta mort.",
-          "Bonjour \uD83D\uDE42 Je t'invite à me tutoyer. Nous allons vite apprendre à nous connaître.",
-          "Bonjour ! \uD83D\uDE42 Ravie de vous rencontrer. Tutoyons-nous si vous me le permettez.",
-          "Bonjour ! Je t'attendais. Ma montre est en avance."
-        ]
-      },
-      {
-        "type": "message",
-        "content": [
-          "Pour me répondre, des cartes sont à ta disposition.\nQuant à moi, je n'ai pas de forme déterminée. Je contrôlerai l'apparence de cette interface comme bon me semble."
-        ]
-      }
-    ],
-    "intents": {
-      "type": "choices",
-      "choices": [
-        {
-          "text": "Comment ma mort peut-elle me parler ? \uD83D\uDE27",
-          "follow":
-            {
-              "priority": [],
-              "default": 1
-            }
-
-        },
-        {
-          "text": "Bonjour \uD83D\uDE04 Tu m'intrigues, faisons connaissance.",
-          "follow":
-            {
-              "priority": [],
-              "default": 1
-            }
-
-        },
-        {
-          "text": "Que veux-tu ? \uD83D\uDE30",
-          "follow":
-            {
-              "priority": [],
-              "default": 1
-            }
-
-        }
-      ]
+    "type": "message",
+    "component": "SimpleMessage",
+    "data": {
+      "text": [
+        " Ton dessin n'est pas très inspiré. Ma foi, je m'en contenterai."
+      ],
+      "sender": "Ma Belle Mort"
     },
-    "done": false
+    "next": 20
   },
   "11": {
-    "responses": [
-      {
-        "type": "popup",
-        "content": {
-          "title": "Ma Belle Mort",
-          "text": "N'aie pas peur, je ne suis pas méchante. J’ai peut-être exagéré sur le noir, veux-tu choisir la couleur d’arrière-plan ? ☠️",
-          "color": "#B3FFD2",
-          "choices": [
-
-          ]
-        }
-      }
-    ],
-    "intents": {
-      "type": "choices",
-      "choices": [
-        {
-          "text": "Oui",
-          "follow":
-            {
-              "priority": [],
-              "default": 2
-            }
-
-        },
-        {
-          "text": "Non",
-          "follow":
-            {
-              "priority": [],
-              "default": 3
-            }
-
-        }
-      ]
+    "type": "message",
+    "component": "SimpleMessage",
+    "data": {
+      "text": [
+        "Tu en as mis du temps. Je ne suis qu'un concept abstrait."
+      ],
+      "sender": "Ma Belle Mort"
     },
-    "done": false
+    "next": 20
   },
   "12": {
-    "responses": {
-      "type": "color-palette"
-    }
+    "type": "message",
+    "component": "SimpleMessage",
+    "data": {
+      "text": [
+        "Pourquoi ton dessin est-il aussi sombre ? J'ai l'air d'être en phase terminale."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": 20
+  },
+  "13": {
+    "type": "message",
+    "component": "SimpleMessage",
+    "data": {
+      "text": [
+        "Tout ça pour ça. Ton dessin est bien trop sage."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": 20
+  },
+  "14": {
+    "type": "message",
+    "component": "SimpleMessage",
+    "data": {
+      "text": [
+        "J'ai l'air joyeuse ! En voilà une Belle Mort. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": 20
+  },
+  "20": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "https://gph.is/1Er0aCG",
+      "sender": "Ma Belle Mort"
+    },
+    "next": 21
   }
 }

@@ -12,8 +12,11 @@
         name: "SimpleMessage",
         props: {
             data: {
-                text: Array,
-                default: null
+                text: {
+                    type: Array,
+                    default: null
+                },
+
             }
         },
         computed: {

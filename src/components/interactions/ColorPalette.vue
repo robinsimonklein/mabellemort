@@ -65,7 +65,6 @@
                 TweenLite.to(this.$el, 1, {opacity: 0, ease: Power2.easeOut, delay: 0.7, onComplete: () => {
                         this.$root.$emit('goToNextNode', nextId);
                     }})
-                // this.$root.$emit('goToNextNode', nextId);
             },
         },
         mounted() {

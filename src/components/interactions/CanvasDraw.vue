@@ -6,11 +6,11 @@
             <li class="tool__clear" @click="clearDrawing"></li>
             <li class="tool__color-palette">
                 <ul>
-                    <li v-for="(color, key) in palette" :key="key" :class="['tool__color', 'tool__color--' + key, {'active' : tools[0].color === color}]" @click="setColor(color)" :style="'background-color:'+color"></li>
+                    <li v-for="(color, key) in data.colors" :key="key" :class="['tool__color', 'tool__color--' + key, {'active' : tools[0].color === color}]" @click="setColor(color)" :style="'background-color:'+color"></li>
                 </ul>
             </li>
 
-            <li @click="checkCanvas()" class="tool__send">ENVOYER</li>
+            <li @click="send()" class="tool__send">ENVOYER</li>
         </ul>
     </div>
 </template>
@@ -19,6 +19,21 @@
     export default {
         name: 'CanvasDraw',
         props: {
+            data: {
+                colors: {
+                    type: Array,
+                    default: ['#000', '#A05', '#0A4', '#05A'],
+                },
+                thresholds: {
+                    type: Object,
+                    default: 0
+                },
+                next: {
+                    type: Object,
+                    default: null
+                },
+                default: null
+            },
             brushSize: {
                 type: Number,
                 default: 12,
@@ -30,7 +45,7 @@
         },
         data() {
             return {
-                palette: ['#000', '#A05', '#0A4', '#05A'],
+                startedTime: null,
                 canvasContext: null,
                 canvasRect: null,
                 isDrawing: false,
@@ -46,6 +61,15 @@
                     },
                 ],
                 selectedToolIdx: 0,
+
+                // Etats du dessin
+                drawState: {
+                    size: 0,
+                    duration: 0,
+                    oneColor: true,
+                    restart: 0
+                },
+                calculatedNext: null // L'étape définie en fonction du dessin et du comportement de l'utilisateur
             };
         },
         computed: {
@@ -55,11 +79,6 @@
             height() {
                 return window.innerWidth - window.innerWidth*0.1
             }
-        },
-        mounted() {
-            // init canvas
-            this.setCanvas();
-            this.bindEvents();
         },
         methods: {
             setCanvas() {
@@ -73,8 +92,12 @@
             bindEvents() {
                 this.$refs.canvas.addEventListener('touchstart', (event) => {
                     this.isDrawing = true;
-
                     [this.lastX, this.lastY] = [event.touches[0].clientX - this.canvasRect.left, event.touches[0].clientY - this.canvasRect.top];
+
+                    // On vérifie si l'utilisateur utilise une autre couleur que le noir
+                    if(this.tools[this.selectedToolIdx].color !== this.data.thresholds.oneColor){
+                        this.drawState.oneColor = false;
+                    }
                 });
                 this.$refs.canvas.addEventListener('touchmove', this.draw);
                 this.$refs.canvas.addEventListener('touchend', () => this.isDrawing = false);
@@ -95,16 +118,22 @@
                 this.canvasContext.lineTo(event.touches[0].clientX - this.canvasRect.left, event.touches[0].clientY - this.canvasRect.top);
                 this.canvasContext.stroke();
                 [this.lastX, this.lastY] = [event.touches[0].clientX - this.canvasRect.left, event.touches[0].clientY - this.canvasRect.top];
+
+                // Compter la "taille" du dessin
+                this.drawState.size++;
             },
             setColor(color){
                 this.tools[0].color = color;
             },
             clearDrawing(){
+                // Reset drawState
+                this.drawState.size = 0;
+                this.drawState.oneColor = true;
+
                 // Effacer le dessin
                 this.canvasContext.clearRect(0, 0, this.$refs.canvas.width, this.$refs.canvas.height);
-            },
-            checkCanvas(){
-                // TODO : Check canvas
+                // Incrémenter le nombre de restart
+                this.drawState.restart++;
             },
             download() {
                 const link = document.createElement('a');
@@ -112,6 +141,58 @@
                 link.href = this.$refs.canvas.toDataURL();
                 link.click();
             },
+            checkCanvas(){
+                // Mise à jour du temps écoulé
+                const finishedTime = Date.now();
+                this.drawState.duration = Math.floor((finishedTime - this.startedTime)/1000/60); // in minutes
+
+                // Choix de l'étape suivante en fonciton du dessin et du comportement de l'utilisateur
+
+                if(this.drawState.size <= this.data.thresholds.size){
+                    // L'utilisateur n'a pas beaucoup dessiné
+                    if(this.data.next.size) {
+                        this.calculatedNext = this.data.next.size;
+                        return;
+                    }
+                }
+                if(this.drawState.time >= this.data.thresholds.time){
+                    // L'utilisateur a pris beaucoup de temps
+                    if(this.data.next.time) {
+                        this.calculatedNext = this.data.next.time;
+                        return;
+                    }
+                }
+                if(this.drawState.oneColor){
+                    // L'utilisateur n'a utilisé qu'une seule couleur (noir)
+                    if(this.data.next.oneColor) {
+                        this.calculatedNext = this.data.next.oneColor;
+                        return;
+                    }
+                }
+                if(this.drawState.restart >= this.data.thresholds.restart){
+                    // L'utilisateur a recommencé plusieurs fois
+                    if(this.data.next.restart) {
+                        this.calculatedNext = this.data.next.restart;
+                        return;
+                    }
+                }
+                // Si aucun de ces cas
+                this.calculatedNext = this.data.next.default;
+            },
+            send(){
+                // On détermine quelle étape sera la suivante
+                this.checkCanvas();
+                // On passe à l'étape suivante
+                this.$root.$emit('goToNextNode', this.calculatedNext);
+            }
+        },
+        mounted() {
+            // init canvas
+            this.setCanvas();
+            this.bindEvents();
+
+            // On met de côté la date de début du dessin
+            this.startedTime = Date.now();
         }
     }
 </script>
