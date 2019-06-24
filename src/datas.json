@@ -78,23 +78,23 @@
     "data": {
       "choices": [
         {
-          "color": "white",
+          "color": "#DB83FF",
           "next": 5
         },
         {
-          "color": "violet",
+          "color": "#EA6E3B",
           "next": 5
         },
         {
-          "color": "green",
+          "color": "#51B770",
           "next": 5
         },
         {
-          "color": "blue",
+          "color": "#F7F3F0",
           "next": 5
         },
         {
-          "color": "darkorange",
+          "color": "#4343FF",
           "next": 5
         }
       ]
@@ -215,9 +215,9 @@
     "type": "message",
     "component": "ImageMessage",
     "data": {
-      "src": "https://gph.is/1Er0aCG",
+      "src": "https://media.giphy.com/media/Wouc7nZQebmww/giphy.gif",
       "sender": "Ma Belle Mort"
     },
-    "next": 21
+    "next": 0
   }
 }

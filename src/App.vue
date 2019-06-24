@@ -28,6 +28,7 @@
     //Import message components
     import Message from "./components/messages/Message";
     import SimpleMessage from "./components/messages/SimpleMessage";
+    import ImageMessage from "./components/messages/ImageMessage";
 
     //Import interactions components
     import UserCardsContainer from "./components/userCards/UserCardsContainer";
@@ -124,12 +125,13 @@ export default {
     },
     components: {
         SimpleMessage,
+        ImageMessage,
+        Message,
         CanvasDraw,
         ColorPalette,
         Popup,
         UserCard,
         UserCardsContainer,
-        Message
     }
 }
 </script>
