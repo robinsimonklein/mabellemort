@@ -37,6 +37,7 @@
     import Popup from "./components/interactions/Popup";
     import ColorPalette from "./components/interactions/ColorPalette";
     import CanvasDraw from "./components/interactions/CanvasDraw";
+    import End from "./components/interactions/End";
 
 
 export default {
@@ -117,6 +118,9 @@ export default {
         this.$root.$on('printUserMessage', (message) => {
             this.printUserMessage(message);
         });
+        this.$root.$on('printMessage', (message) => {
+            this.printMessage(message);
+        });
         this.$root.$on('goToNextNode', (nextId) => {
             this.goToNextNode(nextId);
         });
@@ -134,6 +138,7 @@ export default {
         Popup,
         UserCard,
         UserCardsContainer,
+        End,
     }
 }
 </script>

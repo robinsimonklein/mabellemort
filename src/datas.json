@@ -14,7 +14,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": 0,
+    "next": "m1",
     "done": false
   },
   "m1": {
@@ -26,7 +26,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": 0,
+    "next": "i0",
     "done": false
   },
   "m3": {
@@ -38,7 +38,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": 0,
+    "next": "i1",
     "done": false
   },
   "m4": {
@@ -50,7 +50,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": 0,
+    "next": "m5",
     "done": false
   },
   "m5": {
@@ -62,7 +62,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": 0,
+    "next": "i3",
     "done": false
   },
   "m6": {
@@ -86,7 +86,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": 0,
+    "next": "i5",
     "done": false
   },
   "m8": {
@@ -98,7 +98,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": 0,
+    "next": "m9",
     "done": false
   },
   "m9": {
@@ -110,7 +110,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": 0,
+    "next": "i6",
     "done": false
   },
   "m10": {
@@ -907,6 +907,30 @@
     "next": 0,
     "done": false
   },
+  "m80-2": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Avant ta connexion, je discutais avec ma propre Belle Mort."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": 0,
+    "done": false
+  },
+  "m80-3": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Enchantée ! Je suis ravie de pouvoir te parler grâce à ce système. \uD83D\uDE42"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": 0,
+    "done": false
+  },
   "m81": {
     "type": "message",
     "component": "simple-message",
@@ -984,6 +1008,16 @@
       "text": [
         "Merci !"
       ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": 0,
+    "done": false
+  },
+  "m86-2": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/chute.gif",
       "sender": "Ma Belle Mort"
     },
     "next": 0,
@@ -1800,6 +1834,1631 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "i0": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Comment ma mort peut-elle me parler ? \uD83D\uDE27",
+          "next": "m3"
+        },
+        {
+          "text": "Bonjour \uD83D\uDE04 Tu m'intrigues, faisons connaissance.",
+          "next": "m52"
+        },
+        {
+          "text": "Que veux-tu ? \uD83D\uDE30",
+          "next": "i41"
+        }
+      ]
+    }
+  },
+  "i1": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "J'ai du mal à t'imaginer.",
+          "next": "i2"
+        },
+        {
+          "text": "Tu me fais peur.",
+          "next": "i41"
+        }
+      ]
+    }
+  },
+  "i2": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "Essayons. Je souhaite savoir à quoi je ressemble \uD83E\uDD14 Veux-tu essayer de me dessiner ?️",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": "draw"
+
+        },
+        {
+          "text": "Non",
+          "next": "m50"
+
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i3": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je ne crois pas à cette expérience.",
+          "next": "f1"
+        },
+        {
+          "text": "L'idée de parler avec ma propre mort m'est inconfortable.",
+          "next": "i4"
+        },
+        {
+          "text": "J'ai du mal à t'accepter.",
+          "next": "m6"
+        }
+      ]
+    }
+  },
+  "i4": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "Souhaites-tu rompre cette conversation ?️",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": "f1"
+
+        },
+        {
+          "text": "Non",
+          "next": "m7"
+
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i5": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Rassure-moi.",
+          "next": "m8"
+        },
+        {
+          "text": "Parle-moi de toi.",
+          "next": "m18"
+        }
+      ]
+    }
+  },
+  "i6": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Tu connais la Belle Mort de Louise Labé ?",
+          "next": 3
+        },
+        {
+          "text": "C'est splendide.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i7": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "J'espère qu'elles sont toutes aussi bienveillantes que toi.",
+          "next": 3
+        },
+        {
+          "text": "Tous les humains ne méritent pas une Belle Mort.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i8": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "C'est mourir sans souffrance. ",
+          "next": 3
+        },
+        {
+          "text": "Mourir en ayant accompli sa vie.",
+          "next": 3
+        },
+        {
+          "text": "Choisir sa mort.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i9": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Moi aussi, mais ne viens pas trop tôt.",
+          "next": 3
+        },
+        {
+          "text": "Promets-moi de prendre soin de moi lors de notre rencontre.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i10": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "❤️",
+          "next": 3
+        },
+        {
+          "text": "Merci, à bientôt !",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i11": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "?️",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i12": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je veux savoir.️",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i13": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Compte sur moi.️",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i13-2": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "Ceci est un pacte avec ta mort. En-es tu conscient ?️",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Ok",
+          "next": 4
+
+        },
+        {
+          "text": "Annuler",
+          "next": 4
+
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i14": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Cette expérience me tient à cœur.️",
+          "next": 3
+        },
+        {
+          "text": "C'est parce que tu es insaisissable.",
+          "next": 3
+        },
+        {
+          "text": "Je ne savais pas quoi dessiner.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i15": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Alors comment voulais-tu que je t'imagines ?️",
+          "next": 3
+        },
+        {
+          "text": "Dépourvue de sens, la vie serait vaine.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i16": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je ne t'aime pas.️",
+          "next": 3
+        },
+        {
+          "text": "Ce n'était pas volontaire.",
+          "next": 3
+        },
+        {
+          "text": "Dans mes représentations, tu n'es pas joyeuse.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i17": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "J'accepte tes excuses. Tu m'as l'air sincère.️",
+          "next": 3
+        },
+        {
+          "text": "Tu n'es pas très intelligente.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i18": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je pense souvent à toi.",
+          "next": 3
+        },
+        {
+          "text": "En réalité je ne suis pas quelqu'un d'indécis.",
+          "next": 3
+        },
+        {
+          "text": "Je me pose beaucoup de questions.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i19": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je souhaite que tu prennes soin de mes proches.",
+          "next": 3
+        },
+        {
+          "text": "J'aimerais ne plus te craindre.",
+          "next": 3
+        },
+        {
+          "text": "Je suis en quête de réponses sur ma future mort.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i20": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je te fais confiance.",
+          "next": 3
+        },
+        {
+          "text": "Qui incarne leur Belle Mort ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i21": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "C'est impossible.",
+          "next": 3
+        },
+        {
+          "text": "Où veux-tu en venir ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i22": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i23": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je ne crois pas à ce système. Tout ceci n'est qu'une illusion.",
+          "next": 3
+        },
+        {
+          "text": "Je ne m'attendais pas à une experience pareille.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i24": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "C'est mathématique. Rien n'est réel, tout a été programmé.",
+          "next": 3
+        },
+        {
+          "text": "Tu insinues que je me parle à moi-même.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i25": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je n'imaginais pas te parler avant que l'on se rencontre réellement.",
+          "next": 3
+        },
+        {
+          "text": "Je le suis de moins en moins grâce à cette expérience.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i26": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je n'y ai jamais prêté attention.",
+          "next": 3
+        },
+        {
+          "text": "Dans ce cas pourquoi ne sommes-nous pas dans mon inconscient ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i27": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Qu'y-a-t-il après toi ?",
+          "next": 3
+        },
+        {
+          "text": "Vas-tu me faire souffrir ?",
+          "next": 3
+        },
+        {
+          "text": "Quand vais-je mourir ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i28": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je te préviendrai.",
+          "next": 3
+        },
+        {
+          "text": "Tu es malsaine.",
+          "next": 3
+        },
+        {
+          "text": "Finalement je ne souhaite pas savoir.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i29": {
+    "type": "interaction",
+    "component": "FreeResponse",
+    "data": {
+    }
+  },
+  "i30": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Nous sommes faits l'un pour l'autre !",
+          "next": 3
+        },
+        {
+          "text": "Mieux vaut bien s'entendre alors.",
+          "next": 3
+        },
+        {
+          "text": "Je souhaite ne jamais te rencontrer \uD83D\uDE30",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i31": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je ne pensais pas que ma mort pouvait être sentimentale.",
+          "next": 3
+        },
+        {
+          "text": "J'ai du mal à te comprendre. Qui es-tu vraiment ?",
+          "next": 3
+        },
+        {
+          "text": "Tu n'étais pas censée être intimidante ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i32": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Tu es très mystérieuse.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i33": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "À quoi bon vivre si tu y mets fin ?",
+          "next": 3
+        },
+        {
+          "text": "Je préfère que tu restes loin de moi, j'ai pas envie de mourir.",
+          "next": 3
+        },
+        {
+          "text": "Que sais-tu de moi ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i34": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "L'Éternité ?",
+      "text": "",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": 4
+
+        },
+        {
+          "text": "Non",
+          "next": 4
+
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i35": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "J'ai peur que tu arrives trop tôt.",
+          "next": 3
+        },
+        {
+          "text": "Y-a-t-il une autre forme de vie après toi ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i36": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je t'appréhende beaucoup.",
+          "next": 3
+        },
+        {
+          "text": "Que veux-tu savoir ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i37": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Tu es très poétique.",
+          "next": 3
+        },
+        {
+          "text": "Grâce à toi j'ai le moral dans les chaussettes.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i38": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "Tu m'as l'air d'être quelqu'un d'angoissé. As-tu déjà vécu de mauvaises expériences avec moi ?",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": 4
+
+        },
+        {
+          "text": "Non",
+          "next": 4
+
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i39": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "Souhaites-tu m'en parler ?",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": 4
+
+        },
+        {
+          "text": "Non",
+          "next": 4
+
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i40": {
+    "type": "interaction",
+    "component": "FreeResponse",
+    "data": {
+    }
+  },
+  "i41": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "N'aie pas peur, je ne suis pas méchante. J’ai peut-être exagéré sur le noir, veux-tu choisir la couleur d’arrière-plan ? ☠ ",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": 4
+
+        },
+        {
+          "text": "Non",
+          "next": 4
+
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i42": {
+    "type": "interaction",
+    "component": "ColorPalette",
+    "data": {
+      "choices": [
+        {
+          "color": "#DB83FF",
+          "next": 5
+        },
+        {
+          "color": "#EA6E3B",
+          "next": 5
+        },
+        {
+          "color": "#51B770",
+          "next": 5
+        },
+        {
+          "color": "#F7F3F0",
+          "next": 5
+        },
+        {
+          "color": "#4343FF",
+          "next": 5
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i43": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Où vis-tu ?",
+          "next": 3
+        },
+        {
+          "text": "D'où viens-tu ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i44": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Es-tu avec d'autres personnes ?",
+          "next": 3
+        },
+        {
+          "text": "Pour qui travailles-tu ?",
+          "next": 3
+        },
+        {
+          "text": "Tu as le sens de l'humour.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i45": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Pourquoi faites-vous ça ?",
+          "next": 3
+        },
+        {
+          "text": "Qui contrôle tout ça ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i46": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Comment ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i47": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Que veux-tu me faire faire ?",
+          "next": 3
+        },
+        {
+          "text": "Que veux-tu me faire faire ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i48": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Offre moi une mort paisible et tu seras libre.",
+          "next": 3
+        },
+        {
+          "text": "Cela ne me rassure pas. Tout ceci est absurde.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i49": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Moi, je t'aime bien.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i50": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Notre conversation est-elle enregistrée ?",
+          "next": 3
+        },
+        {
+          "text": "Comment t'es-tu retrouvée ici ?   ",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i51": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Les robots ne peuvent pas être autonomes. Ils sont dépendants des humains.",
+          "next": 3
+        },
+        {
+          "text": "Absolument, j'ai foi en la science et je crois au transhumanisme.",
+          "next": 3
+        },
+        {
+          "text": "L'humain détruira notre planète Terre avant d'inventer toute forme de vie éternelle.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i52": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Cette conversation est totalement absurde.",
+          "next": 3
+        },
+        {
+          "text": "Tout ceci est une illusion.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i53": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Ça n'a aucun sens.",
+          "next": 3
+        },
+        {
+          "text": "À tes souhaits \uD83D\uDE42",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i54": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Un jour, l'humain réussira à te vaincre. Tu n'existeras plus.",
+          "next": 3
+        },
+        {
+          "text": "Ne t'inquiète pas, l'espèce humaine n'est pas immortelle. Elle aura toujours besoin de toi, sinon le sens de son existence serait vaine.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i55": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je viens du ventre de ma mère.",
+          "next": 3
+        },
+        {
+          "text": "D'une planète lontaine.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i56": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Tu n'as pas besoin de moi pour exister.",
+          "next": 3
+        },
+        {
+          "text": "N'es-tu pas née grâce à la Vie ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i57": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je n'ai pas eu le temps de te poser des questions !",
+          "next": 3
+        },
+        {
+          "text": "Pourquoi souhaitais-tu me parler ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i58": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je souhaite entendre la vérité.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i59": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je te fais confiance.",
+          "next": 3
+        },
+        {
+          "text": "Je ne te saisis pas, tu me fais peur.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i60": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je ne cherche pas à te fuir.",
+          "next": 3
+        },
+        {
+          "text": "C'est insensé.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i61": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Moi je t'aime bien.",
+          "next": 3
+        },
+        {
+          "text": "Il faut dire que tu es mal vue.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i62": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i63": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Cette conversation est-elle enregistrée ?",
+          "next": 3
+        },
+        {
+          "text": "Quels progrès ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i64": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je ne pensais pas que ma mort pouvait être sentimentale.",
+          "next": 3
+        },
+        {
+          "text": "Tu me mets mal à l'aise \uD83D\uDE30",
+          "next": 3
+        },
+        {
+          "text": "Est-ce ironique ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i65": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Pourquoi es-tu si cruelle envers les humains ?",
+          "next": 3
+        },
+        {
+          "text": "Prouve-le.",
+          "next": 3
+        },
+        {
+          "text": "Une tueuse en série comme toi n'a pas de cœur.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i66": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "C'est épatant.",
+          "next": 3
+        },
+        {
+          "text": "Tu fais erreur.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i67": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "Peu de défunts ont ce type de caractère. Tu as déjà dû entendre parler de moi. Exprimes-tu de la rancœur envers moi ?",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": 4
+
+        },
+        {
+          "text": "Non",
+          "next": 4
+
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i68": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Le rose ne veut pas dire que je suis sensible.",
+          "next": 3
+        },
+        {
+          "text": "Je suis plutôt quelqu'un de discret.",
+          "next": 3
+        },
+        {
+          "text": "Je n'ai pas envie de me confier à toi.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i69": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Ne sois pas si méprisante.",
+          "next": 3
+        },
+        {
+          "text": "Je suis d'accord avec toi.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i70": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Tu mens.",
+          "next": 3
+        },
+        {
+          "text": "Prouve moi que j'ai tort.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i71": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Sois gentille avec moi.",
+          "next": 3
+        },
+        {
+          "text": "Épargne-moi.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i72": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "👍",
+          "next": 3
+        },
+        {
+          "text": "👎",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i73": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Et toi ?",
+          "next": 3
+        },
+        {
+          "text": "Merci pour ta bienveillance.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i74": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Pourquoi ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i75": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "J'accepte tes excuses. Tu m'as l'air sincère.",
+          "next": 3
+        },
+        {
+          "text": "Tu es cruelle envers les humains. Je ne cèderai pas à tes avances.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i76": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "Laisse-moi te proposer un jeu pour me faire pardonner. Si tu gagnes, je t'accorderai le droit de me poser une question. Si tu perds, c'est moi qui te poserai une question. Es-tu d'accord ?",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": 4
+
+        },
+        {
+          "text": "Non",
+          "next": 4
+
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i77": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "J'ai compris.",
+          "next": 3
+        },
+        {
+          "text": "Tu es cruelle envers les humains. Je ne cèderai pas à tes avances.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i78": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Pierre",
+          "next": 3
+        },
+        {
+          "text": "Feuille",
+          "next": 3
+        },
+        {
+          "text": "Ciseaux",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i79": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "C'est absurde.",
+          "next": 3
+        },
+        {
+          "text": "Active la caméra de ton téléphone.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i80": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je n'ai pas spécialement envie de discuter avec toi.",
+          "next": 3
+        },
+        {
+          "text": "Tu contredis l'image que je me faisais de ma propre mort. ",
+          "next": 3
+        },
+        {
+          "text": "Tu as le sens de l'humour.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i81": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je n'ai pas envie d'avoir des informations sur ma mort.",
+          "next": 3
+        },
+        {
+          "text": "Tu m'angoisses.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i82": {
+    "type": "interaction",
+    "component": "Popup",
+    "data": {
+      "title": "Ma Belle Mort",
+      "text": "J’ai meilleure mine ☺ Une belle mort doit être décente. \nVeux-tu savoir pourquoi je te parle en cet instant ?",
+      "color": "#B3FFD2",
+      "choices": [
+        {
+          "text": "Oui",
+          "next": 4
+
+        },
+        {
+          "text": "Non",
+          "next": 4
+
+        }
+      ]
+    },
+    "delay": 1200
+  },
+  "i83": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Vas-tu me faire souffrir ?",
+          "next": 3
+        },
+        {
+          "text": "Comment puis-je te faire confiance ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i84": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Dans ce cas, pourquoi es-tu là ?",
+          "next": 3
+        },
+        {
+          "text": "Qui décide de ma mort sinon toi ?",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i85": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Quel est le but de cette conversation ?",
+          "next": 3
+        },
+        {
+          "text": "J'ai du mal à te concevoir.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i86": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Quel genre d'informations ?",
+          "next": 3
+        },
+        {
+          "text": "Je ne souhaite pas me confier à toi.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i87": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "C'est absurde.",
+          "next": 3
+        },
+        {
+          "text": "Me consoleras-tu lors de ma mort ?",
+          "next": 3
+        },
+        {
+          "text": "Tu es ma véritable âme sœur.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i88": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je n'irai pas jusque là.",
+          "next": 3
+        },
+        {
+          "text": "Je te fais confiance.",
+          "next": 3
+        }
+      ]
+    }
+  },
+  "i89": {
+    "type": "interaction",
+    "component": "UserCardsContainer",
+    "data": {
+      "choices": [
+        {
+          "text": "Je peine à t'imaginer.",
+          "next": 3
+        },
+        {
+          "text": "Tu ne me fais pas bonne impression.",
+          "next": 3
+        },
+        {
+          "text": "Je ne te saisis pas.",
+          "next": 3
+        }
+      ]
+    }
+  },
+
+
+
+
+
+
+
+
+  "draw": {
+    "type": "interaction",
+    "component": "CanvasDraw",
+    "data": {
+      "colors": ["#000", "#A05", "#0A4", "#05A"],
+      "thresholds": {
+        "size": 150,
+        "time": 3,
+        "oneColor": "#000",
+        "restart": 3
+      },
+      "next": {
+        "size": "m4",
+        "time": "m22",
+        "oneColor": "m26",
+        "restart": "m28",
+        "default": "m25"
+      }
+    },
+    "delay": 2000
+
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "f1": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "C'est dommage. Dans ce cas, nous nous reparlerons peut-être plus tard.",
+      "btnLabel": "Terminer la discussion"
+    },
+    "delay": 2000
+  },
 
 
 
