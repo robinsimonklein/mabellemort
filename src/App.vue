@@ -30,6 +30,7 @@
     import SimpleMessage from "./components/messages/SimpleMessage";
     import ImageMessage from "./components/messages/ImageMessage";
     import FloatingMessage from "./components/messages/FloatingMessage";
+    import ConversationEvent from "./components/messages/ConversationEvent";
 
     //Import interactions components
     import UserCardsContainer from "./components/userCards/UserCardsContainer";
@@ -37,6 +38,7 @@
     import Popup from "./components/interactions/Popup";
     import ColorPalette from "./components/interactions/ColorPalette";
     import CanvasDraw from "./components/interactions/CanvasDraw";
+    import BlueScreen from "./components/interactions/BlueScreen";
     import End from "./components/interactions/End";
 
 
@@ -60,14 +62,15 @@ export default {
                 'data': message.data,
             });
         },
-        printMessage(message){
+        printMessage(message, waiting){
             // Masquer l'interaction de l'utilisateur
             this.DISABLE_USER_INTERACTION();
 
             setTimeout(() => {
                 // Afficher "... est en train d'écrire"
-                this.SET_LOADING(true);
-
+                if(waiting) {
+                    this.SET_LOADING(true);
+                }
                 setTimeout(()=>{
                     // Afficher le message
                     this.messages.push({
@@ -76,17 +79,28 @@ export default {
                     });
                     this.SET_LOADING(false);
                 }, !this.testMode ? Math.random() * 4000 + 3000 : 400);
-            }, !this.testMode ? Math.random() * 1000 + 2000 : 0);
+            }, !this.testMode && waiting ? Math.random() * 1000 + 2000 : 0);
         },
         displayNode(node){
             switch (node.type) {
                 case 'message':
-                    this.printMessage(node);
+                    this.printMessage(node, true);
                     break;
                 case 'interaction':
                     setTimeout(() => {
                         this.ACTIVATE_USER_INTERACTION();
                     }, node.delay && !this.testMode ? node.delay : 0);
+                    break;
+                case 'event':
+                    if(this.actualNode.component === 'ConversationEvent'){
+                        this.printMessage(this.actualNode, false);
+                        console.log(this.actualNode.component)
+                    }else{
+                        setTimeout(() => {
+                            this.ACTIVATE_USER_INTERACTION();
+                        }, node.delay && !this.testMode ? node.delay : 0);
+                    }
+
                     break;
                 default:
                     console.error('%cUne erreur s\'est produite : le noeud demandé n\'existe pas.', 'font-weight: bold');
@@ -139,6 +153,8 @@ export default {
         UserCard,
         UserCardsContainer,
         End,
+        BlueScreen,
+        ConversationEvent,
     }
 }
 </script>

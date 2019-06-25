@@ -486,7 +486,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": 0,
+    "next": "e6",
     "done": false
   },
   "m41": {
@@ -498,7 +498,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": 0,
+    "next": "e7",
     "done": false
   },
   "m42": {
@@ -3455,6 +3455,101 @@
 
 
 
+  "e0": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Ma Belle Mort a quitté la conversation."
+    },
+    "next": "f3",
+    "done": false
+  },
+  "e1": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Ma Belle Mort a quitté la conversation."
+    },
+    "next": "e1-1",
+    "done": false
+  },
+  "e1-1": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Tentative de reconnexion"
+    },
+    "next": "e1-1",
+    "done": false
+  },
+  "e1-2": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Echec de reconnexion"
+    },
+    "next": "f4",
+    "done": false
+  },
+  "e2": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Arte a rejoint la conversation"
+    },
+    "next": "m36",
+    "done": false
+  },
+  "e3": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Redirection en cours..."
+    },
+    "next": "f5",
+    "done": false
+  },
+  "e4": {
+    "type": "event",
+    "component": "BlueScreen",
+    "data": {
+      "text": "Le programme a cessé de fonctionner.",
+      "btnLabel": "OK"
+    },
+    "next": "e5",
+    "done": false
+  },
+  "e5": {
+    "type": "event",
+    "component": "BlueScreen",
+    "data": {
+      "text": "Redémararage en cours...",
+      "btnLabel": "OK"
+    },
+    "next": "m40",
+    "done": false
+  },
+  "e6": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Admin a rejoint la conversation."
+    },
+    "next": "m41",
+    "done": false
+  },
+  "e7": {
+    "type": "event",
+    "component": "BlueScreen",
+    "data": {
+      "text": "Le programme a cessé de fonctionner.",
+      "btnLabel": "OK"
+    },
+    "next": "m42",
+    "done": false
+  },
+
+
 
 
 
@@ -3627,7 +3722,7 @@
 
 
 
-  
+
 
 
 
