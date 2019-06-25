@@ -5,9 +5,9 @@ import Vue from "vue";
 Vue.use(Vuex);
 
 const state = {
-    testMode: true,
+    testMode: false,
     scenario: json,
-    actual: 'e6',
+    actual: 'e4',
     userInteraction: false,
     loading: false,
     bgColor: '#000'

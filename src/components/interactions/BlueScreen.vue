@@ -1,7 +1,7 @@
 <template>
     <div class="blue-screen">
         <span class="blue-screen__text">{{data.text}}</span>
-        <a class="blue-screen__btn" href="#">{{ data.btnLabel }}</a>
+        <button @click="goToNext" class="blue-screen__btn" >{{ data.btnLabel }}</button>
     </div>
 </template>
 
@@ -33,6 +33,10 @@
                     top: document.querySelector('.messages-container').scrollHeight + 30,
                     behavior: 'smooth'}
                 );
+            },
+
+            goToNext(){
+                this.$root.$emit('goToNextNode', this.nextNode);
             }
         },
         mounted() {
@@ -73,6 +77,8 @@
             color: white;
             font-weight: bold;
             text-decoration: none;
+            font-size: 2rem;
+            font-family: 'Millimetre', Arial, sans-serif;
 
         }
     }

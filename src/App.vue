@@ -94,7 +94,6 @@ export default {
                 case 'event':
                     if(this.actualNode.component === 'ConversationEvent'){
                         this.printMessage(this.actualNode, false);
-                        console.log(this.actualNode.component)
                     }else{
                         setTimeout(() => {
                             this.ACTIVATE_USER_INTERACTION();
