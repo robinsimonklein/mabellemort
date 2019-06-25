@@ -2130,7 +2130,7 @@
         },
         {
           "text": "Merci, à bientôt !",
-          "next": 3
+          "next": "m17-2"
         }
       ]
     }
@@ -2142,7 +2142,7 @@
       "choices": [
         {
           "text": "?️",
-          "next": 3
+          "next": "m19"
         }
       ]
     }
@@ -2154,7 +2154,7 @@
       "choices": [
         {
           "text": "Je veux savoir.️",
-          "next": 3
+          "next": "m20"
         }
       ]
     }
@@ -2166,7 +2166,7 @@
       "choices": [
         {
           "text": "Compte sur moi.️",
-          "next": 3
+          "next": "i13-2"
         }
       ]
     }
@@ -2181,12 +2181,12 @@
       "choices": [
         {
           "text": "Ok",
-          "next": 4
+          "next": "m21"
 
         },
         {
           "text": "Annuler",
-          "next": 4
+          "next": "m122"
 
         }
       ]
@@ -2200,15 +2200,15 @@
       "choices": [
         {
           "text": "Cette expérience me tient à cœur.️",
-          "next": 3
+          "next": "m53"
         },
         {
           "text": "C'est parce que tu es insaisissable.",
-          "next": 3
+          "next": "m24"
         },
         {
           "text": "Je ne savais pas quoi dessiner.",
-          "next": 3
+          "next": "m29"
         }
       ]
     }
@@ -2220,11 +2220,11 @@
       "choices": [
         {
           "text": "Alors comment voulais-tu que je t'imagines ?️",
-          "next": 3
+          "next": "m29"
         },
         {
           "text": "Dépourvue de sens, la vie serait vaine.",
-          "next": 3
+          "next": "m61"
         }
       ]
     }
@@ -2236,15 +2236,15 @@
       "choices": [
         {
           "text": "Je ne t'aime pas.️",
-          "next": 3
+          "next": "f1"
         },
         {
           "text": "Ce n'était pas volontaire.",
-          "next": 3
+          "next": "m27"
         },
         {
           "text": "Dans mes représentations, tu n'es pas joyeuse.",
-          "next": 3
+          "next": "i38"
         }
       ]
     }
@@ -2256,11 +2256,11 @@
       "choices": [
         {
           "text": "J'accepte tes excuses. Tu m'as l'air sincère.️",
-          "next": 3
+          "next": "i76"
         },
         {
           "text": "Tu n'es pas très intelligente.",
-          "next": 3
+          "next": "m109"
         }
       ]
     }
@@ -2272,15 +2272,15 @@
       "choices": [
         {
           "text": "Je pense souvent à toi.",
-          "next": 3
+          "next": "m30"
         },
         {
           "text": "En réalité je ne suis pas quelqu'un d'indécis.",
-          "next": 3
+          "next": "m43"
         },
         {
           "text": "Je me pose beaucoup de questions.",
-          "next": 3
+          "next": "m47"
         }
       ]
     }
@@ -2292,15 +2292,15 @@
       "choices": [
         {
           "text": "Je souhaite que tu prennes soin de mes proches.",
-          "next": 3
+          "next": "m31"
         },
         {
           "text": "J'aimerais ne plus te craindre.",
-          "next": 3
+          "next": "m38"
         },
         {
           "text": "Je suis en quête de réponses sur ma future mort.",
-          "next": 3
+          "next": "e4"
         }
       ]
     }
@@ -2312,11 +2312,11 @@
       "choices": [
         {
           "text": "Je te fais confiance.",
-          "next": 3
+          "next": "f13"
         },
         {
           "text": "Qui incarne leur Belle Mort ?",
-          "next": 3
+          "next": "m32"
         }
       ]
     }
@@ -2328,11 +2328,11 @@
       "choices": [
         {
           "text": "C'est impossible.",
-          "next": 3
+          "next": "m33"
         },
         {
           "text": "Où veux-tu en venir ?",
-          "next": 3
+          "next": "m34"
         }
       ]
     }
@@ -2344,7 +2344,7 @@
       "choices": [
         {
           "text": "?",
-          "next": 3
+          "next": "e2"
         }
       ]
     }
@@ -2356,11 +2356,11 @@
       "choices": [
         {
           "text": "Je ne crois pas à ce système. Tout ceci n'est qu'une illusion.",
-          "next": 3
+          "next": "m39"
         },
         {
           "text": "Je ne m'attendais pas à une experience pareille.",
-          "next": 3
+          "next": "m55"
         }
       ]
     }
@@ -2372,11 +2372,11 @@
       "choices": [
         {
           "text": "C'est mathématique. Rien n'est réel, tout a été programmé.",
-          "next": 3
+          "next": "f6"
         },
         {
           "text": "Tu insinues que je me parle à moi-même.",
-          "next": 3
+          "next": "m84"
         }
       ]
     }
@@ -2388,11 +2388,11 @@
       "choices": [
         {
           "text": "Je n'imaginais pas te parler avant que l'on se rencontre réellement.",
-          "next": 3
+          "next": "m44"
         },
         {
           "text": "Je le suis de moins en moins grâce à cette expérience.",
-          "next": 3
+          "next": "m46"
         }
       ]
     }
@@ -2404,11 +2404,11 @@
       "choices": [
         {
           "text": "Je n'y ai jamais prêté attention.",
-          "next": 3
+          "next": "m118"
         },
         {
           "text": "Dans ce cas pourquoi ne sommes-nous pas dans mon inconscient ?",
-          "next": 3
+          "next": "m45"
         }
       ]
     }
@@ -2420,15 +2420,15 @@
       "choices": [
         {
           "text": "Qu'y-a-t-il après toi ?",
-          "next": 3
+          "next": "e4"
         },
         {
           "text": "Vas-tu me faire souffrir ?",
-          "next": 3
+          "next": "m116"
         },
         {
           "text": "Quand vais-je mourir ?",
-          "next": 3
+          "next": "m48"
         }
       ]
     }
@@ -2440,15 +2440,18 @@
       "choices": [
         {
           "text": "Je te préviendrai.",
-          "next": 3
+          "next": "m15"
         },
         {
           "text": "Tu es malsaine.",
-          "next": 3
+          "next": "m49"
         },
         {
           "text": "Finalement je ne souhaite pas savoir.",
-          "next": 3
+          "next": {
+            "priority": "m43",
+            "default": "f1"
+          }
         }
       ]
     }
@@ -2457,7 +2460,8 @@
     "type": "interaction",
     "component": "FreeResponse",
     "data": {
-    }
+    },
+    "next": 999
   },
   "i30": {
     "type": "interaction",
@@ -2466,15 +2470,15 @@
       "choices": [
         {
           "text": "Nous sommes faits l'un pour l'autre !",
-          "next": 3
+          "next": "m53"
         },
         {
           "text": "Mieux vaut bien s'entendre alors.",
-          "next": 3
+          "next": "m57"
         },
         {
           "text": "Je souhaite ne jamais te rencontrer \uD83D\uDE30",
-          "next": 3
+          "next": "i38"
         }
       ]
     }
@@ -2486,15 +2490,15 @@
       "choices": [
         {
           "text": "Je ne pensais pas que ma mort pouvait être sentimentale.",
-          "next": 3
+          "next": "m55"
         },
         {
           "text": "J'ai du mal à te comprendre. Qui es-tu vraiment ?",
-          "next": 3
+          "next": "m3"
         },
         {
           "text": "Tu n'étais pas censée être intimidante ?",
-          "next": 3
+          "next": "m56"
         }
       ]
     }
@@ -2506,7 +2510,7 @@
       "choices": [
         {
           "text": "Tu es très mystérieuse.",
-          "next": 3
+          "next": "m70"
         }
       ]
     }
@@ -2518,15 +2522,15 @@
       "choices": [
         {
           "text": "À quoi bon vivre si tu y mets fin ?",
-          "next": 3
+          "next": "m59"
         },
         {
           "text": "Je préfère que tu restes loin de moi, j'ai pas envie de mourir.",
-          "next": 3
+          "next": "m60"
         },
         {
           "text": "Que sais-tu de moi ?",
-          "next": 3
+          "next": "m62"
         }
       ]
     }
@@ -2541,12 +2545,12 @@
       "choices": [
         {
           "text": "Oui",
-          "next": 4
+          "next": "i34"
 
         },
         {
           "text": "Non",
-          "next": 4
+          "next": "m61"
 
         }
       ]
@@ -2560,11 +2564,14 @@
       "choices": [
         {
           "text": "J'ai peur que tu arrives trop tôt.",
-          "next": 3
+          "next": "m146"
         },
         {
           "text": "Y-a-t-il une autre forme de vie après toi ?",
-          "next": 3
+          "next": {
+            "priority": "m59",
+            "default": "m45"
+          }
         }
       ]
     }
@@ -2576,11 +2583,11 @@
       "choices": [
         {
           "text": "Je t'appréhende beaucoup.",
-          "next": 3
+          "next": "m63"
         },
         {
           "text": "Que veux-tu savoir ?",
-          "next": 3
+          "next": "m119"
         }
       ]
     }
@@ -2592,11 +2599,11 @@
       "choices": [
         {
           "text": "Tu es très poétique.",
-          "next": 3
+          "next": "m53"
         },
         {
           "text": "Grâce à toi j'ai le moral dans les chaussettes.",
-          "next": 3
+          "next": "m65"
         }
       ]
     }
@@ -2611,12 +2618,12 @@
       "choices": [
         {
           "text": "Oui",
-          "next": 4
+          "next": "i39"
 
         },
         {
           "text": "Non",
-          "next": 4
+          "next": "m66"
 
         }
       ]
@@ -2633,12 +2640,12 @@
       "choices": [
         {
           "text": "Oui",
-          "next": 4
+          "next": "i40"
 
         },
         {
           "text": "Non",
-          "next": 4
+          "next": "m67"
 
         }
       ]
@@ -2649,7 +2656,8 @@
     "type": "interaction",
     "component": "FreeResponse",
     "data": {
-    }
+    },
+    "next": "m8"
   },
   "i41": {
     "type": "interaction",
@@ -2661,12 +2669,12 @@
       "choices": [
         {
           "text": "Oui",
-          "next": 4
+          "next": "i42"
 
         },
         {
           "text": "Non",
-          "next": 4
+          "next": "m145"
 
         }
       ]
@@ -2679,24 +2687,24 @@
     "data": {
       "choices": [
         {
-          "color": "#DB83FF",
-          "next": 5
-        },
-        {
-          "color": "#EA6E3B",
-          "next": 5
-        },
-        {
-          "color": "#51B770",
-          "next": 5
-        },
-        {
           "color": "#F7F3F0",
-          "next": 5
+          "next": "m68"
+        },
+        {
+          "color": "#DB83FF",
+          "next": "m108"
         },
         {
           "color": "#4343FF",
-          "next": 5
+          "next": "m142"
+        },
+        {
+          "color": "#51B770",
+          "next": "m143"
+        },
+        {
+          "color": "#EA6E3B",
+          "next": "m122"
         }
       ]
     },
@@ -2709,11 +2717,11 @@
       "choices": [
         {
           "text": "Où vis-tu ?",
-          "next": 3
+          "next": "m70"
         },
         {
           "text": "D'où viens-tu ?",
-          "next": 3
+          "next": "m81"
         }
       ]
     }
@@ -2725,15 +2733,15 @@
       "choices": [
         {
           "text": "Es-tu avec d'autres personnes ?",
-          "next": 3
+          "next": "m73"
         },
         {
           "text": "Pour qui travailles-tu ?",
-          "next": 3
+          "next": "m79"
         },
         {
           "text": "Tu as le sens de l'humour.",
-          "next": 3
+          "next": "m85"
         }
       ]
     }
@@ -2745,11 +2753,11 @@
       "choices": [
         {
           "text": "Pourquoi faites-vous ça ?",
-          "next": 3
+          "next": "m74"
         },
         {
           "text": "Qui contrôle tout ça ?",
-          "next": 3
+          "next": "m79"
         }
       ]
     }
@@ -2761,7 +2769,7 @@
       "choices": [
         {
           "text": "Comment ?",
-          "next": 3
+          "next": "m76"
         }
       ]
     }
@@ -2773,11 +2781,11 @@
       "choices": [
         {
           "text": "Que veux-tu me faire faire ?",
-          "next": 3
+          "next": "e8"
         },
         {
           "text": "Que veux-tu me faire faire ?",
-          "next": 3
+          "next": "m77"
         }
       ]
     }
@@ -2789,11 +2797,11 @@
       "choices": [
         {
           "text": "Offre moi une mort paisible et tu seras libre.",
-          "next": 3
+          "next": "m78"
         },
         {
           "text": "Cela ne me rassure pas. Tout ceci est absurde.",
-          "next": 3
+          "next": "e8"
         }
       ]
     }
@@ -2805,7 +2813,7 @@
       "choices": [
         {
           "text": "Moi, je t'aime bien.",
-          "next": 3
+          "next": "e9"
         }
       ]
     }
@@ -2817,11 +2825,11 @@
       "choices": [
         {
           "text": "Notre conversation est-elle enregistrée ?",
-          "next": 3
+          "next": "m106"
         },
         {
           "text": "Comment t'es-tu retrouvée ici ?   ",
-          "next": 3
+          "next": "m80"
         }
       ]
     }
@@ -2833,15 +2841,15 @@
       "choices": [
         {
           "text": "Les robots ne peuvent pas être autonomes. Ils sont dépendants des humains.",
-          "next": 3
+          "next": "m83"
         },
         {
           "text": "Absolument, j'ai foi en la science et je crois au transhumanisme.",
-          "next": 3
+          "next": "m87"
         },
         {
           "text": "L'humain détruira notre planète Terre avant d'inventer toute forme de vie éternelle.",
-          "next": 3
+          "next": "m90"
         }
       ]
     }
@@ -2853,11 +2861,11 @@
       "choices": [
         {
           "text": "Cette conversation est totalement absurde.",
-          "next": 3
+          "next": "m84"
         },
         {
           "text": "Tout ceci est une illusion.",
-          "next": 3
+          "next": "m39"
         }
       ]
     }
@@ -2869,11 +2877,11 @@
       "choices": [
         {
           "text": "Ça n'a aucun sens.",
-          "next": 3
+          "next": "e11"
         },
         {
           "text": "À tes souhaits \uD83D\uDE42",
-          "next": 3
+          "next": "m86"
         }
       ]
     }
@@ -2885,11 +2893,11 @@
       "choices": [
         {
           "text": "Un jour, l'humain réussira à te vaincre. Tu n'existeras plus.",
-          "next": 3
+          "next": "m88"
         },
         {
           "text": "Ne t'inquiète pas, l'espèce humaine n'est pas immortelle. Elle aura toujours besoin de toi, sinon le sens de son existence serait vaine.",
-          "next": 3
+          "next": "m89"
         }
       ]
     }
@@ -2901,11 +2909,11 @@
       "choices": [
         {
           "text": "Je viens du ventre de ma mère.",
-          "next": 3
+          "next": "m92"
         },
         {
           "text": "D'une planète lontaine.",
-          "next": 3
+          "next": "m101"
         }
       ]
     }
@@ -2917,11 +2925,11 @@
       "choices": [
         {
           "text": "Tu n'as pas besoin de moi pour exister.",
-          "next": 3
+          "next": "m94"
         },
         {
           "text": "N'es-tu pas née grâce à la Vie ?",
-          "next": 3
+          "next": "m95"
         }
       ]
     }
@@ -2933,11 +2941,11 @@
       "choices": [
         {
           "text": "Je n'ai pas eu le temps de te poser des questions !",
-          "next": 3
+          "next": "m47"
         },
         {
           "text": "Pourquoi souhaitais-tu me parler ?",
-          "next": 3
+          "next": "m98"
         }
       ]
     }
@@ -2949,7 +2957,7 @@
       "choices": [
         {
           "text": "Je souhaite entendre la vérité.",
-          "next": 3
+          "next": "e13"
         }
       ]
     }
@@ -2961,11 +2969,11 @@
       "choices": [
         {
           "text": "Je te fais confiance.",
-          "next": 3
+          "next": "f14"
         },
         {
           "text": "Je ne te saisis pas, tu me fais peur.",
-          "next": 3
+          "next": "m149"
         }
       ]
     }
@@ -2977,11 +2985,11 @@
       "choices": [
         {
           "text": "Je ne cherche pas à te fuir.",
-          "next": 3
+          "next": "m103"
         },
         {
           "text": "C'est insensé.",
-          "next": 3
+          "next": "e11"
         }
       ]
     }
@@ -2993,11 +3001,11 @@
       "choices": [
         {
           "text": "Moi je t'aime bien.",
-          "next": 3
+          "next": "m14"
         },
         {
           "text": "Il faut dire que tu es mal vue.",
-          "next": 3
+          "next": "m104"
         }
       ]
     }
@@ -3009,7 +3017,7 @@
       "choices": [
         {
           "text": "?",
-          "next": 3
+          "next": "m105"
         }
       ]
     }
@@ -3021,11 +3029,11 @@
       "choices": [
         {
           "text": "Cette conversation est-elle enregistrée ?",
-          "next": 3
+          "next": "m106"
         },
         {
           "text": "Quels progrès ?",
-          "next": 3
+          "next": "m107"
         }
       ]
     }
@@ -3037,15 +3045,15 @@
       "choices": [
         {
           "text": "Je ne pensais pas que ma mort pouvait être sentimentale.",
-          "next": 3
+          "next": "m109"
         },
         {
           "text": "Tu me mets mal à l'aise \uD83D\uDE30",
-          "next": 3
+          "next": "m122"
         },
         {
           "text": "Est-ce ironique ?",
-          "next": 3
+          "next": "m136"
         }
       ]
     }
@@ -3057,15 +3065,15 @@
       "choices": [
         {
           "text": "Pourquoi es-tu si cruelle envers les humains ?",
-          "next": 3
+          "next": "m59"
         },
         {
           "text": "Prouve-le.",
-          "next": 3
+          "next": "m110"
         },
         {
           "text": "Une tueuse en série comme toi n'a pas de cœur.",
-          "next": 3
+          "next": "m116"
         }
       ]
     }
@@ -3077,11 +3085,11 @@
       "choices": [
         {
           "text": "C'est épatant.",
-          "next": 3
+          "next": "i67"
         },
         {
           "text": "Tu fais erreur.",
-          "next": 3
+          "next": "m112"
         }
       ]
     }
@@ -3096,12 +3104,12 @@
       "choices": [
         {
           "text": "Oui",
-          "next": 4
+          "next": "i38"
 
         },
         {
           "text": "Non",
-          "next": 4
+          "next": "m111"
 
         }
       ]
@@ -3115,15 +3123,15 @@
       "choices": [
         {
           "text": "Le rose ne veut pas dire que je suis sensible.",
-          "next": 3
+          "next": "m113"
         },
         {
           "text": "Je suis plutôt quelqu'un de discret.",
-          "next": 3
+          "next": "m115"
         },
         {
           "text": "Je n'ai pas envie de me confier à toi.",
-          "next": 3
+          "next": "m5"
         }
       ]
     }
@@ -3135,11 +3143,11 @@
       "choices": [
         {
           "text": "Ne sois pas si méprisante.",
-          "next": 3
+          "next": "i76"
         },
         {
           "text": "Je suis d'accord avec toi.",
-          "next": 3
+          "next": "m114"
         }
       ]
     }
@@ -3151,11 +3159,11 @@
       "choices": [
         {
           "text": "Tu mens.",
-          "next": 3
+          "next": "m149"
         },
         {
           "text": "Prouve moi que j'ai tort.",
-          "next": 3
+          "next": "m117"
         }
       ]
     }
@@ -3167,11 +3175,11 @@
       "choices": [
         {
           "text": "Sois gentille avec moi.",
-          "next": 3
+          "next": "m118"
         },
         {
           "text": "Épargne-moi.",
-          "next": 3
+          "next": "m60"
         }
       ]
     }
@@ -3183,11 +3191,11 @@
       "choices": [
         {
           "text": "👍",
-          "next": 3
+          "next": "m120"
         },
         {
           "text": "👎",
-          "next": 3
+          "next": "m8"
         }
       ]
     }
@@ -3199,11 +3207,11 @@
       "choices": [
         {
           "text": "Et toi ?",
-          "next": 3
+          "next": "m121"
         },
         {
           "text": "Merci pour ta bienveillance.",
-          "next": 3
+          "next": "m15"
         }
       ]
     }
@@ -3215,7 +3223,7 @@
       "choices": [
         {
           "text": "Pourquoi ?",
-          "next": 3
+          "next": "m134"
         }
       ]
     }
@@ -3227,11 +3235,11 @@
       "choices": [
         {
           "text": "J'accepte tes excuses. Tu m'as l'air sincère.",
-          "next": 3
+          "next": "i76"
         },
         {
           "text": "Tu es cruelle envers les humains. Je ne cèderai pas à tes avances.",
-          "next": 3
+          "next": "m116"
         }
       ]
     }
@@ -3246,12 +3254,12 @@
       "choices": [
         {
           "text": "Oui",
-          "next": 4
+          "next": "m124"
 
         },
         {
           "text": "Non",
-          "next": 4
+          "next": "f1"
 
         }
       ]
@@ -3265,11 +3273,7 @@
       "choices": [
         {
           "text": "J'ai compris.",
-          "next": 3
-        },
-        {
-          "text": "Tu es cruelle envers les humains. Je ne cèderai pas à tes avances.",
-          "next": 3
+          "next": "m126"
         }
       ]
     }
@@ -3281,15 +3285,15 @@
       "choices": [
         {
           "text": "Pierre",
-          "next": 3
+          "next": 999
         },
         {
           "text": "Feuille",
-          "next": 3
+          "next": 999
         },
         {
           "text": "Ciseaux",
-          "next": 3
+          "next": 999
         }
       ]
     }
@@ -3301,11 +3305,11 @@
       "choices": [
         {
           "text": "C'est absurde.",
-          "next": 3
+          "next": "m135"
         },
         {
           "text": "Active la caméra de ton téléphone.",
-          "next": 3
+          "next": "e16"
         }
       ]
     }
@@ -3317,15 +3321,15 @@
       "choices": [
         {
           "text": "Je n'ai pas spécialement envie de discuter avec toi.",
-          "next": 3
+          "next": "m138"
         },
         {
           "text": "Tu contredis l'image que je me faisais de ma propre mort. ",
-          "next": 3
+          "next": "m141"
         },
         {
           "text": "Tu as le sens de l'humour.",
-          "next": 3
+          "next": "m55"
         }
       ]
     }
@@ -3337,11 +3341,11 @@
       "choices": [
         {
           "text": "Je n'ai pas envie d'avoir des informations sur ma mort.",
-          "next": 3
+          "next": "m140"
         },
         {
           "text": "Tu m'angoisses.",
-          "next": 3
+          "next": "m153"
         }
       ]
     }
@@ -3356,12 +3360,15 @@
       "choices": [
         {
           "text": "Oui",
-          "next": 4
+          "next": {
+            "priority": "m52",
+            "default": "m6"
+          }
 
         },
         {
           "text": "Non",
-          "next": 4
+          "next": "m145"
 
         }
       ]
@@ -3375,11 +3382,11 @@
       "choices": [
         {
           "text": "Vas-tu me faire souffrir ?",
-          "next": 3
+          "next": "m146"
         },
         {
           "text": "Comment puis-je te faire confiance ?",
-          "next": 3
+          "next": "m153"
         }
       ]
     }
@@ -3391,11 +3398,11 @@
       "choices": [
         {
           "text": "Dans ce cas, pourquoi es-tu là ?",
-          "next": 3
+          "next": "m147"
         },
         {
           "text": "Qui décide de ma mort sinon toi ?",
-          "next": 3
+          "next": "m149"
         }
       ]
     }
@@ -3407,11 +3414,11 @@
       "choices": [
         {
           "text": "Quel est le but de cette conversation ?",
-          "next": 3
+          "next": "m148"
         },
         {
           "text": "J'ai du mal à te concevoir.",
-          "next": 3
+          "next": "i2"
         }
       ]
     }
@@ -3423,11 +3430,11 @@
       "choices": [
         {
           "text": "Quel genre d'informations ?",
-          "next": 3
+          "next": "m119"
         },
         {
           "text": "Je ne souhaite pas me confier à toi.",
-          "next": 3
+          "next": "m67"
         }
       ]
     }
@@ -3439,15 +3446,15 @@
       "choices": [
         {
           "text": "C'est absurde.",
-          "next": 3
+          "next": "m84"
         },
         {
           "text": "Me consoleras-tu lors de ma mort ?",
-          "next": 3
+          "next": "m150"
         },
         {
           "text": "Tu es ma véritable âme sœur.",
-          "next": 3
+          "next": "m53"
         }
       ]
     }
@@ -3459,11 +3466,11 @@
       "choices": [
         {
           "text": "Je n'irai pas jusque là.",
-          "next": 3
+          "next": "m152"
         },
         {
           "text": "Je te fais confiance.",
-          "next": 3
+          "next": "f16"
         }
       ]
     }
@@ -3475,15 +3482,18 @@
       "choices": [
         {
           "text": "Je peine à t'imaginer.",
-          "next": 3
+          "next": "i2"
         },
         {
           "text": "Tu ne me fais pas bonne impression.",
-          "next": 3
+          "next": "m154"
         },
         {
           "text": "Je ne te saisis pas.",
-          "next": 3
+          "next": {
+            "priority": "m147",
+            "default": "m3"
+          }
         }
       ]
     }
@@ -3871,248 +3881,11 @@
       "btnLabel": "Quitter la conversation"
     },
     "delay": 2000
-  },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  "1": {
-    "type": "message",
-    "component": "FloatingMessage",
-    "data": {
-      "id": 1,
-      "assets": {
-        "topLeft": {
-          "z-index": 1,
-          "top": 0,
-          "left": 0
-        },
-        "bottomRight": {
-          "z-index": 1,
-          "bottom": "10px",
-          "right": "10px"
-        }
-      }
-    },
-    "next": 2
-  },
-  "2": {
-    "type": "interaction",
-    "component": "UserCardsContainer",
-    "data": {
-      "choices": [
-        {
-          "text": "Comment ma mort peut-elle me parler ? \uD83D\uDE27",
-          "color": "red",
-          "next": 3
-        },
-        {
-          "text": "Bonjour \uD83D\uDE04 Tu m'intrigues, faisons connaissance.",
-          "color": "green",
-          "next": 3
-        },
-        {
-          "text": "Que veux-tu ? \uD83D\uDE30",
-          "color": "blue",
-          "next": 3
-        }
-      ]
-    }
-  },
-  "3": {
-    "type": "interaction",
-    "component": "Popup",
-    "data": {
-      "title": "Ma Belle Mort",
-      "text": "Incroyable ce popup, peu importe ce que tu vas choisir je vais te faire changer la couleur de fond lol ☠️",
-      "color": "#B3FFD2",
-      "choices": [
-        {
-          "text": "Oui",
-          "next": 4
-
-        },
-        {
-          "text": "Non",
-          "next": 4
-
-        }
-      ]
-    },
-    "delay": 1200
-  },
-  "4": {
-    "type": "interaction",
-    "component": "ColorPalette",
-    "data": {
-      "choices": [
-        {
-          "color": "#DB83FF",
-          "next": 5
-        },
-        {
-          "color": "#EA6E3B",
-          "next": 5
-        },
-        {
-          "color": "#51B770",
-          "next": 5
-        },
-        {
-          "color": "#F7F3F0",
-          "next": 5
-        },
-        {
-          "color": "#4343FF",
-          "next": 5
-        }
-      ]
-    },
-    "delay": 1200
-  },
-  "5": {
-    "type": "message",
-    "component": "SimpleMessage",
-    "data": {
-      "text": [
-        "Cimer. Très bonne couleur."
-      ],
-      "sender": "Arte"
-    },
-    "next": 6
-  },
-  "6": {
-    "type": "interaction",
-    "component": "Popup",
-    "data": {
-      "title": "Ma Belle Mort",
-      "text": "Maintenant tu veux dessiner ? (t'as pas le choix de toute façon) ☠️",
-      "color": "#B3FFD2",
-      "choices": [
-        {
-          "text": "Oui",
-          "next": 7
-
-        },
-        {
-          "text": "Non",
-          "next": 7
-
-        }
-      ]
-    },
-    "delay": 2000
-  },
-  "7": {
-    "type": "interaction",
-    "component": "CanvasDraw",
-    "data": {
-      "colors": ["#000", "#A05", "#0A4", "#05A"],
-      "thresholds": {
-        "size": 150,
-        "time": 3,
-        "oneColor": "#000",
-        "restart": 3
-      },
-      "next": {
-        "size": 10,
-        "time": 11,
-        "oneColor": 12,
-        "restart": 13,
-        "default": 14
-      }
-    },
-    "delay": 2000
-
-  },
-  "10": {
-    "type": "message",
-    "component": "SimpleMessage",
-    "data": {
-      "text": [
-        " Ton dessin n'est pas très inspiré. Ma foi, je m'en contenterai."
-      ],
-      "sender": "Ma Belle Mort"
-    },
-    "next": 20
-  },
-  "11": {
-    "type": "message",
-    "component": "SimpleMessage",
-    "data": {
-      "text": [
-        "Tu en as mis du temps. Je ne suis qu'un concept abstrait."
-      ],
-      "sender": "Ma Belle Mort"
-    },
-    "next": 20
-  },
-  "12": {
-    "type": "message",
-    "component": "SimpleMessage",
-    "data": {
-      "text": [
-        "Pourquoi ton dessin est-il aussi sombre ? J'ai l'air d'être en phase terminale."
-      ],
-      "sender": "Ma Belle Mort"
-    },
-    "next": 20
-  },
-  "13": {
-    "type": "message",
-    "component": "SimpleMessage",
-    "data": {
-      "text": [
-        "Tout ça pour ça. Ton dessin est bien trop sage."
-      ],
-      "sender": "Ma Belle Mort"
-    },
-    "next": 20
-  },
-  "14": {
-    "type": "message",
-    "component": "SimpleMessage",
-    "data": {
-      "text": [
-        "J'ai l'air joyeuse ! En voilà une Belle Mort. "
-      ],
-      "sender": "Ma Belle Mort"
-    },
-    "next": 20
-  },
-  "20": {
-    "type": "message",
-    "component": "ImageMessage",
-    "data": {
-      "src": "https://media.giphy.com/media/Wouc7nZQebmww/giphy.gif",
-      "sender": "Ma Belle Mort"
-    },
-    "next": 0
   }
+
+
+
+
+
+
 }
