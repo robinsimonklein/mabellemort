@@ -1,7 +1,7 @@
 <template>
     <div class="floating-message">
         <div class="floating-message__principal">
-            <img class="floating-message__principal-img" :src="principalSrc">
+            <img class="floating-message__principal-img" :class="{'large' : !data.parallax} " :src="principalSrc">
         </div>
         <img v-for="(asset, key) in data.assets" :key="key" :class="['floating-message__floating', key]" :src="floatingElementsSrc[key]" />
     </div>
@@ -19,6 +19,10 @@
                 id: {
                     type: Number,
                     default: 0
+                },
+                parallax: {
+                    type: Boolean,
+                    default: true
                 },
                 assets: {
                     type: Object,
@@ -84,6 +88,11 @@
 
         &__principal-img{
             max-width: 60vw;
+
+            &.large {
+                max-width: 80vw;
+                width: 80vw;
+            }
         }
 
         &__floating {

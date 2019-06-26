@@ -144,7 +144,7 @@
             checkCanvas(){
                 // Mise à jour du temps écoulé
                 const finishedTime = Date.now();
-                this.drawState.duration = Math.floor((finishedTime - this.startedTime)/1000/60); // in minutes
+                this.drawState.duration = Math.floor((finishedTime - this.startedTime)/1000); // in seconds
 
                 // Choix de l'étape suivante en fonciton du dessin et du comportement de l'utilisateur
 

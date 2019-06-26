@@ -78,8 +78,8 @@ export default {
                         'data': message.data,
                     });
                     this.SET_LOADING(false);
-                }, !this.testMode ? Math.random() * 4000 + 3000 : 400);
-            }, !this.testMode && waiting ? Math.random() * 1000 + 2000 : 0);
+                }, !this.testMode ? Math.random() * 3000 + 2000 : 400);
+            }, !this.testMode && waiting ? Math.random() * 1000 + 2000 : 100);
         },
         displayNode(node){
             switch (node.type) {

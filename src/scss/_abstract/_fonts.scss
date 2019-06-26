@@ -16,3 +16,10 @@
         // url('assets/fonts/millimetre/regular/Millimetre-Bold_web.svg#MillimetreBold') format('svg');
   font-weight: bold;
 }
+@font-face {
+  font-family: "Daubenton";
+  src: url('~@/assets/fonts/daubenton/daubenton.ttf') format('truetype'),
+  url('~@/assets/fonts/daubenton/daubenton.woff') format('woff'),
+  url('~@/assets/fonts/daubenton/daubenton.svg#MillimetreRegular') format('svg');
+  font-weight: normal;
+}
