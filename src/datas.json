@@ -253,16 +253,6 @@
     "next": "i13",
     "done": false
   },
-  "m21": {
-    "type": "message",
-    "component": "ImageMessage",
-    "data": {
-      "src": "/assets/messages/gif/kidnapping.gif",
-      "sender": "Ma Belle Mort"
-    },
-    "next": "e1",
-    "done": false
-  },
   "m22": {
     "type": "message",
     "component": "simple-message",
@@ -1442,7 +1432,7 @@
     "type": "message",
     "component": "ImageMessage",
     "data": {
-      "src": "/assets/messages/gif/exasperation.gif",
+      "src": "/assets/messages/gif/timide.gif",
       "sender": "Ma Belle Mort"
     },
     "next": "m85",
@@ -2180,7 +2170,7 @@
       "choices": [
         {
           "text": "Ok",
-          "next": "m21"
+          "next": "m98"
 
         },
         {
@@ -3543,33 +3533,6 @@
     "next": "f3",
     "done": false
   },
-  "e1": {
-    "type": "event",
-    "component": "ConversationEvent",
-    "data": {
-      "text": "Ma Belle Mort a quitté la conversation."
-    },
-    "next": "e1-1",
-    "done": false
-  },
-  "e1-1": {
-    "type": "event",
-    "component": "ConversationEvent",
-    "data": {
-      "text": "Tentative de reconnexion"
-    },
-    "next": "e1-1",
-    "done": false
-  },
-  "e1-2": {
-    "type": "event",
-    "component": "ConversationEvent",
-    "data": {
-      "text": "Echec de reconnexion"
-    },
-    "next": "f4",
-    "done": false
-  },
   "e2": {
     "type": "event",
     "component": "ConversationEvent",
@@ -3753,15 +3716,6 @@
     "data": {
       "text": null,
       "btnLabel": "Terminer la discussion"
-    },
-    "delay": 2000
-  },
-  "f4": {
-    "type": "interaction",
-    "component": "End",
-    "data": {
-      "text": null,
-      "btnLabel": "Quitter la conversation"
     },
     "delay": 2000
   },
