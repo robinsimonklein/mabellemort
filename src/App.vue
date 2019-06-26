@@ -170,7 +170,7 @@ export default {
 
       font-family: 'Messapia', Helvetica, Arial, sans-serif;
       font-weight: bold;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-align: center;
