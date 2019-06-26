@@ -168,7 +168,9 @@ export default {
       align-items: center;
       justify-content: center;
 
-      font-family: 'Avenir', Helvetica, Arial, sans-serif;
+      font-family: 'Messapia', Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 0.7rem;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-align: center;
