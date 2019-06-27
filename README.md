@@ -13,7 +13,7 @@ afin d'embellir la représentation qu'on s'en fait tout en passant un bon moment
 npm install
 ```
 
-### Compiler pour le development
+### Compiler pour le dévelopment
 ```
 npm run serve
 ```
