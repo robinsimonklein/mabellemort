@@ -5,16 +5,9 @@
               <div class="messages-container__wrap">
                   <component v-for="(message, key) in messages" :key="key" :is="message.component" :data="message.data" :fluid="true"></component>
                   <div v-if="loading" class="loader">Ma Belle Mort est en train d'écrire...</div>
-                  <!--
-                      <Message v-if="message.type === 'text'" :sender="message.sender" :content="message.content"/>
-                      <Popup v-if="message.type === 'popup'" :sender="message.sender" :title="message.content.title" :text="message.content.text" :choices="actualChoices" :color="message.content.color"/>
-                      <UserCard v-if="message.type === 'card'" :sender="message.sender" :class="'fluid'" :text="message.text" :color="message.color"/>
-                      <ColorPalette :colors="['red', 'blue', 'green', 'white', 'violet']"/>
-                   -->
-
               </div>
           </div>
-
+          <Frame></Frame>
           <component v-if="userInteraction" :is="actualNode.component" :data="actualNode.data"></component>
       </div>
   </div>
@@ -38,8 +31,10 @@
     import Popup from "./components/interactions/Popup";
     import ColorPalette from "./components/interactions/ColorPalette";
     import CanvasDraw from "./components/interactions/CanvasDraw";
+    import Shifumi from "./components/interactions/Shifumi";
     import BlueScreen from "./components/interactions/BlueScreen";
     import End from "./components/interactions/End";
+    import Frame from "./components/Frame";
 
 
 export default {
@@ -142,12 +137,14 @@ export default {
 
     },
     components: {
+        Frame,
         SimpleMessage,
         ImageMessage,
         FloatingMessage,
         Message,
         CanvasDraw,
         ColorPalette,
+        Shifumi,
         Popup,
         UserCard,
         UserCardsContainer,
