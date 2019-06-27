@@ -1613,7 +1613,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": "m126",
+    "next": "i78",
     "done": false
   },
   "m131": {
@@ -3269,22 +3269,11 @@
   },
   "i78": {
     "type": "interaction",
-    "component": "UserCardsContainer",
+    "component": "Shifumi",
     "data": {
-      "choices": [
-        {
-          "text": "Pierre",
-          "next": 999
-        },
-        {
-          "text": "Feuille",
-          "next": 999
-        },
-        {
-          "text": "Ciseaux",
-          "next": 999
-        }
-      ]
+      "win": "m132",
+      "loose": "m131",
+      "equal": "m130"
     }
   },
   "i79": {

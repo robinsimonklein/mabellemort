@@ -23,6 +23,8 @@
 </template>
 
 <script>
+    /* eslint-disable */
+
     import Vuex from 'vuex';
     import TweenLite from 'gsap'
 

@@ -1,12 +1,13 @@
 <template>
     <div class="user-card" :class="{'fluid' : fluid}" :style="'background-image:url(/assets/messages/user-card/user-card_' + data.number + '.png)'" @click="selectChoice">
         <div class="user-card__text-wrap">
-            <p class="user-card__text" :class="{'big' : bigText }">{{ data.text }}</p>
+            <p class="user-card__text" :class="textSize">{{ data.text }}</p>
         </div>
     </div>
 </template>
 
 <script>
+    /* eslint-disable */
     import TweenLite from 'gsap'
 
     export default {
@@ -37,18 +38,36 @@
         },
         data(){
             return {
-                hidden: false
+                hidden: false,
             }
         },
         computed: {
-            bigText() {
-                return this.data.text.length < 8;
+            length(){
+                return this.data.text.length;
+            },
+            textSize() {
+                if(this.length<4) {
+                    return 'big';
+                }else if(this.length<9) {
+                    return 'medium';
+                }else {
+                    return null
+                }
             }
         },
         methods: {
             selectChoice(){
-                this.$root.$emit('printUserMessage', {'component':'UserCard', 'data': {'text': this.data.text, 'color': this.data.color, 'number': this.data.number}});
-                this.$root.$emit('goToNextNode', this.data.next);
+                if(!this.fluid) {
+                    this.$root.$emit('printUserMessage', {
+                        'component': 'UserCard',
+                        'data': {
+                            'text': this.data.text,
+                            'color': this.data.color,
+                            'number': this.data.number
+                        }
+                    });
+                    this.$root.$emit('goToNextNode', this.data.next);
+                }
             },
             scrollMessagesDown(){
                 document.querySelector('.messages-container').scroll({
@@ -172,6 +191,10 @@
 
             &.big{
                 font-size: 5rem;
+            }
+
+            &.medium {
+                font-size: 2rem;
             }
         }
     }
