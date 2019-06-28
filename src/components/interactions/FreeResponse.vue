@@ -72,7 +72,7 @@
         },
         mounted() {
             // Create socket connexion
-            this.socket = openSocket('http://localhost:3000');
+            this.socket = openSocket('https://mabellemort-server.herokuapp.com:3000');
 
         }
     }
