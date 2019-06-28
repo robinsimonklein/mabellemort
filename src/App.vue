@@ -117,9 +117,6 @@ export default {
                 behavior: 'smooth'}
             );
         },
-        resizeApp(){
-            document.body.height = window.innerHeight;
-        }
 
     },
     computed: {
@@ -137,7 +134,6 @@ export default {
             this.goToNextNode(nextId);
         });
 
-        this.resizeApp();
 
         this.displayNode(this.actualNode);
 

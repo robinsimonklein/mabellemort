@@ -4,7 +4,15 @@
 
 <script>
     export default {
-        name: "Frame"
+        name: "Frame",
+        methods: {
+            resizeFrame(){
+                this.$el.style.height = window.innerHeight;
+            }
+        },
+        mounted(){
+            this.resizeFrame();
+        }
     }
 </script>
 
