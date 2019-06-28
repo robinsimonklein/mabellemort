@@ -1541,7 +1541,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": "m225",
+    "next": "m125",
     "done": false
   },
   "m125": {
@@ -1570,23 +1570,21 @@
   },
   "m127": {
     "type": "message",
-    "component": "simple-message",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Pierre"
-      ],
+      "id": "m127",
+      "parallax": false,
       "sender": "Ma Belle Mort"
     },
-    "next": "m130",
+    "next": "m132",
     "done": false
   },
   "m128": {
     "type": "message",
-    "component": "simple-message",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Feuille"
-      ],
+      "id": "m128",
+      "parallax": false,
       "sender": "Ma Belle Mort"
     },
     "next": "m131",
@@ -1594,14 +1592,13 @@
   },
   "m129": {
     "type": "message",
-    "component": "simple-message",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Ciseaux"
-      ],
+      "id": "m129",
+      "parallax": false,
       "sender": "Ma Belle Mort"
     },
-    "next": "m132",
+    "next": "m130",
     "done": false
   },
   "m130": {
@@ -1609,7 +1606,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Égalité. Recommencons."
+        "Égalité. Recommençons"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -1649,7 +1646,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": "134",
+    "next": "m134",
     "done": false
   },
   "m134": {
@@ -2695,7 +2692,7 @@
         },
         {
           "color": "#EA6E3B",
-          "next": "m122"
+          "next": "m144"
         }
       ]
     },
@@ -3271,11 +3268,22 @@
   },
   "i78": {
     "type": "interaction",
-    "component": "Shifumi",
+    "component": "UserCardsContainer",
     "data": {
-      "win": "m132",
-      "loose": "m131",
-      "equal": "m130"
+      "choices": [
+        {
+          "text": "Pierre",
+          "next": "m128"
+        },
+        {
+          "text": "Feuille",
+          "next": "m127"
+        },
+        {
+          "text": "Ciseaux",
+          "next": "m129"
+        }
+      ]
     }
   },
   "i79": {

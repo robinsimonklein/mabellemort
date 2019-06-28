@@ -93,7 +93,7 @@
         &.fluid {
             position: relative;
             height: auto;
-            width: auto;
+            width: 100%;
             top: inherit;
             left: inherit;
             margin: 1rem 0;

@@ -11,25 +11,17 @@
         components: {UserCardsContainer},
         props: {
             data: {
-                title: {
+                win: {
                     type: String,
-                    default: 'Ma Belle Mort'
+                    default: ""
                 },
-                text: {
+                loose: {
                     type: String,
-                    default: ''
+                    default: ""
                 },
-                choices: {
-                    type: Array,
-                    default: null
-                },
-                color: {
+                equal: {
                     type: String,
-                    default: 'grey'
-                },
-                selected: {
-                    type: Number,
-                    default: null
+                    default: ""
                 }
             },
         },
@@ -43,18 +35,25 @@
                         },
                         {
                             "text": "Feuille",
-                            "next": "e16"
+                            "next": ""
                         },
                         {
                             "text": "Ciseaux️",
-                            "next": "e16"
+                            "next": ""
                         }
                     ]
+                },
+                deathChoice: {
+                    text: null,
+                    number: null,
                 }
             }
         },
         methods: {
             selectChoice(nextId, selected){
+                console.log(selected);
+
+                /*
                 this.$root.$emit('printUserMessage', {
                     'component':'Popup',
                     'data': {
@@ -65,7 +64,8 @@
                         'selected': selected
                     }
                 });
-                this.$root.$emit('goToNextNode', nextId);
+
+                 */
             },
             scrollMessagesDown(){
                 document.querySelector('.messages-container').scroll({
@@ -76,9 +76,52 @@
             }
         },
         mounted() {
-            if(this.fluid){
-                this.scrollMessagesDown();
-            }
+            this.deathChoice.number = Math.round(Math.random() * 2 + 1);
+            this.deathChoice.text = this.userCards.choices[this.deathChoice.number].text;
+
+
+            this.$root.$on('shifumiChoice', (choice) => {
+                console.log('user:',choice.number, ' / death:',this.deathChoice.text);
+
+                    if(choice.number[0] === 'Ciseaux'){
+                        console.log('cis')
+                        switch (this.deathChoice.text) {
+                            case 'Ciseaux' :
+                                this.$root.$emit('goToNextNode', this.data.equal);
+                                break;
+                            case 'Pierre' :
+                                this.$root.$emit('goToNextNode', this.data.loose);
+                                break;
+                            case 'Feuille' :
+                                this.$root.$emit('goToNextNode', this.data.win);
+                                break;
+                        }
+                    }else if(choice.text === 'Pierre') {
+                        switch (this.deathChoice.text) {
+                            case 'Ciseaux' :
+                                this.$root.$emit('goToNextNode', this.data.win);
+                                break;
+                            case 'Pierre' :
+                                this.$root.$emit('goToNextNode', this.data.equal);
+                                break;
+                            case 'Feuille' :
+                                this.$root.$emit('goToNextNode', this.data.loose);
+                                break;
+                        }
+                    }else if(choice.text === 'Feuille'){
+                        switch(this.deathChoice.text) {
+                            case 'Ciseaux' :
+                                this.$root.$emit('goToNextNode', this.data.loose);
+                                break;
+                            case 'Pierre' :
+                                this.$root.$emit('goToNextNode', this.data.win);
+                                break;
+                            case 'Feuille' :
+                                this.$root.$emit('goToNextNode', this.data.equal);
+                                break;
+                        }
+                }
+            });
         }
     }
 </script>

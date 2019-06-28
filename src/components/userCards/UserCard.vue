@@ -34,6 +34,10 @@
             fluid: {
                 type: Boolean,
                 default: false
+            },
+            shifumi: {
+                type: Boolean,
+                default: false
             }
         },
         data(){
@@ -57,7 +61,7 @@
         },
         methods: {
             selectChoice(){
-                if(!this.fluid) {
+                if(!this.fluid  && !this.shifumi) {
                     this.$root.$emit('printUserMessage', {
                         'component': 'UserCard',
                         'data': {
@@ -67,6 +71,11 @@
                         }
                     });
                     this.$root.$emit('goToNextNode', this.data.next);
+                }else if(this.shifumi){
+                    this.$root.$emit('shifumiChoice', {
+                        'text': this.data.text,
+                        'number': this.data.number
+                    });
                 }
             },
             scrollMessagesDown(){

@@ -74,8 +74,8 @@ export default {
                         'data': message.data,
                     });
                     this.SET_LOADING(false);
-                }, !this.testMode ? Math.random() * 3000 + 2000 : 400);
-            }, !this.testMode && waiting ? Math.random() * 1000 + 2000 : 100);
+                }, !this.testMode ? Math.random() * 3000 + 1500 : 400);
+            }, !this.testMode && waiting ? Math.random() * 500 + 1000 : 300);
         },
         displayNode(node){
 

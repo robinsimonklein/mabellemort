@@ -57,7 +57,7 @@
         bottom: 0;
         width: 100vw;
         height: 100vh;
-        padding: 20px;
+        padding: 45px;
         text-align: left;
         box-sizing: border-box;
         z-index: 10;
@@ -77,7 +77,7 @@
             color: white;
             font-weight: bold;
             text-decoration: none;
-            font-size: 2rem;
+            font-size: 1rem;
             font-family: 'Millimetre', Arial, sans-serif;
 
         }
