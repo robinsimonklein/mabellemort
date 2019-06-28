@@ -17,6 +17,7 @@
     /* eslint-disable */
 
     import Vuex from 'vuex';
+    import Frame from "./components/Frame";
 
     //Import message components
     import Message from "./components/messages/Message";
@@ -33,8 +34,8 @@
     import CanvasDraw from "./components/interactions/CanvasDraw";
     import Shifumi from "./components/interactions/Shifumi";
     import BlueScreen from "./components/interactions/BlueScreen";
+    import FreeResponse from "./components/interactions/FreeResponse";
     import End from "./components/interactions/End";
-    import Frame from "./components/Frame";
 
 
 export default {
@@ -150,6 +151,7 @@ export default {
         UserCardsContainer,
         End,
         BlueScreen,
+        FreeResponse,
         ConversationEvent,
     }
 }

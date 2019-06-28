@@ -7,7 +7,7 @@ Vue.use(Vuex);
 const state = {
     testMode: true,
     scenario: json,
-    actual: 'm0',
+    actual: 'm50',
     userInteraction: false,
     loading: false,
     bgColor: '#000'
