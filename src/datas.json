@@ -703,9 +703,8 @@
     "type": "message",
     "component": "simple-message",
     "data": {
-      "text": [
-        "Mon but est de veiller sur toi tout au long de ta vie."
-      ],
+      "id": "m58",
+      "parallax": false,
       "sender": "Ma Belle Mort"
     },
     "next": "i33",
@@ -763,9 +762,8 @@
     "type": "message",
     "component": "simple-message",
     "data": {
-      "text": [
-        "Ne t'en fais pas. Tu ne sauras jamais la date de notre rencontre. Et lorsque tu m'auras rencontrée, tu m'oublieras. Je ne serai que le fantôme de la mémoire des tiens. \nJ'apprivoisera le parfum des fleurs, les flammes des bougies et les veinures du marbre."
-      ],
+      "id": "m63",
+      "parallax": false,
       "sender": "Ma Belle Mort"
     },
     "next": "m64",
@@ -999,11 +997,10 @@
   },
   "m81": {
     "type": "message",
-    "component": "simple-message",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Je suis née dès lors que la vie est apparue sur Terre. Les humains ont inventé toutes sortes de rituels à mon égard, puis j'ai commencé à prendre différentes formes de représentations à travers les cultures et les religions. C'est ainsi que je suis différente dans chaque esprit humain."
-      ],
+      "id": "m81",
+      "parallax": false,
       "sender": "Ma Belle Mort"
     },
     "next": "m82",
@@ -1359,11 +1356,10 @@
   },
   "m109": {
     "type": "message",
-    "component": "simple-message",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Je suis vexée. Peut-être que ça ne se voit pas, mais je suis très émotive."
-      ],
+      "id": "m109",
+      "parallax": false,
       "sender": "Ma Belle Mort"
     },
     "next": "i65",
@@ -1373,9 +1369,8 @@
     "type": "message",
     "component": "simple-message",
     "data": {
-      "text": [
-        "J'existe présentement grâce à la force de ton imagination. Ma personnalité se construit progressivement en fonction de tes réponses. Jusqu'à présent les choix que tu as fait laissent percevoir un caractère sensible mais très affirmé. "
-      ],
+      "id": "m110",
+      "parallax": false,
       "sender": "Ma Belle Mort"
     },
     "next": "i66",
@@ -1781,11 +1776,10 @@
   },
   "m145": {
     "type": "message",
-    "component": "simple-message",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Si tu insistes. J'ai trouvé plus depressif que moi."
-      ],
+      "id": "m145",
+      "parallax": false,
       "sender": "Ma Belle Mort"
     },
     "next": "i83",
@@ -2434,10 +2428,7 @@
         },
         {
           "text": "Finalement je ne souhaite pas savoir.",
-          "next": {
-            "priority": "m43",
-            "default": "f1"
-          }
+          "next": "f1"
         }
       ]
     }
@@ -2555,10 +2546,7 @@
         },
         {
           "text": "Y-a-t-il une autre forme de vie après toi ?",
-          "next": {
-            "priority": "m59",
-            "default": "m45"
-          }
+          "next": "m45"
         }
       ]
     }
@@ -3348,11 +3336,7 @@
       "choices": [
         {
           "text": "Oui",
-          "next": {
-            "priority": "m52",
-            "default": "m6"
-          }
-
+          "next": "m6"
         },
         {
           "text": "Non",
@@ -3478,10 +3462,7 @@
         },
         {
           "text": "Je ne te saisis pas.",
-          "next": {
-            "priority": "m147",
-            "default": "m3"
-          }
+          "next": "m3"
         }
       ]
     }
