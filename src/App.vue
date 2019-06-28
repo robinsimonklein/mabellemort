@@ -116,6 +116,9 @@ export default {
                 top: document.querySelector('.messages-container').scrollHeight + 30,
                 behavior: 'smooth'}
             );
+        },
+        resizeApp(){
+            document.body.height = window.innerHeight;
         }
 
     },
@@ -133,6 +136,8 @@ export default {
         this.$root.$on('goToNextNode', (nextId) => {
             this.goToNextNode(nextId);
         });
+
+        this.resizeApp();
 
         this.displayNode(this.actualNode);
 
