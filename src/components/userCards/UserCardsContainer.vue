@@ -1,6 +1,6 @@
 <template>
     <div class="user-cards-container" :class="{'tidy' : tidy}">
-        <user-card v-for="(choice, key) in data.choices" :key="key" :class="getClass(key)" :id="'card-'+key" :data="{text: choice.text, next: choice.next, color: choice.color, number: (key + 1) + '-' + Math.round(Math.random() + 1)}" :shifumi="shifumi" :fluid="false"></user-card>
+        <user-card v-for="(choice, key) in data.choices" :key="key" :class="getClass(key)" :id="'card-'+key" :data="{text: choice.text, next: choice.next, color: choice.color, number: (key + 1) + '-' + randomNumbers[key]}" :shifumi="shifumi" :fluid="false"></user-card>
         <div class="user-cards__control" @click="next"></div>
     </div>
 </template>
@@ -35,6 +35,13 @@
         },
         computed: {
             ...Vuex.mapGetters(['actual', 'loading']),
+            randomNumbers(){
+                return [
+                    Math.round(Math.random() + 1),
+                    Math.round(Math.random() + 1),
+                    Math.round(Math.random() + 1)
+                ]
+            },
             totalCards() {
                 return this.data.choices.length;
             },
