@@ -1,7 +1,8 @@
 <template>
-    <div class="free-response" :class="{'fluid' : fluid}">
+    <div class="free-response">
         <form class="free-response__form">
             <input type="text" class="free-response__input" name="response" />
+            <input type="submit" name="send" value="Envoyer"/>
         </form>
     </div>
 </template>
@@ -19,22 +20,6 @@
             }
         },
         methods: {
-            selectChoice(nextId, selected){
-                if(this.fluid){
-                    return;
-                }
-                this.$root.$emit('printUserMessage', {
-                    'component':'Popup',
-                    'data': {
-                        'title': this.data.title,
-                        'text': this.data.text,
-                        'choices': this.data.choices,
-                        'color': this.data.color,
-                        'selected': selected
-                    }
-                });
-                this.$root.$emit('goToNextNode', nextId);
-            },
             scrollMessagesDown(){
                 document.querySelector('.messages-container').scroll({
                     left: 0,
