@@ -44,6 +44,9 @@
         },
         methods: {
             selectChoice(nextId, selected){
+                if(this.fluid){
+                    return;
+                }
                 this.$root.$emit('printUserMessage', {
                     'component':'Popup',
                     'data': {

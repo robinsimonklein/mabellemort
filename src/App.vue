@@ -195,7 +195,7 @@ export default {
   .messages-container {
       flex:1;
       background-color: black;
-      padding: 25px 45px 15vh 45px;
+      padding: 45px 45px 15vh 45px;
       overflow: auto;
       -webkit-overflow-scrolling: touch;
 
