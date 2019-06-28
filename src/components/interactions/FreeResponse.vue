@@ -120,6 +120,7 @@
             font-family: 'Millimetre', Arial, sans-serif;
             font-size: 0.8rem;
             margin-left: 5px;
+            -webkit-appearance: none;
         }
 
     }

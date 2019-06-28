@@ -56,6 +56,15 @@ const getters = {
     },
     nextNode: state => {
         if(state.scenario[state.actual].next){
+            if(state.scenario[state.actual].next.priority){
+                const priorityId = state.scenario[state.actual].next.priority;
+                const defaultId = state.scenario[state.actual].next.default;
+                if(state.scenario[priorityId].done === false){
+                    return priorityId
+                }else{
+                    return defaultId
+                }
+            }
             return json[state.actual].next
         }else{
             // TODO: Erreur, il n'y a pas de suite
