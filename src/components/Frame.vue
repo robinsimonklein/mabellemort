@@ -1,5 +1,5 @@
 <template>
-    <div class="frame"></div>
+    <div :ref="'frame'" class="frame"></div>
 </template>
 
 <script>
@@ -7,7 +7,7 @@
         name: "Frame",
         methods: {
             resizeFrame(){
-                this.$el.style.height = window.innerHeight;
+                this.$refs.frame.style.height = window.innerHeight+"px";
             }
         },
         mounted(){

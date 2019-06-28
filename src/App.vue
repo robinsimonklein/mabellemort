@@ -117,6 +117,9 @@ export default {
                 behavior: 'smooth'}
             );
         },
+        reziseApp(){
+            document.body.style.height = window.innerHeight+"px";
+        }
 
     },
     computed: {
@@ -134,6 +137,8 @@ export default {
             this.goToNextNode(nextId);
         });
 
+        this.reziseApp();
+        window.onresize = this.reziseApp;
 
         this.displayNode(this.actualNode);
 
