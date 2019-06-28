@@ -20,6 +20,13 @@ const mutations = {
     SET_LOADING: (state, bool) => {
         state.loading = bool
     },
+    SET_DONE: (state, id) => {
+        if(state.scenario[id]){
+            if(state.scenario[id].done != null){
+                state.scenario[id].done = true
+            }
+        }
+    },
     ACTIVATE_USER_INTERACTION: (state) => {
         state.userInteraction = true
     },

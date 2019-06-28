@@ -1,24 +1,31 @@
 <template>
     <div class="free-response">
         <form @submit.prevent="sendDialogflow" class="free-response__form" novalidate="true">
-            <input type="text" class="free-response__input" name="response" v-model="response" id="response" placeholder="Message..." autocomplete="off"/>
+            <input type="text" :ref="'query'" class="free-response__input" name="query" v-model="query" id="query" placeholder="Message..." autocomplete="off"/>
             <input type="submit" class="free-response__submit" name="send" value="Envoyer"/>
         </form>
     </div>
 </template>
 
 <script>
-    import uuidv1 from 'uuid/v1'
+    /* eslint-disable */
+
+    import openSocket from 'socket.io-client';
 
     export default {
         name: "FreeResponse",
         props: {
+            data: {
+                default: {
+                    type: String,
+                    default: null
+                }
+            }
         },
         data() {
             return {
-                response: null,
-                ACCESS_TOKEN: 'de5f56a7d3ea4b63b3033f5e452209d5',
-                AI_SESSION_ID: null
+                query: null,
+                socket: null,
             }
         },
         methods: {
@@ -29,15 +36,44 @@
                     behavior: 'smooth'}
                 );
             },
-            sendDialogflow(e){
-                console.log(this.response, e)
+            sendDialogflow(){
+                //Envoi de la requête à dialogflow
+                this.socket.emit('dialogflow request', this.query);
+
+                const userQuery = this.query;
+
+                this.socket.on('dialogflow response', (response) => {
+
+                    this.$root.$emit('printUserMessage',
+                        {
+                            'component': 'UserCard',
+                            'data': {
+                                'text': userQuery,
+                                'color': 'red',
+                                'number': '1-2'
+                            }
+                        }
+                    );
+                    this.$root.$emit('printMessage',
+                        {
+                            'component': 'SimpleMessage',
+                            'data': {
+                                'text': [response],
+                            },
+                            'next': this.data.default
+                        }
+                    );
+                    this.$root.$emit('goToNextNode', this.data.default);
+                });
+
+                // On efface le champ input
+                this.query = ""
             }
         },
         mounted() {
-            // config dotenv
-            this.AI_SESSION_ID = uuidv1();
+            // Create socket connexion
+            this.socket = openSocket('http://localhost:3000');
 
-            console.log(this.ACCESS_TOKEN, this.AI_SESSION_ID)
         }
     }
 </script>

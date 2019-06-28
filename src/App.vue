@@ -47,7 +47,7 @@ export default {
         }
     },
     methods: {
-        ...Vuex.mapMutations(['SET_ACTUAL', 'SET_LOADING', 'ACTIVATE_USER_INTERACTION', 'DISABLE_USER_INTERACTION']),
+        ...Vuex.mapMutations(['SET_ACTUAL', 'SET_DONE', 'SET_LOADING', 'ACTIVATE_USER_INTERACTION', 'DISABLE_USER_INTERACTION']),
 
         printUserMessage(message){
             // Masquer l'interaction de l'utilisateur
@@ -78,6 +78,9 @@ export default {
             }, !this.testMode && waiting ? Math.random() * 1000 + 2000 : 100);
         },
         displayNode(node){
+
+            this.SET_DONE(node);
+
             switch (node.type) {
                 case 'message':
                     this.printMessage(node, true);
