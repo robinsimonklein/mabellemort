@@ -5,6 +5,8 @@
 </template>
 
 <script>
+    /* eslint-disable */
+
     import UserCardsContainer from "../userCards/UserCardsContainer";
     export default {
         name: "Shifumi",
@@ -51,7 +53,6 @@
         },
         methods: {
             selectChoice(nextId, selected){
-                console.log(selected);
 
                 /*
                 this.$root.$emit('printUserMessage', {
@@ -81,10 +82,8 @@
 
 
             this.$root.$on('shifumiChoice', (choice) => {
-                console.log('user:',choice.number, ' / death:',this.deathChoice.text);
 
                     if(choice.number[0] === 'Ciseaux'){
-                        console.log('cis')
                         switch (this.deathChoice.text) {
                             case 'Ciseaux' :
                                 this.$root.$emit('goToNextNode', this.data.equal);
