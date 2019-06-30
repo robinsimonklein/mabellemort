@@ -22,6 +22,7 @@
     //Import message components
     import Message from "./components/messages/Message";
     import SimpleMessage from "./components/messages/SimpleMessage";
+    import BubbleMessage from "./components/messages/BubbleMessage";
     import ImageMessage from "./components/messages/ImageMessage";
     import FloatingMessage from "./components/messages/FloatingMessage";
     import ConversationEvent from "./components/messages/ConversationEvent";
@@ -43,7 +44,6 @@ export default {
     data() {
         return {
             messages: [],
-
         }
     },
     methods: {
@@ -149,6 +149,7 @@ export default {
     components: {
         Frame,
         SimpleMessage,
+        BubbleMessage,
         ImageMessage,
         FloatingMessage,
         Message,

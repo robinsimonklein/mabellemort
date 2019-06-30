@@ -109,6 +109,10 @@
             border-radius: 20px;
             padding: 20px;
             box-sizing: border-box;
+
+            .fluid &{
+                width: 100%;
+            }
         }
 
         &__title {
