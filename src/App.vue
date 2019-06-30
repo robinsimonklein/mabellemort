@@ -4,7 +4,7 @@
           <div class="messages-container" id="messages-container" :style="'background-color:' + bgColor">
               <div class="messages-container__wrap">
                   <component v-for="(message, key) in messages" :key="key" :is="message.component" :data="message.data" :fluid="true"></component>
-                  <LoadingMessage v-if="!loading" :text="'Ma Belle Mort est en train d\'écrire'">Ma Belle Mort est en train d'écrire...</LoadingMessage>
+                  <LoadingMessage v-if="loading" :text="'Ma Belle Mort est en train d\'écrire'">Ma Belle Mort est en train d'écrire...</LoadingMessage>
               </div>
           </div>
           <Frame></Frame>
