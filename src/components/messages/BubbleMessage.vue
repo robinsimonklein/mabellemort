@@ -36,6 +36,7 @@
         },
         mounted() {
             this.scrollMessagesDown();
+
             if(this.nextNode){
                 this.$root.$emit('goToNextNode', this.nextNode);
             }
