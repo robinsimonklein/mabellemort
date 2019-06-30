@@ -25,7 +25,7 @@ npm run serve
 
 Le projet sera disponible à `localhost:8080`.
 
-### Compiler et minifier pour la prod
+### Compiler pour la production
 ```
 npm run build
 ```
@@ -39,3 +39,9 @@ npm run test
 ```
 npm run lint
 ```
+
+##  Produciton
+
+Le projet est hébergé sur **Netlify** à l'adresse : [mabellemort.netlify.com](http://mabellemort.netlify.com).
+<br>
+Pour déployer le projet sur Netlify, il suffit de merger la branche **master** sur la branche **production**.
