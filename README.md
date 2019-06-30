@@ -8,6 +8,11 @@ afin d'embellir la représentation qu'on s'en fait tout en passant un bon moment
 <br>
 [Voir le projet](https://mabellemort.netlify.com)
 
+### Pré-requis
+	
+Pour fonctionner, le projet doit être connecté à un serveur Node.js distant : [mabellemort-server](https://github.com/robinsimonklein/mabellemort-server). 
+Installer le serveur et suivre les [instructions](https://github.com/robinsimonklein/mabellemort-server#mabellemort-server) pour le lancer.
+
 ## Installer le projet
 ```
 npm install
