@@ -32,6 +32,18 @@ npm run build
 ```
 
 ## :mag: Tests et corrections
+### Mode test
+
+Il est possible de désactiver les temps de chargement dans la discussion pour aller plus vite durant la phase de développement.<br>
+Pour cela : dans **store.js**, passer la variable 
+```js 
+{
+    ...
+    testMode : true
+    ...
+}
+```
+
 <!--
 ### Lancer les tests
 ```
