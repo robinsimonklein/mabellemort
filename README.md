@@ -12,13 +12,13 @@ afin d'embellir la représentation qu'on s'en fait tout en passant un bon moment
 Pour fonctionner, le projet doit être connecté à un serveur Node.js distant : [mabellemort-server](https://github.com/robinsimonklein/mabellemort-server). 
 Installer le serveur et suivre les [instructions](https://github.com/robinsimonklein/mabellemort-server#mabellemort-server) pour le lancer.
 
-## 🏗 Installer le projet
+## :package: Installer le projet
 ```
 npm install
 ```
 Copier le contenu du fichier `.env.example` dans un nouveau fichier `.env` placé à la racine.
 
-##  Compiler le projet
+## :building_construction: Compiler le projet
 ### Pour le dévelopment
 ```
 npm run serve
@@ -26,12 +26,12 @@ npm run serve
 
 Le projet sera disponible à `localhost:8080`.
 
-### Pour la production
+###  Pour la production
 ```
 npm run build
 ```
 
-## 🔍 Tests et corrections
+## :mag: Tests et corrections
 <!--
 ### Lancer les tests
 ```
