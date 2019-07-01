@@ -61,5 +61,3 @@ Le projet est hébergé sur **Netlify** à l'adresse : [mabellemort.netlify.com]
 Pour déployer le projet sur Netlify, il suffit de merger la branche **master** sur la branche **production**.
 
 <br>
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
