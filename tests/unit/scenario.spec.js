@@ -78,7 +78,6 @@ describe('Tous les noeuds peuvent s\'enchaîner', () => {
           break;
       }
     }
-
     expect(unreachables).toEqual([]);
   });
 });
