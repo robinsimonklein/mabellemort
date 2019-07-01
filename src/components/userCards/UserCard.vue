@@ -197,6 +197,7 @@
             padding: 0 20px;
             text-rendering: geometricPrecision;
             font-family: 'Daubenton', serif;
+            text-transform: uppercase;
 
             &.big{
                 font-size: 5rem;

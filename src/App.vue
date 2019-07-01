@@ -4,7 +4,7 @@
           <div class="messages-container" id="messages-container" :style="'background-color:' + bgColor">
               <div class="messages-container__wrap">
                   <component v-for="(message, key) in messages" :key="key" :is="message.component" :data="message.data" :fluid="true"></component>
-                  <div v-if="loading" class="loader">Ma Belle Mort est en train d'écrire...</div>
+                  <LoadingMessage v-if="loading" :text="'Ma Belle Mort est en train d\'écrire'">Ma Belle Mort est en train d'écrire...</LoadingMessage>
               </div>
           </div>
           <Frame></Frame>
@@ -21,7 +21,9 @@
 
     //Import message components
     import Message from "./components/messages/Message";
+    import LoadingMessage from "./components/messages/LoadingMessage";
     import SimpleMessage from "./components/messages/SimpleMessage";
+    import BubbleMessage from "./components/messages/BubbleMessage";
     import ImageMessage from "./components/messages/ImageMessage";
     import FloatingMessage from "./components/messages/FloatingMessage";
     import ConversationEvent from "./components/messages/ConversationEvent";
@@ -43,7 +45,6 @@ export default {
     data() {
         return {
             messages: [],
-
         }
     },
     methods: {
@@ -145,10 +146,14 @@ export default {
 
         this.displayNode(this.actualNode);
 
+        console.log(process.env.NODE_SERVER);
+
     },
     components: {
         Frame,
+        LoadingMessage,
         SimpleMessage,
+        BubbleMessage,
         ImageMessage,
         FloatingMessage,
         Message,

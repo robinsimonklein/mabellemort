@@ -1,7 +1,7 @@
 {
   "m0": {
     "type": "message",
-    "component": "simple-message",
+    "component": "bubble-message",
     "data": {
       "text": [
         "Enchantée ! Je suis ravie de pouvoir te parler grâce à ce système. \uD83D\uDE42",
@@ -19,7 +19,7 @@
   },
   "m1": {
     "type": "message",
-    "component": "simple-message",
+    "component": "bubble-message",
     "data": {
       "text": [
         "Pour me répondre, des cartes sont à ta disposition. \n Quant à moi, je n'ai pas de forme déterminée. Je contrôlerai l'apparence de l'écran comme bon me semble."
@@ -214,7 +214,7 @@
       ],
       "sender": "Ma Belle Mort"
     },
-    "next": "i10",
+    "next": "e0",
     "done": false
   },
   "m18": {
