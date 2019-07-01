@@ -44,9 +44,9 @@ Pour cela : dans **store.js**, passer la variable
 }
 ```
 
-### Lancer les tests
+### Lancer les tests unitaires
 ```
-npm run test
+npm run test:unit
 ```
 
 ### Lints et corrections
