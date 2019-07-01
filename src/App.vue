@@ -16,7 +16,7 @@
 <script>
     /* eslint-disable */
 
-    import Vuex from 'vuex';
+    import Vuex from 'vuex'; 
     import Frame from "./components/Frame";
 
     //Import message components
@@ -131,6 +131,8 @@ export default {
     },
     mounted(){
 
+
+        // Prepare all $root events listeners
         this.$root.$on('printUserMessage', (message) => {
             this.printUserMessage(message);
         });
@@ -146,7 +148,7 @@ export default {
 
         this.displayNode(this.actualNode);
 
-        console.log(process.env.NODE_SERVER);
+        console.log(process.env);
 
     },
     components: {

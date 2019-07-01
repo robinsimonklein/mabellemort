@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import store from './store';
+import dotenv from 'dotenv';
 import './registerServiceWorker'
+
+
 
 
 Vue.config.productionTip = false;
