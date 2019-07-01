@@ -1,0 +1,148 @@
+{
+  "f1": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "C'est dommage. Dans ce cas, nous nous reparlerons peut-être plus tard.",
+      "sender": "Ma Belle Mort",
+      "btnLabel": "Terminer la discussion"
+    },
+    "delay": 2000
+  },
+  "f2": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "Dans ce cas, ne perds pas ton temps à discuter avec moi. Tu as encore tant de choses à accomplir.\nQuant à moi, je retourne à mes occupations. Ne t'inquiète pas, je garde un œil sur toi.",
+      "sender": "Ma Belle Mort",
+      "btnLabel": "Terminer la discussion"
+    },
+    "delay": 2000
+  },
+  "f3": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": null,
+      "btnLabel": "Terminer la discussion"
+    },
+    "delay": 2000
+  },
+  "f5": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": null,
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  },
+  "f6": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "Ton absence d'imagination me chagrine. Nous aurons peut-être l'occasion de se reparler plus tard. D'ici là, je te souhaite une belle vie. ",
+      "sender": "Ma Belle Mort",
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  },
+  "f7": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": null,
+      "btnLabel": "Redirection vers la page d'accueil"
+    },
+    "delay": 2000
+  },
+  "f8": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "Vous avez libéré votre Belle Mort. Vous pouvez être en paix avec elle.\nNous vous remercions infiniment de votre participation et vous souhaitons une vie heureuse.\nPrenez soin de vous. Votre Belle Mort vous le rendra. ",
+      "sender": "Admin",
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  },
+  "f9": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": null,
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  },
+  "f10": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": null,
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  },
+  "f11": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "Ici Arte. Cette expérience est en réalité une étude comportementale au profit d'un prochain film documentaire. La représentation de votre \"Belle Mort\" fera l'objet d'une analyse psychologique anonyme. Nous vous remercions infiniment pour votre participation, et vous invitons à rejoindre notre communauté. À bientôt sur Arte.tv.",
+      "sender": "Arte",
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  },
+  "f12": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "Pardonne-moi, mais je ne suis pas en mesure de continuer cette conversation. Ces quelques mots ont heurté ma sensibilité. Nous reparlerons peut-être plus tard.",
+      "sender": "Ma Belle Mort",
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  },
+  "f13": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "Ce premier contact avec toi m'a apaisée quant à notre relation. Tu es un esprit sain. Je n'ai jamais été aussi Belle, je t'en remercie. Nous nous reverrons, d'ici là je te souhaite une belle vie.",
+      "sender": "Ma Belle Mort",
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  },
+  "f14": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "Je suis heureuse d'avoir obtenu ta confiance. Je te souhaite une belle et longue vie avant que l'on se rencontre à nouveau.",
+      "sender": "Ma Belle Mort",
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  },
+  "f15": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "Bonjour (prénom), nous vous remercions de votre participation. Vos choix nous ont permi de récolter les données nécessaires pour votre Belle Mort. Nous espérons que votre conversation a été agréable.\nÀ bientôt,\nPrenez soin de vous.\nAdmin",
+      "sender": "Admin",
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  },
+  "f16": {
+    "type": "interaction",
+    "component": "End",
+    "data": {
+      "text": "Cette conversation touche à sa fin. Ma mission est réussie, je te suis reconnaissante. On s'est bien amusé ! Je peux repartir sereine \uD83D\uDE42 \nQuelque soit ta mort, elle sera belle si tu l'acceptes. Je te souhaite une belle vie, nous nous reverrons à l'issue de celle-ci. ",
+      "sender": "Ma Belle Mort",
+      "btnLabel": "Quitter la conversation"
+    },
+    "delay": 2000
+  }
+
+}

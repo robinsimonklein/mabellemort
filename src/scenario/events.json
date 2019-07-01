@@ -1,0 +1,159 @@
+{
+  "e0": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Ma Belle Mort a quitté la conversation."
+    },
+    "next": "f3",
+    "done": false
+  },
+  "e2": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Arte a rejoint la conversation"
+    },
+    "next": "m36",
+    "done": false
+  },
+  "e3": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Redirection en cours..."
+    },
+    "next": "f5",
+    "done": false
+  },
+  "e4": {
+    "type": "event",
+    "component": "BlueScreen",
+    "data": {
+      "text": "Le programme a cessé de fonctionner.",
+      "btnLabel": "OK"
+    },
+    "next": "e5",
+    "done": false
+  },
+  "e5": {
+    "type": "event",
+    "component": "BlueScreen",
+    "data": {
+      "text": "Redémararage en cours...",
+      "btnLabel": "OK"
+    },
+    "next": "m40",
+    "done": false
+  },
+  "e6": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Admin a rejoint la conversation."
+    },
+    "next": "m41",
+    "done": false
+  },
+  "e7": {
+    "type": "event",
+    "component": "BlueScreen",
+    "data": {
+      "text": "Le programme a cessé de fonctionner.",
+      "btnLabel": "OK"
+    },
+    "next": "m42",
+    "delay": 3000,
+    "done": false
+  },
+  "e8": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Ma Belle Mort est en train d'écrire..."
+    },
+    "next": "e11",
+    "done": false
+  },
+  "e9": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Admin a rejoint la conversation."
+    },
+    "next": "f8",
+    "done": false
+  },
+  "e10": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Votre défunt a rejoint la conversation."
+    },
+    "next": "m80-3",
+    "done": false
+  },
+  "e11": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Votre Belle Mort a échappé son téléphone."
+    },
+    "next": "e12",
+    "done": false
+  },
+  "e12": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Le téléphone tombe du Ciel"
+    },
+    "next": "m86-2",
+    "done": false
+  },
+  "e12-2": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "La Vie a rejoint la conversation."
+    },
+    "next": "m96",
+    "done": false
+  },
+  "e13": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "La Vérité a rejoint la conversation"
+    },
+    "next": "m99",
+    "done": false
+  },
+  "e14": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Ma Belle Mort a bloqué la Vérité."
+    },
+    "next": "m100",
+    "done": false
+  },
+  "e15": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Admin a rejoint la conversation"
+    },
+    "next": "f15",
+    "done": false
+  },
+  "e16": {
+    "type": "event",
+    "component": "ConversationEvent",
+    "data": {
+      "text": "Appel en cours..."
+    },
+    "next": "e4",
+    "done": false
+  }
+}
