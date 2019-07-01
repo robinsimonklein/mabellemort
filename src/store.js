@@ -1,12 +1,15 @@
 import Vuex from 'vuex'
-import json from './datas';
+import messages from './scenario/messages';
+import interactions from './scenario/interactions';
+import events from './scenario/events';
+import ends from './scenario/ends';
 import Vue from "vue";
 
 Vue.use(Vuex);
 
 const state = {
     testMode: true,
-    scenario: json,
+    scenario: Object.assign({}, messages, interactions, events, ends),
     actual: 'm0',
     userInteraction: false,
     loading: false,
@@ -48,7 +51,7 @@ const getters = {
 
     actualNode: state => {
         if(state.scenario[state.actual]) {
-            return json[state.actual]
+            return state.scenario[state.actual]
         }else{
             // TODO: Error, next node doesn't exists
             return null
@@ -65,7 +68,7 @@ const getters = {
                     return defaultId
                 }
             }
-            return json[state.actual].next
+            return state.scenario[state.actual].next
         }else{
             // TODO: Error, there is no continuation
             return null
