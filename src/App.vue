@@ -16,7 +16,7 @@
 <script>
     /* eslint-disable */
 
-    import Vuex from 'vuex'; 
+    import Vuex from 'vuex';
     import Frame from "./components/Frame";
 
     //Import message components
