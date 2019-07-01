@@ -16,8 +16,8 @@ Installer le serveur et suivre les [instructions](https://github.com/robinsimonk
 ```
 npm install
 ```
-### Configuration
-Pour configurer le projet en local, copier le contenu du fichier *.env.example* dans un nouveau fichier *.env* placé à la racine.
+### 🔧 Configuration
+Copier le contenu du fichier `.env.example` dans un nouveau fichier `.env` placé à la racine.
 
 ## Compiler le projet
 ### Pour le dévelopment
