@@ -9,6 +9,7 @@
 <script>
     /* eslint-disable */
     import TweenLite from 'gsap'
+    import Hammer from 'hammerjs'
 
     export default {
         name: "UserCard",
@@ -43,6 +44,7 @@
         data(){
             return {
                 hidden: false,
+                hammer: null
             }
         },
         computed: {
@@ -87,6 +89,14 @@
             }
         },
         mounted() {
+            //Configure Hammer
+
+            this.hammer = new Hammer(this.$el);
+            this.hammer.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+            this.hammer.on('swipedown', (e) => {
+                this.$emit('swipedown');
+            });
+
             if(this.fluid){
                 this.scrollMessagesDown();
             }else {

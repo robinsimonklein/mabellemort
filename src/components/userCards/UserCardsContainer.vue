@@ -1,6 +1,6 @@
 <template>
     <div class="user-cards-container" :class="{'tidy' : tidy}">
-        <user-card v-for="(choice, key) in data.choices" :key="key" :class="getClass(key)" :id="'card-'+key" :data="{text: choice.text, next: choice.next, color: choice.color, number: (key + 1) + '-' + randomNumbers[key]}" :shifumi="shifumi" :fluid="false"></user-card>
+        <user-card v-for="(choice, key) in data.choices" :key="key" v-on:swipedown="close" :class="getClass(key)" :id="'card-'+key" :data="{text: choice.text, next: choice.next, color: choice.color, number: (key + 1) + '-' + randomNumbers[key]}" :shifumi="shifumi" :fluid="false"></user-card>
         <div class="user-cards__control" @click="next"></div>
     </div>
 </template>
@@ -58,7 +58,7 @@
                 }else {
                     return this.secondCard + 1
                 }
-            }
+            },
         },
         methods: {
             next() {
@@ -83,6 +83,9 @@
                     default:
                         return 'hidden'
                 }
+            },
+            close(){
+                this.tidy=true;
             }
         },
         mounted() {
