@@ -50,7 +50,7 @@ const getters = {
         if(state.scenario[state.actual]) {
             return json[state.actual]
         }else{
-            // TODO: Erreur, le noeud n'existe pas
+            // TODO: Error, next node doesn't exists
             return null
         }
     },
@@ -67,7 +67,7 @@ const getters = {
             }
             return json[state.actual].next
         }else{
-            // TODO: Erreur, il n'y a pas de suite
+            // TODO: Error, there is no continuation
             return null
         }
     }
@@ -85,6 +85,6 @@ let store = new Vuex.Store({
     strict: true
 });
 
-global.store = store; // Accessible depuis la console navigateur
+global.store = store; // Accessible from navigator console
 
 export default store;

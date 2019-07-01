@@ -26,6 +26,8 @@
     import BubbleMessage from "./components/messages/BubbleMessage";
     import ImageMessage from "./components/messages/ImageMessage";
     import FloatingMessage from "./components/messages/FloatingMessage";
+
+    //Import events components
     import ConversationEvent from "./components/messages/ConversationEvent";
 
     //Import interactions components
@@ -60,8 +62,6 @@ export default {
             });
         },
         printMessage(message, waiting){
-            // Masquer l'interaction de l'utilisateur
-            this.DISABLE_USER_INTERACTION();
 
             setTimeout(() => {
                 // Afficher "... est en train d'écrire"
@@ -79,6 +79,10 @@ export default {
             }, !this.testMode && waiting ? Math.random() * 500 + 1000 : 300);
         },
         displayNode(node){
+
+
+            // Masquer l'interaction de l'utilisateur
+            this.DISABLE_USER_INTERACTION();
 
             this.SET_DONE(node);
 
@@ -99,7 +103,6 @@ export default {
                             this.ACTIVATE_USER_INTERACTION();
                         }, node.delay && !this.testMode ? node.delay : 0);
                     }
-
                     break;
                 default:
                     console.error('%cUne erreur s\'est produite : le noeud demandé n\'existe pas.', 'font-weight: bold');
@@ -111,7 +114,7 @@ export default {
             if(this.actualNode) {
                 this.displayNode(this.actualNode);
             }else{
-                // TODO: Erreur, le noeud suivant n'existe pas
+                // TODO: Error, next node doesn't exists
             }
         },
         scrollMessagesDown(){
@@ -121,7 +124,7 @@ export default {
                 behavior: 'smooth'}
             );
         },
-        reziseApp(){
+        resizeApp(){
             document.body.style.height = window.innerHeight+"px";
         }
 
@@ -143,9 +146,11 @@ export default {
             this.goToNextNode(nextId);
         });
 
-        this.reziseApp();
-        window.onresize = this.reziseApp;
+        // Fix mobile navbar viewport
+        this.resizeApp();
+        window.onresize = this.resizeApp;
 
+        // Display first node at launching
         this.displayNode(this.actualNode);
 
     },
