@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2327550e-3f43-473b-bb55-1a0858936ca5/deploy-status)](https://app.netlify.com/sites/mabellemort/deploys)
 
-# Ma Belle Mort
+# ☠ Ma Belle Mort ☠
 
 Ma Belle Mort c'est un moyen d'échanger, pendant un instant, avec sa propre mort 
 afin d'embellir la représentation qu'on s'en fait tout en passant un bon moment !
@@ -12,36 +12,44 @@ afin d'embellir la représentation qu'on s'en fait tout en passant un bon moment
 Pour fonctionner, le projet doit être connecté à un serveur Node.js distant : [mabellemort-server](https://github.com/robinsimonklein/mabellemort-server). 
 Installer le serveur et suivre les [instructions](https://github.com/robinsimonklein/mabellemort-server#mabellemort-server) pour le lancer.
 
-## Installer le projet
+## :package: Installer le projet
 ```
 npm install
 ```
+Copier le contenu du fichier `.env.example` dans un nouveau fichier `.env` placé à la racine.
 
-### Compiler pour le dévelopment
+## :building_construction: Compiler le projet
+### Pour le dévelopment
 ```
 npm run serve
 ```
 
 Le projet sera disponible à `localhost:8080`.
 
-### Compiler pour la production
+###  Pour la production
 ```
 npm run build
 ```
+
+## :mag: Tests et corrections
 <!--
 ### Lancer les tests
 ```
 npm run test
 ```
+-->
 
 ### Lints et corrections
 ```
 npm run lint
 ```
--->
 
-##  Produciton
+## :rocket: Produciton
 
 Le projet est hébergé sur **Netlify** à l'adresse : [mabellemort.netlify.com](http://mabellemort.netlify.com).
 <br>
 Pour déployer le projet sur Netlify, il suffit de merger la branche **master** sur la branche **production**.
+
+<br>
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)

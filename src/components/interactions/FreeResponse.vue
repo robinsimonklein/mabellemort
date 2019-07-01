@@ -72,7 +72,7 @@
         },
         mounted() {
             // Create socket connexion
-            this.socket = openSocket(process.env.NODE_SERVER);
+            this.socket = openSocket(process.env.VUE_APP_NODE_SERVER);
 
         }
     }

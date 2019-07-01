@@ -2,7 +2,6 @@ import Vue from 'vue';
 import store from './store';
 import './registerServiceWorker'
 
-
 Vue.config.productionTip = false;
 
 new Vue({

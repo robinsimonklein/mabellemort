@@ -131,6 +131,8 @@ export default {
     },
     mounted(){
 
+
+        // Prepare all $root events listeners
         this.$root.$on('printUserMessage', (message) => {
             this.printUserMessage(message);
         });
@@ -145,8 +147,6 @@ export default {
         window.onresize = this.reziseApp;
 
         this.displayNode(this.actualNode);
-
-        console.log(process.env.NODE_SERVER);
 
     },
     components: {
