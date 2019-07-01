@@ -84,7 +84,7 @@ export default {
             // Masquer l'interaction de l'utilisateur
             this.DISABLE_USER_INTERACTION();
 
-            this.SET_DONE(node);
+            this.SET_DONE(this.actual);
 
             switch (node.type) {
                 case 'message':
