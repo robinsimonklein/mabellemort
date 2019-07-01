@@ -30,9 +30,6 @@
         pointer-events: none; // Allow scroll under frame
         box-sizing: border-box;
         border: 45px solid;
-        border-image: url('~@/assets/images/cadre.png') 65 / 45px round;
-
-        transform: scaleY(1.005); // Temporary fix
-
+        border-image: url('~@/assets/images/cadre.png') 68 / 70px round;
     }
 </style>
