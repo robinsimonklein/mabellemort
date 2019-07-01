@@ -41,7 +41,12 @@
         },
         mounted() {
             this.scrollMessagesDown();
-            this.$root.$emit('printMessage', {'component':'simple-message', 'data': {'text':[ this.data.text ], 'sender': 'Ma Belle Mort'}});
+            if(this.data.text) {
+                this.$root.$emit('printMessage', {
+                    'component': 'simple-message',
+                    'data': {'text': [this.data.text], 'sender': 'Ma Belle Mort'}
+                });
+            }
             this.ACTIVATE_USER_INTERACTION();
         }
     }

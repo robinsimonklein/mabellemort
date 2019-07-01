@@ -1,4 +1,4 @@
-import scenario from '../../src/datas.json'
+import store from '../../src/store.js'
 
 
 // Vérifie qu'il n'y a pas plusieurs fois la même valeur dans un tableau
@@ -7,7 +7,7 @@ function hasDuplicates(array) {
 }
 // Tableau de tous les IDs des noeuds du scénario
 const keysArray = [];
-for(let [key] of Object.entries(scenario)){
+for(let [key] of Object.entries(store.state.scenario)){
   keysArray.push(key);
 }
 
@@ -25,7 +25,7 @@ describe('Tous les noeuds peuvent s\'enchaîner', () => {
   it('leur ID suivant doit exister', () => {
     const unreachables = [];
 
-    for(let [key, value] of Object.entries(scenario)){
+    for(let [key, value] of Object.entries(store.state.scenario)){
       switch(value.component.toLowerCase()) {
         case 'end':
           break;
