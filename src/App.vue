@@ -146,6 +146,8 @@ export default {
 
         this.displayNode(this.actualNode);
 
+        console.log(process.env.NODE_SERVER);
+
     },
     components: {
         Frame,
