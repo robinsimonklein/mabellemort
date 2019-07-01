@@ -1,6 +1,6 @@
 ## Messages
 
-###SimpleMessage
+### SimpleMessage
 
 ```json
 "m0" : {
