@@ -35,9 +35,9 @@ npm run build
 ### Mode TEST
 
 Il est possible de désactiver les temps de chargement dans la discussion pour aller plus vite durant la phase de développement.<br>
-Pour cela : dans **store.js**, passer la variable 
+Pour cela : dans **store.js**, passer la variable `testMode` à `true`
 ```js 
-{
+const state = {
     ...
     testMode : true
     ...
