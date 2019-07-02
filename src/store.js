@@ -9,7 +9,7 @@ Vue.use(Vuex);
 
 const state = {
     testMode: true,
-    view:'Intro',
+    view:'Outro',
     scenario: Object.assign({}, messages, interactions, events, ends),
     actual: 'm0',
     userInteraction: false,
@@ -18,6 +18,9 @@ const state = {
 };
 
 const mutations = {
+    SET_VIEW: (state, value) => {
+        state.view = value
+    },
     SET_ACTUAL: (state, id) => {
         state.actual = id
     },

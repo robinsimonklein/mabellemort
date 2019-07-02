@@ -22,6 +22,7 @@
 
     // Import views
     import Intro from './views/Intro';
+    import Outro from './views/Outro';
 
     //Import message components
     import Message from "./components/messages/Message";
@@ -160,6 +161,7 @@ export default {
     },
     components: {
         Intro,
+        Outro,
         Frame,
         LoadingMessage,
         SimpleMessage,

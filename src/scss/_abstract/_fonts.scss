@@ -41,3 +41,12 @@
   url('~@/assets/fonts/messapia/bold/Messapia-Bold.svg#MessapiaBold') format('svg');
   font-weight: bold;
 }
+
+@font-face {
+  font-family: "Murmure";
+  src: url('~@/assets/fonts/murmure/Le_Murmure-Regular_web.eot'),
+  url('~@/assets/fonts/murmure/Le_Murmure-Regular_web.woff') format('woff'),
+  url('~@/assets/fonts/murmure/Le_Murmure-Regular_web.eot?#iefix') format('embedded-opentype'),
+  url('~@/assets/fonts/murmure/Le_Murmure-Regular_web.svg#Murmure') format('svg');
+  font-weight: bold;
+}
