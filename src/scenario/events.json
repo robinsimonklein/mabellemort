@@ -3,7 +3,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Ma Belle Mort a quitté la conversation."
+      "text": "Ma Belle Mort a&nbsp;quitté la&nbsp;conversation."
     },
     "next": "f3",
     "done": false
@@ -12,7 +12,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Arte a rejoint la conversation"
+      "text": "Arte a rejoint la&nbsp;conversation"
     },
     "next": "m36",
     "done": false
@@ -21,7 +21,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Redirection en cours..."
+      "text": "Redirection en&nbsp;cours..."
     },
     "next": "f5",
     "done": false
@@ -30,7 +30,7 @@
     "type": "event",
     "component": "BlueScreen",
     "data": {
-      "text": "Le programme a cessé de fonctionner.",
+      "text": "Le programme a&nbsp;cessé de&nbsp;fonctionner.",
       "btnLabel": "OK"
     },
     "next": "e5",
@@ -40,7 +40,7 @@
     "type": "event",
     "component": "BlueScreen",
     "data": {
-      "text": "Redémararage en cours...",
+      "text": "Redémararage en&nbsp;cours...",
       "btnLabel": "OK"
     },
     "next": "m40",
@@ -50,7 +50,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Admin a rejoint la conversation."
+      "text": "Admin a rejoint la&nbsp;conversation."
     },
     "next": "m41",
     "done": false
@@ -59,7 +59,7 @@
     "type": "event",
     "component": "BlueScreen",
     "data": {
-      "text": "Le programme a cessé de fonctionner.",
+      "text": "Le programme a cessé de&nbsp;fonctionner.",
       "btnLabel": "OK"
     },
     "next": "m42",
@@ -70,7 +70,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Ma Belle Mort est en train d'écrire..."
+      "text": "Ma Belle&nbsp;Mort est en&nbsp;train&nbsp;d'écrire..."
     },
     "next": "e11",
     "done": false
@@ -79,7 +79,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Admin a rejoint la conversation."
+      "text": "Admin a rejoint la&nbsp;conversation."
     },
     "next": "f8",
     "done": false
@@ -88,7 +88,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Votre défunt a rejoint la conversation."
+      "text": "Votre défunt a rejoint la&nbsp;conversation."
     },
     "next": "m80-3",
     "done": false
@@ -97,7 +97,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Votre Belle Mort a échappé son téléphone."
+      "text": "Votre Belle Mort a&nbsp;échappé son&nbsp;téléphone."
     },
     "next": "e12",
     "done": false
@@ -106,7 +106,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Le téléphone tombe du Ciel"
+      "text": "Le téléphone tombe du&nbsp;Ciel"
     },
     "next": "m86-2",
     "done": false
@@ -115,7 +115,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "La Vie a rejoint la conversation."
+      "text": "La Vie a rejoint la&nbsp;conversation."
     },
     "next": "m96",
     "done": false
@@ -124,7 +124,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "La Vérité a rejoint la conversation"
+      "text": "La Vérité a rejoint la&nbsp;conversation"
     },
     "next": "m99",
     "done": false
@@ -133,7 +133,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Ma Belle Mort a bloqué la Vérité."
+      "text": "Ma Belle Mort a&nbsp;bloqué la&nbsp;Vérité."
     },
     "next": "m100",
     "done": false
@@ -142,7 +142,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Admin a rejoint la conversation"
+      "text": "Admin a rejoint la&nbsp;conversation"
     },
     "next": "f15",
     "done": false
@@ -151,7 +151,7 @@
     "type": "event",
     "component": "ConversationEvent",
     "data": {
-      "text": "Appel en cours..."
+      "text": "Appel en&nbsp;cours..."
     },
     "next": "e4",
     "done": false
