@@ -1,8 +1,8 @@
 <template>
     <div class="popup" :class="{'fluid' : fluid}">
         <div class="popup__wrap" :style="'border-color: ' + data.color">
-            <span class="popup__title">{{ data.title }}</span>
-            <p class="popup__text">{{ data.text }}</p>
+            <span class="popup__title" v-html="data.title"></span>
+            <p class="popup__text" v-html="data.text"></p>
             <div class="popup__actions">
                 <button @click="selectChoice(data.choices[0].next, 0)" class="popup__button popup__button--1" :class="{'popup__button--disabled' : data.selected === 1}" :style="'background-color:' + data.color">{{ data.choices[0].text }}</button>
                 <button @click="selectChoice(data.choices[1].next, 1)" class="popup__button popup__button--2" :class="{'popup__button--disabled' : data.selected === 0}" :style="'color:' + data.color + '; border-color:' + data.color">{{ data.choices[1].text }}</button>

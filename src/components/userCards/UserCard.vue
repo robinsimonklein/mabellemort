@@ -1,7 +1,7 @@
 <template>
     <div class="user-card" :class="{'fluid' : fluid}" :style="'background-image:url(/assets/messages/user-card/user-card_' + data.number + '.png)'" @click="selectChoice">
         <div class="user-card__text-wrap">
-            <p class="user-card__text" :class="textSize">{{ data.text }}</p>
+            <p class="user-card__text" :class="textSize" v-html="data.text"></p>
         </div>
     </div>
 </template>

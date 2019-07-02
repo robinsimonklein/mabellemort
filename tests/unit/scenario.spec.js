@@ -11,7 +11,6 @@ for(let [key] of Object.entries(store.state.scenario)){
   keysArray.push(key);
 }
 
-
 // Test que les éléments du scénario ne contiennent pas plusieurs fois le même ID
 describe('Duplication d\'IDs dans le scénario', () => {
   it('ne doit pas avoir de doubles', () => {

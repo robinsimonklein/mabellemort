@@ -48,7 +48,7 @@
     import Vuex from 'vuex';
 
     export default {
-        name: "Intro",
+        name: "Outro",
         methods: {
             ...Vuex.mapMutations(['SET_VIEW']),
             start(){
@@ -61,12 +61,12 @@
 <style lang="scss" scoped>
 .intro {
     display: flex;
-    padding: 0 2rem;
     flex-direction: column;
     justify-content: center;
     background-color: black;
 
     &__title {
+        margin: 3rem 0 2rem 0;
         font-size: 2.1rem;
         font-weight: normal;
         text-transform: uppercase;
@@ -80,10 +80,13 @@
         text-transform: uppercase;
         font-weight: normal;
         margin-bottom: 0.5rem;
+        padding: 0 2rem;
     }
 
     &__contacts {
-
+        flex:1;
+        padding: 0 2rem;
+        overflow: auto;
     }
 
     &__list{
@@ -100,15 +103,15 @@
         text-transform: uppercase;
         font-family: 'Daubenton', serif;
         text-align: left;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         border-bottom: 1px solid rgba(255,255,255,0.5);
     }
 
     .user__profile {
 
         position: relative;
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -141,7 +144,14 @@
     }
     .user__name {
         display: block;
+        font-size: 0.9rem;
         margin-left: 0.8rem;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: normal;
+    }
+
+    &__btn {
+        margin: 3rem 0;
     }
 
 }
