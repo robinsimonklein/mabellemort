@@ -4,13 +4,13 @@
     "component": "bubble-message",
     "data": {
       "text": [
-        "Enchantée&nbsp;! Je suis ravie de pouvoir te parler grâce à ce système. \uD83D\uDE42",
-        "Bienvenue. Je te remercie d'avoir accepté de parler avec moi. \uD83D\uDE42",
-        "Bienvenue ! Heureuse de te voir ici.",
-        "Enchantée. Je me présente, je suis ta mort.",
-        "Bonjour \uD83D\uDE42 Je t'invite à me tutoyer. Nous allons vite apprendre à nous connaître.",
-        "Bonjour ! \uD83D\uDE42 Ravie de vous rencontrer. Tutoyons-nous si vous me le permettez.",
-        "Bonjour ! Je t'attendais. Ma montre est en avance."
+        "Enchantée&nbsp;! Je&nbsp;suis ravie de&nbsp;pouvoir te&nbsp;parler grâce à&nbsp;ce&nbsp;système. \uD83D\uDE42",
+        "Bienvenue. Je&nbsp;te&nbsp;remercie d'avoir accepté de&nbsp;parler avec&nbsp;moi. \uD83D\uDE42",
+        "Bienvenue&nbsp;! Heureuse de&nbsp;te&nbsp;voir&nbsp;ici.",
+        "Enchantée. Je&nbsp;me&nbsp;présente, je&nbsp;suis ta&nbsp;Belle&nbsp;Mort.",
+        "Bonjour \uD83D\uDE42 Je&nbsp;t'invite à&nbsp;me&nbsp;tutoyer. Nous&nbsp;allons vite apprendre à&nbsp;nous connaître.",
+        "Bonjour&nbsp;! \uD83D\uDE42 Ravie de vous rencontrer. Tutoyons-nous si vous me le permettez.",
+        "Bonjour&nbsp;! Je&nbsp;t'attendais. Ma&nbsp;montre est&nbsp;en&nbsp;avance."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -22,7 +22,7 @@
     "component": "bubble-message",
     "data": {
       "text": [
-        "Pour me répondre, des cartes sont à ta disposition. \n Quant à moi, je n'ai pas de forme déterminée. Je contrôlerai l'apparence de l'écran comme bon me semble."
+        "Pour&nbsp;me&nbsp;répondre, des&nbsp;cartes sont à&nbsp;ta&nbsp;disposition. \n Quant à&nbsp;moi, je&nbsp;n'ai pas&nbsp;de&nbsp;forme déterminée. Je&nbsp;contrôlerai l'apparence de&nbsp;l'écran comme bon&nbsp;me&nbsp;semble."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -34,7 +34,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "On m'a créée dans le but de converser avec toi. Pas de panique, je ne suis qu'une fiction. C'est parce que ton esprit est capable de me concevoir que je peux exister et te parler à cet instant-même."
+        "On&nbsp;m'a&nbsp;créée dans le&nbsp;but de&nbsp;converser avec&nbsp;toi. Pas&nbsp;de&nbsp;panique, je&nbsp;ne&nbsp;suis qu'une&nbsp;fiction. C'est&nbsp;parce&nbsp;que ton&nbsp;esprit est&nbsp;capable de&nbsp;me&nbsp;concevoir que&nbsp;je&nbsp;peux exister et&nbsp;te&nbsp;parler à&nbsp;cet&nbsp;instant-même."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -46,7 +46,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Ton dessin n'est pas très inspiré. Ma foi, je m'en contenterai."
+        "Ton&nbsp;dessin n'est pas&nbsp;très inspiré. Ma&nbsp;foi, je&nbsp;m'en contenterai."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -58,7 +58,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Es-tu sceptique envers moi ?"
+        "Es-tu&nbsp;sceptique envers&nbsp;moi&nbsp;?"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -70,7 +70,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Cette conversation fait l'objet d'une introspection. Les cartes t'invitent à faire des choix, dont les chemins font évoluer la relation que tu établies avec moi."
+        "Cette&nbsp;conversation fait l'objet d'une&nbsp;introspection. Les&nbsp;cartes t'invitent à&nbsp;faire des&nbsp;choix, dont les&nbsp;chemins font évoluer la&nbsp;relation que tu&nbsp;établies avec&nbsp;moi."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -82,7 +82,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Ouf. J'ai frôlé le blasphème.\nComment puis-je obtenir ta confiance ?"
+        "Ouf. J'ai&nbsp;frôlé le&nbsp;blasphème.\nComment puis-je&nbsp;obtenir ta&nbsp;confiance&nbsp;?"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -94,7 +94,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "On voit mourir toute chose animée,\nLors que du corps l'âme subtile part :\nJe suis le corps, toi la meilleure part :\nOù es-tu donc, ô âme bien aimée ?"
+        "On&nbsp;voit mourir toute chose animée,\nLors que du&nbsp;corps l'âme subtile part&nbsp;:\nJe&nbsp;suis le&nbsp;corps, toi&nbsp;la&nbsp;meilleure part&nbsp;:\nOù&nbsp;es-tu&nbsp;donc, ô&nbsp;âme bien aimée&nbsp;?"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -106,7 +106,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "C'est La Belle Mort de Louise Labé qui me l'a récité. C'est beau, n'est-ce pas ?"
+        "C'est&nbsp;La&nbsp;Belle&nbsp;Mort de&nbsp;Louise Labé qui&nbsp;me&nbsp;l'a&nbsp;récité. C'est&nbsp;beau, n'est-ce&nbsp;pas&nbsp;?"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -118,7 +118,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je connais toutes les Belles Morts."
+        "Je&nbsp;connais toutes les&nbsp;Belles&nbsp;Morts."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -140,7 +140,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je n'ai pas l'habitude de recevoir des compliments. Je suis apaisée quant à l'image que tu as de moi."
+        "Je&nbsp;n'ai&nbsp;pas&nbsp;l'habitude de&nbsp;recevoir des&nbsp;compliments. Je&nbsp;suis apaisée quant à&nbsp;l'image que tu&nbsp;as de&nbsp;moi."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -152,7 +152,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Qu'est-ce qu'une Belle Mort selon toi ?"
+        "Qu'est-ce&nbsp;qu'une&nbsp;Belle&nbsp;Mort selon&nbsp;toi&nbsp;?"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -174,7 +174,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "J'ai hâte de te rencontrer."
+        "J'ai&nbsp;hâte de&nbsp;te&nbsp;rencontrer."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -186,7 +186,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je t'en fais la promesse."
+        "Je&nbsp;t'en&nbsp;fais la&nbsp;promesse."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -198,7 +198,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je dois partir, le temps me rattrape. Quelque soit les circonstances de notre rencontre, je serai Belle si tu m'acceptes. Je te souhaite une vie heureuse."
+        "Je&nbsp;dois partir, le&nbsp;temps me&nbsp;rattrape. Quelques&nbsp;soient les&nbsp;circonstances de&nbsp;notre rencontre, je&nbsp;serai Belle si&nbsp;tu&nbsp;m'acceptes. Je&nbsp;te&nbsp;souhaite une&nbsp;vie&nbsp;heureuse."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -222,7 +222,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je ne suis pas sûre que tu veuilles entendre la vérité."
+        "Je&nbsp;ne&nbsp;suis pas&nbsp;sûre que&nbsp;tu&nbsp;veuilles entendre la&nbsp;vérité."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -234,7 +234,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je crains que l'humain est trop vulnérable pour entendre ce genre de choses."
+        "Je&nbsp;crains que&nbsp;l'humain est&nbsp;trop vulnérable pour&nbsp;entendre ce&nbsp;genre de&nbsp;choses."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -246,7 +246,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Garde-le pour toi. "
+        "Garde-le&nbsp;pour&nbsp;toi. "
       ],
       "sender": "Ma Belle Mort"
     },
@@ -258,7 +258,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Tu en as mis du temps. Je ne suis qu'un concept abstrait."
+        "Tu&nbsp;en&nbsp;as mis du&nbsp;temps. Je&nbsp;ne&nbsp;suis qu'un&nbsp;concept abstrait."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -280,7 +280,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Vous les humains vous cherchez toujours du sens là où il n'y en a pas."
+        "Vous&nbsp;les&nbsp;humains vous&nbsp;cherchez toujours du&nbsp;sens là&nbsp;où&nbsp;il&nbsp;n'y&nbsp;en&nbsp;a&nbsp;pas."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -292,7 +292,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "J'ai l'air joyeuse ! En voilà une Belle Mort. "
+        "J'ai&nbsp;l'air&nbsp;joyeuse&nbsp;! En&nbsp;voilà une&nbsp;Belle&nbsp;Mort. "
       ],
       "sender": "Ma Belle Mort"
     },
@@ -304,7 +304,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Pourquoi ton dessin est-il aussi sombre ? J'ai l'air d'être en phase terminale."
+        "Pourquoi ton&nbsp;dessin est-il&nbsp;aussi sombre&nbsp;? J'ai&nbsp;l'air d'être en&nbsp;phase terminale."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -316,7 +316,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Pardonne-moi, j'ai peut-être mal interprété ton dessin."
+        "Pardonne-moi, j'ai&nbsp;peut-être mal&nbsp;interprété ton&nbsp;dessin."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -328,7 +328,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Tout ça pour ça. Ton dessin est bien trop sage."
+        "Tout&nbsp;ça pour&nbsp;ça. Ton&nbsp;dessin est&nbsp;bien trop&nbsp;sage."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -340,7 +340,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Si je peux te donner un conseil : arrête de chercher midi à 14h, tu réfléchies trop. \nEs-tu aussi incertain face à moi ?"
+        "Si&nbsp;je&nbsp;peux te&nbsp;donner un&nbsp;conseil&nbsp;: arrête de&nbsp;chercher midi à&nbsp;14h, tu&nbsp;réfléchies trop. \nEs-tu aussi incertain face&nbsp;à&nbsp;moi&nbsp;?"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -352,7 +352,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Qu'attends-tu de moi au juste ?"
+        "Qu'attends-tu de&nbsp;moi au&nbsp;juste&nbsp;?"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -364,7 +364,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Chacun sa propre Belle Mort. Tu es mon unique défunt, je ne peux pas veiller sur tes proches. Ne t'en fais pas pour eux, ils sont entre de bonnes mains."
+        "Chacun sa&nbsp;propre Belle&nbsp;Mort. Tu&nbsp;es&nbsp;mon&nbsp;unique défunt, je&nbsp;ne&nbsp;peux pas&nbsp;veiller sur&nbsp;tes&nbsp;proches. Ne&nbsp;t'en&nbsp;fais pas&nbsp;pour&nbsp;eux, ils&nbsp;sont&nbsp;entre de&nbsp;bonnes mains."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -388,7 +388,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je te rappelle que je suis le reflet de ton âme. Chaque Belle Mort est singulière."
+        "Je&nbsp;te&nbsp;rappelle que&nbsp;je&nbsp;suis le&nbsp;reflet de&nbsp;ton&nbsp;âme. Chaque Belle&nbsp;Mort est&nbsp;singulière."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -403,7 +403,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Tu me remplaceras le jour de ta véritable mort."
+        "Tu&nbsp;me&nbsp;remplaceras le&nbsp;jour de&nbsp;ta&nbsp;véritable&nbsp;mort."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -415,7 +415,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Pour prévenir ton futur défunt."
+        "Pour&nbsp;prévenir ton&nbsp;futur défunt."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -427,7 +427,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        " Ici Arte. Cette expérience est en réalité une étude comportementale au profit d'un prochain film documentaire. La représentation de votre \"Belle Mort\" fera l'objet d'une analyse psychologique anonyme. Nous vous remercions infiniment pour votre participation, et vous invitons à rejoindre notre communauté. À bientôt sur Arte.tv."
+        " Ici&nbsp;Arte. Cette&nbsp;expérience est&nbsp;en&nbsp;réalité une&nbsp;étude comportementale au&nbsp;profit d'un&nbsp;prochain film documentaire. La&nbsp;représentation de&nbsp;votre \"Belle Mort\" fera l'objet d'une&nbsp;analyse psychologique anonyme. Nous&nbsp;vous&nbsp;remercions infiniment pour&nbsp;votre&nbsp;participation, et&nbsp;vous invitons à&nbsp;rejoindre notre communauté. À&nbsp;bientôt sur&nbsp;Arte.tv."
       ],
       "sender": "Arte"
     },
@@ -439,7 +439,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Aide-moi. J'étais humaine avant de mourir. Je suis prisonnière de ce système."
+        "Aide-moi. J'étais humaine avant de&nbsp;mourir. Je&nbsp;suis prisonnière de&nbsp;ce&nbsp;système."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -451,7 +451,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Ne trouves-tu pas notre conversation amusante ? Avant l'invention de ce système, ma conscience était bloquée dans ton esprit."
+        "Ne&nbsp;trouves-tu pas&nbsp;notre conversation amusante&nbsp;? Avant&nbsp;l'invention de&nbsp;ce&nbsp;système, ma&nbsp;conscience était bloquée dans&nbsp;ton&nbsp;esprit."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -463,7 +463,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Pourtant tu discutes avec moi. Tes choix construisent la logique de notre dialogue, tandis que je ne fais que répondre aux cartes."
+        "Pourtant tu&nbsp;discutes avec&nbsp;moi. Tes&nbsp;choix construisent la&nbsp;logique de&nbsp;notre&nbsp;dialogue, tandis&nbsp;que je&nbsp;ne&nbsp;fais que&nbsp;répondre aux&nbsp;cartes."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -475,7 +475,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Qui suis-je ?"
+        "Qui&nbsp;suis-je&nbsp;?"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -487,7 +487,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Veuillez m'excuser pour cette erreur technique. Je n'avais pas prévu ce cas de figure. Vos choix ont fait planté le système."
+        "Veuillez m'excuser pour&nbsp;cette&nbsp;erreur technique. Je&nbsp;n'avais pas&nbsp;prévu ce&nbsp;cas de&nbsp;figure. Vos&nbsp;choix ont&nbsp;fait planté le&nbsp;système."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -499,7 +499,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Qui suis-je ?"
+        "Qui&nbsp;suis-je ?"
       ],
       "sender": "Admin"
     },
@@ -511,7 +511,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je sais que je t'intimide \uD83D\uDE09"
+        "Je&nbsp;sais que&nbsp;je&nbsp;t'intimide \uD83D\uDE09"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -523,7 +523,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Tu m'as déjà parlé sans t'en rendre compte. Je suis profondément enfouie dans ton inconscient et dans tes rêves les plus imperçeptibles."
+        "Tu&nbsp;m'as&nbsp;déjà parlé sans t'en&nbsp;rendre compte. Je&nbsp;suis profondément enfouie dans&nbsp;ton&nbsp;inconscient et&nbsp;dans tes&nbsp;rêves les&nbsp;plus imperçeptibles."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -535,7 +535,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je suis navrée, tu as choisi la mauvaise carte. Je ne suis pas en mesure de répondre à cette question. Cherche sur Wikipédia."
+        "Je&nbsp;suis&nbsp;navrée, tu&nbsp;as&nbsp;choisi la&nbsp;mauvaise carte. Je&nbsp;ne&nbsp;suis pas&nbsp;en&nbsp;mesure de&nbsp;répondre à&nbsp;cette question. Cherche sur&nbsp;Wikipédia."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -547,7 +547,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Tu commences à comprendre l'intérêt de cette conversation."
+        "Tu&nbsp;commences à&nbsp;comprendre l'intérêt de&nbsp;cette&nbsp;conversation."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -559,7 +559,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Peut-être qu'il y a des questions auxquelles je peux répondre. Je te laisse choisir celle que tu souhaites me poser."
+        "Peut-être qu'il&nbsp;y&nbsp;a&nbsp;des&nbsp;questions auxquelles je&nbsp;peux&nbsp;répondre. Je&nbsp;te&nbsp;laisse choisir celle que tu&nbsp;souhaites me&nbsp;poser."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -571,7 +571,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Si tu souhaites savoir la date de notre rencontre, prévois-la à l'avance. Je serai au rendez-vous \uD83D\uDE07"
+        "Si&nbsp;tu&nbsp;souhaites savoir la&nbsp;date de&nbsp;notre rencontre, prévois-la à&nbsp;l'avance. Je&nbsp;serai au&nbsp;rendez-vous \uD83D\uDE07"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -583,7 +583,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je ne voulais pas être agressive."
+        "Je&nbsp;ne&nbsp;voulais pas&nbsp;être&nbsp;agressive."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -595,7 +595,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Peut-être préfères-tu l'écrire ? Si je me présentais face à toi, à quoi ressemblerais-je ?"
+        "Peut-être préfères-tu l'écrire&nbsp;? Si&nbsp;je&nbsp;me&nbsp;présentais face&nbsp;à&nbsp;toi, à&nbsp;quoi ressemblerais-je&nbsp;?"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -607,7 +607,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je suis plus présentable. Je te remercie."
+        "Je&nbsp;suis plus&nbsp;présentable. Je&nbsp;te&nbsp;remercie."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -622,7 +622,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je suis Ta Belle Mort. Mes créateurs m'ont conçue sous forme numérique dans le but de converser avec mon futur défunt. Chaque défunt a sa propre Belle Mort. Ainsi nous sommes liés jusqu'à notre véritable rencontre."
+        "Je&nbsp;suis Ta&nbsp;Belle&nbsp;Mort. Mes&nbsp;créateurs m'ont&nbsp;conçue sous&nbsp;forme numérique dans&nbsp;le&nbsp;but de&nbsp;converser avec mon&nbsp;futur défunt. Chaque&nbsp;défunt a&nbsp;sa&nbsp;propre Belle&nbsp;Mort. Ainsi nous sommes liés jusqu'à&nbsp;notre véritable rencontre."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -634,7 +634,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je suis flattée. Tu vas me faire rougir ☺️"
+        "Je&nbsp;suis flattée. Tu&nbsp;vas me&nbsp;faire rougir&nbsp;☺️"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -656,7 +656,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je n'ai pas fini de te surprendre. \uD83D\uDE0C"
+        "Je&nbsp;n'ai pas&nbsp;fini de&nbsp;te&nbsp;surprendre.&nbsp;\uD83D\uDE0C"
       ],
       "sender": "Ma Belle Mort"
     },
@@ -668,7 +668,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je suis là pour te prouver le contraire."
+        "Je suis là pour te&nbsp;prouver le&nbsp;contraire."
       ],
       "sender": "Ma Belle Mort"
     },
