@@ -677,11 +677,9 @@
   },
   "m56-2": {
     "type": "message",
-    "component": "simple-message",
+    "component": "ImageMessage",
     "data": {
-      "text": [
-        "Je suis là pour te prouver le contraire."
-      ],
+      "src": "/assets/messages/gif/cadeau.gif",
       "sender": "Ma Belle Mort"
     },
     "next": "m153",
