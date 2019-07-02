@@ -6,15 +6,15 @@
     "data": {
       "choices": [
         {
-          "text": "Comment ma mort peut-elle me parler ? \uD83D\uDE27",
+          "text": "Comment ma&nbsp;mort peut-elle me&nbsp;parler ? \uD83D\uDE27",
           "next": "m3"
         },
         {
-          "text": "Bonjour \uD83D\uDE04 Tu m'intrigues, faisons connaissance.",
+          "text": "Bonjour&nbsp;\uD83D\uDE04 Tu&nbsp;m'intrigues, faisons connaissance.",
           "next": "m52"
         },
         {
-          "text": "Que veux-tu ? \uD83D\uDE30",
+          "text": "Que veux-tu ?&nbsp;\uD83D\uDE30",
           "next": "i41"
         }
       ]
@@ -26,11 +26,11 @@
     "data": {
       "choices": [
         {
-          "text": "J'ai du mal à t'imaginer.",
+          "text": "J'ai du mal à&nbsp;t'imaginer.",
           "next": "i2"
         },
         {
-          "text": "Tu me fais peur.",
+          "text": "Tu&nbsp;me&nbsp;fais&nbsp;peur.",
           "next": "i41"
         }
       ]
@@ -41,7 +41,7 @@
     "component": "Popup",
     "data": {
       "title": "Ma Belle Mort",
-      "text": "Essayons. Je souhaite savoir à quoi je ressemble \uD83E\uDD14 Veux-tu essayer de me dessiner ?️",
+      "text": "Essayons. Je&nbsp;souhaite savoir à&nbsp;quoi je&nbsp;ressemble&nbsp;\uD83E\uDD14 Veux-tu essayer de&nbsp;me&nbsp;dessiner&nbsp;?️",
       "color": "#B3FFD2",
       "choices": [
         {
@@ -64,15 +64,15 @@
     "data": {
       "choices": [
         {
-          "text": "Je ne crois pas à cette expérience.",
+          "text": "Je&nbsp;ne&nbsp;crois pas à&nbsp;cette&nbsp;expérience.",
           "next": "f1"
         },
         {
-          "text": "L'idée de parler avec ma propre mort m'est inconfortable.",
+          "text": "L'idée de&nbsp;parler avec ma&nbsp;propre mort m'est&nbsp;inconfortable.",
           "next": "i4"
         },
         {
-          "text": "J'ai du mal à t'accepter.",
+          "text": "J'ai&nbsp;du&nbsp;mal à&nbsp;t'accepter.",
           "next": "m6"
         }
       ]
@@ -83,7 +83,7 @@
     "component": "Popup",
     "data": {
       "title": "Ma Belle Mort",
-      "text": "Souhaites-tu rompre cette conversation ?️",
+      "text": "Souhaites-tu rompre cette&nbsp;conversation&nbsp;?️",
       "color": "#B3FFD2",
       "choices": [
         {
@@ -110,7 +110,7 @@
           "next": "m8"
         },
         {
-          "text": "Parle-moi de toi.",
+          "text": "Parle-moi de&nbsp;toi.",
           "next": "m18"
         }
       ]
@@ -122,11 +122,11 @@
     "data": {
       "choices": [
         {
-          "text": "Tu connais la Belle Mort de Louise Labé ?",
+          "text": "Tu&nbsp;connais la&nbsp;Belle&nbsp;Mort de&nbsp;Louise&nbsp;Labé&nbsp;?",
           "next": "m10"
         },
         {
-          "text": "C'est splendide.",
+          "text": "C'est&nbsp;splendide.",
           "next": "m14"
         }
       ]
@@ -138,11 +138,11 @@
     "data": {
       "choices": [
         {
-          "text": "J'espère qu'elles sont toutes aussi bienveillantes que toi.",
+          "text": "J'espère qu'elles sont toutes aussi bienveillantes que&nbsp;toi.",
           "next": "m11"
         },
         {
-          "text": "Tous les humains ne méritent pas une Belle Mort.",
+          "text": "Tous&nbsp;les&nbsp;humains ne&nbsp;méritent pas une&nbsp;Belle&nbsp;Mort.",
           "next": "m13"
         }
       ]
@@ -154,15 +154,15 @@
     "data": {
       "choices": [
         {
-          "text": "C'est mourir sans souffrance. ",
+          "text": "C'est mourir sans&nbsp;souffrance. ",
           "next": "m116"
         },
         {
-          "text": "Mourir en ayant accompli sa vie.",
+          "text": "Mourir en&nbsp;ayant accompli sa&nbsp;vie.",
           "next": "f2"
         },
         {
-          "text": "Choisir sa mort.",
+          "text": "Choisir sa&nbsp;mort.",
           "next": "m48"
         }
       ]
@@ -174,11 +174,11 @@
     "data": {
       "choices": [
         {
-          "text": "Moi aussi, mais ne viens pas trop tôt.",
+          "text": "Moi&nbsp;aussi, mais&nbsp;ne&nbsp;viens pas trop&nbsp;tôt.",
           "next": "m16"
         },
         {
-          "text": "Promets-moi de prendre soin de moi lors de notre rencontre.",
+          "text": "Promets-moi de&nbsp;prendre soin de&nbsp;moi lors de&nbsp;notre&nbsp;rencontre.",
           "next": "m16"
         }
       ]
@@ -194,7 +194,7 @@
           "next": "m17-2"
         },
         {
-          "text": "Merci, à bientôt !",
+          "text": "Merci, à&nbsp;bientôt !",
           "next": "m17-2"
         }
       ]
@@ -230,7 +230,7 @@
     "data": {
       "choices": [
         {
-          "text": "Compte sur moi.️",
+          "text": "Compte sur&nbsp;moi.️",
           "next": "i13-2"
         }
       ]
@@ -241,7 +241,7 @@
     "component": "Popup",
     "data": {
       "title": "Ma Belle Mort",
-      "text": "Ceci est un pacte avec ta mort. En-es tu conscient ?️",
+      "text": "Ceci est un&nbsp;pacte avec ta&nbsp;mort. En-es tu&nbsp;conscient&nbsp;?️",
       "color": "#B3FFD2",
       "choices": [
         {
@@ -264,11 +264,11 @@
     "data": {
       "choices": [
         {
-          "text": "Cette expérience me tient à cœur.️",
+          "text": "Cette expérience me&nbsp;tient à&nbsp;cœur.️",
           "next": "m53"
         },
         {
-          "text": "C'est parce que tu es insaisissable.",
+          "text": "C'est parce&nbsp;que tu&nbsp;es&nbsp;insaisissable.",
           "next": "m24"
         },
         {
@@ -284,11 +284,11 @@
     "data": {
       "choices": [
         {
-          "text": "Alors comment voulais-tu que je t'imagines ?️",
+          "text": "Alors comment voulais-tu que je&nbsp;t'imagines&nbsp;?️",
           "next": "m29"
         },
         {
-          "text": "Dépourvue de sens, la vie serait vaine.",
+          "text": "Dépourvue de&nbsp;sens, la&nbsp;vie serait&nbsp;vaine.",
           "next": "m61"
         }
       ]
@@ -300,15 +300,15 @@
     "data": {
       "choices": [
         {
-          "text": "Je ne t'aime pas.️",
+          "text": "Je&nbsp;ne&nbsp;t'aime&nbsp;pas.️",
           "next": "f1"
         },
         {
-          "text": "Ce n'était pas volontaire.",
+          "text": "Ce n'était pas&nbsp;volontaire.",
           "next": "m27"
         },
         {
-          "text": "Dans mes représentations, tu n'es pas joyeuse.",
+          "text": "Dans&nbsp;mes&nbsp;représentations, tu&nbsp;n'es&nbsp;pas&nbsp;joyeuse.",
           "next": "i38"
         }
       ]
@@ -324,7 +324,7 @@
           "next": "i76"
         },
         {
-          "text": "Tu n'es pas très intelligente.",
+          "text": "Tu&nbsp;n'es&nbsp;pas très&nbsp;intelligente.",
           "next": "m109"
         }
       ]
@@ -336,15 +336,15 @@
     "data": {
       "choices": [
         {
-          "text": "Je pense souvent à toi.",
+          "text": "Je pense souvent à&nbsp;toi.",
           "next": "m30"
         },
         {
-          "text": "En réalité je ne suis pas quelqu'un d'indécis.",
+          "text": "En réalité je&nbsp;ne&nbsp;suis pas quelqu'un d'indécis.",
           "next": "m43"
         },
         {
-          "text": "Je me pose beaucoup de questions.",
+          "text": "Je me pose beaucoup de&nbsp;questions.",
           "next": "m47"
         }
       ]
@@ -356,15 +356,15 @@
     "data": {
       "choices": [
         {
-          "text": "Je souhaite que tu prennes soin de mes proches.",
+          "text": "Je souhaite que tu&nbsp;prennes soin de&nbsp;mes&nbsp;proches.",
           "next": "m31"
         },
         {
-          "text": "J'aimerais ne plus te craindre.",
+          "text": "J'aimerais ne&nbsp;plus te&nbsp;craindre.",
           "next": "m38"
         },
         {
-          "text": "Je suis en quête de réponses sur ma future mort.",
+          "text": "Je suis en&nbsp;quête de&nbsp;réponses sur&nbsp;ma&nbsp;future&nbsp;mort.",
           "next": "e4"
         }
       ]
@@ -376,11 +376,11 @@
     "data": {
       "choices": [
         {
-          "text": "Je te fais confiance.",
+          "text": "Je&nbsp;te&nbsp;fais confiance.",
           "next": "f13"
         },
         {
-          "text": "Qui incarne leur Belle Mort ?",
+          "text": "Qui incarne leur&nbsp;Belle&nbsp;Mort&nbsp;?",
           "next": "m32"
         }
       ]
@@ -396,7 +396,7 @@
           "next": "m33"
         },
         {
-          "text": "Où veux-tu en venir ?",
+          "text": "Où&nbsp;veux-tu en&nbsp;venir&nbsp;?",
           "next": "m34"
         }
       ]
@@ -420,11 +420,11 @@
     "data": {
       "choices": [
         {
-          "text": "Je ne crois pas à ce système. Tout ceci n'est qu'une illusion.",
+          "text": "Je ne crois pas à&nbsp;ce&nbsp;système. Tout ceci n'est qu'une&nbsp;illusion.",
           "next": "m39"
         },
         {
-          "text": "Je ne m'attendais pas à une experience pareille.",
+          "text": "Je ne m'attendais pas à&nbsp;une&nbsp;experience pareille.",
           "next": "m55"
         }
       ]
@@ -436,11 +436,11 @@
     "data": {
       "choices": [
         {
-          "text": "C'est mathématique. Rien n'est réel, tout a été programmé.",
+          "text": "C'est mathématique. Rien n'est&nbsp;réel, tout a&nbsp;été programmé.",
           "next": "f6"
         },
         {
-          "text": "Tu insinues que je me parle à moi-même.",
+          "text": "Tu insinues que je&nbsp;me&nbsp;parle à&nbsp;moi-même.",
           "next": "m84"
         }
       ]
@@ -452,11 +452,11 @@
     "data": {
       "choices": [
         {
-          "text": "Je n'imaginais pas te parler avant que l'on se rencontre réellement.",
+          "text": "Je n'imaginais pas te parler avant que l'on se&nbsp;rencontre réellement.",
           "next": "m44"
         },
         {
-          "text": "Je le suis de moins en moins grâce à cette expérience.",
+          "text": "Je le suis de&nbsp;moins en&nbsp;moins grâce à&nbsp;cette&nbsp;expérience.",
           "next": "m46"
         }
       ]
@@ -468,11 +468,11 @@
     "data": {
       "choices": [
         {
-          "text": "Je n'y ai jamais prêté attention.",
+          "text": "Je n'y&nbsp;ai&nbsp;jamais prêté attention.",
           "next": "m118"
         },
         {
-          "text": "Dans ce cas pourquoi ne sommes-nous pas dans mon inconscient ?",
+          "text": "Dans ce&nbsp;cas pourquoi ne&nbsp;sommes-nous pas dans&nbsp;mon&nbsp;inconscient&nbsp;?",
           "next": "m45"
         }
       ]
@@ -484,15 +484,15 @@
     "data": {
       "choices": [
         {
-          "text": "Qu'y-a-t-il après toi ?",
+          "text": "Qu'y-a-t-il après&nbsp;toi&nbsp;?",
           "next": "e4"
         },
         {
-          "text": "Vas-tu me faire souffrir ?",
+          "text": "Vas-tu me faire souffrir&nbsp;?",
           "next": "m116"
         },
         {
-          "text": "Quand vais-je mourir ?",
+          "text": "Quand vais-je mourir&nbsp;?",
           "next": "m48"
         }
       ]
@@ -504,15 +504,15 @@
     "data": {
       "choices": [
         {
-          "text": "Je te préviendrai.",
+          "text": "Je&nbsp;te&nbsp;préviendrai.",
           "next": "m15"
         },
         {
-          "text": "Tu es malsaine.",
+          "text": "Tu&nbsp;es&nbsp;malsaine.",
           "next": "m49"
         },
         {
-          "text": "Finalement je ne souhaite pas savoir.",
+          "text": "Finalement je&nbsp;ne&nbsp;souhaite&nbsp;pas savoir.",
           "next": "f1"
         }
       ]
@@ -532,7 +532,7 @@
     "data": {
       "choices": [
         {
-          "text": "Nous sommes faits l'un pour l'autre !",
+          "text": "Nous sommes faits l'un pour&nbsp;l'autre&nbsp;!",
           "next": "m53"
         },
         {
@@ -540,7 +540,7 @@
           "next": "m57"
         },
         {
-          "text": "Je souhaite ne jamais te rencontrer \uD83D\uDE30",
+          "text": "Je souhaite ne&nbsp;jamais te&nbsp;rencontrer&nbsp;\uD83D\uDE30",
           "next": "i38"
         }
       ]
@@ -552,15 +552,15 @@
     "data": {
       "choices": [
         {
-          "text": "Je ne pensais pas que ma mort pouvait être sentimentale.",
+          "text": "Je ne&nbsp;pensais&nbsp;pas que ma&nbsp;mort pouvait être sentimentale.",
           "next": "m55"
         },
         {
-          "text": "J'ai du mal à te comprendre. Qui es-tu vraiment ?",
+          "text": "J'ai du mal à&nbsp;te&nbsp;comprendre. Qui&nbsp;es-tu vraiment&nbsp;?",
           "next": "m3"
         },
         {
-          "text": "Tu n'étais pas censée être intimidante ?",
+          "text": "Tu n'étais pas censée être intimidante&nbsp;?",
           "next": "m56"
         }
       ]
@@ -572,7 +572,7 @@
     "data": {
       "choices": [
         {
-          "text": "Tu es très mystérieuse.",
+          "text": "Tu&nbsp;es&nbsp;très&nbsp;mystérieuse.",
           "next": "m70"
         }
       ]
@@ -584,15 +584,15 @@
     "data": {
       "choices": [
         {
-          "text": "À quoi bon vivre si tu y mets fin ?",
+          "text": "À quoi bon vivre si&nbsp;tu&nbsp;y&nbsp;mets fin&nbsp;?",
           "next": "m59"
         },
         {
-          "text": "Je préfère que tu restes loin de moi, j'ai pas envie de mourir.",
+          "text": "Je préfère que tu&nbsp;restes loin de&nbsp;moi, j'ai&nbsp;pas envie de&nbsp;mourir.",
           "next": "m60"
         },
         {
-          "text": "Que sais-tu de moi ?",
+          "text": "Que sais-tu de&nbsp;moi&nbsp;?",
           "next": "m62"
         }
       ]
@@ -602,7 +602,7 @@
     "type": "interaction",
     "component": "Popup",
     "data": {
-      "title": "L'Éternité ?",
+      "title": "L'Éternité&nbsp;?",
       "text": "",
       "color": "#B3FFD2",
       "choices": [
@@ -626,11 +626,11 @@
     "data": {
       "choices": [
         {
-          "text": "J'ai peur que tu arrives trop tôt.",
+          "text": "J'ai peur que tu arrives trop&nbsp;tôt.",
           "next": "m146"
         },
         {
-          "text": "Y-a-t-il une autre forme de vie après toi ?",
+          "text": "Y-a-t-il une autre forme de&nbsp;vie après&nbsp;toi&nbsp;?",
           "next": "m45"
         }
       ]
@@ -646,7 +646,7 @@
           "next": "m63"
         },
         {
-          "text": "Que veux-tu savoir ?",
+          "text": "Que veux-tu savoir&nbsp;?",
           "next": "m119"
         }
       ]
@@ -658,11 +658,11 @@
     "data": {
       "choices": [
         {
-          "text": "Tu es très poétique.",
+          "text": "Tu&nbsp;es très&nbsp;poétique.",
           "next": "m53"
         },
         {
-          "text": "Grâce à toi j'ai le moral dans les chaussettes.",
+          "text": "Grâce à toi j'ai le&nbsp;moral dans les&nbsp;chaussettes.",
           "next": "m65"
         }
       ]
@@ -673,7 +673,7 @@
     "component": "Popup",
     "data": {
       "title": "Ma Belle Mort",
-      "text": "Tu m'as l'air d'être quelqu'un d'angoissé. As-tu déjà vécu de mauvaises expériences avec moi ?",
+      "text": "Tu&nbsp;m'as l'air d'être quelqu'un d'angoissé. As-tu&nbsp;déjà vécu de&nbsp;mauvaises expériences avec&nbsp;moi&nbsp;?",
       "color": "#B3FFD2",
       "choices": [
         {
@@ -695,7 +695,7 @@
     "component": "Popup",
     "data": {
       "title": "Ma Belle Mort",
-      "text": "Souhaites-tu m'en parler ?",
+      "text": "Souhaites-tu m'en parler&nbsp;?",
       "color": "#B3FFD2",
       "choices": [
         {
@@ -725,7 +725,7 @@
     "component": "Popup",
     "data": {
       "title": "Ma Belle Mort",
-      "text": "N'aie pas peur, je ne suis pas méchante. J’ai peut-être exagéré sur le noir, veux-tu choisir la couleur d’arrière-plan ? ☠ ",
+      "text": "N'aie pas peur, je&nbsp;ne&nbsp;suis pas&nbsp;méchante. J’ai&nbsp;peut-être exagéré sur&nbsp;le&nbsp;noir, veux-tu choisir la&nbsp;couleur d’arrière-plan&nbsp;?&nbsp;☠ ",
       "color": "#B3FFD2",
       "choices": [
         {
@@ -777,11 +777,11 @@
     "data": {
       "choices": [
         {
-          "text": "Où vis-tu ?",
+          "text": "Où vis-tu&nbsp;?",
           "next": "m70"
         },
         {
-          "text": "D'où viens-tu ?",
+          "text": "D'où viens-tu&nbsp;?",
           "next": "m81"
         }
       ]
@@ -793,15 +793,15 @@
     "data": {
       "choices": [
         {
-          "text": "Es-tu avec d'autres personnes ?",
+          "text": "Es-tu avec d'autres personnes&nbsp;?",
           "next": "m73"
         },
         {
-          "text": "Pour qui travailles-tu ?",
+          "text": "Pour qui travailles-tu&nbsp;?",
           "next": "m79"
         },
         {
-          "text": "Tu as le sens de l'humour.",
+          "text": "Tu as&nbsp;le&nbsp;sens de&nbsp;l'humour.",
           "next": "m85"
         }
       ]
@@ -813,11 +813,11 @@
     "data": {
       "choices": [
         {
-          "text": "Pourquoi faites-vous ça ?",
+          "text": "Pourquoi faites-vous ça&nbsp;?",
           "next": "m74"
         },
         {
-          "text": "Qui contrôle tout ça ?",
+          "text": "Qui contrôle tout ça&nbsp;?",
           "next": "m79"
         }
       ]
@@ -829,7 +829,7 @@
     "data": {
       "choices": [
         {
-          "text": "Comment ?",
+          "text": "Comment&nbsp;?",
           "next": "m76"
         }
       ]
@@ -841,11 +841,11 @@
     "data": {
       "choices": [
         {
-          "text": "Que veux-tu me faire faire ?",
+          "text": "Que veux-tu me&nbsp;faire faire&nbsp;?",
           "next": "e8"
         },
         {
-          "text": "Que veux-tu me faire faire ?",
+          "text": "Que veux-tu me faire faire&nbsp;?",
           "next": "m77"
         }
       ]
@@ -857,11 +857,11 @@
     "data": {
       "choices": [
         {
-          "text": "Offre moi une mort paisible et tu seras libre.",
+          "text": "Offre moi une mort paisible et&nbsp;tu&nbsp;seras&nbsp;libre.",
           "next": "m78"
         },
         {
-          "text": "Cela ne me rassure pas. Tout ceci est absurde.",
+          "text": "Cela ne me rassure&nbsp;pas. Tout&nbsp;ceci est&nbsp;absurde.",
           "next": "e8"
         }
       ]
@@ -873,7 +873,7 @@
     "data": {
       "choices": [
         {
-          "text": "Moi, je t'aime bien.",
+          "text": "Moi,&nbsp;je&nbsp;t'aime&nbsp;bien.",
           "next": "e9"
         }
       ]
@@ -885,11 +885,11 @@
     "data": {
       "choices": [
         {
-          "text": "Notre conversation est-elle enregistrée ?",
+          "text": "Notre conversation est-elle enregistrée&nbsp;?",
           "next": "m106"
         },
         {
-          "text": "Comment t'es-tu retrouvée ici ?   ",
+          "text": "Comment t'es-tu retrouvée&nbsp;ici&nbsp;?   ",
           "next": "m80"
         }
       ]
@@ -901,15 +901,15 @@
     "data": {
       "choices": [
         {
-          "text": "Les robots ne peuvent pas être autonomes. Ils sont dépendants des humains.",
+          "text": "Les robots ne&nbsp;peuvent pas être autonomes. Ils&nbsp;sont dépendants des&nbsp;humains.",
           "next": "m83"
         },
         {
-          "text": "Absolument, j'ai foi en la science et je crois au transhumanisme.",
+          "text": "Absolument, j'ai foi en la science et&nbsp;je&nbsp;crois au&nbsp;transhumanisme.",
           "next": "m87"
         },
         {
-          "text": "L'humain détruira notre planète Terre avant d'inventer toute forme de vie éternelle.",
+          "text": "L'humain détruira notre planète Terre avant&nbsp;d'inventer toute&nbsp;forme de&nbsp;vie éternelle.",
           "next": "m90"
         }
       ]
@@ -921,11 +921,11 @@
     "data": {
       "choices": [
         {
-          "text": "Cette conversation est totalement absurde.",
+          "text": "Cette conversation est&nbsp;totalement absurde.",
           "next": "m84"
         },
         {
-          "text": "Tout ceci est une illusion.",
+          "text": "Tout ceci est&nbsp;une&nbsp;illusion.",
           "next": "m39"
         }
       ]
@@ -937,11 +937,11 @@
     "data": {
       "choices": [
         {
-          "text": "Ça n'a aucun sens.",
+          "text": "Ça n'a aucun&nbsp;sens.",
           "next": "e11"
         },
         {
-          "text": "À tes souhaits \uD83D\uDE42",
+          "text": "À tes souhaits&nbsp;\uD83D\uDE42",
           "next": "m86"
         }
       ]
@@ -953,11 +953,11 @@
     "data": {
       "choices": [
         {
-          "text": "Un jour, l'humain réussira à te vaincre. Tu n'existeras plus.",
+          "text": "Un jour, l'humain réussira à&nbsp;te&nbsp;vaincre. Tu&nbsp;n'existeras&nbsp;plus.",
           "next": "m88"
         },
         {
-          "text": "Ne t'inquiète pas, l'espèce humaine n'est pas immortelle. Elle aura toujours besoin de toi, sinon le sens de son existence serait vaine.",
+          "text": "Ne t'inquiète pas, l'espèce humaine n'est&nbsp;pas immortelle. Elle&nbsp;aura toujours besoin de&nbsp;toi, sinon le&nbsp;sens de&nbsp;son existence serait&nbsp;vaine.",
           "next": "m89"
         }
       ]
@@ -969,7 +969,7 @@
     "data": {
       "choices": [
         {
-          "text": "Je viens du ventre de ma mère.",
+          "text": "Je viens du&nbsp;ventre de&nbsp;ma&nbsp;mère.",
           "next": "m92"
         },
         {
@@ -985,11 +985,11 @@
     "data": {
       "choices": [
         {
-          "text": "Tu n'as pas besoin de moi pour exister.",
+          "text": "Tu n'as pas besoin de&nbsp;moi pour&nbsp;exister.",
           "next": "m94"
         },
         {
-          "text": "N'es-tu pas née grâce à la Vie ?",
+          "text": "N'es-tu pas née grâce à&nbsp;la&nbsp;Vie&nbsp;?",
           "next": "m95"
         }
       ]
@@ -1001,11 +1001,11 @@
     "data": {
       "choices": [
         {
-          "text": "Je n'ai pas eu le temps de te poser des questions !",
+          "text": "Je n'ai pas eu le temps de&nbsp;te&nbsp;poser des&nbsp;questions&nbsp;!",
           "next": "m47"
         },
         {
-          "text": "Pourquoi souhaitais-tu me parler ?",
+          "text": "Pourquoi souhaitais-tu me&nbsp;parler&nbsp;?",
           "next": "m98"
         }
       ]
@@ -1017,7 +1017,7 @@
     "data": {
       "choices": [
         {
-          "text": "Je souhaite entendre la vérité.",
+          "text": "Je souhaite entendre la&nbsp;vérité.",
           "next": "e13"
         }
       ]
@@ -1033,7 +1033,7 @@
           "next": "f14"
         },
         {
-          "text": "Je ne te saisis pas, tu me fais peur.",
+          "text": "Je ne te saisis pas, tu&nbsp;me&nbsp;fais&nbsp;peur.",
           "next": "m149"
         }
       ]
@@ -1045,7 +1045,7 @@
     "data": {
       "choices": [
         {
-          "text": "Je ne cherche pas à te fuir.",
+          "text": "Je ne cherche pas à&nbsp;te&nbsp;fuir.",
           "next": "m103"
         },
         {
@@ -1061,11 +1061,11 @@
     "data": {
       "choices": [
         {
-          "text": "Moi je t'aime bien.",
+          "text": "Moi, je&nbsp;t'aime&nbsp;bien.",
           "next": "m14"
         },
         {
-          "text": "Il faut dire que tu es mal vue.",
+          "text": "Il faut dire que tu&nbsp;es&nbsp;mal&nbsp;vue.",
           "next": "m104"
         }
       ]
@@ -1089,7 +1089,7 @@
     "data": {
       "choices": [
         {
-          "text": "Cette conversation est-elle enregistrée ?",
+          "text": "Cette conversation est-elle enregistrée&nbsp;?",
           "next": "m106"
         },
         {
@@ -1105,15 +1105,15 @@
     "data": {
       "choices": [
         {
-          "text": "Je ne pensais pas que ma mort pouvait être sentimentale.",
+          "text": "Je ne pensais pas que ma&nbsp;mort pouvait être sentimentale.",
           "next": "m109"
         },
         {
-          "text": "Tu me mets mal à l'aise \uD83D\uDE30",
+          "text": "Tu me mets mal&nbsp;à&nbsp;l'aise&nbsp;\uD83D\uDE30",
           "next": "m122"
         },
         {
-          "text": "Est-ce ironique ?",
+          "text": "Est-ce ironique&nbsp;?",
           "next": "m136"
         }
       ]
@@ -1125,7 +1125,7 @@
     "data": {
       "choices": [
         {
-          "text": "Pourquoi es-tu si cruelle envers les humains ?",
+          "text": "Pourquoi es-tu si cruelle envers les&nbsp;humains&nbsp;?",
           "next": "m59"
         },
         {
@@ -1133,7 +1133,7 @@
           "next": "m110"
         },
         {
-          "text": "Une tueuse en série comme toi n'a pas de cœur.",
+          "text": "Une tueuse en série comme toi n'a&nbsp;pas de&nbsp;cœur.",
           "next": "m116"
         }
       ]
@@ -1160,7 +1160,7 @@
     "component": "Popup",
     "data": {
       "title": "Ma Belle Mort",
-      "text": "Peu de défunts ont ce type de caractère. Tu as déjà dû entendre parler de moi. Exprimes-tu de la rancœur envers moi ?",
+      "text": "Peu de défunts ont&nbsp;ce&nbsp;type de&nbsp;caractère. Tu&nbsp;as&nbsp;déjà dû&nbsp;entendre parler&nbsp;de&nbsp;moi. Exprimes-tu&nbsp;de&nbsp;la&nbsp;rancœur envers moi&nbsp;?",
       "color": "#B3FFD2",
       "choices": [
         {
@@ -1183,15 +1183,15 @@
     "data": {
       "choices": [
         {
-          "text": "Le rose ne veut pas dire que je suis sensible.",
+          "text": "Le rose ne veut pas dire que je&nbsp;suis&nbsp;sensible.",
           "next": "m113"
         },
         {
-          "text": "Je suis plutôt quelqu'un de discret.",
+          "text": "Je suis plutôt quelqu'un de&nbsp;discret.",
           "next": "m115"
         },
         {
-          "text": "Je n'ai pas envie de me confier à toi.",
+          "text": "Je n'ai pas envie de&nbsp;me&nbsp;confier à&nbsp;toi.",
           "next": "m5"
         }
       ]
@@ -1203,11 +1203,11 @@
     "data": {
       "choices": [
         {
-          "text": "Ne sois pas si méprisante.",
+          "text": "Ne sois pas si&nbsp;méprisante.",
           "next": "i76"
         },
         {
-          "text": "Je suis d'accord avec toi.",
+          "text": "Je suis d'accord avec&nbsp;toi.",
           "next": "m114"
         }
       ]
@@ -1219,11 +1219,11 @@
     "data": {
       "choices": [
         {
-          "text": "Tu mens.",
+          "text": "Tu&nbsp;mens.",
           "next": "m149"
         },
         {
-          "text": "Prouve moi que j'ai tort.",
+          "text": "Prouve-moi que j'ai&nbsp;tort.",
           "next": "m117"
         }
       ]
@@ -1235,7 +1235,7 @@
     "data": {
       "choices": [
         {
-          "text": "Sois gentille avec moi.",
+          "text": "Sois gentille avec&nbsp;moi.",
           "next": "m118"
         },
         {
@@ -1267,11 +1267,11 @@
     "data": {
       "choices": [
         {
-          "text": "Et toi ?",
+          "text": "Et&nbsp;toi&nbsp;?",
           "next": "m121"
         },
         {
-          "text": "Merci pour ta bienveillance.",
+          "text": "Merci pour ta&nbsp;bienveillance.",
           "next": "m15"
         }
       ]
@@ -1283,7 +1283,7 @@
     "data": {
       "choices": [
         {
-          "text": "Pourquoi ?",
+          "text": "Pourquoi&nbsp;?",
           "next": "m134"
         }
       ]
@@ -1295,11 +1295,11 @@
     "data": {
       "choices": [
         {
-          "text": "J'accepte tes excuses. Tu m'as l'air sincère.",
+          "text": "J'accepte tes&nbsp;excuses. Tu&nbsp;m'as l'air sincère.",
           "next": "i76"
         },
         {
-          "text": "Tu es cruelle envers les humains. Je ne cèderai pas à tes avances.",
+          "text": "Tu&nbsp;es cruelle envers les&nbsp;humains. Je&nbsp;ne&nbsp;cèderai pas à&nbsp;tes&nbsp;avances.",
           "next": "m116"
         }
       ]
@@ -1310,7 +1310,7 @@
     "component": "Popup",
     "data": {
       "title": "Ma Belle Mort",
-      "text": "Laisse-moi te proposer un jeu pour me faire pardonner. Si tu gagnes, je t'accorderai le droit de me poser une question. Si tu perds, c'est moi qui te poserai une question. Es-tu d'accord ?",
+      "text": "Laisse-moi te&nbsp;proposer un&nbsp;jeu pour&nbsp;me&nbsp;faire pardonner. Si&nbsp;tu&nbsp;gagnes, je&nbsp;t'accorderai le&nbsp;droit de&nbsp;me&nbsp;poser une&nbsp;question. Si&nbsp;tu&nbsp;perds, c'est&nbsp;moi qui te&nbsp;poserai une&nbsp;question. Es-tu&nbsp;d'accord&nbsp;?",
       "color": "#B3FFD2",
       "choices": [
         {
@@ -1333,7 +1333,7 @@
     "data": {
       "choices": [
         {
-          "text": "J'ai compris.",
+          "text": "J'ai&nbsp;compris.",
           "next": "m126"
         }
       ]
@@ -1369,7 +1369,7 @@
           "next": "m135"
         },
         {
-          "text": "Active la caméra de ton téléphone.",
+          "text": "Active la&nbsp;caméra de&nbsp;ton&nbsp;téléphone.",
           "next": "e16"
         }
       ]
@@ -1381,15 +1381,15 @@
     "data": {
       "choices": [
         {
-          "text": "Je n'ai pas spécialement envie de discuter avec toi.",
+          "text": "Je n'ai pas spécialement envie de&nbsp;discuter avec&nbsp;toi.",
           "next": "m138"
         },
         {
-          "text": "Tu contredis l'image que je me faisais de ma propre mort. ",
+          "text": "Tu contredis l'image que je&nbsp;me&nbsp;faisais de&nbsp;ma&nbsp;propre&nbsp;mort. ",
           "next": "m141"
         },
         {
-          "text": "Tu as le sens de l'humour.",
+          "text": "Tu as le&nbsp;sens de&nbsp;l'humour.",
           "next": "m55"
         }
       ]
@@ -1401,7 +1401,7 @@
     "data": {
       "choices": [
         {
-          "text": "Je n'ai pas envie d'avoir des informations sur ma mort.",
+          "text": "Je n'ai pas envie d'avoir des&nbsp;informations sur&nbsp;ma&nbsp;mort.",
           "next": "m140"
         },
         {
@@ -1416,7 +1416,7 @@
     "component": "Popup",
     "data": {
       "title": "Ma Belle Mort",
-      "text": "J’ai meilleure mine ☺ Une belle mort doit être décente. \nVeux-tu savoir pourquoi je te parle en cet instant ?",
+      "text": "J’ai&nbsp;meilleure mine&nbsp;☺ Une&nbsp;Belle&nbsp;Mort doit être décente. \nVeux-tu savoir pourquoi je&nbsp;te&nbsp;parle en&nbsp;cet&nbsp;instant&nbsp;?",
       "color": "#B3FFD2",
       "choices": [
         {
@@ -1438,11 +1438,11 @@
     "data": {
       "choices": [
         {
-          "text": "Vas-tu me faire souffrir ?",
+          "text": "Vas-tu me faire souffrir&nbsp;?",
           "next": "m146"
         },
         {
-          "text": "Comment puis-je te faire confiance ?",
+          "text": "Comment puis-je te&nbsp;faire confiance&nbsp;?",
           "next": "m153"
         }
       ]
@@ -1454,11 +1454,11 @@
     "data": {
       "choices": [
         {
-          "text": "Dans ce cas, pourquoi es-tu là ?",
+          "text": "Dans ce cas, pourquoi es-tu&nbsp;là&nbsp;?",
           "next": "m147"
         },
         {
-          "text": "Qui décide de ma mort sinon toi ?",
+          "text": "Qui décide de&nbsp;ma&nbsp;mort sinon toi&nbsp;?",
           "next": "m149"
         }
       ]
@@ -1470,11 +1470,11 @@
     "data": {
       "choices": [
         {
-          "text": "Quel est le but de cette conversation ?",
+          "text": "Quel est&nbsp;le&nbsp;but de&nbsp;cette conversation&nbsp;?",
           "next": "m148"
         },
         {
-          "text": "J'ai du mal à te concevoir.",
+          "text": "J'ai du mal à&nbsp;te&nbsp;concevoir.",
           "next": "i2"
         }
       ]
@@ -1486,11 +1486,11 @@
     "data": {
       "choices": [
         {
-          "text": "Quel genre d'informations ?",
+          "text": "Quel genre d'informations&nbsp;?",
           "next": "m119"
         },
         {
-          "text": "Je ne souhaite pas me confier à toi.",
+          "text": "Je ne souhaite pas me&nbsp;confier à&nbsp;toi.",
           "next": "m67"
         }
       ]
@@ -1506,11 +1506,11 @@
           "next": "m84"
         },
         {
-          "text": "Me consoleras-tu lors de ma mort ?",
+          "text": "Me consoleras-tu lors de&nbsp;ma&nbsp;mort&nbsp;?",
           "next": "m150"
         },
         {
-          "text": "Tu es ma véritable âme sœur.",
+          "text": "Tu es ma véritable âme&nbsp;sœur.",
           "next": "m53"
         }
       ]
@@ -1522,7 +1522,7 @@
     "data": {
       "choices": [
         {
-          "text": "Je n'irai pas jusque là.",
+          "text": "Je n'irai pas jusque&nbsp;là.",
           "next": "m152"
         },
         {
@@ -1538,7 +1538,7 @@
     "data": {
       "choices": [
         {
-          "text": "Je peine à t'imaginer.",
+          "text": "Je peine à&nbsp;t'imaginer.",
           "next": "i2"
         },
         {
@@ -1546,7 +1546,7 @@
           "next": "m154"
         },
         {
-          "text": "Je ne te saisis pas.",
+          "text": "Je ne te saisis&nbsp;pas.",
           "next": "m3"
         }
       ]
