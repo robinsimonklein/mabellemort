@@ -50,6 +50,6 @@
         margin: 1rem 0;
         background-color: skyblue;
         color:white;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
 </style>

@@ -183,11 +183,11 @@
   },
   "m16": {
     "type": "message",
-    "component": "simple-message",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Je&nbsp;t'en&nbsp;fais la&nbsp;promesse."
-      ],
+      "id": "m16",
+      "parallax": true,
+      "layers": 2,
       "sender": "Ma Belle Mort"
     },
     "next": "m17",
@@ -277,11 +277,11 @@
   },
   "m24": {
     "type": "message",
-    "component": "simple-message",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Vous&nbsp;les&nbsp;humains vous&nbsp;cherchez toujours du&nbsp;sens là&nbsp;où&nbsp;il&nbsp;n'y&nbsp;en&nbsp;a&nbsp;pas."
-      ],
+      "id": "m24",
+      "parallax": true,
+      "layers": 2,
       "sender": "Ma Belle Mort"
     },
     "next": "i15",
@@ -699,7 +699,7 @@
   },
   "m58": {
     "type": "message",
-    "component": "simple-message",
+    "component": "floating-message",
     "data": {
       "id": "m58",
       "parallax": false,
@@ -758,7 +758,7 @@
   },
   "m63": {
     "type": "message",
-    "component": "simple-message",
+    "component": "floating-message",
     "data": {
       "id": "m63",
       "parallax": false,
