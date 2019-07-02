@@ -9,6 +9,7 @@
           </div>
           <Frame></Frame>
           <component v-if="userInteraction" :is="actualNode.component" :data="actualNode.data"></component>
+          <component v-if="view" :is="view"></component>
       </div>
   </div>
 </template>
@@ -18,6 +19,9 @@
 
     import Vuex from 'vuex';
     import Frame from "./components/Frame";
+
+    // Import views
+    import Intro from './views/Intro';
 
     //Import message components
     import Message from "./components/messages/Message";
@@ -130,7 +134,7 @@ export default {
 
     },
     computed: {
-        ...Vuex.mapGetters(['testMode', 'actual', 'scenario', 'bgColor', 'userInteraction', 'loading', 'actualNode', 'state'])
+        ...Vuex.mapGetters(['testMode', 'view', 'actual', 'scenario', 'bgColor', 'userInteraction', 'loading', 'actualNode', 'state'])
     },
     mounted(){
 
@@ -155,6 +159,7 @@ export default {
 
     },
     components: {
+        Intro,
         Frame,
         LoadingMessage,
         SimpleMessage,
