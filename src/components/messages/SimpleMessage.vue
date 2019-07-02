@@ -1,6 +1,6 @@
 <template>
-    <div class="simple-message">
-        {{ randomText }}
+    <div class="simple-message" v-html="randomText">
+
     </div>
 </template>
 

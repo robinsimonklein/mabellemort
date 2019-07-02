@@ -1,6 +1,5 @@
 <template>
-    <div class="bubble-message" :style="'background-color:'">
-        {{ randomText }}
+    <div class="bubble-message" :style="'background-color:'" v-html="randomText">
     </div>
 </template>
 

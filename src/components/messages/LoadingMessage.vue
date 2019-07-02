@@ -1,6 +1,6 @@
 <template>
     <div class="loading-message">
-        {{ text }} <span class="loading-message__dot">.</span> <span class="loading-message__dot">.</span><span class="loading-message__dot">.</span>
+        <span v-html="text"></span><span class="loading-message__dot">.</span> <span class="loading-message__dot">.</span><span class="loading-message__dot">.</span>
     </div>
 </template>
 
