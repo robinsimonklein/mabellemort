@@ -193,7 +193,7 @@ export default {
       align-items: center;
       justify-content: center;
 
-      font-family: 'Messapia', Helvetica, Arial, sans-serif;
+      font-family: 'Helvetica', Helvetica, Arial, sans-serif;
       font-weight: bold;
       font-size: 0.8rem;
       -webkit-font-smoothing: antialiased;

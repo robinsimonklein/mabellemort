@@ -50,8 +50,9 @@
     export default {
         name: "Outro",
         methods: {
-            ...Vuex.mapMutations(['SET_VIEW']),
+            ...Vuex.mapMutations(['SET_VIEW', 'SET_ACTUAL']),
             start(){
+                this.SET_ACTUAL('m0');
                 this.SET_VIEW(null);
             }
         }

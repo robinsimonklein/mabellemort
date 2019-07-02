@@ -89,18 +89,15 @@
             }
         },
         mounted() {
-            //Configure Hammer
-
-            this.hammer = new Hammer(this.$el);
-            this.hammer.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-            this.hammer.on('swipedown', (e) => {
-                this.$emit('swipedown');
-            });
-
             if(this.fluid){
                 this.scrollMessagesDown();
             }else {
-                //TweenLite
+                //Configure Hammer (only if not fluid)
+                this.hammer = new Hammer(this.$el);
+                this.hammer.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+                this.hammer.on('swipedown', () => {
+                    this.$emit('swipedown');
+                });
             }
         }
     }

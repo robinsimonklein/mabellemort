@@ -9,5 +9,10 @@
   border: none;
   border-radius: 2.5rem;
   outline:none;
+  -webkit-tap-highlight-color: transparent;
   box-shadow: 0 0 15px rgba(255,255,255,1);
+
+  &:focus{
+    -webkit-tap-highlight-color: transparent;
+  }
 }
