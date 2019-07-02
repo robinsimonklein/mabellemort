@@ -3,7 +3,7 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "C'est dommage. Dans ce cas, nous nous reparlerons peut-être plus tard.",
+      "text": "C'est dommage. Dans&nbsp;ce&nbsp;cas, nous nous reparlerons peut-être plus&nbsp;tard.",
       "sender": "Ma Belle Mort",
       "btnLabel": "Terminer la discussion"
     },
@@ -13,7 +13,7 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "Dans ce cas, ne perds pas ton temps à discuter avec moi. Tu as encore tant de choses à accomplir.\nQuant à moi, je retourne à mes occupations. Ne t'inquiète pas, je garde un œil sur toi.",
+      "text": "Dans ce&nbsp;cas, ne&nbsp;perds pas ton&nbsp;temps à&nbsp;discuter avec&nbsp;moi. Tu&nbsp;as&nbsp;encore tant de&nbsp;choses à&nbsp;accomplir.\nQuant&nbsp;à&nbsp;moi, je&nbsp;retourne à&nbsp;mes&nbsp;occupations. Ne&nbsp;t'inquiète&nbsp;pas, je&nbsp;garde un&nbsp;œil sur&nbsp;toi.",
       "sender": "Ma Belle Mort",
       "btnLabel": "Terminer la discussion"
     },
@@ -24,7 +24,7 @@
     "component": "End",
     "data": {
       "text": null,
-      "btnLabel": "Terminer la discussion"
+      "btnLabel": "Terminer la&nbsp;discussion"
     },
     "delay": 2000
   },
@@ -33,7 +33,7 @@
     "component": "End",
     "data": {
       "text": null,
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   },
@@ -41,9 +41,9 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "Ton absence d'imagination me chagrine. Nous aurons peut-être l'occasion de se reparler plus tard. D'ici là, je te souhaite une belle vie. ",
+      "text": "Ton&nbsp;absence d'imagination me&nbsp;chagrine. Nous&nbsp;aurons peut-être l'occasion de&nbsp;se&nbsp;reparler plus&nbsp;tard. D'ici&nbsp;là, je&nbsp;te&nbsp;souhaite une&nbsp;belle&nbsp;vie. ",
       "sender": "Ma Belle Mort",
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   },
@@ -52,7 +52,7 @@
     "component": "End",
     "data": {
       "text": null,
-      "btnLabel": "Redirection vers la page d'accueil"
+      "btnLabel": "Redirection vers la&nbsp;page d'accueil"
     },
     "delay": 2000
   },
@@ -60,9 +60,9 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "Vous avez libéré votre Belle Mort. Vous pouvez être en paix avec elle.\nNous vous remercions infiniment de votre participation et vous souhaitons une vie heureuse.\nPrenez soin de vous. Votre Belle Mort vous le rendra. ",
+      "text": "Vous avez libéré votre&nbsp;Belle&nbsp;Mort. Vous&nbsp;pouvez être en&nbsp;paix avec&nbsp;elle.\nNous&nbsp;vous&nbsp;remercions infiniment de&nbsp;votre&nbsp;participation et&nbsp;vous&nbsp;souhaitons une&nbsp;vie heureuse.\nPrenez soin de&nbsp;vous. Votre&nbsp;Belle&nbsp;Mort vous&nbsp;le&nbsp;rendra. ",
       "sender": "Admin",
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   },
@@ -71,7 +71,7 @@
     "component": "End",
     "data": {
       "text": null,
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   },
@@ -80,7 +80,7 @@
     "component": "End",
     "data": {
       "text": null,
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   },
@@ -88,9 +88,9 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "Ici Arte. Cette expérience est en réalité une étude comportementale au profit d'un prochain film documentaire. La représentation de votre \"Belle Mort\" fera l'objet d'une analyse psychologique anonyme. Nous vous remercions infiniment pour votre participation, et vous invitons à rejoindre notre communauté. À bientôt sur Arte.tv.",
+      "text": "Ici Arte. Cette&nbsp;expérience est en&nbsp;réalité une&nbsp;étude comportementale au&nbsp;profit d'un&nbsp;prochain film&nbsp;documentaire. La&nbsp;représentation de&nbsp;votre&nbsp;\"Belle&nbsp;Mort\" fera l'objet d'une&nbsp;analyse psychologique anonyme. Nous&nbsp;vous&nbsp;remercions infiniment pour&nbsp;votre&nbsp;participation, et&nbsp;vous&nbsp;invitons à&nbsp;rejoindre notre communauté. À&nbsp;bientôt sur&nbsp;Arte.tv.",
       "sender": "Arte",
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   },
@@ -98,9 +98,9 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "Pardonne-moi, mais je ne suis pas en mesure de continuer cette conversation. Ces quelques mots ont heurté ma sensibilité. Nous reparlerons peut-être plus tard.",
+      "text": "Pardonne-moi, mais je&nbsp;ne&nbsp;suis pas en&nbsp;mesure de&nbsp;continuer cette&nbsp;conversation. Ces&nbsp;quelques mots ont&nbsp;heurté ma&nbsp;sensibilité. Nous&nbsp;reparlerons peut-être plus&nbsp;tard.",
       "sender": "Ma Belle Mort",
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   },
@@ -108,9 +108,9 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "Ce premier contact avec toi m'a apaisée quant à notre relation. Tu es un esprit sain. Je n'ai jamais été aussi Belle, je t'en remercie. Nous nous reverrons, d'ici là je te souhaite une belle vie.",
+      "text": "Ce&nbsp;premier contact avec&nbsp;toi m'a&nbsp;apaisée quant à&nbsp;notre relation. Tu&nbsp;es&nbsp;un&nbsp;esprit sain. Je&nbsp;n'ai jamais été aussi Belle, je&nbsp;t'en&nbsp;remercie. Nous nous reverrons, d'ici là je&nbsp;te&nbsp;souhaite une&nbsp;belle&nbsp;vie.",
       "sender": "Ma Belle Mort",
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   },
@@ -118,9 +118,9 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "Je suis heureuse d'avoir obtenu ta confiance. Je te souhaite une belle et longue vie avant que l'on se rencontre à nouveau.",
+      "text": "Je&nbsp;suis heureuse d'avoir obtenu ta&nbsp;confiance. Je&nbsp;te&nbsp;souhaite une&nbsp;belle et&nbsp;longue&nbsp;vie avant que&nbsp;l'on se&nbsp;rencontre à&nbsp;nouveau.",
       "sender": "Ma Belle Mort",
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   },
@@ -128,9 +128,9 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "Bonjour (prénom), nous vous remercions de votre participation. Vos choix nous ont permi de récolter les données nécessaires pour votre Belle Mort. Nous espérons que votre conversation a été agréable.\nÀ bientôt,\nPrenez soin de vous.\nAdmin",
+      "text": "Bonjour&nbsp;*prénom*, nous vous remercions de&nbsp;votre participation. Vos&nbsp;choix nous ont permi de&nbsp;récolter les&nbsp;données nécessaires pour&nbsp;votre Belle&nbsp;Mort. Nous&nbsp;espérons que votre conversation a&nbsp;été agréable.\nÀ&nbsp;bientôt,\nPrenez soin de&nbsp;vous.\nAdmin",
       "sender": "Admin",
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   },
@@ -138,9 +138,9 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "Cette conversation touche à sa fin. Ma mission est réussie, je te suis reconnaissante. On s'est bien amusé ! Je peux repartir sereine \uD83D\uDE42 \nQuelque soit ta mort, elle sera belle si tu l'acceptes. Je te souhaite une belle vie, nous nous reverrons à l'issue de celle-ci. ",
+      "text": "Cette conversation touche à&nbsp;sa&nbsp;fin. Ma&nbsp;mission est&nbsp;réussie, je&nbsp;te&nbsp;suis reconnaissante. On&nbsp;s'est bien&nbsp;amusé&nbsp;! Je&nbsp;peux repartir sereine&nbsp;\uD83D\uDE42 \nQuelque&nbsp;soit ta&nbsp;mort, elle&nbsp;sera belle si&nbsp;tu&nbsp;l'acceptes. Je&nbsp;te&nbsp;souhaite une&nbsp;belle&nbsp;vie, nous&nbsp;nous reverrons à&nbsp;l'issue de&nbsp;celle-ci. ",
       "sender": "Ma Belle Mort",
-      "btnLabel": "Quitter la conversation"
+      "btnLabel": "Quitter la&nbsp;conversation"
     },
     "delay": 2000
   }
