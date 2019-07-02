@@ -4,7 +4,7 @@
     "component": "bubble-message",
     "data": {
       "text": [
-        "Enchantée ! Je suis ravie de pouvoir te parler grâce à ce système. \uD83D\uDE42",
+        "Enchantée&nbsp;! Je suis ravie de pouvoir te parler grâce à ce système. \uD83D\uDE42",
         "Bienvenue. Je te remercie d'avoir accepté de parler avec moi. \uD83D\uDE42",
         "Bienvenue ! Heureuse de te voir ici.",
         "Enchantée. Je me présente, je suis ta mort.",
