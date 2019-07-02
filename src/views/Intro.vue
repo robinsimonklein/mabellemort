@@ -1,6 +1,8 @@
 <template>
-    <div class="intro view">
+    <form class="intro view">
         <h1 class="intro__title">Ma Belle Mort</h1>
+        <input class="intro__forname" type="text" name="username" v-model="username" placeholder="Votre prénom..." />
+        <transition><div v-show="error" class="intro__forname--error">{{ error }}</div></transition>
         <h2 class="intro__subtitle">Contacts</h2>
         <div class="intro__contacts">
             <ul class="intro__list">
@@ -38,9 +40,9 @@
             </ul>
         </div>
         <div class="intro__btn">
-            <a @click.prevent="start" href="#" class="white-button">Commencer la discussion</a>
+            <input @click.prevent="start" type="submit" href="#" class="white-button" value="Commencer la discussion"/>
         </div>
-    </div>
+    </form>
 </template>
 
 <script>
@@ -49,11 +51,23 @@
 
     export default {
         name: "Outro",
+        data(){
+            return {
+                username: null,
+                error: null
+            }
+        },
         methods: {
-            ...Vuex.mapMutations(['SET_VIEW', 'SET_ACTUAL']),
+            ...Vuex.mapMutations(['SET_VIEW', 'SET_ACTUAL', "SET_USERNAME"]),
             start(){
-                this.SET_ACTUAL('m0');
-                this.SET_VIEW(null);
+                if(this.username && this.username.length > 2){
+                    this.error = null;
+                    this.SET_ACTUAL('m0');
+                    this.SET_VIEW(null);
+                    this.SET_USERNAME(this.username)
+                }else{
+                    this.error= "Vous devez entrer votre prénom."
+                }
             }
         }
     }
@@ -82,6 +96,25 @@
         font-weight: normal;
         margin-bottom: 0.5rem;
         padding: 0 2rem;
+    }
+
+    &__forname {
+        background-color: rgba(255,255,255,0.2);
+        border: none;
+        font-size: 1rem;
+        font-family: 'Millimetre', sans-serif;
+        padding: 1rem;
+        margin: 0 2rem;
+        outline: none;
+        color: white;
+        border-radius: 0.5rem;
+
+        &--error {
+            color: #D36B6B;
+            margin: 10px 0;
+            font-size: 0.8rem;
+            font-family: 'Millimetre', sans-serif;
+        }
     }
 
     &__contacts {

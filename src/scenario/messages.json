@@ -1198,7 +1198,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Je&nbsp;suis la&nbsp;Mère de&nbsp;Ta&nbsp;Belle&nbsp;Mort. J'ai&nbsp;veillé à&nbsp;ce&nbsp;que cette&nbsp;conversation se&nbsp;déroule bien. Merci&nbsp;Belle&nbsp;Mort, tu&nbsp;as&nbsp;été sage avec ton&nbsp;défunt. *Prénom*, j'espère que tu&nbsp;en&nbsp;as&nbsp;appris assez pour&nbsp;être en&nbsp;paix avec&nbsp;elle."
+        "Je&nbsp;suis la&nbsp;Mère de&nbsp;Ta&nbsp;Belle&nbsp;Mort. J'ai&nbsp;veillé à&nbsp;ce&nbsp;que cette&nbsp;conversation se&nbsp;déroule bien. Merci&nbsp;Belle&nbsp;Mort, tu&nbsp;as&nbsp;été sage avec ton&nbsp;défunt. {{prenom}}, j'espère que tu&nbsp;en&nbsp;as&nbsp;appris assez pour&nbsp;être en&nbsp;paix avec&nbsp;elle."
       ],
       "sender": "La Vie"
     },
@@ -1210,7 +1210,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Merci,&nbsp;Vie. Mon&nbsp;intervention s'arrête&nbsp;ici. Le&nbsp;temps me&nbsp;rattrape. *Prénom*, je&nbsp;suis heureuse d'avoir fait ta&nbsp;connaissance. Nous&nbsp;nous&nbsp;reverrons lors&nbsp;de&nbsp;notre véritable rencontre dans&nbsp;le&nbsp;monde&nbsp;réel."
+        "Merci,&nbsp;Vie. Mon&nbsp;intervention s'arrête&nbsp;ici. Le&nbsp;temps me&nbsp;rattrape. {{prenom}}, je&nbsp;suis heureuse d'avoir fait ta&nbsp;connaissance. Nous&nbsp;nous&nbsp;reverrons lors&nbsp;de&nbsp;notre véritable rencontre dans&nbsp;le&nbsp;monde&nbsp;réel."
       ],
       "sender": "Ma Belle Mort"
     },
@@ -1234,7 +1234,7 @@
     "component": "simple-message",
     "data": {
       "text": [
-        "Enchantée,&nbsp;*prénom*. \nBelle&nbsp;Mort, tes&nbsp;mensonges doivent cesser. Ton&nbsp;défunt mérite des&nbsp;explications."
+        "Enchantée,&nbsp;{{prenom}}. \nBelle&nbsp;Mort, tes&nbsp;mensonges doivent cesser. Ton&nbsp;défunt mérite des&nbsp;explications."
       ],
       "sender": "La Vérité"
     },

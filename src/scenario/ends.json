@@ -128,7 +128,7 @@
     "type": "interaction",
     "component": "End",
     "data": {
-      "text": "Bonjour&nbsp;*prénom*, nous vous remercions de&nbsp;votre participation. Vos&nbsp;choix nous ont permi de&nbsp;récolter les&nbsp;données nécessaires pour&nbsp;votre Belle&nbsp;Mort. Nous&nbsp;espérons que votre conversation a&nbsp;été agréable.\nÀ&nbsp;bientôt,\nPrenez soin de&nbsp;vous.\nAdmin",
+      "text": "Bonjour&nbsp;{{prénom}}, nous vous remercions de&nbsp;votre participation. Vos&nbsp;choix nous ont permi de&nbsp;récolter les&nbsp;données nécessaires pour&nbsp;votre Belle&nbsp;Mort. Nous&nbsp;espérons que votre conversation a&nbsp;été agréable.\nÀ&nbsp;bientôt,\nPrenez soin de&nbsp;vous.\nAdmin",
       "sender": "Admin",
       "btnLabel": "Quitter la&nbsp;conversation"
     },

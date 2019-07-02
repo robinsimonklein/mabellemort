@@ -14,7 +14,8 @@ const state = {
     actual: 'm0',
     userInteraction: false,
     loading: false,
-    bgColor: '#000'
+    bgColor: '#000',
+    username: null
 };
 
 const mutations = {
@@ -26,6 +27,9 @@ const mutations = {
     },
     SET_LOADING: (state, bool) => {
         state.loading = bool
+    },
+    SET_USERNAME: (state, username) => {
+        state.username = username
     },
     SET_DONE: (state, id) => {
         if(state.scenario[id]){
@@ -53,6 +57,7 @@ const getters = {
     scenario: state => state.scenario,
     userInteraction: state => state.userInteraction,
     loading: state => state.loading,
+    username: state => state.username,
 
     actualNode: state => {
         if(state.scenario[state.actual]) {
