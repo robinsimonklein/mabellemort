@@ -1,5 +1,5 @@
 import Vuex from 'vuex'
-import messages from './scenario/messages';
+import messages_prez from './scenario/messages_prez';
 import interactions from './scenario/interactions';
 import events from './scenario/events';
 import ends from './scenario/ends';
@@ -9,8 +9,9 @@ Vue.use(Vuex);
 
 const state = {
     testMode: true,
+    demoMode: true,
     view:null,
-    scenario: Object.assign({}, messages, interactions, events, ends),
+    scenario: Object.assign({}, messages_prez, interactions, events, ends),
     actual: 'm0',
     userInteraction: false,
     loading: false,
@@ -51,6 +52,7 @@ const mutations = {
 
 const getters = {
     testMode: state => state.testMode,
+    demoMode: state => state.demoMode,
     view: state => state.view,
     actual: state => state.actual,
     bgColor: state => state.bgColor,

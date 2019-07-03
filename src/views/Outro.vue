@@ -7,7 +7,7 @@
         </div>
         <div class="outro__message-wrap">
             <div class="outro__message">
-                La discution est terminée.
+                La discussion est terminée.
                 <br>
                 <br>
                 Merci d’avoir participé à l’expérience et à bientôt sur&nbsp;<a href="http://arte.tv" target="_blank">Arte.TV</a>

@@ -1,7 +1,7 @@
 <template>
     <div class="floating-message">
         <div class="floating-message__principal">
-            <img v-for="(asset, key) in assets" :key="key" :class="[{'large' : !data.parallax}, key===0 ? 'floating-message__principal-img' : 'floating-message__floating']" :ref="'asset-'+key" :src="assets[key]" />
+            <img v-for="(asset, key) in assets" :key="key" :class="[{'large' : !data.parallax}, key===0 ? 'floating-message__principal-img' : 'floating-message__floating']" :ref="'asset-'+key" :src="assets[key]" :data-rellax-speed="rellaxSpeeds[key]" data-rellax-percentage="0" />
         </div>
     </div>
 </template>
@@ -9,7 +9,8 @@
 <script>
     /* eslint-disable */
     import Vuex from 'vuex';
-    import imagesLoaded from 'imagesloaded'
+    import imagesLoaded from 'imagesloaded';
+    import Rellax from 'rellax';
 
     export default {
         name: "FloatingMessage",
@@ -31,7 +32,8 @@
         },
         data() {
             return {
-
+                rellax: null,
+                rellaxSpeeds: [0, 0.3, 0.6]
             }
         },
         computed: {
@@ -74,6 +76,7 @@
             const messagesContainer = document.querySelector('.messages-container');
             const images = document.querySelectorAll('.floating-message__floating');
 
+            /*
             messagesContainer.addEventListener('scroll', ()=>{
                 const scrollHeight  = messagesContainer.scrollTop;
                 images.forEach((image, index)=>{
@@ -82,6 +85,15 @@
 
                 console.log(scrollHeight)
             });
+
+             */
+
+            this.rellax = new Rellax('.floating-message__floating', {
+                wrapper: '.messages-container',
+                center: true
+            });
+
+            console.log(this.rellax)
         }
     }
 </script>

@@ -16,6 +16,8 @@
 </template>
 
 <script>
+    import Vuex from 'vuex';
+
     export default {
         name: 'CanvasDraw',
         props: {
@@ -73,6 +75,8 @@
             };
         },
         computed: {
+            ...Vuex.mapGetters(['demoMode']),
+
             width(){
                 return window.innerWidth - window.innerWidth*0.1
             },
@@ -183,7 +187,11 @@
                 // On détermine quelle étape sera la suivante
                 this.checkCanvas();
                 // On passe à l'étape suivante
-                this.$root.$emit('goToNextNode', this.calculatedNext);
+                if(!this.demoMode) {
+                    this.$root.$emit('goToNextNode', this.calculatedNext);
+                }else{
+                    this.$root.$emit('goToNextNode', "m22");
+                }
             }
         },
         mounted() {

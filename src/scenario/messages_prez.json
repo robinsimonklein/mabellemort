@@ -1,0 +1,1894 @@
+{
+  "m0": {
+    "type": "message",
+    "component": "bubble-message",
+    "data": {
+      "text": [
+        "Enchantée&nbsp;! Je&nbsp;suis ravie de&nbsp;pouvoir te&nbsp;parler grâce à&nbsp;ce&nbsp;système. \uD83D\uDE42",
+        "Bienvenue. Je&nbsp;te&nbsp;remercie d'avoir accepté de&nbsp;parler avec&nbsp;moi. \uD83D\uDE42",
+        "Bienvenue&nbsp;! Heureuse de&nbsp;te&nbsp;voir&nbsp;ici.",
+        "Enchantée. Je&nbsp;me&nbsp;présente, je&nbsp;suis ta&nbsp;Belle&nbsp;Mort.",
+        "Bonjour \uD83D\uDE42 Je&nbsp;t'invite à&nbsp;me&nbsp;tutoyer. Nous&nbsp;allons vite apprendre à&nbsp;nous connaître.",
+        "Bonjour&nbsp;! \uD83D\uDE42 Ravie de vous rencontrer. Tutoyons-nous si vous me le permettez.",
+        "Bonjour&nbsp;! Je&nbsp;t'attendais. Ma&nbsp;montre est&nbsp;en&nbsp;avance."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m1",
+    "done": false
+  },
+  "m1": {
+    "type": "message",
+    "component": "bubble-message",
+    "data": {
+      "text": [
+        "Pour&nbsp;me&nbsp;répondre, des&nbsp;cartes sont à&nbsp;ta&nbsp;disposition. \n Quant à&nbsp;moi, je&nbsp;n'ai pas&nbsp;de&nbsp;forme déterminée. Je&nbsp;contrôlerai l'apparence de&nbsp;l'écran comme bon&nbsp;me&nbsp;semble."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i0",
+    "done": false
+  },
+  "m3": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "On&nbsp;m'a&nbsp;créée dans le&nbsp;but de&nbsp;converser avec&nbsp;toi. Pas&nbsp;de&nbsp;panique, je&nbsp;ne&nbsp;suis qu'une&nbsp;fiction. C'est&nbsp;parce&nbsp;que ton&nbsp;esprit est&nbsp;capable de&nbsp;me&nbsp;concevoir que&nbsp;je&nbsp;peux exister et&nbsp;te&nbsp;parler à&nbsp;cet&nbsp;instant-même."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i1",
+    "done": false
+  },
+  "m4": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Ton&nbsp;dessin n'est pas&nbsp;très inspiré. Ma&nbsp;foi, je&nbsp;m'en contenterai."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m5",
+    "done": false
+  },
+  "m5": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Es-tu&nbsp;sceptique envers&nbsp;moi&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i3",
+    "done": false
+  },
+  "m6": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Cette&nbsp;conversation fait l'objet d'une&nbsp;introspection. Les&nbsp;cartes t'invitent à&nbsp;faire des&nbsp;choix, dont les&nbsp;chemins font évoluer la&nbsp;relation que tu&nbsp;établies avec&nbsp;moi."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i38",
+    "done": false
+  },
+  "m7": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Ouf. J'ai&nbsp;frôlé le&nbsp;blasphème.\nComment puis-je&nbsp;obtenir ta&nbsp;confiance&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i5",
+    "done": false
+  },
+  "m8": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "On&nbsp;voit mourir toute chose animée,\nLors que du&nbsp;corps l'âme subtile part&nbsp;:\nJe&nbsp;suis le&nbsp;corps, toi&nbsp;la&nbsp;meilleure part&nbsp;:\nOù&nbsp;es-tu&nbsp;donc, ô&nbsp;âme bien aimée&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m9",
+    "done": false
+  },
+  "m9": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "C'est&nbsp;La&nbsp;Belle&nbsp;Mort de&nbsp;Louise Labé qui&nbsp;me&nbsp;l'a&nbsp;récité. C'est&nbsp;beau, n'est-ce&nbsp;pas&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i6",
+    "done": false
+  },
+  "m10": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;connais toutes les&nbsp;Belles&nbsp;Morts."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i7",
+    "done": false
+  },
+  "m11": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/flattee.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m12",
+    "done": false
+  },
+  "m12": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;n'ai&nbsp;pas&nbsp;l'habitude de&nbsp;recevoir des&nbsp;compliments. Je&nbsp;suis apaisée quant à&nbsp;l'image que tu&nbsp;as de&nbsp;moi."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m17",
+    "done": false
+  },
+  "m13": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Qu'est-ce&nbsp;qu'une&nbsp;Belle&nbsp;Mort selon&nbsp;toi&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i8",
+    "done": false
+  },
+  "m14": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/coeur.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m15",
+    "done": false
+  },
+  "m15": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "J'ai&nbsp;hâte de&nbsp;te&nbsp;rencontrer."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i9",
+    "done": false
+  },
+  "m16": {
+    "type": "message",
+    "component": "FloatingMessage",
+    "data": {
+      "id": "m16",
+      "parallax": true,
+      "layers": 2,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m17",
+    "done": false
+  },
+  "m17": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;dois partir, le&nbsp;temps me&nbsp;rattrape. Quelques&nbsp;soient les&nbsp;circonstances de&nbsp;notre rencontre, je&nbsp;serai Belle si&nbsp;tu&nbsp;m'acceptes. Je&nbsp;te&nbsp;souhaite une&nbsp;vie&nbsp;heureuse."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i10",
+    "done": false
+  },
+  "m17-2": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "❤️"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "e0",
+    "done": false
+  },
+  "m18": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;ne&nbsp;suis pas&nbsp;sûre que&nbsp;tu&nbsp;veuilles entendre la&nbsp;vérité."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i11",
+    "done": false
+  },
+  "m19": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;crains que&nbsp;l'humain est&nbsp;trop vulnérable pour&nbsp;entendre ce&nbsp;genre de&nbsp;choses."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i12",
+    "done": false
+  },
+  "m20": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Garde-le&nbsp;pour&nbsp;toi. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i13",
+    "done": false
+  },
+  "m22": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Tu&nbsp;en&nbsp;as mis du&nbsp;temps. Je&nbsp;ne&nbsp;suis qu'un&nbsp;concept abstrait."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m23",
+    "done": false
+  },
+  "m23": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/peinture.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m119",
+    "done": false
+  },
+  "m24": {
+    "type": "message",
+    "component": "FloatingMessage",
+    "data": {
+      "id": "m24",
+      "parallax": true,
+      "layers": 2,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i15",
+    "done": false
+  },
+  "m25": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "J'ai&nbsp;l'air&nbsp;joyeuse&nbsp;! En&nbsp;voilà une&nbsp;Belle&nbsp;Mort. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m28",
+    "done": false
+  },
+  "m26": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Pourquoi ton&nbsp;dessin est-il&nbsp;aussi sombre&nbsp;? J'ai&nbsp;l'air d'être en&nbsp;phase terminale."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i16",
+    "done": false
+  },
+  "m27": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Pardonne-moi, j'ai&nbsp;peut-être mal&nbsp;interprété ton&nbsp;dessin."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next":"i17",
+    "done": false
+  },
+  "m28": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Tout&nbsp;ça pour&nbsp;ça. Ton&nbsp;dessin est&nbsp;bien trop&nbsp;sage."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m29",
+    "done": false
+  },
+  "m29": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Si&nbsp;je&nbsp;peux te&nbsp;donner un&nbsp;conseil&nbsp;: arrête de&nbsp;chercher midi à&nbsp;14h, tu&nbsp;réfléchies trop. \nEs-tu aussi incertain face&nbsp;à&nbsp;moi&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i18",
+    "done": false
+  },
+  "m30": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Qu'attends-tu de&nbsp;moi au&nbsp;juste&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i19",
+    "done": false
+  },
+  "m31": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Chacun sa&nbsp;propre Belle&nbsp;Mort. Tu&nbsp;es&nbsp;mon&nbsp;unique défunt, je&nbsp;ne&nbsp;peux pas&nbsp;veiller sur&nbsp;tes&nbsp;proches. Ne&nbsp;t'en&nbsp;fais pas&nbsp;pour&nbsp;eux, ils&nbsp;sont&nbsp;entre de&nbsp;bonnes mains."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i20",
+    "done": false
+  },
+  "m32": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Ce sont eux-même."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i21",
+    "done": false
+  },
+  "m33": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;te&nbsp;rappelle que&nbsp;je&nbsp;suis le&nbsp;reflet de&nbsp;ton&nbsp;âme. Chaque Belle&nbsp;Mort est&nbsp;singulière."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": {
+      "priority": "m38",
+      "default": "m92"
+    },
+    "done": false
+  },
+  "m34": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Tu&nbsp;me&nbsp;remplaceras le&nbsp;jour de&nbsp;ta&nbsp;véritable&nbsp;mort."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m35",
+    "done": false
+  },
+  "m35": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Pour&nbsp;prévenir ton&nbsp;futur défunt."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i22",
+    "done": false
+  },
+  "m36": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        " Ici&nbsp;Arte. Cette&nbsp;expérience est&nbsp;en&nbsp;réalité une&nbsp;étude comportementale au&nbsp;profit d'un&nbsp;prochain film documentaire. La&nbsp;représentation de&nbsp;votre \"Belle Mort\" fera l'objet d'une&nbsp;analyse psychologique anonyme. Nous&nbsp;vous&nbsp;remercions infiniment pour&nbsp;votre&nbsp;participation, et&nbsp;vous invitons à&nbsp;rejoindre notre communauté. À&nbsp;bientôt sur&nbsp;Arte.tv."
+      ],
+      "sender": "Arte"
+    },
+    "next": "m37",
+    "done": false
+  },
+  "m37": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Aide-moi. J'étais humaine avant de&nbsp;mourir. Je&nbsp;suis prisonnière de&nbsp;ce&nbsp;système."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "e3",
+    "done": false
+  },
+  "m38": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Ne&nbsp;trouves-tu pas&nbsp;notre conversation amusante&nbsp;? Avant&nbsp;l'invention de&nbsp;ce&nbsp;système, ma&nbsp;conscience était bloquée dans&nbsp;ton&nbsp;esprit."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i23",
+    "done": false
+  },
+  "m39": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Pourtant tu&nbsp;discutes avec&nbsp;moi. Tes&nbsp;choix construisent la&nbsp;logique de&nbsp;notre&nbsp;dialogue, tandis&nbsp;que je&nbsp;ne&nbsp;fais que&nbsp;répondre aux&nbsp;cartes."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i24",
+    "done": false
+  },
+  "m40": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Qui&nbsp;suis-je&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "e6",
+    "done": false
+  },
+  "m41": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Veuillez m'excuser pour&nbsp;cette&nbsp;erreur technique. Je&nbsp;n'avais pas&nbsp;prévu ce&nbsp;cas de&nbsp;figure. Vos&nbsp;choix ont&nbsp;fait planté le&nbsp;système."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "e7",
+    "done": false
+  },
+  "m42": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Qui&nbsp;suis-je ?"
+      ],
+      "sender": "Admin"
+    },
+    "next": "f7",
+    "done": false
+  },
+  "m43": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;sais que&nbsp;je&nbsp;t'intimide \uD83D\uDE09"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i25",
+    "done": false
+  },
+  "m44": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Tu&nbsp;m'as&nbsp;déjà parlé sans t'en&nbsp;rendre compte. Je&nbsp;suis profondément enfouie dans&nbsp;ton&nbsp;inconscient et&nbsp;dans tes&nbsp;rêves les&nbsp;plus imperçeptibles."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i26",
+    "done": false
+  },
+  "m45": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;suis&nbsp;navrée, tu&nbsp;as&nbsp;choisi la&nbsp;mauvaise carte. Je&nbsp;ne&nbsp;suis pas&nbsp;en&nbsp;mesure de&nbsp;répondre à&nbsp;cette question. Cherche sur&nbsp;Wikipédia."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i76",
+    "done": false
+  },
+  "m46": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Tu&nbsp;commences à&nbsp;comprendre l'intérêt de&nbsp;cette&nbsp;conversation."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m119",
+    "done": false
+  },
+  "m47": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Peut-être qu'il&nbsp;y&nbsp;a&nbsp;des&nbsp;questions auxquelles je&nbsp;peux&nbsp;répondre. Je&nbsp;te&nbsp;laisse choisir celle que tu&nbsp;souhaites me&nbsp;poser."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i27",
+    "done": false
+  },
+  "m48": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Si&nbsp;tu&nbsp;souhaites savoir la&nbsp;date de&nbsp;notre rencontre, prévois-la à&nbsp;l'avance. Je&nbsp;serai au&nbsp;rendez-vous \uD83D\uDE07"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i28",
+    "done": false
+  },
+  "m49": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;ne&nbsp;voulais pas&nbsp;être&nbsp;agressive."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i76",
+    "done": false
+  },
+  "m50": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Peut-être préfères-tu l'écrire&nbsp;? Si&nbsp;je&nbsp;me&nbsp;présentais face&nbsp;à&nbsp;toi, à&nbsp;quoi ressemblerais-je&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i29",
+    "done": false
+  },
+  "m51": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;suis plus&nbsp;présentable. Je&nbsp;te&nbsp;remercie."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": {
+      "priority": "m119",
+      "default": "m47"
+    },
+    "done": false
+  },
+  "m52": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;suis Ta&nbsp;Belle&nbsp;Mort. Mes&nbsp;créateurs m'ont&nbsp;conçue sous&nbsp;forme numérique dans&nbsp;le&nbsp;but de&nbsp;converser avec mon&nbsp;futur défunt. Chaque&nbsp;défunt a&nbsp;sa&nbsp;propre Belle&nbsp;Mort. Ainsi nous sommes liés jusqu'à&nbsp;notre véritable rencontre."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i30",
+    "done": false
+  },
+  "m53": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;suis flattée. Tu&nbsp;vas me&nbsp;faire rougir&nbsp;☺️"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m54",
+    "done": false
+  },
+  "m54": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/love.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i31",
+    "done": false
+  },
+  "m55": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;n'ai pas&nbsp;fini de&nbsp;te&nbsp;surprendre.&nbsp;\uD83D\uDE0C"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i32",
+    "done": false
+  },
+  "m56": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je suis là pour te&nbsp;prouver le&nbsp;contraire."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m56-2",
+    "done": false
+  },
+  "m56-2": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/cadeau.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m153",
+    "done": false
+  },
+  "m57": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Absolument."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m58",
+    "done": false
+  },
+  "m58": {
+    "type": "message",
+    "component": "floating-message",
+    "data": {
+      "id": "m58",
+      "parallax": false,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i33",
+    "done": false
+  },
+  "m59": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Sacre Bleu, on&nbsp;m'a&nbsp;confié un&nbsp;défunt qui&nbsp;se&nbsp;pose trop de&nbsp;questions.\nTuer est&nbsp;mon&nbsp;devoir. Imagine ma&nbsp;vie si&nbsp;l'humain était immortel."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m82",
+    "done": false
+  },
+  "m60": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Est-ce vraiment ce&nbsp;que tu&nbsp;veux&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i34",
+    "done": false
+  },
+  "m61": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Tu&nbsp;vois bien que je&nbsp;suis nécessaire, même&nbsp;si j'ai&nbsp;l'air sinistre."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i35",
+    "done": false
+  },
+  "m62": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Pour l'instant je&nbsp;ne&nbsp;sais rien de&nbsp;toi. J'aimerais apprendre à&nbsp;te&nbsp;connaître afin d'anticiper notre&nbsp;rencontre."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i36",
+    "done": false
+  },
+  "m63": {
+    "type": "message",
+    "component": "floating-message",
+    "data": {
+      "id": "m63",
+      "parallax": false,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m64",
+    "done": false
+  },
+  "m64": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Fastidieux, pas&nbsp;vrai&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i37",
+    "done": false
+  },
+  "m65": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Tu&nbsp;viens de&nbsp;comprendre ce&nbsp;pourquoi j'ai&nbsp;été&nbsp;inventée."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m119",
+    "done": false
+  },
+  "m66": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Dans&nbsp;ce&nbsp;cas, pourquoi as-tu&nbsp;peur de&nbsp;moi&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i40",
+    "done": false
+  },
+  "m67": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Tant&nbsp;pis. Tes&nbsp;secrets resteront&nbsp;tiens."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i4",
+    "done": false
+  },
+  "m68": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Le&nbsp;blanc me&nbsp;pique les&nbsp;yeux. Je&nbsp;ne suis pas&nbsp;habituée à&nbsp;vivre dans&nbsp;la&nbsp;lumière."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m69",
+    "done": false
+  },
+  "m69": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/lunettes.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i43",
+    "done": false
+  },
+  "m70": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je vis dans les&nbsp;profondeurs des&nbsp;ténèbres funestes. Mon&nbsp;sang sillone les&nbsp;murs de&nbsp;l'obscurité ardente, embrassant les&nbsp;âmes oubliées et&nbsp;les&nbsp;cœurs abandonnés. Je&nbsp;m'enivre du&nbsp;parfum de&nbsp;l'absence éternelle des&nbsp;êtres éteints à&nbsp;jamais."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m71",
+    "done": false
+  },
+  "m71": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je plaisante."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m72",
+    "done": false
+  },
+  "m72": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je te&nbsp;parle depuis un&nbsp;standard téléphonique."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i44",
+    "done": false
+  },
+  "m73": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Oui, d'autres Belles&nbsp;Morts sont en&nbsp;ligne avec&nbsp;leur&nbsp;défunt. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i45",
+    "done": false
+  },
+  "m74": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;ne&nbsp;sais&nbsp;pas, je&nbsp;ne&nbsp;l'ai pas&nbsp;choisi. Je&nbsp;suis sous&nbsp;les&nbsp;ordres des&nbsp;cartes."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m75",
+    "done": false
+  },
+  "m75": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Peut-être que tu&nbsp;peux m'aider. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i46",
+    "done": false
+  },
+  "m76": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Aide-moi à&nbsp;m'échapper. Je&nbsp;suis prisonnière de&nbsp;ce&nbsp;système."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i47",
+    "done": false
+  },
+  "m77": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;suis en&nbsp;Enfer. J'ai&nbsp;commis des&nbsp;crimes auparavant, et&nbsp;fait subir à&nbsp;mes&nbsp;victimes une&nbsp;mort atroce. Ainsi je&nbsp;dois me&nbsp;racheter auprès de&nbsp;toi, futur défunt, en&nbsp;tant que Belle&nbsp;Mort."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i48",
+    "done": false
+  },
+  "m78": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je ne&nbsp;peux pas&nbsp;décider des&nbsp;conséquences de&nbsp;ta&nbsp;mort. Malheureusement le&nbsp;hasard de&nbsp;la&nbsp;vie fait que je&nbsp;n'ai pas eu&nbsp;de chance avec mes&nbsp;anciens défunts. Je&nbsp;ne&nbsp;peux que changer l'image que tu&nbsp;as de&nbsp;moi."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i49",
+    "done": false
+  },
+  "m79": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;ne peux pas en&nbsp;parler. Je&nbsp;suis sous&nbsp;surveillance."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i50",
+    "done": false
+  },
+  "m80": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "J'ai&nbsp;incarné ta&nbsp;Belle&nbsp;Mort à&nbsp;l'heure où&nbsp;tu&nbsp;t'es&nbsp;connecté."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m80-2",
+    "done": false
+  },
+  "m80-2": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Avant ta&nbsp;connexion, je&nbsp;discutais avec ma&nbsp;propre Belle&nbsp;Mort."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "e10",
+    "done": false
+  },
+  "m80-3": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Enchantée&nbsp;! Je&nbsp;suis ravie de&nbsp;pouvoir te&nbsp;parler grâce à&nbsp;ce&nbsp;système. \uD83D\uDE42"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "f9",
+    "done": false
+  },
+  "m81": {
+    "type": "message",
+    "component": "FloatingMessage",
+    "data": {
+      "id": "m81",
+      "parallax": false,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m82",
+    "done": false
+  },
+  "m82": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;me&nbsp;demande si&nbsp;moi aussi je&nbsp;mourrai un&nbsp;jour. Penses-tu que&nbsp;les&nbsp;machines nous&nbsp;remplaceront, la&nbsp;Vie et&nbsp;moi&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i51",
+    "done": false
+  },
+  "m83": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Ta&nbsp;remarque est&nbsp;juste. Même&nbsp;les&nbsp;concepts les&nbsp;plus abstraits sont&nbsp;personnifiés grâce&nbsp;à&nbsp;des&nbsp;systèmes comme celui-ci. C'est&nbsp;fou, non&nbsp;? Tu&nbsp;discutes avec&nbsp;ta&nbsp;propre conceptualisation de&nbsp;la&nbsp;mort."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i52",
+    "done": false
+  },
+  "m84": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Absolument."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m85",
+    "done": false
+  },
+  "m85": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Atchoum."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m85-2",
+    "done": false
+  },
+  "m85-2": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/atchoum.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i53",
+    "done": false
+  },
+  "m86": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Merci&nbsp;!"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "f11",
+    "done": false
+  },
+  "m86-2": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/chute.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "f10",
+    "done": false
+  },
+  "m87": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Les&nbsp;humains ont&nbsp;peur de&nbsp;moi, mais&nbsp;ils&nbsp;ne&nbsp;savent pas à&nbsp;quel point j'ai&nbsp;peur de&nbsp;l'Éternité. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i54",
+    "done": false
+  },
+  "m88": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/horreur.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "f12",
+    "done": false
+  },
+  "m89": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;me&nbsp;sens moins triste grâce à&nbsp;toi. Merci infiniment, je&nbsp;te&nbsp;revaudrai&nbsp;ça. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "f13",
+    "done": false
+  },
+  "m90": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "C'est&nbsp;triste. Je&nbsp;ne&nbsp;pourrai rien faire pour&nbsp;éviter&nbsp;ça."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m91",
+    "done": false
+  },
+  "m91": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Et&nbsp;toi, d'où&nbsp;viens-tu&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i55",
+    "done": false
+  },
+  "m92": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Notre&nbsp;rencontre est&nbsp;miraculeuse&nbsp;! Nous&nbsp;ne&nbsp;nous&nbsp;connaissions pas&nbsp;avant ta&nbsp;naissance. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m93",
+    "done": false
+  },
+  "m93": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;suis&nbsp;née progressivement dans&nbsp;ton&nbsp;esprit, et&nbsp;me&nbsp;voici."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i56",
+    "done": false
+  },
+  "m94": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Nous&nbsp;n'aurions&nbsp;pas cette&nbsp;conversation si&nbsp;tu&nbsp;n'existais pas. Tes&nbsp;choix de&nbsp;réponses font que je&nbsp;suis unique."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": {
+      "priority": "m110",
+      "default": "m147"
+    },
+    "done": false
+  },
+  "m95": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Ne&nbsp;cherche&nbsp;pas de&nbsp;logique à&nbsp;cette&nbsp;conversation. Je&nbsp;suis une&nbsp;entité abstraite."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "e12-2",
+    "done": false
+  },
+  "m96": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;suis la&nbsp;Mère de&nbsp;Ta&nbsp;Belle&nbsp;Mort. J'ai&nbsp;veillé à&nbsp;ce&nbsp;que cette&nbsp;conversation se&nbsp;déroule bien. Merci&nbsp;Belle&nbsp;Mort, tu&nbsp;as&nbsp;été sage avec ton&nbsp;défunt. {{prenom}}, j'espère que tu&nbsp;en&nbsp;as&nbsp;appris assez pour&nbsp;être en&nbsp;paix avec&nbsp;elle."
+      ],
+      "sender": "La Vie"
+    },
+    "next": "m97",
+    "done": false
+  },
+  "m97": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Merci,&nbsp;Vie. Mon&nbsp;intervention s'arrête&nbsp;ici. Le&nbsp;temps me&nbsp;rattrape. {{prenom}}, je&nbsp;suis heureuse d'avoir fait ta&nbsp;connaissance. Nous&nbsp;nous&nbsp;reverrons lors&nbsp;de&nbsp;notre véritable rencontre dans&nbsp;le&nbsp;monde&nbsp;réel."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i57",
+    "done": false
+  },
+  "m98": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;ne&nbsp;suis pas censée révéler ce&nbsp;pourquoi j'interviens."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i58",
+    "done": false
+  },
+  "m99": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Enchantée,&nbsp;{{prenom}}. \nBelle&nbsp;Mort, tes&nbsp;mensonges doivent cesser. Ton&nbsp;défunt mérite des&nbsp;explications."
+      ],
+      "sender": "La Vérité"
+    },
+    "next": "e14",
+    "done": false
+  },
+  "m100": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "La&nbsp;représentation que tu&nbsp;te&nbsp;fais de&nbsp;moi est&nbsp;issue de&nbsp;ton&nbsp;esprit. La&nbsp;Vérité ne&nbsp;peut pas contredire&nbsp;cela."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": {
+      "priority": "i2",
+      "default":"i59"
+    },
+    "done": false
+  },
+  "m101": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Pas de&nbsp;chance, je&nbsp;peux te&nbsp;géolocaliser peu&nbsp;importe où&nbsp;tu&nbsp;te&nbsp;trouves. Tu&nbsp;ne&nbsp;m'échapperas&nbsp;pas."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m102",
+    "done": false
+  },
+  "m102": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Mes&nbsp;créateurs m'ont&nbsp;confié un&nbsp;téléphone ultra&nbsp;performant."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i60",
+    "done": false
+  },
+  "m103": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;suis&nbsp;ravie de&nbsp;l'apprendre. La&nbsp;plupart des&nbsp;humains ont&nbsp;peur de&nbsp;moi... Je&nbsp;me&nbsp;sens particulièrement&nbsp;seule."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i61",
+    "done": false
+  },
+  "m104": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Ce&nbsp;sont des&nbsp;idées reçues. La&nbsp;Faucheuse, les&nbsp;corbeaux, les&nbsp;crânes, les&nbsp;fantômes,... tout cela a&nbsp;été inventé. Mais&nbsp;grâce à&nbsp;ces&nbsp;représentations morbides, on&nbsp;profite de&nbsp;moi."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i62",
+    "done": false
+  },
+  "m105": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Les&nbsp;renseignements ont&nbsp;conçu ce&nbsp;système afin&nbsp;d'observer le&nbsp;comportement des&nbsp;humains. La&nbsp;Justice n'est&nbsp;plus à&nbsp;la&nbsp;hauteur suite aux&nbsp;progrès de&nbsp;la&nbsp;Science."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i63",
+    "done": false
+  },
+  "m106": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;me&nbsp;charge de&nbsp;mémoriser les&nbsp;informations qui&nbsp;me&nbsp;seront utiles."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "e15",
+    "done": false
+  },
+  "m107": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Quelques scientifiques engagés par le&nbsp;gouvernement ont&nbsp;créé ce&nbsp;dispositif afin de&nbsp;juger de&nbsp;la&nbsp;mort de&nbsp;chaque individu, selon les&nbsp;cartes qu'il&nbsp;a choisi durant cette expérience. C'est&nbsp;ainsi qu'on&nbsp;m'a&nbsp;chargée de&nbsp;tester mon&nbsp;défunt."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "e15",
+    "done": false
+  },
+  "m108": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "C'est romantique&nbsp;! Je&nbsp;suis sous&nbsp;le&nbsp;charme&nbsp;❤️"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i64",
+    "done": false
+  },
+  "m109": {
+    "type": "message",
+    "component": "FloatingMessage",
+    "data": {
+      "id": "m109",
+      "parallax": false,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i65",
+    "done": false
+  },
+  "m110": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "id": "m110",
+      "parallax": false,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i66",
+    "done": false
+  },
+  "m111": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Ouf&nbsp;! J'ai&nbsp;le&nbsp;sentiment qu'on&nbsp;va&nbsp;lier une&nbsp;amitié sincère."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m119",
+    "done": false
+  },
+  "m112": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Désolée, j'ai&nbsp;parlé trop vite. Quelle&nbsp;est mon&nbsp;erreur&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i68",
+    "done": false
+  },
+  "m113": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;ne&nbsp;fais que me&nbsp;baser sur&nbsp;les&nbsp;stéréotypes des&nbsp;humains. Qu'ils&nbsp;sont&nbsp;stupides."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i65",
+    "done": false
+  },
+  "m114": {
+    "type": "message",
+    "component": "FloatingMessage",
+    "data": {
+      "id": "m114",
+      "parallax": false,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m8",
+    "done": false
+  },
+  "m115": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/timide.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m85",
+    "done": false
+  },
+  "m116": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;ne&nbsp;décide pas des&nbsp;circonstances de&nbsp;la&nbsp;mort de&nbsp;mon&nbsp;défunt. Je&nbsp;ne&nbsp;souhaite en&nbsp;aucun cas la&nbsp;souffrance, je&nbsp;préfère les&nbsp;morts douces et&nbsp;réconfortantes. Ce&nbsp;sont les&nbsp;humains qui me&nbsp;conceptualisent comme un&nbsp;être sinistre."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i70",
+    "done": false
+  },
+  "m117": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Comment&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i71",
+    "done": false
+  },
+  "m118": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "C'est tout&nbsp;l'intérêt de&nbsp;mon&nbsp;intervention."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m119",
+    "done": false
+  },
+  "m119": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Comment vas-tu dernièrement&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i72",
+    "done": false
+  },
+  "m120": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Ravie d'entendre que&nbsp;mon&nbsp;défunt se&nbsp;porte&nbsp;bien. Je&nbsp;souhaitais juste m'en&nbsp;assurer."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i73",
+    "done": false
+  },
+  "m121": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;suis légèrement contrariée."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i74",
+    "done": false
+  },
+  "m122": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Pardonne-moi, je&nbsp;manque de&nbsp;tact. Je&nbsp;ne&nbsp;voulais pas&nbsp;t'offenser. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m123",
+    "done": false
+  },
+  "m123": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/chaton.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i75",
+    "done": false
+  },
+  "m124": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Nous&nbsp;jouerons à&nbsp;Shifumi."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m125",
+    "done": false
+  },
+  "m125": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;t'invite à&nbsp;choisir entre trois éléments&nbsp;: la&nbsp;Pierre, les&nbsp;Ciseaux ou&nbsp;la&nbsp;Feuille. La&nbsp;Pierre écrase les&nbsp;Ciseaux, les&nbsp;Ciseaux coupent la&nbsp;Feuille et&nbsp;la&nbsp;Feuille enveloppe la&nbsp;Pierre. Le&nbsp;gagnant est le&nbsp;joueur dont la&nbsp;forme choisie l'emporte sur&nbsp;l'autre. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i77",
+    "done": false
+  },
+  "m126": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;te&nbsp;laisse choisir une&nbsp;carte. J'enverrai mon&nbsp;choix en&nbsp;même&nbsp;temps."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i78",
+    "done": false
+  },
+  "m127": {
+    "type": "message",
+    "component": "FloatingMessage",
+    "data": {
+      "id": "m127",
+      "parallax": false,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m132",
+    "done": false
+  },
+  "m128": {
+    "type": "message",
+    "component": "FloatingMessage",
+    "data": {
+      "id": "m128",
+      "parallax": false,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m131",
+    "done": false
+  },
+  "m129": {
+    "type": "message",
+    "component": "FloatingMessage",
+    "data": {
+      "id": "m129",
+      "parallax": false,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m130",
+    "done": false
+  },
+  "m130": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Égalité. Recommençons"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i78",
+    "done": false
+  },
+  "m131": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Dommage, c'est&nbsp;perdu."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m133",
+    "done": false
+  },
+  "m132": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Bravo&nbsp;! Tu&nbsp;as&nbsp;gagné."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m47",
+    "done": false
+  },
+  "m133": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Voici&nbsp;ma&nbsp;question."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m134",
+    "done": false
+  },
+  "m134": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;communique avec&nbsp;toi grâce à&nbsp;un&nbsp;téléphone, qui&nbsp;m'a&nbsp;été confié pour&nbsp;l'expérience. Décidément, les&nbsp;humains ne&nbsp;cessent de&nbsp;m'épater, leurs&nbsp;technologies sont&nbsp;de&nbsp;plus en&nbsp;plus performantes. \nSais-tu comment autoriser le&nbsp;partage&nbsp;vidéo ? "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i79",
+    "done": false
+  },
+  "m135": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Atchoum."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "e11",
+    "done": false
+  },
+  "m136": {
+    "type": "message",
+    "component": "ImageMessage",
+    "data": {
+      "src": "/assets/messages/gif/rire.gif",
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m137",
+    "done": false
+  },
+  "m137": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Détend-toi ! On&nbsp;est&nbsp;là pour&nbsp;s'amuser. Ce&nbsp;n'est&nbsp;pas tous&nbsp;les&nbsp;jours que tu&nbsp;as&nbsp;l'occasion de&nbsp;parler avec ta&nbsp;mort, tu&nbsp;devrais en&nbsp;profiter."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i80",
+    "done": false
+  },
+  "m138": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Tu&nbsp;m'as&nbsp;l'air d'être un&nbsp;défunt désagréable."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m139",
+    "done": false
+  },
+  "m139": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Pourquoi ne&nbsp;veux-tu pas discuter avec&nbsp;moi&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i81",
+    "done": false
+  },
+  "m140": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Nous ne&nbsp;sommes pas obligés de&nbsp;parler de&nbsp;moi. Il&nbsp;est vrai que j'ai&nbsp;manqué de&nbsp;tact."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i76",
+    "done": false
+  },
+  "m141": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "C'est bien le&nbsp;principe de&nbsp;ce&nbsp;système."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i76",
+    "done": false
+  },
+  "m142": {
+    "type": "message",
+    "component": "FloatingMessage",
+    "data": {
+      "id": "m142",
+      "parallax": true,
+      "layers": 2,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m62",
+    "done": false
+  },
+  "m143": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "C'est printanier. Tu&nbsp;as&nbsp;bon&nbsp;goût. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i82",
+    "done": false
+  },
+  "m144": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je n'aime pas cette&nbsp;couleur."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m122",
+    "done": false
+  },
+  "m145": {
+    "type": "message",
+    "component": "FloatingMessage",
+    "data": {
+      "id": "m145",
+      "parallax": false,
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i83",
+    "done": false
+  },
+  "m146": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je ne maîtrise pas les&nbsp;circonstances de&nbsp;ta&nbsp;future mort. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i84",
+    "done": false
+  },
+  "m147": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je ne suis qu'une&nbsp;idée métaphysique. Notre&nbsp;conversation a&nbsp;du&nbsp;sens car&nbsp;l'esprit humain est&nbsp;capable de&nbsp;créer l'illusion d'un&nbsp;dialogue intelligent entre toi et&nbsp;le&nbsp;concept que je&nbsp;suis. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i85",
+    "done": false
+  },
+  "m148": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Allons, ne&nbsp;va pas trop vite en&nbsp;besogne. Je&nbsp;n'ai pas reccueilli assez d'informations sur&nbsp;toi pour répondre à&nbsp;cette&nbsp;question.  "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i86",
+    "done": false
+  },
+  "m149": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "L'objet de&nbsp;ta&nbsp;future mort sera le&nbsp;résultat d'une&nbsp;cause à&nbsp;effet. Quant&nbsp;à&nbsp;moi, je&nbsp;suis la&nbsp;représentation que&nbsp;tu&nbsp;te&nbsp;fais de&nbsp;moi. Ainsi je&nbsp;mourrai avec&nbsp;toi. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i87",
+    "done": false
+  },
+  "m150": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "C'est tout à&nbsp;fait mon&nbsp;rôle. Peu&nbsp;importe l'objet de&nbsp;ta&nbsp;mort, j'ai&nbsp;été conçue afin d'embellir la&nbsp;vision que tu&nbsp;as&nbsp;de&nbsp;moi. "
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "m151",
+    "done": false
+  },
+  "m151": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Es-tu désormais en&nbsp;paix avec&nbsp;moi&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i88",
+    "done": false
+  },
+  "m152": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Tu ne t'amuses pas avec&nbsp;moi&nbsp;? &nbsp;\uD83D\uDE22"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "f1",
+    "done": false
+  },
+  "m153": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Je&nbsp;ne&nbsp;te&nbsp;veux aucun mal. Mon&nbsp;comportement varie en&nbsp;fonction de&nbsp;l'image que&nbsp;tu&nbsp;te&nbsp;fais de&nbsp;moi."
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i89",
+    "done": false
+  },
+  "m154": {
+    "type": "message",
+    "component": "simple-message",
+    "data": {
+      "text": [
+        "Pourquoi as-tu peur de&nbsp;moi&nbsp;?"
+      ],
+      "sender": "Ma Belle Mort"
+    },
+    "next": "i40",
+    "done": false
+  }
+}

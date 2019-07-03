@@ -1,7 +1,7 @@
 <template>
     <form class="intro view">
         <h1 class="intro__title">Ma Belle Mort</h1>
-        <input class="intro__forname" type="text" name="username" v-model="username" placeholder="Votre prénom..." />
+        <input class="intro__forname" type="text" name="username" v-model="username" placeholder="Votre prénom..." autocomplete="off" />
         <transition><div v-show="error" class="intro__forname--error">{{ error }}</div></transition>
         <h2 class="intro__subtitle">Contacts</h2>
         <div class="intro__contacts">
@@ -50,7 +50,7 @@
     import Vuex from 'vuex';
 
     export default {
-        name: "Outro",
+        name: "Intro",
         data(){
             return {
                 username: null,
