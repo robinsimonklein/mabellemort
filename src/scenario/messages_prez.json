@@ -272,7 +272,7 @@
       "src": "/assets/messages/gif/peinture.gif",
       "sender": "Ma Belle Mort"
     },
-    "next": "m119",
+    "next": "m24",
     "done": false
   },
   "m24": {
@@ -284,7 +284,7 @@
       "layers": 2,
       "sender": "Ma Belle Mort"
     },
-    "next": "i15",
+    "next": "m119",
     "done": false
   },
   "m25": {

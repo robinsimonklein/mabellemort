@@ -8,11 +8,11 @@ import Vue from "vue";
 Vue.use(Vuex);
 
 const state = {
-    testMode: false,
+    testMode: true,
     demoMode: true,
     view:null,
     scenario: Object.assign({}, messages_prez, interactions, events, ends),
-    actual: 'm0',
+    actual: 'm23',
     userInteraction: false,
     loading: false,
     bgColor: '#000',
