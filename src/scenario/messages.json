@@ -1738,11 +1738,11 @@
   },
   "m142": {
     "type": "message",
-    "component": "simple-message",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Pourquoi les&nbsp;humains apprécient autant cette&nbsp;couleur&nbsp;? "
-      ],
+      "id": "m142",
+      "parallax": true,
+      "layers": 2,
       "sender": "Ma Belle Mort"
     },
     "next": "m62",

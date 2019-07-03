@@ -11,7 +11,7 @@ const state = {
     testMode: true,
     view:null,
     scenario: Object.assign({}, messages, interactions, events, ends),
-    actual: 'm16',
+    actual: 'm0',
     userInteraction: false,
     loading: false,
     bgColor: '#000',
