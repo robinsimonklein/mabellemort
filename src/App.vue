@@ -9,6 +9,7 @@
           </div>
           <Frame></Frame>
           <component v-if="userInteraction" :is="actualNode.component" :data="actualNode.data"></component>
+          <component v-if="view" :is="view"></component>
       </div>
   </div>
 </template>
@@ -19,6 +20,10 @@
     import Vuex from 'vuex';
     import Frame from "./components/Frame";
 
+    // Import views
+    import Intro from './views/Intro';
+    import Outro from './views/Outro';
+
     //Import message components
     import Message from "./components/messages/Message";
     import LoadingMessage from "./components/messages/LoadingMessage";
@@ -26,6 +31,8 @@
     import BubbleMessage from "./components/messages/BubbleMessage";
     import ImageMessage from "./components/messages/ImageMessage";
     import FloatingMessage from "./components/messages/FloatingMessage";
+
+    //Import events components
     import ConversationEvent from "./components/messages/ConversationEvent";
 
     //Import interactions components
@@ -60,8 +67,6 @@ export default {
             });
         },
         printMessage(message, waiting){
-            // Masquer l'interaction de l'utilisateur
-            this.DISABLE_USER_INTERACTION();
 
             setTimeout(() => {
                 // Afficher "... est en train d'écrire"
@@ -80,7 +85,11 @@ export default {
         },
         displayNode(node){
 
-            this.SET_DONE(node);
+
+            // Masquer l'interaction de l'utilisateur
+            this.DISABLE_USER_INTERACTION();
+
+            this.SET_DONE(this.actual);
 
             switch (node.type) {
                 case 'message':
@@ -99,7 +108,6 @@ export default {
                             this.ACTIVATE_USER_INTERACTION();
                         }, node.delay && !this.testMode ? node.delay : 0);
                     }
-
                     break;
                 default:
                     console.error('%cUne erreur s\'est produite : le noeud demandé n\'existe pas.', 'font-weight: bold');
@@ -111,7 +119,7 @@ export default {
             if(this.actualNode) {
                 this.displayNode(this.actualNode);
             }else{
-                // TODO: Erreur, le noeud suivant n'existe pas
+                // TODO: Error, next node doesn't exists
             }
         },
         scrollMessagesDown(){
@@ -121,13 +129,13 @@ export default {
                 behavior: 'smooth'}
             );
         },
-        reziseApp(){
+        resizeApp(){
             document.body.style.height = window.innerHeight+"px";
         }
 
     },
     computed: {
-        ...Vuex.mapGetters(['testMode', 'actual', 'scenario', 'bgColor', 'userInteraction', 'loading', 'actualNode', 'state'])
+        ...Vuex.mapGetters(['testMode', 'view', 'actual', 'scenario', 'bgColor', 'userInteraction', 'loading', 'actualNode', 'state'])
     },
     mounted(){
 
@@ -143,13 +151,17 @@ export default {
             this.goToNextNode(nextId);
         });
 
-        this.reziseApp();
-        window.onresize = this.reziseApp;
+        // Fix mobile navbar viewport
+        this.resizeApp();
+        window.onresize = this.resizeApp;
 
+        // Display first node at launching
         this.displayNode(this.actualNode);
 
     },
     components: {
+        Intro,
+        Outro,
         Frame,
         LoadingMessage,
         SimpleMessage,
@@ -181,7 +193,7 @@ export default {
       align-items: center;
       justify-content: center;
 
-      font-family: 'Messapia', Helvetica, Arial, sans-serif;
+      font-family: 'Helvetica', Helvetica, Arial, sans-serif;
       font-weight: bold;
       font-size: 0.8rem;
       -webkit-font-smoothing: antialiased;

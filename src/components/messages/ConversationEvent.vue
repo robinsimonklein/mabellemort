@@ -1,6 +1,5 @@
 <template>
-    <div class="conversation-event">
-        {{ data.text }}
+    <div class="conversation-event" v-html="data.text">
     </div>
 </template>
 

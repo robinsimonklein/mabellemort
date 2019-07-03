@@ -1,6 +1,6 @@
 <template>
     <div class="blue-screen">
-        <span class="blue-screen__text">{{data.text}}</span>
+        <span class="blue-screen__text" v-html="data.text"></span>
         <button @click="goToNext" class="blue-screen__btn" >{{ data.btnLabel }}</button>
     </div>
 </template>

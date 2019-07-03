@@ -1,0 +1,18 @@
+.white-button{
+  display: inline-block;
+  font-family: 'Murmure', serif;
+  font-size: 1.4rem;
+  background-color: white;
+  padding: 0.8rem 1.6rem;
+  color: black;
+  text-decoration: none;
+  border: none;
+  border-radius: 2.5rem;
+  outline:none;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 0 15px rgba(255,255,255,1);
+
+  &:focus{
+    -webkit-tap-highlight-color: transparent;
+  }
+}

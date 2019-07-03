@@ -1,7 +1,7 @@
 <template>
     <div class="user-card" :class="{'fluid' : fluid}" :style="'background-image:url(/assets/messages/user-card/user-card_' + data.number + '.png)'" @click="selectChoice">
         <div class="user-card__text-wrap">
-            <p class="user-card__text" :class="textSize">{{ data.text }}</p>
+            <p class="user-card__text" :class="textSize" v-html="data.text"></p>
         </div>
     </div>
 </template>
@@ -9,6 +9,7 @@
 <script>
     /* eslint-disable */
     import TweenLite from 'gsap'
+    import Hammer from 'hammerjs'
 
     export default {
         name: "UserCard",
@@ -43,6 +44,7 @@
         data(){
             return {
                 hidden: false,
+                hammer: null
             }
         },
         computed: {
@@ -90,7 +92,12 @@
             if(this.fluid){
                 this.scrollMessagesDown();
             }else {
-                //TweenLite
+                //Configure Hammer (only if not fluid)
+                this.hammer = new Hammer(this.$el);
+                this.hammer.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+                this.hammer.on('swipedown', () => {
+                    this.$emit('swipedown');
+                });
             }
         }
     }
@@ -131,11 +138,11 @@
             transition: all 0.5s ease;
         }
 
-        $card-scale: 0.25;
+        $card-scale: 0.30;
 
         &.active {
             .tidy &{
-                transform: scale($card-scale) rotate(30deg);
+                transform: scale($card-scale) translateY(4rem) rotate(30deg);
                 transform-origin: bottom;
                 margin-bottom: 0;
                 z-index: 4;
@@ -152,13 +159,13 @@
         }
 
         &.small {
-            transform: scale($card-scale);
+            transform: scale($card-scale) translateY(4rem);
             transform-origin: bottom;
             margin-bottom: 0;
             z-index: 3;
 
             &--left {
-                transform: scale($card-scale) rotate(-30deg);
+                transform: scale($card-scale) translateY(4rem) rotate(-30deg);
                 transform-origin: bottom;
                 margin-bottom: 0;
                 z-index: 2;
@@ -168,7 +175,7 @@
                 }
             }
             &--right {
-                transform: scale($card-scale) rotate(30deg);
+                transform: scale($card-scale)  rotate(30deg);
                 transform-origin: bottom;
                 margin-bottom: 0;
                 z-index: 4;

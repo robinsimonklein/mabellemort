@@ -1,6 +1,6 @@
 <template>
     <div class="end">
-        <a class="end__btn" href="#">{{ data.btnLabel }}</a>
+        <a @click.prevent="showOutro" class="end__btn white-button" href="#" v-html="data.btnLabel"></a>
     </div>
 </template>
 
@@ -29,7 +29,7 @@
 
         },
         methods: {
-            ...Vuex.mapMutations(['ACTIVATE_USER_INTERACTION']),
+            ...Vuex.mapMutations(['SET_VIEW', 'ACTIVATE_USER_INTERACTION']),
 
             scrollMessagesDown(){
                 document.querySelector('.messages-container').scroll({
@@ -37,11 +37,19 @@
                     top: document.querySelector('.messages-container').scrollHeight + 30,
                     behavior: 'smooth'}
                 );
+            },
+            showOutro(){
+                this.SET_VIEW('Outro')
             }
         },
         mounted() {
             this.scrollMessagesDown();
-            this.$root.$emit('printMessage', {'component':'simple-message', 'data': {'text':[ this.data.text ], 'sender': 'Ma Belle Mort'}});
+            if(this.data.text) {
+                this.$root.$emit('printMessage', {
+                    'component': 'simple-message',
+                    'data': {'text': [this.data.text], 'sender': 'Ma Belle Mort'}
+                });
+            }
             this.ACTIVATE_USER_INTERACTION();
         }
     }
@@ -53,18 +61,14 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        padding: 20px;
         text-align: left;
-        margin: 1rem 0;
+        padding:3rem;
         box-sizing: border-box;
         z-index: 10;
 
         &__btn{
             display: block;
-            background-color: red;
-            padding: 1rem;
             text-align: center;
-            color: white;
             font-weight: bold;
             text-decoration: none;
 

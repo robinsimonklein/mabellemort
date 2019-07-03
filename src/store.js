@@ -1,24 +1,36 @@
 import Vuex from 'vuex'
-import json from './datas';
+import messages_prez from './scenario/messages_prez';
+import interactions from './scenario/interactions';
+import events from './scenario/events';
+import ends from './scenario/ends';
 import Vue from "vue";
 
 Vue.use(Vuex);
 
 const state = {
-    testMode: true,
-    scenario: json,
+    testMode: false,
+    demoMode: true,
+    view:null,
+    scenario: Object.assign({}, messages_prez, interactions, events, ends),
     actual: 'm0',
     userInteraction: false,
     loading: false,
-    bgColor: '#000'
+    bgColor: '#000',
+    username: null
 };
 
 const mutations = {
+    SET_VIEW: (state, value) => {
+        state.view = value
+    },
     SET_ACTUAL: (state, id) => {
         state.actual = id
     },
     SET_LOADING: (state, bool) => {
         state.loading = bool
+    },
+    SET_USERNAME: (state, username) => {
+        state.username = username
     },
     SET_DONE: (state, id) => {
         if(state.scenario[id]){
@@ -40,17 +52,20 @@ const mutations = {
 
 const getters = {
     testMode: state => state.testMode,
+    demoMode: state => state.demoMode,
+    view: state => state.view,
     actual: state => state.actual,
     bgColor: state => state.bgColor,
     scenario: state => state.scenario,
     userInteraction: state => state.userInteraction,
     loading: state => state.loading,
+    username: state => state.username,
 
     actualNode: state => {
         if(state.scenario[state.actual]) {
-            return json[state.actual]
+            return state.scenario[state.actual]
         }else{
-            // TODO: Erreur, le noeud n'existe pas
+            // TODO: Error, next node doesn't exists
             return null
         }
     },
@@ -65,9 +80,9 @@ const getters = {
                     return defaultId
                 }
             }
-            return json[state.actual].next
+            return state.scenario[state.actual].next
         }else{
-            // TODO: Erreur, il n'y a pas de suite
+            // TODO: Error, there is no continuation
             return null
         }
     }
@@ -85,6 +100,6 @@ let store = new Vuex.Store({
     strict: true
 });
 
-global.store = store; // Accessible depuis la console navigateur
+global.store = store; // Accessible from navigator console
 
 export default store;

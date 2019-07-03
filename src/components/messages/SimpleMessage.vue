@@ -1,6 +1,6 @@
 <template>
-    <div class="simple-message">
-        {{ randomText }}
+    <div class="simple-message" v-html="randomText.replace('{{prenom}}', this.username)">
+
     </div>
 </template>
 
@@ -20,7 +20,7 @@
             }
         },
         computed: {
-            ...Vuex.mapGetters(['nextNode']),
+            ...Vuex.mapGetters(['nextNode', 'username']),
 
             randomText() {
                 return this.data.text[Math.round(Math.random() * (this.data.text.length - 1))]

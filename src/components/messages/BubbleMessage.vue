@@ -1,6 +1,5 @@
 <template>
-    <div class="bubble-message" :style="'background-color:'">
-        {{ randomText }}
+    <div class="bubble-message" :style="'background-color:'" v-html="randomText.replace('{{prenom}}', this.username)">
     </div>
 </template>
 
@@ -19,7 +18,7 @@
             }
         },
         computed: {
-            ...Vuex.mapGetters(['nextNode']),
+            ...Vuex.mapGetters(['nextNode', 'username']),
 
             randomText() {
                 return this.data.text[Math.round(Math.random() * (this.data.text.length - 1))]
@@ -51,6 +50,6 @@
         margin: 1rem 0;
         background-color: skyblue;
         color:white;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
 </style>

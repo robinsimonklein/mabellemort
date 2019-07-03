@@ -25,19 +25,20 @@
 }
 
 @font-face {
-  font-family: "Messapia";
-  src: url('~@/assets/fonts/messapia/regular/Messapia-Regular.eot'),
-  url('~@/assets/fonts/messapia/regular/Messapia-Regular.woff') format('woff'),
-  url('~@/assets/fonts/messapia/regular/Messapia-Regular.eot?#iefix') format('embedded-opentype'),
-  url('~@/assets/fonts/messapia/regular/Messapia-Regular.svg#MessapiaBold') format('svg');
+  font-family: "Helvetica";
+  src: url('~@/assets/fonts/helvetica/Helvetica.eot'),
+  url('~@/assets/fonts/helvetica/Helvetica.woff') format('woff'),
+  url('~@/assets/fonts/helvetica/Helvetica.eot?#iefix') format('embedded-opentype'),
+  url('~@/assets/fonts/helvetica/Helvetica.svg#Helvetica') format('svg');
   font-weight: normal;
 }
 
+
 @font-face {
-  font-family: "Messapia";
-  src: url('~@/assets/fonts/messapia/bold/Messapia-Bold.eot'),
-  url('~@/assets/fonts/messapia/bold/Messapia-Bold.woff') format('woff'),
-  url('~@/assets/fonts/messapia/bold/Messapia-Bold.eot?#iefix') format('embedded-opentype'),
-  url('~@/assets/fonts/messapia/bold/Messapia-Bold.svg#MessapiaBold') format('svg');
+  font-family: "Murmure";
+  src: url('~@/assets/fonts/murmure/Le_Murmure-Regular_web.eot'),
+  url('~@/assets/fonts/murmure/Le_Murmure-Regular_web.woff') format('woff'),
+  url('~@/assets/fonts/murmure/Le_Murmure-Regular_web.eot?#iefix') format('embedded-opentype'),
+  url('~@/assets/fonts/murmure/Le_Murmure-Regular_web.svg#Murmure') format('svg');
   font-weight: bold;
 }

@@ -32,12 +32,22 @@ npm run build
 ```
 
 ## :mag: Tests et corrections
-<!--
-### Lancer les tests
+### Mode TEST
+
+Il est possible de désactiver les temps de chargement dans la discussion pour aller plus vite durant la phase de développement.<br>
+Pour cela : dans **store.js**, passer la variable `testMode` à `true`
+```js 
+const state = {
+    ...
+    testMode : true
+    ...
+}
 ```
-npm run test
+
+### Lancer les tests unitaires
 ```
--->
+npm run test:unit
+```
 
 ### Lints et corrections
 ```
@@ -51,5 +61,3 @@ Le projet est hébergé sur **Netlify** à l'adresse : [mabellemort.netlify.com]
 Pour déployer le projet sur Netlify, il suffit de merger la branche **master** sur la branche **production**.
 
 <br>
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
