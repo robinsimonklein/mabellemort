@@ -1,5 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2327550e-3f43-473b-bb55-1a0858936ca5/deploy-status)](https://app.netlify.com/sites/mabellemort/deploys)
-
+[![Badge Loris](https://github.com/robinsimonklein/mabellemort/loris-badge.png "Badge Loris")](https://github.com/DevLoris)
 # ☠ Ma Belle Mort ☠
 
 Ma Belle Mort c'est un moyen d'échanger, pendant un instant, avec sa propre mort 
@@ -54,7 +54,7 @@ npm run test:unit
 npm run lint
 ```
 
-## :rocket: Produciton
+## :rocket: Production
 
 Le projet est hébergé sur **Netlify** à l'adresse : [mabellemort.netlify.com](http://mabellemort.netlify.com).
 <br>

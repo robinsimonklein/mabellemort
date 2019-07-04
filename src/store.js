@@ -1,5 +1,5 @@
 import Vuex from 'vuex'
-import messages_prez from './scenario/messages_prez';
+import messages from './scenario/messages';
 import interactions from './scenario/interactions';
 import events from './scenario/events';
 import ends from './scenario/ends';
@@ -11,7 +11,7 @@ const state = {
     testMode: false,
     demoMode: true,
     view:'Intro',
-    scenario: Object.assign({}, messages_prez, interactions, events, ends),
+    scenario: Object.assign({}, messages, interactions, events, ends),
     actual: "m0",
     userInteraction: false,
     loading: false,
