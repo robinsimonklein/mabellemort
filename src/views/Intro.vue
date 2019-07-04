@@ -63,8 +63,9 @@
                 if(this.username && this.username.length > 2){
                     this.error = null;
                     this.SET_ACTUAL('m0');
+                    this.SET_USERNAME(this.username);
                     this.SET_VIEW(null);
-                    this.SET_USERNAME(this.username)
+                    this.$root.$emit('goToNextNode', "m0");
                 }else{
                     this.error= "Vous devez entrer votre prénom."
                 }

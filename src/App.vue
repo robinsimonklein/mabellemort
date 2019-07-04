@@ -156,7 +156,7 @@ export default {
         window.onresize = this.resizeApp;
 
         // Display first node at launching
-        this.displayNode(this.actualNode);
+        // this.displayNode(this.actualNode);
 
     },
     components: {
