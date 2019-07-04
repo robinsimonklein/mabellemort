@@ -19,6 +19,7 @@
 
     import Vuex from 'vuex';
     import Frame from "./components/Frame";
+    import smoothscroll from 'smoothscroll-polyfill';
 
     // Import views
     import Intro from './views/Intro';
@@ -81,7 +82,7 @@ export default {
                     });
                     this.SET_LOADING(false);
                 }, !this.testMode ? Math.random() * 3000 + 1500 : 400);
-            }, !this.testMode && waiting ? Math.random() * 500 + 1000 : 300);
+            }, !this.testMode && waiting ? Math.random() * 500 + 500 : 300);
         },
         displayNode(node){
 
@@ -131,6 +132,10 @@ export default {
         },
         resizeApp(){
             document.body.style.height = window.innerHeight+"px";
+        },
+        reset(){
+            this.SET_ACTUAL("m0");
+            this.messages = []
         }
 
     },
@@ -139,6 +144,7 @@ export default {
     },
     mounted(){
 
+        smoothscroll.polyfill();
 
         // Prepare all $root events listeners
         this.$root.$on('printUserMessage', (message) => {
@@ -150,13 +156,19 @@ export default {
         this.$root.$on('goToNextNode', (nextId) => {
             this.goToNextNode(nextId);
         });
+        this.$root.$on('reset', () => {
+            this.reset();
+        });
 
         // Fix mobile navbar viewport
         this.resizeApp();
         window.onresize = this.resizeApp;
 
         // Display first node at launching
-        this.displayNode(this.actualNode);
+
+        if(this.testMode) {
+            this.displayNode(this.actualNode);
+        }
 
     },
     components: {

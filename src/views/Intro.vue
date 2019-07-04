@@ -7,6 +7,7 @@
         <div class="intro__contacts">
             <ul class="intro__list">
                 <h3 class="intro__list-title">En ligne</h3>
+                <hr class="intro__separator"/>
                 <li class="intro__list-item">
                     <div class="user__profile user__profile--active" style="background-image: url(/img/profile/death_profile.png)"></div>
                     <span class="user__name">La Mort</span>
@@ -14,6 +15,7 @@
             </ul>
             <ul class="intro__list">
                 <h3 class="intro__list-title">Inactif</h3>
+                <hr class="intro__separator"/>
                 <li class="intro__list-item">
                     <div class="user__profile user__profile--inactive" style="background-image: url(/img/profile/truth_profile.png)"></div>
                     <span class="user__name">La Vérité</span>
@@ -25,6 +27,7 @@
             </ul>
             <ul class="intro__list">
                 <h3 class="intro__list-title">Hors ligne</h3>
+                <hr class="intro__separator"/>
                 <li class="intro__list-item">
                     <div class="user__profile user__profile--offline" style="background-image: url(/img/profile/life_profile.png)"></div>
                     <span class="user__name">La Vie</span>
@@ -46,8 +49,11 @@
 </template>
 
 <script>
+    /* eslint-disable */
 
     import Vuex from 'vuex';
+    import TweenLite from 'gsap';
+    import Power2 from 'gsap';
 
     export default {
         name: "Intro",
@@ -62,9 +68,28 @@
             start(){
                 if(this.username && this.username.length > 2){
                     this.error = null;
-                    this.SET_ACTUAL('m0');
-                    this.SET_VIEW(null);
-                    this.SET_USERNAME(this.username)
+
+                    //Leave animations
+                    const elements = document.querySelector('.intro').children;
+                    for(let i=0; i<elements.length-1; i++){
+                        TweenLite.to(elements[i], 0.5, {y: -100, alpha: 0, delay: i*0.04, easing: Power2.easeIn})
+                    }
+                    const separators = document.querySelectorAll('.intro__separator');
+                    console.log(separators)
+                    separators.forEach((separator, index) => {
+                        TweenLite.to(separator, 0.5, {scaleX: 0, transformOrigin: 'left', delay: index*0.04, easing: Power2.easeIn})
+                    });
+
+                    TweenLite.to(this.$el, 1.5, {autoAlpha: 0, delay: 0.5, easing: Power2.easeIn}).eventCallback('onComplete', ()=>{
+                        // Start
+                        this.SET_ACTUAL('m0');
+                        this.SET_USERNAME(this.username);
+                        this.SET_VIEW(null);
+                        this.$root.$emit('goToNextNode', "m0");
+                    });
+
+
+
                 }else{
                     this.error= "Vous devez entrer votre prénom."
                 }
@@ -138,7 +163,15 @@
         font-family: 'Daubenton', serif;
         text-align: left;
         font-size: 0.9rem;
-        border-bottom: 1px solid rgba(255,255,255,0.5);
+        margin-bottom: 0;
+        margin-top: 1.5rem;
+    }
+
+    &__separator {
+        height: 1px;
+        border: none;
+        background: rgba(255,255,255,0.5);
+        margin-bottom: 5px;
     }
 
     .user__profile {

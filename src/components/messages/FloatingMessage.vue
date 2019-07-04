@@ -1,7 +1,7 @@
 <template>
     <div class="floating-message">
         <div class="floating-message__principal">
-            <img v-for="(asset, key) in assets" :key="key" :class="[{'large' : !data.parallax}, key===0 ? 'floating-message__principal-img' : 'floating-message__floating']" :ref="'asset-'+key" :src="assets[key]" :data-rellax-speed="rellaxSpeeds[key]" data-rellax-percentage="0" />
+            <img v-for="(asset, key) in assets" :key="key" :class="[{'large' : !data.parallax}, key===0 ? 'floating-message__principal-img' : 'floating-message__floating']" :ref="'asset-'+key" :src="assets[key]" :data-rellax-speed="rellaxSpeeds[key]" data-rellax-percentage="1" />
         </div>
     </div>
 </template>
@@ -59,10 +59,6 @@
                     top: document.querySelector('.messages-container').scrollHeight + 30,
                     behavior: 'smooth'}
                 );
-            },
-            parallax(element, scrollHeight, force, direction, shift){
-                let translate = (scrollHeight * force * direction) - shift;
-                element.style.transform = 'translateY('+ translate +'px)';
             }
         },
         mounted() {
@@ -73,27 +69,12 @@
                 }
             });
 
-            const messagesContainer = document.querySelector('.messages-container');
-            const images = document.querySelectorAll('.floating-message__floating');
-
-            /*
-            messagesContainer.addEventListener('scroll', ()=>{
-                const scrollHeight  = messagesContainer.scrollTop;
-                images.forEach((image, index)=>{
-                    this.parallax(image, scrollHeight, 0.05*index+0.05, -1, -10);
-                });
-
-                console.log(scrollHeight)
-            });
-
-             */
 
             this.rellax = new Rellax('.floating-message__floating', {
                 wrapper: '.messages-container',
-                center: true
+                center: true,
+                round: true
             });
-
-            console.log(this.rellax)
         }
     }
 </script>
@@ -102,6 +83,7 @@
     .floating-message {
         position: relative;
         width: 100%;
+        margin-top: 10vh;
 
         &__principal {
             position: relative;

@@ -10,9 +10,9 @@ Vue.use(Vuex);
 const state = {
     testMode: false,
     demoMode: true,
-    view:null,
+    view:'Intro',
     scenario: Object.assign({}, messages_prez, interactions, events, ends),
-    actual: 'm0',
+    actual: "m0",
     userInteraction: false,
     loading: false,
     bgColor: '#000',

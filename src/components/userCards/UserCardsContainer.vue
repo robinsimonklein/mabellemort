@@ -108,9 +108,9 @@
         .user-cards__control {
             position: absolute;
             display: block;
-            width: 30vw;
-            height: 12vh;
-            left: 50vw;
+            width: 50vw;
+            height: 15vh;
+            left: 40vw;
             bottom: 0;
             margin-left: -15vw;
             z-index: 10;

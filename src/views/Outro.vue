@@ -27,6 +27,10 @@
         methods: {
             ...Vuex.mapMutations(['SET_VIEW']),
             start(){
+                // On remet la discussion à zéro
+                this.$root.$emit('reset');
+
+                // On affiche l'intro
                 this.SET_VIEW('Intro');
             }
         }

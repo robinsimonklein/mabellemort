@@ -37,6 +37,7 @@
             }
         },
         mounted() {
+
             imagesLoaded(this.$el.querySelector('img'), () => {
                 this.scrollMessagesDown();
                 if(this.nextNode){
@@ -51,11 +52,15 @@
     .image-message {
         width: 100%;
         display: flex;
-        justify-content:flex-start;
+        justify-content:center;
+        align-items: center;
 
         img {
+            display: inline-block;
+            box-sizing: border-box;
             width: 100%;
             max-width: 70%;
+            height: auto;
         }
     }
 </style>
