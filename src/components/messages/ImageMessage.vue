@@ -51,7 +51,7 @@
     .image-message {
         width: 100%;
         display: flex;
-        justify-content:flex-start;
+        justify-content:center;
 
         img {
             width: 100%;

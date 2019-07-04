@@ -48,6 +48,7 @@
 <script>
 
     import Vuex from 'vuex';
+    import TweenLite from 'gsap'
 
     export default {
         name: "Intro",

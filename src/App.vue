@@ -81,7 +81,7 @@ export default {
                     });
                     this.SET_LOADING(false);
                 }, !this.testMode ? Math.random() * 3000 + 1500 : 400);
-            }, !this.testMode && waiting ? Math.random() * 500 + 1000 : 300);
+            }, !this.testMode && waiting ? Math.random() * 500 + 500 : 300);
         },
         displayNode(node){
 
@@ -154,15 +154,21 @@ export default {
         this.$root.$on('goToNextNode', (nextId) => {
             this.goToNextNode(nextId);
         });
+        this.$root.$on('reset', () => {
+            this.reset();
+        });
 
         // Fix mobile navbar viewport
         this.resizeApp();
         window.onresize = this.resizeApp;
 
         // Display first node at launching
+        /*
         if(this.testMode) {
             this.displayNode(this.actualNode);
         }
+
+         */
 
     },
     components: {

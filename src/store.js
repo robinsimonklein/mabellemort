@@ -10,7 +10,7 @@ Vue.use(Vuex);
 const state = {
     testMode: true,
     demoMode: true,
-    view:null,
+    view:'Intro',
     scenario: Object.assign({}, messages_prez, interactions, events, ends),
     actual: "m0",
     userInteraction: false,
