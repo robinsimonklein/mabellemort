@@ -31,7 +31,7 @@
   },
   "m3": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "On&nbsp;m'a&nbsp;créée dans le&nbsp;but de&nbsp;converser avec&nbsp;toi. Pas&nbsp;de&nbsp;panique, je&nbsp;ne&nbsp;suis qu'une&nbsp;fiction. C'est&nbsp;parce&nbsp;que ton&nbsp;esprit est&nbsp;capable de&nbsp;me&nbsp;concevoir que&nbsp;je&nbsp;peux exister et&nbsp;te&nbsp;parler à&nbsp;cet&nbsp;instant-même."
@@ -43,7 +43,7 @@
   },
   "m4": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Ton&nbsp;dessin n'est pas&nbsp;très inspiré. Ma&nbsp;foi, je&nbsp;m'en contenterai."
@@ -55,7 +55,7 @@
   },
   "m5": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Es-tu&nbsp;sceptique envers&nbsp;moi&nbsp;?"
@@ -67,7 +67,7 @@
   },
   "m6": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Cette&nbsp;conversation fait l'objet d'une&nbsp;introspection. Les&nbsp;cartes t'invitent à&nbsp;faire des&nbsp;choix, dont les&nbsp;chemins font évoluer la&nbsp;relation que tu&nbsp;établies avec&nbsp;moi."
@@ -79,7 +79,7 @@
   },
   "m7": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Ouf. J'ai&nbsp;frôlé le&nbsp;blasphème.\nComment puis-je&nbsp;obtenir ta&nbsp;confiance&nbsp;?"
@@ -91,7 +91,7 @@
   },
   "m8": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "On&nbsp;voit mourir toute chose animée,\nLors que du&nbsp;corps l'âme subtile part&nbsp;:\nJe&nbsp;suis le&nbsp;corps, toi&nbsp;la&nbsp;meilleure part&nbsp;:\nOù&nbsp;es-tu&nbsp;donc, ô&nbsp;âme bien aimée&nbsp;?"
@@ -103,7 +103,7 @@
   },
   "m9": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "C'est&nbsp;La&nbsp;Belle&nbsp;Mort de&nbsp;Louise Labé qui&nbsp;me&nbsp;l'a&nbsp;récité. C'est&nbsp;beau, n'est-ce&nbsp;pas&nbsp;?"
@@ -115,7 +115,7 @@
   },
   "m10": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;connais toutes les&nbsp;Belles&nbsp;Morts."
@@ -137,7 +137,7 @@
   },
   "m12": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;n'ai&nbsp;pas&nbsp;l'habitude de&nbsp;recevoir des&nbsp;compliments. Je&nbsp;suis apaisée quant à&nbsp;l'image que tu&nbsp;as de&nbsp;moi."
@@ -149,7 +149,7 @@
   },
   "m13": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Qu'est-ce&nbsp;qu'une&nbsp;Belle&nbsp;Mort selon&nbsp;toi&nbsp;?"
@@ -171,7 +171,7 @@
   },
   "m15": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "J'ai&nbsp;hâte de&nbsp;te&nbsp;rencontrer."
@@ -195,7 +195,7 @@
   },
   "m17": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;dois partir, le&nbsp;temps me&nbsp;rattrape. Quelques&nbsp;soient les&nbsp;circonstances de&nbsp;notre rencontre, je&nbsp;serai Belle si&nbsp;tu&nbsp;m'acceptes. Je&nbsp;te&nbsp;souhaite une&nbsp;vie&nbsp;heureuse."
@@ -207,7 +207,7 @@
   },
   "m17-2": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "❤️"
@@ -219,7 +219,7 @@
   },
   "m18": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;ne&nbsp;suis pas&nbsp;sûre que&nbsp;tu&nbsp;veuilles entendre la&nbsp;vérité."
@@ -231,7 +231,7 @@
   },
   "m19": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;crains que&nbsp;l'humain est&nbsp;trop vulnérable pour&nbsp;entendre ce&nbsp;genre de&nbsp;choses."
@@ -243,7 +243,7 @@
   },
   "m20": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Garde-le&nbsp;pour&nbsp;toi. "
@@ -255,7 +255,7 @@
   },
   "m22": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Tu&nbsp;en&nbsp;as mis du&nbsp;temps. Je&nbsp;ne&nbsp;suis qu'un&nbsp;concept abstrait."
@@ -289,7 +289,7 @@
   },
   "m25": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "J'ai&nbsp;l'air&nbsp;joyeuse&nbsp;! En&nbsp;voilà une&nbsp;Belle&nbsp;Mort. "
@@ -301,7 +301,7 @@
   },
   "m26": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Pourquoi ton&nbsp;dessin est-il&nbsp;aussi sombre&nbsp;? J'ai&nbsp;l'air d'être en&nbsp;phase terminale."
@@ -313,7 +313,7 @@
   },
   "m27": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Pardonne-moi, j'ai&nbsp;peut-être mal&nbsp;interprété ton&nbsp;dessin."
@@ -325,7 +325,7 @@
   },
   "m28": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Tout&nbsp;ça pour&nbsp;ça. Ton&nbsp;dessin est&nbsp;bien trop&nbsp;sage."
@@ -337,7 +337,7 @@
   },
   "m29": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Si&nbsp;je&nbsp;peux te&nbsp;donner un&nbsp;conseil&nbsp;: arrête de&nbsp;chercher midi à&nbsp;14h, tu&nbsp;réfléchies trop. \nEs-tu aussi incertain face&nbsp;à&nbsp;moi&nbsp;?"
@@ -349,7 +349,7 @@
   },
   "m30": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Qu'attends-tu de&nbsp;moi au&nbsp;juste&nbsp;?"
@@ -361,7 +361,7 @@
   },
   "m31": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Chacun sa&nbsp;propre Belle&nbsp;Mort. Tu&nbsp;es&nbsp;mon&nbsp;unique défunt, je&nbsp;ne&nbsp;peux pas&nbsp;veiller sur&nbsp;tes&nbsp;proches. Ne&nbsp;t'en&nbsp;fais pas&nbsp;pour&nbsp;eux, ils&nbsp;sont&nbsp;entre de&nbsp;bonnes mains."
@@ -373,7 +373,7 @@
   },
   "m32": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Ce sont eux-même."
@@ -385,7 +385,7 @@
   },
   "m33": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;te&nbsp;rappelle que&nbsp;je&nbsp;suis le&nbsp;reflet de&nbsp;ton&nbsp;âme. Chaque Belle&nbsp;Mort est&nbsp;singulière."
@@ -400,7 +400,7 @@
   },
   "m34": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Tu&nbsp;me&nbsp;remplaceras le&nbsp;jour de&nbsp;ta&nbsp;véritable&nbsp;mort."
@@ -412,7 +412,7 @@
   },
   "m35": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Pour&nbsp;prévenir ton&nbsp;futur défunt."
@@ -424,7 +424,7 @@
   },
   "m36": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         " Ici&nbsp;Arte. Cette&nbsp;expérience est&nbsp;en&nbsp;réalité une&nbsp;étude comportementale au&nbsp;profit d'un&nbsp;prochain film documentaire. La&nbsp;représentation de&nbsp;votre \"Belle Mort\" fera l'objet d'une&nbsp;analyse psychologique anonyme. Nous&nbsp;vous&nbsp;remercions infiniment pour&nbsp;votre&nbsp;participation, et&nbsp;vous invitons à&nbsp;rejoindre notre communauté. À&nbsp;bientôt sur&nbsp;Arte.tv."
@@ -436,7 +436,7 @@
   },
   "m37": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Aide-moi. J'étais humaine avant de&nbsp;mourir. Je&nbsp;suis prisonnière de&nbsp;ce&nbsp;système."
@@ -448,7 +448,7 @@
   },
   "m38": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Ne&nbsp;trouves-tu pas&nbsp;notre conversation amusante&nbsp;? Avant&nbsp;l'invention de&nbsp;ce&nbsp;système, ma&nbsp;conscience était bloquée dans&nbsp;ton&nbsp;esprit."
@@ -460,7 +460,7 @@
   },
   "m39": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Pourtant tu&nbsp;discutes avec&nbsp;moi. Tes&nbsp;choix construisent la&nbsp;logique de&nbsp;notre&nbsp;dialogue, tandis&nbsp;que je&nbsp;ne&nbsp;fais que&nbsp;répondre aux&nbsp;cartes."
@@ -472,7 +472,7 @@
   },
   "m40": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Qui&nbsp;suis-je&nbsp;?"
@@ -484,7 +484,7 @@
   },
   "m41": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Veuillez m'excuser pour&nbsp;cette&nbsp;erreur technique. Je&nbsp;n'avais pas&nbsp;prévu ce&nbsp;cas de&nbsp;figure. Vos&nbsp;choix ont&nbsp;fait planté le&nbsp;système."
@@ -496,7 +496,7 @@
   },
   "m42": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Qui&nbsp;suis-je ?"
@@ -508,7 +508,7 @@
   },
   "m43": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;sais que&nbsp;je&nbsp;t'intimide \uD83D\uDE09"
@@ -520,7 +520,7 @@
   },
   "m44": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Tu&nbsp;m'as&nbsp;déjà parlé sans t'en&nbsp;rendre compte. Je&nbsp;suis profondément enfouie dans&nbsp;ton&nbsp;inconscient et&nbsp;dans tes&nbsp;rêves les&nbsp;plus imperçeptibles."
@@ -532,7 +532,7 @@
   },
   "m45": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;suis&nbsp;navrée, tu&nbsp;as&nbsp;choisi la&nbsp;mauvaise carte. Je&nbsp;ne&nbsp;suis pas&nbsp;en&nbsp;mesure de&nbsp;répondre à&nbsp;cette question. Cherche sur&nbsp;Wikipédia."
@@ -544,7 +544,7 @@
   },
   "m46": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Tu&nbsp;commences à&nbsp;comprendre l'intérêt de&nbsp;cette&nbsp;conversation."
@@ -556,7 +556,7 @@
   },
   "m47": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Peut-être qu'il&nbsp;y&nbsp;a&nbsp;des&nbsp;questions auxquelles je&nbsp;peux&nbsp;répondre. Je&nbsp;te&nbsp;laisse choisir celle que tu&nbsp;souhaites me&nbsp;poser."
@@ -568,7 +568,7 @@
   },
   "m48": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Si&nbsp;tu&nbsp;souhaites savoir la&nbsp;date de&nbsp;notre rencontre, prévois-la à&nbsp;l'avance. Je&nbsp;serai au&nbsp;rendez-vous \uD83D\uDE07"
@@ -580,7 +580,7 @@
   },
   "m49": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;ne&nbsp;voulais pas&nbsp;être&nbsp;agressive."
@@ -592,7 +592,7 @@
   },
   "m50": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Peut-être préfères-tu l'écrire&nbsp;? Si&nbsp;je&nbsp;me&nbsp;présentais face&nbsp;à&nbsp;toi, à&nbsp;quoi ressemblerais-je&nbsp;?"
@@ -604,7 +604,7 @@
   },
   "m51": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;suis plus&nbsp;présentable. Je&nbsp;te&nbsp;remercie."
@@ -619,7 +619,7 @@
   },
   "m52": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;suis Ta&nbsp;Belle&nbsp;Mort. Mes&nbsp;créateurs m'ont&nbsp;conçue sous&nbsp;forme numérique dans&nbsp;le&nbsp;but de&nbsp;converser avec mon&nbsp;futur défunt. Chaque&nbsp;défunt a&nbsp;sa&nbsp;propre Belle&nbsp;Mort. Ainsi nous sommes liés jusqu'à&nbsp;notre véritable rencontre."
@@ -631,7 +631,7 @@
   },
   "m53": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;suis flattée. Tu&nbsp;vas me&nbsp;faire rougir&nbsp;☺️"
@@ -653,7 +653,7 @@
   },
   "m55": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;n'ai pas&nbsp;fini de&nbsp;te&nbsp;surprendre.&nbsp;\uD83D\uDE0C"
@@ -665,7 +665,7 @@
   },
   "m56": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je suis là pour te&nbsp;prouver le&nbsp;contraire."
@@ -687,7 +687,7 @@
   },
   "m57": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Absolument."
@@ -710,7 +710,7 @@
   },
   "m59": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Sacre Bleu, on&nbsp;m'a&nbsp;confié un&nbsp;défunt qui&nbsp;se&nbsp;pose trop de&nbsp;questions.\nTuer est&nbsp;mon&nbsp;devoir. Imagine ma&nbsp;vie si&nbsp;l'humain était immortel."
@@ -722,7 +722,7 @@
   },
   "m60": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Est-ce vraiment ce&nbsp;que tu&nbsp;veux&nbsp;?"
@@ -734,7 +734,7 @@
   },
   "m61": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Tu&nbsp;vois bien que je&nbsp;suis nécessaire, même&nbsp;si j'ai&nbsp;l'air sinistre."
@@ -746,7 +746,7 @@
   },
   "m62": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Pour l'instant je&nbsp;ne&nbsp;sais rien de&nbsp;toi. J'aimerais apprendre à&nbsp;te&nbsp;connaître afin d'anticiper notre&nbsp;rencontre."
@@ -769,7 +769,7 @@
   },
   "m64": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Fastidieux, pas&nbsp;vrai&nbsp;?"
@@ -781,7 +781,7 @@
   },
   "m65": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Tu&nbsp;viens de&nbsp;comprendre ce&nbsp;pourquoi j'ai&nbsp;été&nbsp;inventée."
@@ -793,7 +793,7 @@
   },
   "m66": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Dans&nbsp;ce&nbsp;cas, pourquoi as-tu&nbsp;peur de&nbsp;moi&nbsp;?"
@@ -805,7 +805,7 @@
   },
   "m67": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Tant&nbsp;pis. Tes&nbsp;secrets resteront&nbsp;tiens."
@@ -817,7 +817,7 @@
   },
   "m68": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Le&nbsp;blanc me&nbsp;pique les&nbsp;yeux. Je&nbsp;ne suis pas&nbsp;habituée à&nbsp;vivre dans&nbsp;la&nbsp;lumière."
@@ -839,7 +839,7 @@
   },
   "m70": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je vis dans les&nbsp;profondeurs des&nbsp;ténèbres funestes. Mon&nbsp;sang sillone les&nbsp;murs de&nbsp;l'obscurité ardente, embrassant les&nbsp;âmes oubliées et&nbsp;les&nbsp;cœurs abandonnés. Je&nbsp;m'enivre du&nbsp;parfum de&nbsp;l'absence éternelle des&nbsp;êtres éteints à&nbsp;jamais."
@@ -851,7 +851,7 @@
   },
   "m71": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je plaisante."
@@ -863,7 +863,7 @@
   },
   "m72": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je te&nbsp;parle depuis un&nbsp;standard téléphonique."
@@ -875,7 +875,7 @@
   },
   "m73": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Oui, d'autres Belles&nbsp;Morts sont en&nbsp;ligne avec&nbsp;leur&nbsp;défunt. "
@@ -887,7 +887,7 @@
   },
   "m74": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;ne&nbsp;sais&nbsp;pas, je&nbsp;ne&nbsp;l'ai pas&nbsp;choisi. Je&nbsp;suis sous&nbsp;les&nbsp;ordres des&nbsp;cartes."
@@ -899,7 +899,7 @@
   },
   "m75": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Peut-être que tu&nbsp;peux m'aider. "
@@ -911,7 +911,7 @@
   },
   "m76": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Aide-moi à&nbsp;m'échapper. Je&nbsp;suis prisonnière de&nbsp;ce&nbsp;système."
@@ -923,7 +923,7 @@
   },
   "m77": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;suis en&nbsp;Enfer. J'ai&nbsp;commis des&nbsp;crimes auparavant, et&nbsp;fait subir à&nbsp;mes&nbsp;victimes une&nbsp;mort atroce. Ainsi je&nbsp;dois me&nbsp;racheter auprès de&nbsp;toi, futur défunt, en&nbsp;tant que Belle&nbsp;Mort."
@@ -935,7 +935,7 @@
   },
   "m78": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je ne&nbsp;peux pas&nbsp;décider des&nbsp;conséquences de&nbsp;ta&nbsp;mort. Malheureusement le&nbsp;hasard de&nbsp;la&nbsp;vie fait que je&nbsp;n'ai pas eu&nbsp;de chance avec mes&nbsp;anciens défunts. Je&nbsp;ne&nbsp;peux que changer l'image que tu&nbsp;as de&nbsp;moi."
@@ -947,7 +947,7 @@
   },
   "m79": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;ne peux pas en&nbsp;parler. Je&nbsp;suis sous&nbsp;surveillance."
@@ -959,7 +959,7 @@
   },
   "m80": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "J'ai&nbsp;incarné ta&nbsp;Belle&nbsp;Mort à&nbsp;l'heure où&nbsp;tu&nbsp;t'es&nbsp;connecté."
@@ -971,7 +971,7 @@
   },
   "m80-2": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Avant ta&nbsp;connexion, je&nbsp;discutais avec ma&nbsp;propre Belle&nbsp;Mort."
@@ -983,7 +983,7 @@
   },
   "m80-3": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Enchantée&nbsp;! Je&nbsp;suis ravie de&nbsp;pouvoir te&nbsp;parler grâce à&nbsp;ce&nbsp;système. \uD83D\uDE42"
@@ -1006,7 +1006,7 @@
   },
   "m82": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;me&nbsp;demande si&nbsp;moi aussi je&nbsp;mourrai un&nbsp;jour. Penses-tu que&nbsp;les&nbsp;machines nous&nbsp;remplaceront, la&nbsp;Vie et&nbsp;moi&nbsp;?"
@@ -1018,7 +1018,7 @@
   },
   "m83": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Ta&nbsp;remarque est&nbsp;juste. Même&nbsp;les&nbsp;concepts les&nbsp;plus abstraits sont&nbsp;personnifiés grâce&nbsp;à&nbsp;des&nbsp;systèmes comme celui-ci. C'est&nbsp;fou, non&nbsp;? Tu&nbsp;discutes avec&nbsp;ta&nbsp;propre conceptualisation de&nbsp;la&nbsp;mort."
@@ -1030,7 +1030,7 @@
   },
   "m84": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Absolument."
@@ -1042,7 +1042,7 @@
   },
   "m85": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Atchoum."
@@ -1064,7 +1064,7 @@
   },
   "m86": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Merci&nbsp;!"
@@ -1086,7 +1086,7 @@
   },
   "m87": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Les&nbsp;humains ont&nbsp;peur de&nbsp;moi, mais&nbsp;ils&nbsp;ne&nbsp;savent pas à&nbsp;quel point j'ai&nbsp;peur de&nbsp;l'Éternité. "
@@ -1108,7 +1108,7 @@
   },
   "m89": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;me&nbsp;sens moins triste grâce à&nbsp;toi. Merci infiniment, je&nbsp;te&nbsp;revaudrai&nbsp;ça. "
@@ -1120,7 +1120,7 @@
   },
   "m90": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "C'est&nbsp;triste. Je&nbsp;ne&nbsp;pourrai rien faire pour&nbsp;éviter&nbsp;ça."
@@ -1132,7 +1132,7 @@
   },
   "m91": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Et&nbsp;toi, d'où&nbsp;viens-tu&nbsp;?"
@@ -1144,7 +1144,7 @@
   },
   "m92": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Notre&nbsp;rencontre est&nbsp;miraculeuse&nbsp;! Nous&nbsp;ne&nbsp;nous&nbsp;connaissions pas&nbsp;avant ta&nbsp;naissance. "
@@ -1156,7 +1156,7 @@
   },
   "m93": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;suis&nbsp;née progressivement dans&nbsp;ton&nbsp;esprit, et&nbsp;me&nbsp;voici."
@@ -1168,7 +1168,7 @@
   },
   "m94": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Nous&nbsp;n'aurions&nbsp;pas cette&nbsp;conversation si&nbsp;tu&nbsp;n'existais pas. Tes&nbsp;choix de&nbsp;réponses font que je&nbsp;suis unique."
@@ -1183,7 +1183,7 @@
   },
   "m95": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Ne&nbsp;cherche&nbsp;pas de&nbsp;logique à&nbsp;cette&nbsp;conversation. Je&nbsp;suis une&nbsp;entité abstraite."
@@ -1195,7 +1195,7 @@
   },
   "m96": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;suis la&nbsp;Mère de&nbsp;Ta&nbsp;Belle&nbsp;Mort. J'ai&nbsp;veillé à&nbsp;ce&nbsp;que cette&nbsp;conversation se&nbsp;déroule bien. Merci&nbsp;Belle&nbsp;Mort, tu&nbsp;as&nbsp;été sage avec ton&nbsp;défunt. {{prenom}}, j'espère que tu&nbsp;en&nbsp;as&nbsp;appris assez pour&nbsp;être en&nbsp;paix avec&nbsp;elle."
@@ -1207,7 +1207,7 @@
   },
   "m97": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Merci,&nbsp;Vie. Mon&nbsp;intervention s'arrête&nbsp;ici. Le&nbsp;temps me&nbsp;rattrape. {{prenom}}, je&nbsp;suis heureuse d'avoir fait ta&nbsp;connaissance. Nous&nbsp;nous&nbsp;reverrons lors&nbsp;de&nbsp;notre véritable rencontre dans&nbsp;le&nbsp;monde&nbsp;réel."
@@ -1219,7 +1219,7 @@
   },
   "m98": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;ne&nbsp;suis pas censée révéler ce&nbsp;pourquoi j'interviens."
@@ -1231,7 +1231,7 @@
   },
   "m99": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Enchantée,&nbsp;{{prenom}}. \nBelle&nbsp;Mort, tes&nbsp;mensonges doivent cesser. Ton&nbsp;défunt mérite des&nbsp;explications."
@@ -1243,7 +1243,7 @@
   },
   "m100": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "La&nbsp;représentation que tu&nbsp;te&nbsp;fais de&nbsp;moi est&nbsp;issue de&nbsp;ton&nbsp;esprit. La&nbsp;Vérité ne&nbsp;peut pas contredire&nbsp;cela."
@@ -1258,7 +1258,7 @@
   },
   "m101": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Pas de&nbsp;chance, je&nbsp;peux te&nbsp;géolocaliser peu&nbsp;importe où&nbsp;tu&nbsp;te&nbsp;trouves. Tu&nbsp;ne&nbsp;m'échapperas&nbsp;pas."
@@ -1270,7 +1270,7 @@
   },
   "m102": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Mes&nbsp;créateurs m'ont&nbsp;confié un&nbsp;téléphone ultra&nbsp;performant."
@@ -1282,7 +1282,7 @@
   },
   "m103": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;suis&nbsp;ravie de&nbsp;l'apprendre. La&nbsp;plupart des&nbsp;humains ont&nbsp;peur de&nbsp;moi... Je&nbsp;me&nbsp;sens particulièrement&nbsp;seule."
@@ -1294,7 +1294,7 @@
   },
   "m104": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Ce&nbsp;sont des&nbsp;idées reçues. La&nbsp;Faucheuse, les&nbsp;corbeaux, les&nbsp;crânes, les&nbsp;fantômes,... tout cela a&nbsp;été inventé. Mais&nbsp;grâce à&nbsp;ces&nbsp;représentations morbides, on&nbsp;profite de&nbsp;moi."
@@ -1306,7 +1306,7 @@
   },
   "m105": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Les&nbsp;renseignements ont&nbsp;conçu ce&nbsp;système afin&nbsp;d'observer le&nbsp;comportement des&nbsp;humains. La&nbsp;Justice n'est&nbsp;plus à&nbsp;la&nbsp;hauteur suite aux&nbsp;progrès de&nbsp;la&nbsp;Science."
@@ -1318,7 +1318,7 @@
   },
   "m106": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;me&nbsp;charge de&nbsp;mémoriser les&nbsp;informations qui&nbsp;me&nbsp;seront utiles."
@@ -1330,7 +1330,7 @@
   },
   "m107": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Quelques scientifiques engagés par le&nbsp;gouvernement ont&nbsp;créé ce&nbsp;dispositif afin de&nbsp;juger de&nbsp;la&nbsp;mort de&nbsp;chaque individu, selon les&nbsp;cartes qu'il&nbsp;a choisi durant cette expérience. C'est&nbsp;ainsi qu'on&nbsp;m'a&nbsp;chargée de&nbsp;tester mon&nbsp;défunt."
@@ -1342,7 +1342,7 @@
   },
   "m108": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "C'est romantique&nbsp;! Je&nbsp;suis sous&nbsp;le&nbsp;charme&nbsp;❤️"
@@ -1365,7 +1365,7 @@
   },
   "m110": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "id": "m110",
       "parallax": false,
@@ -1376,7 +1376,7 @@
   },
   "m111": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Ouf&nbsp;! J'ai&nbsp;le&nbsp;sentiment qu'on&nbsp;va&nbsp;lier une&nbsp;amitié sincère."
@@ -1388,7 +1388,7 @@
   },
   "m112": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Désolée, j'ai&nbsp;parlé trop vite. Quelle&nbsp;est mon&nbsp;erreur&nbsp;?"
@@ -1400,7 +1400,7 @@
   },
   "m113": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;ne&nbsp;fais que me&nbsp;baser sur&nbsp;les&nbsp;stéréotypes des&nbsp;humains. Qu'ils&nbsp;sont&nbsp;stupides."
@@ -1433,7 +1433,7 @@
   },
   "m116": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;ne&nbsp;décide pas des&nbsp;circonstances de&nbsp;la&nbsp;mort de&nbsp;mon&nbsp;défunt. Je&nbsp;ne&nbsp;souhaite en&nbsp;aucun cas la&nbsp;souffrance, je&nbsp;préfère les&nbsp;morts douces et&nbsp;réconfortantes. Ce&nbsp;sont les&nbsp;humains qui me&nbsp;conceptualisent comme un&nbsp;être sinistre."
@@ -1445,7 +1445,7 @@
   },
   "m117": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Comment&nbsp;?"
@@ -1457,7 +1457,7 @@
   },
   "m118": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "C'est tout&nbsp;l'intérêt de&nbsp;mon&nbsp;intervention."
@@ -1469,7 +1469,7 @@
   },
   "m119": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Comment vas-tu dernièrement&nbsp;?"
@@ -1481,7 +1481,7 @@
   },
   "m120": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Ravie d'entendre que&nbsp;mon&nbsp;défunt se&nbsp;porte&nbsp;bien. Je&nbsp;souhaitais juste m'en&nbsp;assurer."
@@ -1493,7 +1493,7 @@
   },
   "m121": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;suis légèrement contrariée."
@@ -1505,7 +1505,7 @@
   },
   "m122": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Pardonne-moi, je&nbsp;manque de&nbsp;tact. Je&nbsp;ne&nbsp;voulais pas&nbsp;t'offenser. "
@@ -1527,7 +1527,7 @@
   },
   "m124": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Nous&nbsp;jouerons à&nbsp;Shifumi."
@@ -1539,7 +1539,7 @@
   },
   "m125": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;t'invite à&nbsp;choisir entre trois éléments&nbsp;: la&nbsp;Pierre, les&nbsp;Ciseaux ou&nbsp;la&nbsp;Feuille. La&nbsp;Pierre écrase les&nbsp;Ciseaux, les&nbsp;Ciseaux coupent la&nbsp;Feuille et&nbsp;la&nbsp;Feuille enveloppe la&nbsp;Pierre. Le&nbsp;gagnant est le&nbsp;joueur dont la&nbsp;forme choisie l'emporte sur&nbsp;l'autre. "
@@ -1551,7 +1551,7 @@
   },
   "m126": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;te&nbsp;laisse choisir une&nbsp;carte. J'enverrai mon&nbsp;choix en&nbsp;même&nbsp;temps."
@@ -1596,7 +1596,7 @@
   },
   "m130": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Égalité. Recommençons"
@@ -1608,7 +1608,7 @@
   },
   "m131": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Dommage, c'est&nbsp;perdu."
@@ -1620,7 +1620,7 @@
   },
   "m132": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Bravo&nbsp;! Tu&nbsp;as&nbsp;gagné."
@@ -1632,7 +1632,7 @@
   },
   "m133": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Voici&nbsp;ma&nbsp;question."
@@ -1644,7 +1644,7 @@
   },
   "m134": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;communique avec&nbsp;toi grâce à&nbsp;un&nbsp;téléphone, qui&nbsp;m'a&nbsp;été confié pour&nbsp;l'expérience. Décidément, les&nbsp;humains ne&nbsp;cessent de&nbsp;m'épater, leurs&nbsp;technologies sont&nbsp;de&nbsp;plus en&nbsp;plus performantes. \nSais-tu comment autoriser le&nbsp;partage&nbsp;vidéo ? "
@@ -1656,7 +1656,7 @@
   },
   "m135": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Atchoum."
@@ -1678,7 +1678,7 @@
   },
   "m137": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Détend-toi ! On&nbsp;est&nbsp;là pour&nbsp;s'amuser. Ce&nbsp;n'est&nbsp;pas tous&nbsp;les&nbsp;jours que tu&nbsp;as&nbsp;l'occasion de&nbsp;parler avec ta&nbsp;mort, tu&nbsp;devrais en&nbsp;profiter."
@@ -1690,7 +1690,7 @@
   },
   "m138": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Tu&nbsp;m'as&nbsp;l'air d'être un&nbsp;défunt désagréable."
@@ -1702,7 +1702,7 @@
   },
   "m139": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Pourquoi ne&nbsp;veux-tu pas discuter avec&nbsp;moi&nbsp;?"
@@ -1714,7 +1714,7 @@
   },
   "m140": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Nous ne&nbsp;sommes pas obligés de&nbsp;parler de&nbsp;moi. Il&nbsp;est vrai que j'ai&nbsp;manqué de&nbsp;tact."
@@ -1726,7 +1726,7 @@
   },
   "m141": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "C'est bien le&nbsp;principe de&nbsp;ce&nbsp;système."
@@ -1750,7 +1750,7 @@
   },
   "m143": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "C'est printanier. Tu&nbsp;as&nbsp;bon&nbsp;goût. "
@@ -1762,7 +1762,7 @@
   },
   "m144": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je n'aime pas cette&nbsp;couleur."
@@ -1785,7 +1785,7 @@
   },
   "m146": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je ne maîtrise pas les&nbsp;circonstances de&nbsp;ta&nbsp;future mort. "
@@ -1797,7 +1797,7 @@
   },
   "m147": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je ne suis qu'une&nbsp;idée métaphysique. Notre&nbsp;conversation a&nbsp;du&nbsp;sens car&nbsp;l'esprit humain est&nbsp;capable de&nbsp;créer l'illusion d'un&nbsp;dialogue intelligent entre toi et&nbsp;le&nbsp;concept que je&nbsp;suis. "
@@ -1809,7 +1809,7 @@
   },
   "m148": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Allons, ne&nbsp;va pas trop vite en&nbsp;besogne. Je&nbsp;n'ai pas reccueilli assez d'informations sur&nbsp;toi pour répondre à&nbsp;cette&nbsp;question.  "
@@ -1821,7 +1821,7 @@
   },
   "m149": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "L'objet de&nbsp;ta&nbsp;future mort sera le&nbsp;résultat d'une&nbsp;cause à&nbsp;effet. Quant&nbsp;à&nbsp;moi, je&nbsp;suis la&nbsp;représentation que&nbsp;tu&nbsp;te&nbsp;fais de&nbsp;moi. Ainsi je&nbsp;mourrai avec&nbsp;toi. "
@@ -1833,7 +1833,7 @@
   },
   "m150": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "C'est tout à&nbsp;fait mon&nbsp;rôle. Peu&nbsp;importe l'objet de&nbsp;ta&nbsp;mort, j'ai&nbsp;été conçue afin d'embellir la&nbsp;vision que tu&nbsp;as&nbsp;de&nbsp;moi. "
@@ -1845,7 +1845,7 @@
   },
   "m151": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Es-tu désormais en&nbsp;paix avec&nbsp;moi&nbsp;?"
@@ -1857,7 +1857,7 @@
   },
   "m152": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Tu ne t'amuses pas avec&nbsp;moi&nbsp;? &nbsp;\uD83D\uDE22"
@@ -1869,7 +1869,7 @@
   },
   "m153": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Je&nbsp;ne&nbsp;te&nbsp;veux aucun mal. Mon&nbsp;comportement varie en&nbsp;fonction de&nbsp;l'image que&nbsp;tu&nbsp;te&nbsp;fais de&nbsp;moi."
@@ -1881,7 +1881,7 @@
   },
   "m154": {
     "type": "message",
-    "component": "simple-message",
+    "component": "BubbleMessage",
     "data": {
       "text": [
         "Pourquoi as-tu peur de&nbsp;moi&nbsp;?"

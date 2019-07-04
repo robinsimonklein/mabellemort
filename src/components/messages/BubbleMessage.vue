@@ -1,11 +1,13 @@
 <template>
-    <div class="bubble-message" :style="'background-color:'" v-html="randomText.replace('{{prenom}}', this.username)">
-    </div>
+    <component :is="randomBubble" :text="randomText.replace('{{prenom}}', this.username)" ></component>
 </template>
 
 <script>
     /* eslint-disable */
     import Vuex from 'vuex';
+
+    import Bubble1 from './bubbles/Bubble1'
+    import Bubble2 from './bubbles/Bubble2'
 
     export default {
         name: "BubbleMessage",
@@ -17,12 +19,24 @@
                 },
             }
         },
+        data(){
+            return {
+                bubbles: ['Bubble1', 'Bubble2']
+            }
+        },
         computed: {
             ...Vuex.mapGetters(['nextNode', 'username']),
 
             randomText() {
                 return this.data.text[Math.round(Math.random() * (this.data.text.length - 1))]
-            }
+            },
+            randomBubble() {
+                return this.bubbles[Math.round(Math.random() * (this.bubbles.length - 1))]
+            },
+        },
+        components: {
+            Bubble1,
+            Bubble2
         },
         methods: {
             scrollMessagesDown(){
@@ -44,12 +58,5 @@
 </script>
 
 <style lang="scss" scoped>
-    .bubble-message {
-        padding: 20px;
-        text-align: left;
-        margin: 1rem 0;
-        background-color: skyblue;
-        color:white;
-        font-size: 0.9rem;
-    }
+
 </style>

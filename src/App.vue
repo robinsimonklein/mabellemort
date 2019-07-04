@@ -131,6 +131,10 @@ export default {
         },
         resizeApp(){
             document.body.style.height = window.innerHeight+"px";
+        },
+        reset(){
+            this.SET_ACTUAL("m0");
+            this.messages = []
         }
 
     },
@@ -156,7 +160,9 @@ export default {
         window.onresize = this.resizeApp;
 
         // Display first node at launching
-        // this.displayNode(this.actualNode);
+        if(this.testMode) {
+            this.displayNode(this.actualNode);
+        }
 
     },
     components: {
