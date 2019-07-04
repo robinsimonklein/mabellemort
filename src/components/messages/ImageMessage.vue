@@ -52,10 +52,14 @@
         width: 100%;
         display: flex;
         justify-content:center;
+        align-items: center;
 
         img {
+            display: inline-block;
+            box-sizing: border-box;
             width: 100%;
             max-width: 70%;
+            height: auto;
         }
     }
 </style>
