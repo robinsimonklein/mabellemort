@@ -8,7 +8,7 @@ import Vue from "vue";
 Vue.use(Vuex);
 
 const state = {
-    testMode: true,
+    testMode: false,
     demoMode: true,
     view:'Intro',
     scenario: Object.assign({}, messages_prez, interactions, events, ends),

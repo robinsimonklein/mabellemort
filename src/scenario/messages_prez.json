@@ -631,11 +631,10 @@
   },
   "m53": {
     "type": "message",
-    "component": "BubbleMessage",
+    "component": "FloatingMessage",
     "data": {
-      "text": [
-        "Je&nbsp;suis flattée. Tu&nbsp;vas me&nbsp;faire rougir&nbsp;☺️"
-      ],
+      "id": "m53",
+      "parallax": false,
       "sender": "Ma Belle Mort"
     },
     "next": "m54",

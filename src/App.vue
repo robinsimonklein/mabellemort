@@ -144,7 +144,7 @@ export default {
     },
     mounted(){
 
-        smoothScroll.polyfill();
+        smoothscroll.polyfill();
 
         // Prepare all $root events listeners
         this.$root.$on('printUserMessage', (message) => {
