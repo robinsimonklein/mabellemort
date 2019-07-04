@@ -3,20 +3,21 @@
         <span class="canvas-draw__title">Dessiner Ma Belle Mort</span>
         <canvas id="canvas" class="canvas-draw__area" ref="canvas" :width="width" :height="height"></canvas>
         <ul class="tools">
-            <li class="tool__clear" @click="clearDrawing"></li>
-            <li class="tool__color-palette">
+            <li class="tool tool__clear" @click="clearDrawing"></li>
+            <li class="tool tool__color-palette">
                 <ul>
-                    <li v-for="(color, key) in data.colors" :key="key" :class="['tool__color', 'tool__color--' + key, {'active' : tools[0].color === color}]" @click="setColor(color)" :style="'background-color:'+color"></li>
+                    <li v-for="(color, key) in data.colors" :key="key" :class="['tool', 'tool__color', 'tool__color--' + key, {'active' : tools[0].color === color}]" @click="setColor(color)" :style="'background-color:'+color"></li>
                 </ul>
             </li>
 
-            <li @click="send()" class="tool__send">ENVOYER</li>
+            <li @click="send()" class="tool tool__send">ENVOYER</li>
         </ul>
     </div>
 </template>
 
 <script>
     import Vuex from 'vuex';
+    import TweenLite from 'gsap'
 
     export default {
         name: 'CanvasDraw',
@@ -192,12 +193,23 @@
                 }else{
                     this.$root.$emit('goToNextNode', "m22");
                 }
+            },
+            animateEnter(){
+                const tools = this.$el.querySelectorAll('.tool');
+                TweenLite.fromTo('#canvas', 1, {alpha: 0, scale: 0.5}, {alpha: 1, scale: 1, ease: Power2.easeOut});
+                tools.forEach((tool, index)=>{
+                    TweenLite.set(tool, {alpha: 0, scale: 0.5});
+                    TweenLite.fromTo(tool, 1, {alpha: 0, scale: 0.5}, {alpha: 1, scale: 1, ease: Power2.easeOut, delay: index*0.05});
+                })
             }
         },
         mounted() {
             // init canvas
             this.setCanvas();
             this.bindEvents();
+
+            // Animation d'entrée
+            this.animateEnter();
 
             // On met de côté la date de début du dessin
             this.startedTime = Date.now();
