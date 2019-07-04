@@ -50,6 +50,10 @@
         mounted() {
             this.scrollMessagesDown();
 
+
+            TweenLite.set(this.$el, {alpha: 0, scale: 0.6});
+            TweenLite.fromTo(this.$el, 0.6, {alpha: 0, scale: 0.6}, {alpha: 1, scale: 1, ease: Power2.easeInOut});
+
             if(this.nextNode){
                 this.$root.$emit('goToNextNode', this.nextNode);
             }

@@ -16,6 +16,7 @@
     "imagesloaded": "^4.1.4",
     "register-service-worker": "^1.6.2",
     "rellax": "^1.10.0",
+    "smoothscroll-polyfill": "^0.4.4",
     "socket.io-client": "^2.2.0",
     "vue": "^2.6.10",
     "vuex": "^3.1.1"

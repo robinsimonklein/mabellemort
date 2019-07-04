@@ -19,6 +19,7 @@
 
     import Vuex from 'vuex';
     import Frame from "./components/Frame";
+    import smoothscroll from 'smoothscroll-polyfill';
 
     // Import views
     import Intro from './views/Intro';
@@ -143,6 +144,7 @@ export default {
     },
     mounted(){
 
+        smoothScroll.polyfill();
 
         // Prepare all $root events listeners
         this.$root.$on('printUserMessage', (message) => {

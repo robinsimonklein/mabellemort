@@ -37,6 +37,7 @@
             }
         },
         mounted() {
+
             imagesLoaded(this.$el.querySelector('img'), () => {
                 this.scrollMessagesDown();
                 if(this.nextNode){
